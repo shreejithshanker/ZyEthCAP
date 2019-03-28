@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar 21 16:20:24 2019
+# Process ID: 29420
+# Current directory: C:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/nicap_extend/nicap_test.runs/bit_buffer_fifo_synth_1
+# Command line: vivado.exe -log bit_buffer_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bit_buffer_fifo.tcl
+# Log file: C:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/nicap_extend/nicap_test.runs/bit_buffer_fifo_synth_1/bit_buffer_fifo.vds
+# Journal file: C:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/nicap_extend/nicap_test.runs/bit_buffer_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bit_buffer_fifo.tcl -notrace

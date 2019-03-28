@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Sat Jan  5 12:16:00 2019
+# Process ID: 122416
+# Current directory: C:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/nicap_test/nicap_test.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/nicap_test/nicap_test.sdk/webtalk/webtalk.log
+# Journal file: C:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/nicap_test/nicap_test.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

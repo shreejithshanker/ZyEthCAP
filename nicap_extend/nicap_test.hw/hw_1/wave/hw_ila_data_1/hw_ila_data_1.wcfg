@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/nicap_extend/nicap_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="891000fs"></ZoomStartTime>
+      <ZoomEndTime time="1019000fs"></ZoomEndTime>
+      <Cursor1Time time="900000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="443"></NameColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="41" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="eth_bridge/bit_buffer/m_axis_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/m_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/m_axis_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/m_axis_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/m_axis_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/s_axis_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/s_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/s_axis_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/s_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/s_axis_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/s_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/s_axis_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/s_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="VirtualBus" type="vbus">
+      <obj_property name="label">bit_fifo_data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Reversed">true</obj_property>
+      <obj_property name="ElementShortName">VirtualBus[]</obj_property>
+      <obj_property name="ObjectShortName">VirtualBus[]</obj_property>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__1" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__1[0:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__1[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__2" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__2[1:1]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__2[1:1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__3" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__3[2:2]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__3[2:2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__4" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__4[3:3]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__4[3:3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__5" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__5[4:4]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__5[4:4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__6" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__6[5:5]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__6[5:5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__7" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__7[6:6]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__7[6:6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__8" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__8[7:7]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__8[7:7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__9" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__9[8:8]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__9[8:8]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__10" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__10[9:9]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__10[9:9]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__11" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__11[10:10]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__11[10:10]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__12" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__12[11:11]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__12[11:11]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__13" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__13[12:12]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__13[12:12]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__14" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__14[13:13]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__14[13:13]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__15" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__15[14:14]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__15[14:14]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__16" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__16[15:15]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__16[15:15]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__17" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__17[16:16]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__17[16:16]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__18" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__18[17:17]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__18[17:17]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__19" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__19[18:18]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__19[18:18]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__20" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__20[19:19]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__20[19:19]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__21" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__21[20:20]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__21[20:20]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__22" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__22[21:21]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__22[21:21]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__23" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__23[22:22]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__23[22:22]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__24" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__24[23:23]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__24[23:23]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__25" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__25[24:24]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__25[24:24]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__26" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__26[25:25]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__26[25:25]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__27" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__27[26:26]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__27[26:26]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__28" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__28[27:27]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__28[27:27]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__29" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__29[28:28]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__29[28:28]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__30" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__30[29:29]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__30[29:29]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0__31" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0__31[30:30]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0__31[30:30]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_fifo_data_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_fifo_data_reg_n_0_[31:31]</obj_property>
+         <obj_property name="ObjectShortName">bit_fifo_data_reg_n_0_[31:31]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_fifo_rdLast_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_fifo_rdLast_valid</obj_property>
+      <obj_property name="ObjectShortName">bit_fifo_rdLast_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_fifo_wr_reg_n_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_fifo_wr_reg_n_0</obj_property>
+      <obj_property name="ObjectShortName">bit_fifo_wr_reg_n_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_len_val" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_len_val[55:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_len_val[55:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_sm[0]_i_1_n_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_sm[0]_i_1_n_0</obj_property>
+      <obj_property name="ObjectShortName">bit_sm[0]_i_1_n_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_sm[1]_i_1_n_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_sm[1]_i_1_n_0</obj_property>
+      <obj_property name="ObjectShortName">bit_sm[1]_i_1_n_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_sm_check_reg_n_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_sm_check_reg_n_0</obj_property>
+      <obj_property name="ObjectShortName">bit_sm_check_reg_n_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus503" type="vbus">
+      <obj_property name="label">bitSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="eth_bridge/bit_sm_reg_n_0_" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_sm_reg_n_0_[1:1]</obj_property>
+         <obj_property name="ObjectShortName">bit_sm_reg_n_0_[1:1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/bit_sm_reg_n_0__1" type="array">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/bit_sm_reg_n_0__1[0:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_sm_reg_n_0__1[0:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="VirtualBus" type="vbus">
+      <obj_property name="label">ConfigFrameData</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Reversed">true</obj_property>
+      <obj_property name="ElementShortName">VirtualBus[]</obj_property>
+      <obj_property name="ObjectShortName">VirtualBus[]</obj_property>
+      <wvobject fp_name="eth_bridge/config_frameData[0]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[0]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[0]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[1]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[1]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[1]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[2]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[2]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[2]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[3]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[3]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[3]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[4]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[4]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[4]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[5]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[5]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[5]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[6]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[6]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[6]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[7]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[7]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[7]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[8]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[8]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[8]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[9]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[9]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[9]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[10]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[10]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[10]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[11]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[11]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[11]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[12]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[12]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[12]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[13]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[13]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[13]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[14]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[14]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[14]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[16]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[16]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[16]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[17]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[17]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[17]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[18]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[18]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[18]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[19]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[19]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[19]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[20]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[20]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[20]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[21]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[21]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[21]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[22]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[22]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[22]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[23]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[23]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[23]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[24]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[24]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[24]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[25]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[25]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[25]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[26]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[26]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[26]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[27]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[27]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[27]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[28]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[28]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[28]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[29]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[29]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[29]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_frameData[30]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_frameData[30]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_frameData[30]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="VirtualBus" type="vbus">
+      <obj_property name="label">ConfigState</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Reversed">true</obj_property>
+      <obj_property name="ElementShortName">VirtualBus[]</obj_property>
+      <obj_property name="ObjectShortName">VirtualBus[]</obj_property>
+      <wvobject fp_name="eth_bridge/config_state[0]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_state[0]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_state[0]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_state[1]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_state[1]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_state[1]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_state[2]_i_1_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_state[2]_i_1_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_state[2]_i_1_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="eth_bridge/config_state[3]_i_2_n_0" type="logic">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">eth_bridge/config_state[3]_i_2_n_0</obj_property>
+         <obj_property name="ObjectShortName">config_state[3]_i_2_n_0</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/cur_bit_flag" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/cur_bit_flag[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_bit_flag[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/cur_bit_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/cur_bit_len[55:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_bit_len[55:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/Lcl_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/Lcl_tlast</obj_property>
+      <obj_property name="ObjectShortName">Lcl_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/len_to_check_reg_n_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/len_to_check_reg_n_0</obj_property>
+      <obj_property name="ObjectShortName">len_to_check_reg_n_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/m_axis_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/m_axis_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/pkt1_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/pkt1_len[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pkt1_len[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/state0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/state0</obj_property>
+      <obj_property name="ObjectShortName">state0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/state_reg_n_0_" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/state_reg_n_0_[0:0]</obj_property>
+      <obj_property name="ObjectShortName">state_reg_n_0_[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/useLcl_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/useLcl_0</obj_property>
+      <obj_property name="ObjectShortName">useLcl_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_mm2s_tdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_mm2s_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_mm2s_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/m_axis_mm2s_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_mm2s_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_wrapper/design_1_i/zycap_0/inst/icap_ctrl_0/S_AXIS_TDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/zycap_0/inst/icap_ctrl_0/S_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_wrapper/design_1_i/zycap_0/inst/icap_ctrl_0/S_AXIS_TVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/zycap_0/inst/icap_ctrl_0/S_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_fifo_rdLast_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_fifo_rdLast_valid</obj_property>
+      <obj_property name="ObjectShortName">bit_fifo_rdLast_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/axis_data_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/axis_data_count[10:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_data_count[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/axis_rd_data_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/axis_rd_data_count[10:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_rd_data_count[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_buffer/axis_wr_data_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_buffer/axis_wr_data_count[10:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_wr_data_count[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="VirtualBus" type="vbus">
+      <obj_property name="label">bitlenVal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Reversed">true</obj_property>
+      <obj_property name="ElementShortName">VirtualBus[]</obj_property>
+      <obj_property name="ObjectShortName">VirtualBus[]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/bit_len_val" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/bit_len_val[55:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_len_val[55:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="eth_bridge/cur_bit_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">eth_bridge/cur_bit_len[55:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_bit_len[55:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

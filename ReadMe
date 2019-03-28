@@ -9,3 +9,8 @@ Observe the console using a terminal application like TeraTerm (8-bit at a baud 
 
 Once the python script is done, type on 3 key press command on the UART console to read the time consumed by the ethernet operation, based on a hardware counter. The counter counts the time from the reception of the first frame to the completion of reconfiguration operation. 
 
+Test on PynQ-Z2 board
+Device xc7z020clg400-1 
+
+Partial bitstream size: 151488 bytes
+Time consumed: 270 to 305 ms

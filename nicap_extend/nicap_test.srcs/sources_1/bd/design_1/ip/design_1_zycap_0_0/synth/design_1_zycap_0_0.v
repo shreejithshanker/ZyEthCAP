@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.shs:user:zycap:1.0
-// IP Revision: 3
+// IP Revision: 6
 
 (* X_CORE_INFO = "zycap,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "design_1_zycap_0_0,zycap,{}" *)

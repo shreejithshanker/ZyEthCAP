@@ -1,0 +1,202 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:54:30 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 23987
+License: Customer
+
+Current time: 	Thu Apr 25 12:32:49 BST 2019
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Ubuntu
+OS Version: 4.15.0-46-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 3840x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 17 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2017.4/tps/lnx64/jre
+JVM executable location: 	/opt/Xilinx/Vivado/2017.4/tps/lnx64/jre/bin/java
+
+User name: 	alex
+User home directory: /home/alex
+User working directory: /home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/partial_led_test_1.0/partial_led_test_v1_0_project
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2017.4
+RDI_DATADIR: /opt/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: /home/alex/.Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: /home/alex/.Xilinx/Vivado/2017.4/
+Vivado layouts directory: /home/alex/.Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	/home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/partial_led_test_1.0/partial_led_test_v1_0_project/vivado.log
+Vivado journal file location: 	/home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/partial_led_test_1.0/partial_led_test_v1_0_project/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-23987-alex-warc
+
+GUI allocated memory:	202 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 963 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl' 
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: partial_led_test_v1_0_project.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 47 MB (+46613kb) [00:00:05]
+// [Engine Memory]: 874 MB (+765340kb) [00:00:05]
+// Tcl Message: open_project partial_led_test_v1_0_project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PR_PARTITION_RM_NEW
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 62 MB (+13503kb) [00:00:06]
+// [GUI Memory]: 69 MB (+3704kb) [00:00:07]
+// [Engine Memory]: 947 MB (+30183kb) [00:00:07]
+// [GUI Memory]: 97 MB (+25681kb) [00:00:07]
+// Tcl Message: open_project partial_led_test_v1_0_project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/partial_led_test_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'. 
+// Project name: partial_led_test_v1_0_project; location: /home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/partial_led_test_1.0/partial_led_test_v1_0_project; part: xc7z020clg400-1
+// HMemoryUtils.trashcanNow. Engine heap size: 972 MB. GUI used memory: 43 MB. Current time: 4/25/19 12:32:50 PM BST
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,010 MB (+16247kb) [00:00:09]
+// TclEventType: DG_GRAPH_GENERATED
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "up_synth_1 ;  ; up ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 114 ; 197 ; 0.0 ; 0 ; 0 ; Wed Apr 24 15:46:00 BST 2019 ; 00:00:56 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; Vivado Synthesis Default Reports (Vivado Synthesis 2017) ; xc7z020clg400-1 ; alex-warc ; Vivado Synthesis Defaults", 4, "up_synth_1", 0, false); // ax (O, cj)
+// PAPropertyPanels.initPanels (up_synth_1) elapsed time: 0.4s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "up_synth_1 ;  ; up ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 114 ; 197 ; 0.0 ; 0 ; 0 ; Wed Apr 24 15:46:00 BST 2019 ; 00:00:56 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; Vivado Synthesis Default Reports (Vivado Synthesis 2017) ; xc7z020clg400-1 ; alex-warc ; Vivado Synthesis Defaults", 4, "up_synth_1", 0, false, false, false, false, true, false); // ax (O, cj) - Popup Trigger
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenuItem(PAResourceEtoH.ExpRunMenu_OPEN_RUN, "Open Run"); // ac (ai, cj)
+// bs (cj):  Open Synthesized Design : addNotify
+// Tcl Message: open_run up_synth_1 -name up_synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: up Design is defaulting to synth run part: xc7z020clg400-1 
+// [Engine Memory]: 1,088 MB (+28880kb) [00:00:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,132 MB. GUI used memory: 46 MB. Current time: 4/25/19 12:33:10 PM BST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 45 MB. Current time: 4/25/19 12:33:14 PM BST
+// [Engine Memory]: 1,308 MB (+173563kb) [00:00:33]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.4/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.5s
+// [Engine Memory]: 1,461 MB (+91872kb) [00:00:34]
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (up_synth_1) elapsed time: 0.2s
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 6612.512 ; gain = 486.805 ; free physical = 3812 ; free virtual = 8999 
+// Elapsed time: 23 seconds
+dismissDialog("Open Synthesized Design"); // bs (cj)
+// [GUI Memory]: 102 MB (+152kb) [00:00:42]
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "pwd", true); // aF (ae, cj)
+// Tcl Command: 'pwd'
+// Tcl Command: 'pwd'
+// Tcl Message: pwd 
+// Tcl Message: /home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/partial_led_test_1.0/partial_led_test_v1_0_project 
+// [Engine Memory]: 1,542 MB (+8376kb) [00:00:47]
+// Tcl Command: 'rdi::info_commands {w*}'
+// Tcl Command: 'rdi::info_commands {write*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,558 MB. GUI used memory: 78 MB. Current time: 4/25/19 12:33:30 PM BST
+// Tcl Command: 'rdi::info_commands {write_check*}'
+// Tcl Command: 'rdi::info_commands {write_check*}'
+// Tcl Command: 'rdi::match_options {write_checkpoint} {force}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// RouteApi::initDelayMediator elapsed time: 19.1s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// [Engine Memory]: 1,773 MB (+161654kb) [00:00:56]
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Elapsed time: 20 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_checkpoint -force ../../../../../../nicap_extend/checkpoints/up.dcp", true); // aF (ae, cj)
+// Tcl Command: 'write_checkpoint -force ../../../../../../nicap_extend/checkpoints/up.dcp'
+// Tcl Command: 'write_checkpoint -force ../../../../../../nicap_extend/checkpoints/up.dcp'
+// Tcl Message: write_checkpoint -force ../../../../../../nicap_extend/checkpoints/up.dcp 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/up.dcp' has been generated. 
+// Tcl Message: /home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/up.dcp 
+// [Engine Memory]: 1,942 MB (+83796kb) [00:01:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,953 MB. GUI used memory: 77 MB. Current time: 4/25/19 12:33:45 PM BST
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aF (Q, cj)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "down_synth_1 ;  ; down ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 114 ; 197 ; 0.0 ; 0 ; 0 ; Wed Apr 24 15:46:00 BST 2019 ; 00:00:57 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; Vivado Synthesis Default Reports (Vivado Synthesis 2017) ; xc7z020clg400-1 ; alex-warc ; Vivado Synthesis Defaults", 5, "down_synth_1", 0, false); // ax (O, cj)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "down_synth_1 ;  ; down ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 114 ; 197 ; 0.0 ; 0 ; 0 ; Wed Apr 24 15:46:00 BST 2019 ; 00:00:57 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; Vivado Synthesis Default Reports (Vivado Synthesis 2017) ; xc7z020clg400-1 ; alex-warc ; Vivado Synthesis Defaults", 5, "down_synth_1", 0, false, false, false, false, true, false); // ax (O, cj) - Popup Trigger
+selectMenuItem(PAResourceEtoH.ExpRunMenu_OPEN_RUN, "Open Run"); // ac (ai, cj)
+// bs (cj):  Open Synthesized Design : addNotify
+// Tcl Message: open_run down_synth_1 -name down_synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: down Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 79 MB. Current time: 4/25/19 12:33:52 PM BST
+// [Engine Memory]: 2,047 MB (+8245kb) [00:01:10]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 108 MB (+1299kb) [00:01:11]
+// [GUI Memory]: 118 MB (+5172kb) [00:01:11]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+dismissDialog("Open Synthesized Design"); // bs (cj)
+// Tcl Command: 'rdi::info_commands bd::match_path'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_checkpoint -force ../../../../../../nicap_extend/checkpoints/down.dcp", true); // aF (ae, cj)
+// Tcl Command: 'write_checkpoint -force ../../../../../../nicap_extend/checkpoints/down.dcp'
+// Tcl Command: 'write_checkpoint -force ../../../../../../nicap_extend/checkpoints/down.dcp'
+// Tcl Message: write_checkpoint -force ../../../../../../nicap_extend/checkpoints/down.dcp 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/down.dcp' has been generated. 
+// Tcl Message: /home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/down.dcp 
+// [Engine Memory]: 2,248 MB (+103749kb) [00:01:20]
+// [GUI Memory]: 125 MB (+342kb) [00:24:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 89 MB. Current time: 4/25/19 1:03:55 PM BST
+// [GUI Memory]: 132 MB (+1134kb) [00:50:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 86 MB. Current time: 4/25/19 1:33:55 PM BST
+// [GUI Memory]: 139 MB (+458kb) [01:26:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 86 MB. Current time: 4/25/19 2:03:55 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 86 MB. Current time: 4/25/19 2:33:55 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 86 MB. Current time: 4/25/19 3:03:55 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 86 MB. Current time: 4/25/19 3:33:55 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 86 MB. Current time: 4/25/19 4:03:55 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 86 MB. Current time: 4/25/19 4:33:55 PM BST
+// Elapsed time: 14844 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF (Q, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_test_v1_0.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0_S00_AXI (down.v)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0_S00_AXI (down.v)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Partition Definitions", 3); // i (N, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, mode, up]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, mode, down]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, mode, down, partial_led_test_v1_0_S00_AXI (down.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, mode, down, partial_led_test_v1_0_S00_AXI (down.v)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,275 MB. GUI used memory: 89 MB. Current time: 4/25/19 4:41:31 PM BST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, mode, up, partial_led_test_v1_0_S00_AXI (partial_led_test_v1_0_S00_AXI.v)]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, mode, up, partial_led_test_v1_0_S00_AXI (partial_led_test_v1_0_S00_AXI.v)]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click

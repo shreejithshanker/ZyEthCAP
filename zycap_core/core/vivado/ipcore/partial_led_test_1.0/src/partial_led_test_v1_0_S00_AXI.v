@@ -80,7 +80,6 @@
     		// accept the read data and response information.
 		input wire  S_AXI_RREADY
 	);
-/*
 	// AXI4LITE signals
 	reg [C_S_AXI_ADDR_WIDTH-1 : 0] 	axi_awaddr;
 	reg  	axi_awready;
@@ -411,5 +410,4 @@
         end 
     end     
 	// User logic ends
-*/
 	endmodule

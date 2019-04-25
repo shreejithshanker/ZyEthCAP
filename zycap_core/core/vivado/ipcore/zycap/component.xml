@@ -615,7 +615,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>243294f9</spirit:value>
+            <spirit:value>d97edc04</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -637,7 +637,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>243294f9</spirit:value>
+            <spirit:value>d97edc04</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -651,7 +651,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f64a5dae</spirit:value>
+            <spirit:value>f92e9879</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1349,10 +1349,10 @@
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-03-21T15:06:40Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-04-25T11:18:37Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="user.shs:user:zycap:1.0_ARCHIVE_LOCATION">c:/SHS/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/zycap_core/core/vivado/ipcore/zycap</xilinx:tag>
+        <xilinx:tag xilinx:name="user.shs:user:zycap:1.0_ARCHIVE_LOCATION">/home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/zycap</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
@@ -1360,8 +1360,8 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="43ee47c6"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="7b928c64"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="f789cef3"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8634d08d"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="cd1f8a5f"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8881e648"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ce099aeb"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4709cd24"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

@@ -1,0 +1,16 @@
+15:51:54 **** Incremental Build of configuration Debug for project zyncap_extend ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c:9:25: fatal error: xparameters.h: No such file or directory
+ #include "xparameters.h"
+                         ^
+compilation terminated.
+make: *** [src/ZyNCAP_pr.o] Error 1
+src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
+
+15:51:54 Build Finished (took 63ms)
+

@@ -1,10 +1,10 @@
 -makelib ies_lib/xil_defaultlib -sv \
-  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
-  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/blk_mem_gen_v8_4_1 \
   "../../../../nicap_test.srcs/sources_1/bd/design_1/ipshared/67d8/simulation/blk_mem_gen_v8_4.v" \
@@ -58,10 +58,7 @@
   "../../../bd/design_1/ip/design_1_axi_bram_ctrl_3_0/sim/design_1_axi_bram_ctrl_3_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/45bd/src/partial_led_test_v1_0_S00_AXI.v" \
-  "../../../bd/design_1/ipshared/45bd/hdl/partial_led_test_v1_0.v" \
-  "../../../bd/design_1/ip/design_1_partial_led_test_0_0/sim/design_1_partial_led_test_0_0.v" \
-  "../../../bd/design_1/ip/design_1_zycap_0_0/ipshared/cf83/verilog/icap_ctrl.v" \
+  "../../../bd/design_1/ip/design_1_zycap_0_0/ipshared/a6fe/verilog/icap_ctrl.v" \
   "../../../bd/design_1/ip/design_1_zycap_0_0/src/zycap_icap_ctrl_0_1/sim/zycap_icap_ctrl_0_1.v" \
 -endlib
 -makelib ies_lib/lib_pkg_v1_0_2 \
@@ -95,7 +92,7 @@
   "../../../bd/design_1/ip/design_1_zycap_0_0/src/zycap_axi_dma_0_0/sim/zycap_axi_dma_0_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/18c2/src/zycap.v" \
+  "../../../bd/design_1/ipshared/7714/src/zycap.v" \
   "../../../bd/design_1/ip/design_1_zycap_0_0/sim/design_1_zycap_0_0.v" \
 -endlib
 -makelib ies_lib/xlconcat_v2_1_1 \
@@ -175,6 +172,7 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
   "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+  "../../../bd/design_1/ip/design_1_partial_led_test_v1_0_0_0/sim/design_1_partial_led_test_v1_0_0_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_15 \
   "../../../../nicap_test.srcs/sources_1/bd/design_1/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

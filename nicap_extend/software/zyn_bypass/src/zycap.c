@@ -495,7 +495,7 @@ int Net_Bitstream()
     int pres_last;
     int file_size;
     int Status;
-    xil_printf ("\r\n Interrupts received %d ",intr_counter);
+//    xil_printf ("\r\n Interrupts received %d ",intr_counter);
     bs_pres = check_bs_present(bs_list,modeName);
     if (bs_pres != -1 && bs_list[bs_pres].prev != NULL)            //The bitstream is already in the list and is not the most recently used
     {

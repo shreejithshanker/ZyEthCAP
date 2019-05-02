@@ -17,7 +17,7 @@
 #define EMACPS_DEVICE_ID	XPAR_XEMACPS_0_DEVICE_ID
 #define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define EMACPS_IRPT_INTR	XPS_GEM0_INT_ID
-#define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0x43C00000
+#define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
 #define DeviceId XPAR_XUARTPS_0_DEVICE_ID
 
 
@@ -30,8 +30,12 @@ XUartPs Uart_PS;
 int EmacFrTxSetup(XEmacPs *EmacPsInstancePtr);
 
 int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000;
+
+
 int main()
 {
+
+	/*********************************************** CONFIG *********************************************************/
 	int Status;
 	int rtn;
 	u32 delay,delay1;
@@ -67,7 +71,20 @@ int main()
 		return XST_FAILURE;
 	}
 
+	//Initialise the ZyNCAP controller
+	Status = Init_Zycap(&InterruptController, &ps7_ethernet_0);
+	if (Status != XST_SUCCESS){
+		xil_printf("ZyCAP and/or ENET Interface initialisation failed\r\n",Status);
+		return XST_FAILURE;
+	}
 
+	// Initalisethe PSEMAC
+	Status = EnetFrameSetup (&ps7_ethernet_0);
+    if (Status != XST_SUCCESS) {
+		 return XST_FAILURE;
+	}
+
+	/*****************************************************************************************************************/
 
 
 
@@ -77,29 +94,17 @@ int main()
 	 */
 	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
 	print("Reading data from register before PR\n\r");
-	//rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+	rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
 	xil_printf("Register content is %0x\n\r",rtn);
+
+
 	print("Starting Reconfiguration\n\r");
+	// Status = Prefetch_PR_Bitstream("mode2.bin");
 
-
-
-	//Initialise the ZyNCAP controller
-	Status = Init_Zycap(&InterruptController, &ps7_ethernet_0);
-	if (Status != XST_SUCCESS){
-		xil_printf("ZyCAP and/or ENET Interface initialisation failed\r\n",Status);
-		return XST_FAILURE;
-	}
-
-
-	Status = EnetFrameSetup (&ps7_ethernet_0);
-    if (Status != XST_SUCCESS) {
-		 return XST_FAILURE;
-	}
-    
-	Status = Prefetch_PR_Bitstream("mode2.bin");
 	//Reset the Timer and start it
 	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
 	delay1 = XScuTimer_GetCounterValue(TimerInstancePtr);
+
 	XScuTimer_Start(TimerInstancePtr);
 	//Send config2 partial bitstream to the ICAP with reset sync bit set
 	Status = Config_PR_Bitstream("mode2.bin",1);
@@ -108,10 +113,11 @@ int main()
 		xil_printf("Reconfiguration failed\r\n",Status);
 		return XST_FAILURE;
 	}
+
 	//Read the content of the timer and check the performance
 	XScuTimer_Stop(TimerInstancePtr);
-	xil_printf("Reconfiguration speed: %d MBytes/sec\r\n", (Status*TimerClock)/delay);
-	//Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
+	xil_printf("Reconfiguration speed (1st attempt): %d MBytes/sec\r\n", (Status*TimerClock)/delay);
+	// Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
 	RecvCount = 0;
 	xil_printf("Check PRR Registers? ");
 	while (RecvCount < (sizeof("Yes") - 1)) {
@@ -120,9 +126,9 @@ int main()
 							   &recvbuffer[RecvCount], sizeof("Yes")-RecvCount);
 	}
 
-	print("Reading data from register after PR\n\r");
-	//rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	xil_printf("Register content is %0x\n\r",rtn);
+	// print("Reading data from register after PR\n\r");
+	// rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+	// xil_printf("Register content is %0x\n\r",rtn);
 
 
 	Status = Prefetch_PR_Bitstream("mode1.bin");
@@ -131,14 +137,14 @@ int main()
 	XScuTimer_Start(TimerInstancePtr);
 
 	//Do the reconfiguration once again to see the effect of bufferring in the DRAM
-	Status = Config_PR_Bitstream("mode2.bin",1);
+	Status = Config_PR_Bitstream("mode1.bin",1);
 	delay =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
 	if (Status == XST_FAILURE){
 		xil_printf("Reconfiguration failed\r\n",Status);
 		return XST_FAILURE;
 	}
 	XScuTimer_Stop(TimerInstancePtr);
-	xil_printf("Reconfiguration speed for the second try: %d MBytes/sec\r\n", (Status*TimerClock)/delay);
+	xil_printf("Reconfiguration speed (2nd attempt - with prefetch): %d MBytes/sec\r\n", (Status*TimerClock)/delay);
 	//Prefetch the config1 bitstream for better ICAP performance
 	RecvCount = 0;
 	xil_printf("Check PRR Registers? ");
@@ -176,7 +182,7 @@ int main()
 	}
 	delay =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
 	XScuTimer_Stop(TimerInstancePtr);
-	xil_printf("Mode Name received is %s",modeName);
+//	xil_printf("Mode Name received is %s",modeName);
 	u32 delay2;
 	XScuTimer_Start(TimerInstancePtr);
 	Status = Net_Bitstream();
@@ -190,11 +196,14 @@ int main()
 	delay2 =  delay - XScuTimer_GetCounterValue(TimerInstancePtr);
 	XScuTimer_Stop(TimerInstancePtr);
 	xil_printf("Time taken for transmission to interrupt %d sec\r\n",delay);
-	xil_printf("Performance with prefetching and deferred interrupt sync: %d MBytes/sec\r\n", (Status*TimerClock)/delay2);
+	xil_printf("Performance with pre-fetching and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/delay2);
 	xil_printf("Time taken: %d sec\r\n", delay2);
-	//Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-	//rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	xil_printf("Now the register content is %0x\n\r",rtn);
+	xil_printf("%d\r\n",Status);
+	xil_printf("%d\r\n",TimerClock);
+
+	// Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
+	// rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+	// xil_printf("Now the register content is %0x\n\r",rtn);
 	return 0;
 }
 

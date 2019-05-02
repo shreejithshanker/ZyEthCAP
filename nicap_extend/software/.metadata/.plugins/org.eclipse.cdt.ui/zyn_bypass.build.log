@@ -1,8 +1,60 @@
-15:02:01 **** Incremental Build of configuration Debug for project zyn_bypass ****
+18:40:26 **** Auto Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-make: Nothing to be done for 'main-build'.
+Building file: ../src/zycap.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/zycap.d" -MT"src/zycap.o" -o "src/zycap.o" "../src/zycap.c"
+../src/zycap.c: In function 'print_schedule':
+../src/zycap.c:101:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'struct bit_info *' [-Wformat=]
+         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
+                                                    ^
+../src/zycap.c:101:63: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'struct bit_info *' [-Wformat=]
+         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
+                                                               ^
+../src/zycap.c: In function 'Net_Bitstream':
+../src/zycap.c:499:40: warning: passing argument 2 of 'check_bs_present' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     bs_pres = check_bs_present(bs_list,modeName);
+                                        ^~~~~~~~
+../src/zycap.c:37:12: note: expected 'char *' but argument is of type 'volatile char *'
+ static int check_bs_present(bs_info *bs_list,char *bs_name)
+            ^~~~~~~~~~~~~~~~
+../src/zycap.c:515:37: warning: passing argument 1 of 'SD_TransferPartial' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+      file_size = SD_TransferPartial(modeName, bs_list[pres_last].addr);
+                                     ^~~~~~~~
+../src/zycap.c:278:12: note: expected 'char *' but argument is of type 'volatile char *'
+ static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
+            ^~~~~~~~~~~~~~~~~~
+../src/zycap.c:524:40: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+         strcpy(bs_list[pres_last].name,modeName);
+                                        ^~~~~~~~
+In file included from /opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
+                 from ../src/zycap.h:8,
+                 from ../src/zycap.c:7:
+/opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/string.h:30:8: note: expected 'const char * restrict' but argument is of type 'volatile char *'
+ char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
+        ^
+At top level:
+../src/zycap.c:94:6: warning: 'print_schedule' defined but not used [-Wunused-function]
+ void print_schedule(bs_info *bs_list)
+      ^~~~~~~~~~~~~~
+Finished building: ../src/zycap.c
+ 
+Building target: zyn_bypass.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_bypass.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_bypass.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_bypass.elf  |tee "zyn_bypass.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 159920	   4260	 148736	 312916	  4c654	zyn_bypass.elf
+Finished building: zyn_bypass.elf.size
+ 
 
-15:02:01 Build Finished (took 75ms)
+18:40:26 Build Finished (took 266ms)
 

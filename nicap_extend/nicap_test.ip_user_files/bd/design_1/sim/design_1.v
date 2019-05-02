@@ -1,15 +1,15 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Thu Apr 25 12:19:00 2019
-//Host        : alex-warc running 64-bit Ubuntu 18.04.2 LTS
+//Date        : Thu May  2 11:43:45 2019
+//Host        : alex-pc running 64-bit Ubuntu 18.10
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=18,numNonXlnxBlks=1,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_board_cnt=1,da_bram_cntlr_cnt=4,da_clkrst_cnt=2,da_ps7_cnt=3,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=18,numNonXlnxBlks=2,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_board_cnt=1,da_bram_cntlr_cnt=4,da_clkrst_cnt=2,da_ps7_cnt=3,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (BRAM_PORTA_1_addr,
     BRAM_PORTA_1_clk,
@@ -332,7 +332,7 @@ module design_1
   wire axi_smc_M00_AXI_RREADY;
   wire [1:0]axi_smc_M00_AXI_RRESP;
   wire axi_smc_M00_AXI_RVALID;
-  wire [3:0]partial_led_test_v1_0_0_leds;
+  wire [3:0]partial_led_0_leds;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -471,7 +471,7 @@ module design_1
   assign Lcl_M_AXIS_MM2S_TVALID_0_1 = Lcl_M_AXIS_MM2S_TVALID_0;
   assign axi_bram_ctrl_2_BRAM_PORTA_DOUT = BRAM_PORTA_dout[31:0];
   assign axi_bram_ctrl_3_BRAM_PORTA_DOUT = BRAM_PORTA_1_dout[31:0];
-  assign leds_0[3:0] = partial_led_test_v1_0_0_leds;
+  assign leds_0[3:0] = partial_led_0_leds;
   assign useLcl_0_1 = useLcl_0;
   (* BMM_INFO_ADDRESS_SPACE = "byte  0x40000000 32 > design_1 blk_mem_gen_0" *) 
   (* KEEP_HIERARCHY = "yes" *) 
@@ -1007,8 +1007,8 @@ module design_1
         .rstb(axi_bram_ctrl_1_BRAM_PORTB_RST),
         .wea(axi_bram_ctrl_1_BRAM_PORTA_WE),
         .web(axi_bram_ctrl_1_BRAM_PORTB_WE));
-  design_1_partial_led_test_v1_0_0_0 partial_led_test_v1_0_0
-       (.leds(partial_led_test_v1_0_0_leds),
+  design_1_partial_led_0_0 partial_led_0
+       (.leds(partial_led_0_leds),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_mem_intercon_M02_AXI_ARADDR[3:0]),
         .s00_axi_aresetn(rst_processing_system7_0_50M_peripheral_aresetn),

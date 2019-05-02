@@ -1,7 +1,7 @@
 set_property SRC_FILE_INFO {cfile:/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_2/design_1_processing_system7_0_2.xdc rfile:../../../nicap_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_2/design_1_processing_system7_0_2.xdc id:1 order:EARLY scoped_inst:design_1_wrapper/design_1_i/processing_system7_0/inst} [current_design]
 set_property SRC_FILE_INFO {cfile:/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc rfile:../../../nicap_test.srcs/constrs_1/new/top_io.xdc id:2} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl rfile:../../../../../../../../opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl id:3 order:LATE scoped_inst:{design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory} unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl rfile:../../../../../../../../opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl id:4 order:LATE scoped_inst:{design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory} unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl rfile:../../../../../../../../tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl id:3 order:LATE scoped_inst:{design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory} unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl rfile:../../../../../../../../tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl id:4 order:LATE scoped_inst:{design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory} unmanaged:yes} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
@@ -406,6 +406,8 @@ set_property src_info {type:XDC file:2 line:71 export:INPUT save:INPUT read:READ
 set_property MARK_DEBUG true [get_nets {eth_bridge/config_match_reg_reg_n_0_[20]}]
 set_property src_info {type:XDC file:2 line:72 export:INPUT save:INPUT read:READ} [current_design]
 set_property MARK_DEBUG true [get_nets {eth_bridge/config_match_reg_reg_n_0_[7]}]
+set_property src_info {type:XDC file:2 line:74 export:INPUT save:INPUT read:READ} [current_design]
+set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/partial_led_test_v1_0_0/inst/partial_led_test_v1_0_S00_AXI_inst]
 set_property src_info {type:SCOPED_XDC file:3 line:3 export:INPUT save:NONE read:READ} [current_design]
 set my_var [get_property dram_emb_xdc [get_cells -hier  -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}]]
 set_property src_info {type:SCOPED_XDC file:4 line:3 export:INPUT save:NONE read:READ} [current_design]

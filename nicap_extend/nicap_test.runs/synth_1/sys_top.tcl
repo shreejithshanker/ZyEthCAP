@@ -29,12 +29,13 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
-set_property ip_repo_paths /home/alex/GitHub/ZyEthCAP/zycap_core [current_project]
+set_property ip_repo_paths {
+  /home/alex/GitHub/ip-cores/partial_led_1.0
+  /home/alex/GitHub/ZyEthCAP/zycap_core
+} [current_project]
 set_property ip_output_repo /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/imports/hdl/partial_led_test_v1_0_S00_AXI.v
-  /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/imports/hdl/partial_led_test_v1_0.v
   /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
   /home/alex/GitHub/ZyEthCAP/nicap_extend/sources_1/imports/sources_1/imports/src/enet_bridge.v
   /home/alex/GitHub/ZyEthCAP/nicap_extend/sources_1/imports/sources_1/imports/src/framePassThru.v

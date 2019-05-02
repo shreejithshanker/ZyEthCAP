@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="up_synth_1" LaunchDir="/home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/partial_led_test_1.0/partial_led_test_v1_0_project/partial_led_test_v1_0_project.runs/up_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,21 +1,108 @@
-15:51:54 **** Incremental Build of configuration Debug for project zyncap_extend ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+15:00:35 **** Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/partial_led_v1_0/src
+make -C ps7_cortexa9_0/libsrc/partial_led_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/partial_led_v1_0/src
+make -C ps7_cortexa9_0/libsrc/partial_led_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling partial_led...
+partial_led_selftest.c: In function 'PARTIAL_LED_Reg_SelfTest':
+partial_led_selftest.c:52:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( PARTIAL_LED_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                            ^~
+partial_led_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
+make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling bram
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+15:00:42 **** Clean-only build of configuration Debug for project zyn_bypass ****
+make clean 
+rm -rf  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o  ./src/ZyNCAP_pr.d ./src/devcfg.d ./src/ff.d ./src/mmc.d ./src/xaxidma.d ./src/xaxidma_bd.d ./src/xaxidma_bdring.d ./src/xaxidma_g.d ./src/xaxidma_sinit.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d ./src/zycap.d  zyn_bypass.elf.size  zyn_bypass.elf
  
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_1/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c:9:25: fatal error: xparameters.h: No such file or directory
- #include "xparameters.h"
-                         ^
-compilation terminated.
-make: *** [src/ZyNCAP_pr.o] Error 1
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-
-**** Build of configuration Debug for project zyncap_extended ****
-
-Nothing to build for project zyncap_extended
-15:53:31 **** Auto Build of configuration Debug for project zyncap_extended ****
+15:00:42 **** Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -23,35 +110,7 @@ Building file: ../src/ZyNCAP_pr.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
 ../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:21:50: error: 'XPAR_PARTIAL_LED_TEST_0_0' undeclared (first use in this function)
- #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_TEST_0_0
-                                                  ^
-../src/ZyNCAP_pr.c:79:12: note: in expansion of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
-  Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-            ^
-../src/ZyNCAP_pr.c:21:50: note: each undeclared identifier is reported only once for each function it appears in
- #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_TEST_0_0
-                                                  ^
-../src/ZyNCAP_pr.c:79:12: note: in expansion of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
-  Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-            ^
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-make: *** [src/ZyNCAP_pr.o] Error 1
-15:53:41 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-../src/ZyNCAP_pr.c:82:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../src/ZyNCAP_pr.c:81:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
   xil_printf("Register content is %0x\n\r",rtn);
   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/ZyNCAP_pr.c
@@ -99,209 +158,90 @@ Finished building: ../src/xaxidma_sinit.c
 Building file: ../src/xemacps_example_intr_dma.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacSetup':
+../src/xemacps_example_intr_dma.c:500:3: warning: implicit declaration of function 'EmacPsUtilEnterLocalLoopback' [-Wimplicit-function-declaration]
+   EmacPsUtilEnterLocalLoopback(EmacPsInstancePtr);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
-../src/xemacps_example_intr_dma.c:568:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
+../src/xemacps_example_intr_dma.c:564:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
   u32 RxFrLen;
       ^~~~~~~
-../src/xemacps_example_intr_dma.c:567:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
+../src/xemacps_example_intr_dma.c:563:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
   u32 NumRxBuf = 0;
       ^~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsRecvHandler':
-../src/xemacps_example_intr_dma.c:1102:15: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  int NumRxBuf,Status;
-               ^~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsErrorHandler':
-../src/xemacps_example_intr_dma.c:1179:4: warning: implicit declaration of function 'printRxBD' [-Wimplicit-function-declaration]
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
 ../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
-../src/xemacps_example_intr_dma.c:1230:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
+../src/xemacps_example_intr_dma.c:1186:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
   u32 CrlApbClkCntrl;
       ^~~~~~~~~~~~~~
 ../src/xemacps_example_intr_dma.c: In function 'ppu_test':
-../src/xemacps_example_intr_dma.c:1376:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+../src/xemacps_example_intr_dma.c:1332:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
   rxvd_buffer_0 = PACKET_BUFFER_2;
                 ^
-../src/xemacps_example_intr_dma.c:1377:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+../src/xemacps_example_intr_dma.c:1333:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
   rxvd_buffer_1 = PACKET_BUFFER_3;
                 ^
-../src/xemacps_example_intr_dma.c:1388:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
+../src/xemacps_example_intr_dma.c:1344:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
   EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
                               ^
 In file included from ../src/xemacps_example_intr_dma.h:4:0,
                  from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
+../src/xemacps_example.h:122:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
  void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1432:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+../src/xemacps_example_intr_dma.c:1387:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
   *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
                                      ^
-../src/xemacps_example_intr_dma.c:1446:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+../src/xemacps_example_intr_dma.c:1401:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
     *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
                                                ^
-../src/xemacps_example_intr_dma.c:1447:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1402:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
     printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
                                     ^
-../src/xemacps_example_intr_dma.c:1447:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1402:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
     printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
                                          ^
-../src/xemacps_example_intr_dma.c:1457:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+../src/xemacps_example_intr_dma.c:1412:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
     *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
                                                ^
-../src/xemacps_example_intr_dma.c:1458:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1413:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
     printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
                                     ^
-../src/xemacps_example_intr_dma.c:1458:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1413:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
     printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
                                          ^
-../src/xemacps_example_intr_dma.c:1373:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
+../src/xemacps_example_intr_dma.c:1329:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
   char *rxvd_buffer_0, *rxvd_buffer_1;
                         ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1373:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
+../src/xemacps_example_intr_dma.c:1329:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
   char *rxvd_buffer_0, *rxvd_buffer_1;
         ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1372:7: warning: unused variable 'temp_char' [-Wunused-variable]
+../src/xemacps_example_intr_dma.c:1328:7: warning: unused variable 'temp_char' [-Wunused-variable]
   char temp_char;
        ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1371:6: warning: unused variable 'DataError' [-Wunused-variable]
+../src/xemacps_example_intr_dma.c:1327:6: warning: unused variable 'DataError' [-Wunused-variable]
   u32 DataError;
       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1369:6: warning: unused variable 'i' [-Wunused-variable]
+../src/xemacps_example_intr_dma.c:1325:6: warning: unused variable 'i' [-Wunused-variable]
   u32 i,j;
       ^
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_test':
-../src/xemacps_example_intr_dma.c:1496:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  bitaddr = bit_infor->addr;
-          ^
-../src/xemacps_example_intr_dma.c:1534:31: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-   EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                               ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1591:32: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-    EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                                ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1639:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (i * 8)) = &TxBuffer[i][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1644:53: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8)) = &TxBuffer[i][0];
-                                                     ^
-../src/xemacps_example_intr_dma.c:1645:68: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8) + 4) = framesize+12 | XEMACPS_TXBUF_LAST_MASK;
-                                                           ~~~~~~~~~^~~
-../src/xemacps_example_intr_dma.c:1662:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1673:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1490:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1488:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1485:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1482:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
 ../src/xemacps_example_intr_dma.c: In function 'TestData':
-../src/xemacps_example_intr_dma.c:1729:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
+../src/xemacps_example_intr_dma.c:1467:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
   PrintData(PACKET_BUFFER_2);
   ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1741:9: warning: 'return' with a value, in function returning void
+../src/xemacps_example_intr_dma.c:1479:9: warning: 'return' with a value, in function returning void
   return 0;
          ^
-../src/xemacps_example_intr_dma.c:1694:6: note: declared here
+../src/xemacps_example_intr_dma.c:1432:6: note: declared here
  void TestData(  )
       ^~~~~~~~
 ../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1745:6: warning: conflicting types for 'PrintData'
+../src/xemacps_example_intr_dma.c:1483:6: warning: conflicting types for 'PrintData'
  void PrintData(char *data_ptr)
       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1729:2: note: previous implicit declaration of 'PrintData' was here
+../src/xemacps_example_intr_dma.c:1467:2: note: previous implicit declaration of 'PrintData' was here
   PrintData(PACKET_BUFFER_2);
   ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_rxsetup':
-../src/xemacps_example_intr_dma.c:1802:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1813:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1823:2: warning: implicit declaration of function 'EmacPsUtilExitLocalLoopback' [-Wimplicit-function-declaration]
-  EmacPsUtilExitLocalLoopback (EmacPsInstancePtr);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1793:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1791:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1790:6: warning: unused variable 'PAY_LOAD_LENGTH' [-Wunused-variable]
-  u32 PAY_LOAD_LENGTH = 1024;
-      ^~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1788:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1787:8: warning: unused variable 'bitaddr' [-Wunused-variable]
-  u32 * bitaddr;
-        ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:33: warning: unused variable 'framesize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                                 ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:24: warning: unused variable 'lastiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                        ^~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:16: warning: unused variable 'numiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:6: warning: unused variable 'bitsize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:1785:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1783:12: warning: unused variable 'bit_infor' [-Wunused-variable]
-  bs_info * bit_infor;
-            ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1782:8: warning: unused variable 'j' [-Wunused-variable]
-  u32 i,j;
-        ^
-../src/xemacps_example_intr_dma.c:1782:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1835:6: warning: conflicting types for 'printRxBD'
- void printRxBD (XEmacPs *EmacPsInstancePtr, XEmacPs_Bd *CurRxBdPtr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1179:4: note: previous implicit declaration of 'printRxBD' was here
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1018:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
+../src/xemacps_example_intr_dma.c:1014:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
  static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
              ^~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/xemacps_example_intr_dma.c
@@ -337,1303 +277,39 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cor
 ../src/zycap.c:524:40: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
          strcpy(bs_list[pres_last].name,modeName);
                                         ^~~~~~~~
-In file included from /opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/ctype.h:4:0,
+In file included from /tools/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/ctype.h:4:0,
                  from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
                  from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
                  from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
                  from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
                  from ../src/zycap.h:8,
                  from ../src/zycap.c:7:
-/opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/string.h:30:8: note: expected 'const char * restrict' but argument is of type 'volatile char *'
+/tools/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/string.h:30:8: note: expected 'const char * restrict' but argument is of type 'volatile char *'
  char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
         ^
-../src/zycap.c: In function 'getbitDet':
-../src/zycap.c:557:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  int Status;
-      ^~~~~~
-../src/zycap.c: In function 'print_addr':
-../src/zycap.c:582:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Addr %s \n",i,current_bs->name,current_bs->addr);
-                                                    ^
 At top level:
 ../src/zycap.c:94:6: warning: 'print_schedule' defined but not used [-Wunused-function]
  void print_schedule(bs_info *bs_list)
       ^~~~~~~~~~~~~~
 Finished building: ../src/zycap.c
  
-Building target: zyncap_extended.elf
+Building target: zyn_bypass.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_bypass.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_bypass.elf
  
 Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
+arm-none-eabi-size zyn_bypass.elf  |tee "zyn_bypass.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 165464	   4260	 865600	1035324	  fcc3c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
+ 160080	   4260	 148736	 313076	  4c6f4	zyn_bypass.elf
+Finished building: zyn_bypass.elf.size
  
-15:53:53 **** Incremental Build of configuration Debug for project zyncap_extended ****
+15:01:20 **** Incremental Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-15:54:56 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-../src/ZyNCAP_pr.c:82:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  xil_printf("Register content is %0x\n\r",rtn);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 165464	   4260	 865600	1035324	  fcc3c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-15:54:57 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-15:55:00 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:06:23 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:06:40 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:07:37 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:09:50 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-../src/ZyNCAP_pr.c:82:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  xil_printf("Register content is %0x\n\r",rtn);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 165472	   4260	 865600	1035332	  fcc44	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:10:00 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:11:55 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-../src/ZyNCAP_pr.c:82:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  xil_printf("Register content is %0x\n\r",rtn);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 165464	   4260	 865600	1035324	  fcc3c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:11:58 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-../src/ZyNCAP_pr.c:82:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  xil_printf("Register content is %0x\n\r",rtn);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 165464	   4260	 865600	1035324	  fcc3c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:13:25 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-../src/ZyNCAP_pr.c:82:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  xil_printf("Register content is %0x\n\r",rtn);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 165464	   4260	 865600	1035324	  fcc3c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:13:31 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:24:53 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:41:12: error: 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR' undeclared (first use in this function)
-  Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/ZyNCAP_pr.c:41:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/ZyNCAP_pr.c:47:11: error: too few arguments to function 'Init_Zycap'
-  Status = Init_Zycap(&InterruptController);
-           ^~~~~~~~~~
-In file included from ../src/ZyNCAP_pr.c:10:0:
-../src/zycap.h:102:5: note: declared here
- int Init_Zycap(XScuGic * InterruptController, XEmacPs *EmacPsInstancePtr);
-     ^~~~~~~~~~
-make: *** [src/ZyNCAP_pr.o] Error 1
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-16:25:04 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:48:11: error: too few arguments to function 'Init_Zycap'
-  Status = Init_Zycap(&InterruptController);
-           ^~~~~~~~~~
-In file included from ../src/ZyNCAP_pr.c:10:0:
-../src/zycap.h:102:5: note: declared here
- int Init_Zycap(XScuGic * InterruptController, XEmacPs *EmacPsInstancePtr);
-     ^~~~~~~~~~
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-make: *** [src/ZyNCAP_pr.o] Error 1
-16:25:30 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 163332	   4244	 865344	1032920	  fc2d8	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:26:02 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:26:41 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/zycap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/zycap.d" -MT"src/zycap.o" -o "src/zycap.o" "../src/zycap.c"
-../src/zycap.c: In function 'print_schedule':
-../src/zycap.c:91:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                    ^
-../src/zycap.c:91:63: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                               ^
-../src/zycap.c: At top level:
-../src/zycap.c:267:5: error: conflicting types for 'Init_Zycap'
- int Init_Zycap(XScuGic * InterruptController)
-     ^~~~~~~~~~
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:102:5: note: previous declaration of 'Init_Zycap' was here
- int Init_Zycap(XScuGic * InterruptController, XEmacPs *EmacPsInstancePtr);
-     ^~~~~~~~~~
-../src/zycap.c:84:6: warning: 'print_schedule' defined but not used [-Wunused-function]
- void print_schedule(bs_info *bs_list)
-      ^~~~~~~~~~~~~~
-src/subdir.mk:54: recipe for target 'src/zycap.o' failed
-make: *** [src/zycap.o] Error 1
-16:26:51 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:48:11: error: too many arguments to function 'Init_Zycap'
-  Status = Init_Zycap(&InterruptController,0);
-           ^~~~~~~~~~
-In file included from ../src/ZyNCAP_pr.c:10:0:
-../src/zycap.h:90:5: note: declared here
- int Init_Zycap(XScuGic * InterruptController);
-     ^~~~~~~~~~
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-make: *** [src/ZyNCAP_pr.o] Error 1
-16:26:55 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building file: ../src/xaxidma_g.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_g.d" -MT"src/xaxidma_g.o" -o "src/xaxidma_g.o" "../src/xaxidma_g.c"
-Finished building: ../src/xaxidma_g.c
- 
-Building file: ../src/xaxidma_sinit.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_sinit.d" -MT"src/xaxidma_sinit.o" -o "src/xaxidma_sinit.o" "../src/xaxidma_sinit.c"
-Finished building: ../src/xaxidma_sinit.c
- 
-Building file: ../src/xemacps_example_intr_dma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
-../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
-../src/xemacps_example_intr_dma.c:568:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
-  u32 RxFrLen;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:567:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
-  u32 NumRxBuf = 0;
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsRecvHandler':
-../src/xemacps_example_intr_dma.c:1102:15: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  int NumRxBuf,Status;
-               ^~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsErrorHandler':
-../src/xemacps_example_intr_dma.c:1179:4: warning: implicit declaration of function 'printRxBD' [-Wimplicit-function-declaration]
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
-../src/xemacps_example_intr_dma.c:1230:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
-  u32 CrlApbClkCntrl;
-      ^~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'ppu_test':
-../src/xemacps_example_intr_dma.c:1376:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_0 = PACKET_BUFFER_2;
-                ^
-../src/xemacps_example_intr_dma.c:1377:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_1 = PACKET_BUFFER_3;
-                ^
-../src/xemacps_example_intr_dma.c:1388:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
-                              ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1432:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
-                                     ^
-../src/xemacps_example_intr_dma.c:1446:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1447:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1447:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1457:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1458:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1458:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1373:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1373:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1372:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1371:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1369:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_test':
-../src/xemacps_example_intr_dma.c:1494:14: warning: implicit declaration of function 'getbitDet' [-Wimplicit-function-declaration]
-  bit_infor = getbitDet (bs_name);
-              ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1494:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  bit_infor = getbitDet (bs_name);
-            ^
-../src/xemacps_example_intr_dma.c:1496:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  bitaddr = bit_infor->addr;
-          ^
-../src/xemacps_example_intr_dma.c:1534:31: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-   EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                               ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1591:32: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-    EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                                ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1639:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (i * 8)) = &TxBuffer[i][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1644:53: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8)) = &TxBuffer[i][0];
-                                                     ^
-../src/xemacps_example_intr_dma.c:1645:68: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8) + 4) = framesize+12 | XEMACPS_TXBUF_LAST_MASK;
-                                                           ~~~~~~~~~^~~
-../src/xemacps_example_intr_dma.c:1662:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1673:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1490:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1488:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1485:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1482:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'TestData':
-../src/xemacps_example_intr_dma.c:1729:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1741:9: warning: 'return' with a value, in function returning void
-  return 0;
-         ^
-../src/xemacps_example_intr_dma.c:1694:6: note: declared here
- void TestData(  )
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1745:6: warning: conflicting types for 'PrintData'
- void PrintData(char *data_ptr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1729:2: note: previous implicit declaration of 'PrintData' was here
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_rxsetup':
-../src/xemacps_example_intr_dma.c:1802:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1813:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1823:2: warning: implicit declaration of function 'EmacPsUtilExitLocalLoopback' [-Wimplicit-function-declaration]
-  EmacPsUtilExitLocalLoopback (EmacPsInstancePtr);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1793:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1791:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1790:6: warning: unused variable 'PAY_LOAD_LENGTH' [-Wunused-variable]
-  u32 PAY_LOAD_LENGTH = 1024;
-      ^~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1788:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1787:8: warning: unused variable 'bitaddr' [-Wunused-variable]
-  u32 * bitaddr;
-        ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:33: warning: unused variable 'framesize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                                 ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:24: warning: unused variable 'lastiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                        ^~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:16: warning: unused variable 'numiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:6: warning: unused variable 'bitsize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:1785:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1783:12: warning: unused variable 'bit_infor' [-Wunused-variable]
-  bs_info * bit_infor;
-            ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1782:8: warning: unused variable 'j' [-Wunused-variable]
-  u32 i,j;
-        ^
-../src/xemacps_example_intr_dma.c:1782:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1835:6: warning: conflicting types for 'printRxBD'
- void printRxBD (XEmacPs *EmacPsInstancePtr, XEmacPs_Bd *CurRxBdPtr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1179:4: note: previous implicit declaration of 'printRxBD' was here
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1018:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
- static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
-             ^~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xemacps_example_intr_dma.c
- 
-Building file: ../src/zycap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/zycap.d" -MT"src/zycap.o" -o "src/zycap.o" "../src/zycap.c"
-../src/zycap.c: In function 'print_schedule':
-../src/zycap.c:91:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                    ^
-../src/zycap.c:91:63: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                               ^
-At top level:
-../src/zycap.c:84:6: warning: 'print_schedule' defined but not used [-Wunused-function]
- void print_schedule(bs_info *bs_list)
-      ^~~~~~~~~~~~~~
-Finished building: ../src/zycap.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-./src/xemacps_example_intr_dma.o: In function `enet_reconfig_test':
-/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyncap_extended/Debug/../src/xemacps_example_intr_dma.c:1494: undefined reference to `getbitDet'
-makefile:39: recipe for target 'zyncap_extended.elf' failed
-collect2: error: ld returned 1 exit status
-make: *** [zyncap_extended.elf] Error 1
-16:27:13 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/xemacps_example_intr_dma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
-../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
-../src/xemacps_example_intr_dma.c:568:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
-  u32 RxFrLen;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:567:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
-  u32 NumRxBuf = 0;
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsRecvHandler':
-../src/xemacps_example_intr_dma.c:1102:15: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  int NumRxBuf,Status;
-               ^~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsErrorHandler':
-../src/xemacps_example_intr_dma.c:1179:4: warning: implicit declaration of function 'printRxBD' [-Wimplicit-function-declaration]
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
-../src/xemacps_example_intr_dma.c:1230:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
-  u32 CrlApbClkCntrl;
-      ^~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'ppu_test':
-../src/xemacps_example_intr_dma.c:1376:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_0 = PACKET_BUFFER_2;
-                ^
-../src/xemacps_example_intr_dma.c:1377:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_1 = PACKET_BUFFER_3;
-                ^
-../src/xemacps_example_intr_dma.c:1388:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
-                              ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1432:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
-                                     ^
-../src/xemacps_example_intr_dma.c:1446:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1447:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1447:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1457:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1458:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1458:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1373:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1373:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1372:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1371:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1369:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_test':
-../src/xemacps_example_intr_dma.c:1496:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  bitaddr = bit_infor->addr;
-          ^
-../src/xemacps_example_intr_dma.c:1534:31: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-   EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                               ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1591:32: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-    EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                                ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1639:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (i * 8)) = &TxBuffer[i][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1644:53: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8)) = &TxBuffer[i][0];
-                                                     ^
-../src/xemacps_example_intr_dma.c:1645:68: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8) + 4) = framesize+12 | XEMACPS_TXBUF_LAST_MASK;
-                                                           ~~~~~~~~~^~~
-../src/xemacps_example_intr_dma.c:1662:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1673:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1490:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1488:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1485:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1482:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'TestData':
-../src/xemacps_example_intr_dma.c:1729:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1741:9: warning: 'return' with a value, in function returning void
-  return 0;
-         ^
-../src/xemacps_example_intr_dma.c:1694:6: note: declared here
- void TestData(  )
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1745:6: warning: conflicting types for 'PrintData'
- void PrintData(char *data_ptr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1729:2: note: previous implicit declaration of 'PrintData' was here
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_rxsetup':
-../src/xemacps_example_intr_dma.c:1802:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1813:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1823:2: warning: implicit declaration of function 'EmacPsUtilExitLocalLoopback' [-Wimplicit-function-declaration]
-  EmacPsUtilExitLocalLoopback (EmacPsInstancePtr);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1793:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1791:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1790:6: warning: unused variable 'PAY_LOAD_LENGTH' [-Wunused-variable]
-  u32 PAY_LOAD_LENGTH = 1024;
-      ^~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1788:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1787:8: warning: unused variable 'bitaddr' [-Wunused-variable]
-  u32 * bitaddr;
-        ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:33: warning: unused variable 'framesize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                                 ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:24: warning: unused variable 'lastiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                        ^~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:16: warning: unused variable 'numiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:6: warning: unused variable 'bitsize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:1785:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1783:12: warning: unused variable 'bit_infor' [-Wunused-variable]
-  bs_info * bit_infor;
-            ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1782:8: warning: unused variable 'j' [-Wunused-variable]
-  u32 i,j;
-        ^
-../src/xemacps_example_intr_dma.c:1782:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1835:6: warning: conflicting types for 'printRxBD'
- void printRxBD (XEmacPs *EmacPsInstancePtr, XEmacPs_Bd *CurRxBdPtr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1179:4: note: previous implicit declaration of 'printRxBD' was here
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1018:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
- static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
-             ^~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_test':
-../src/xemacps_example_intr_dma.c:1495:21: warning: 'bit_infor' is used uninitialized in this function [-Wuninitialized]
-  bitsize = bit_infor->size;
-            ~~~~~~~~~^~~~~~
-Finished building: ../src/xemacps_example_intr_dma.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 143240	   4244	 865344	1012828	  f745c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:27:25 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:34:46 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 143248	   4244	 865344	1012836	  f7464	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:34:52 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 143232	   4244	 865344	1012820	  f7454	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:34:57 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:35:24 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 143248	   4244	 865344	1012836	  f7464	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:35:27 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:35:55 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 143224	   4244	 865344	1012812	  f744c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:35:59 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:36:20 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 143240	   4244	 865344	1012828	  f745c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:36:37 **** Incremental Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-16:37:03 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:88:11: error: too many arguments to function 'Init_Zycap'
-  Status = Init_Zycap(&InterruptController, &ps7_ethernet_0);
-           ^~~~~~~~~~
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:90:5: note: declared here
- int Init_Zycap(XScuGic * InterruptController);
-     ^~~~~~~~~~
-../src/ZyNCAP_pr.c:221:11: warning: implicit declaration of function 'enet_reconfig_rxsetup' [-Wimplicit-function-declaration]
-  Status = enet_reconfig_rxsetup(&ps7_ethernet_0);
-           ^~~~~~~~~~~~~~~~~~~~~
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-make: *** [src/ZyNCAP_pr.o] Error 1
-16:37:12 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:88:11: error: too many arguments to function 'Init_Zycap'
-  Status = Init_Zycap(&InterruptController, &ps7_ethernet_0);
-           ^~~~~~~~~~
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:90:5: note: declared here
- int Init_Zycap(XScuGic * InterruptController);
-     ^~~~~~~~~~
-../src/ZyNCAP_pr.c:221:11: warning: implicit declaration of function 'enet_reconfig_rxsetup' [-Wimplicit-function-declaration]
-  Status = enet_reconfig_rxsetup(&ps7_ethernet_0);
-           ^~~~~~~~~~~~~~~~~~~~~
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-make: *** [src/ZyNCAP_pr.o] Error 1
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-16:37:15 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:88:11: error: too many arguments to function 'Init_Zycap'
-  Status = Init_Zycap(&InterruptController, &ps7_ethernet_0);
-           ^~~~~~~~~~
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:90:5: note: declared here
- int Init_Zycap(XScuGic * InterruptController);
-     ^~~~~~~~~~
-../src/ZyNCAP_pr.c:221:11: warning: implicit declaration of function 'enet_reconfig_rxsetup' [-Wimplicit-function-declaration]
-  Status = enet_reconfig_rxsetup(&ps7_ethernet_0);
-           ^~~~~~~~~~~~~~~~~~~~~
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-make: *** [src/ZyNCAP_pr.o] Error 1
-16:37:18 **** Auto Build of configuration Debug for project zyncap_extended ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:206:13: warning: variable 'delay4' set but not used [-Wunused-but-set-variable]
-  u32 delay3,delay4;
-             ^~~~~~
-../src/ZyNCAP_pr.c:82:2: warning: 'rtn' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  xil_printf("Register content is %0x\n\r",rtn);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building file: ../src/xaxidma_g.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_g.d" -MT"src/xaxidma_g.o" -o "src/xaxidma_g.o" "../src/xaxidma_g.c"
-Finished building: ../src/xaxidma_g.c
- 
-Building file: ../src/xaxidma_sinit.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_sinit.d" -MT"src/xaxidma_sinit.o" -o "src/xaxidma_sinit.o" "../src/xaxidma_sinit.c"
-Finished building: ../src/xaxidma_sinit.c
- 
-Building file: ../src/xemacps_example_intr_dma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
-../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
-../src/xemacps_example_intr_dma.c:568:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
-  u32 RxFrLen;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:567:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
-  u32 NumRxBuf = 0;
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsRecvHandler':
-../src/xemacps_example_intr_dma.c:1102:15: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  int NumRxBuf,Status;
-               ^~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsErrorHandler':
-../src/xemacps_example_intr_dma.c:1179:4: warning: implicit declaration of function 'printRxBD' [-Wimplicit-function-declaration]
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
-../src/xemacps_example_intr_dma.c:1230:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
-  u32 CrlApbClkCntrl;
-      ^~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'ppu_test':
-../src/xemacps_example_intr_dma.c:1376:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_0 = PACKET_BUFFER_2;
-                ^
-../src/xemacps_example_intr_dma.c:1377:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_1 = PACKET_BUFFER_3;
-                ^
-../src/xemacps_example_intr_dma.c:1388:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
-                              ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1432:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
-                                     ^
-../src/xemacps_example_intr_dma.c:1446:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1447:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1447:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1457:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1458:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1458:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1373:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1373:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1372:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1371:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1369:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_test':
-../src/xemacps_example_intr_dma.c:1496:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  bitaddr = bit_infor->addr;
-          ^
-../src/xemacps_example_intr_dma.c:1534:31: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-   EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                               ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1591:32: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-    EmacPsUtilFrameHdrFormatMAC(&TxBuffer[i][0], EmacPsMAC);
-                                ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1639:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (i * 8)) = &TxBuffer[i][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1644:53: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8)) = &TxBuffer[i][0];
-                                                     ^
-../src/xemacps_example_intr_dma.c:1645:68: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
-   *(u32*)(TX_BD_LIST_START_ADDRESS + (numiter * 8) + 4) = framesize+12 | XEMACPS_TXBUF_LAST_MASK;
-                                                           ~~~~~~~~~^~~
-../src/xemacps_example_intr_dma.c:1662:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1673:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1490:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1488:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1486:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1485:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1482:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'TestData':
-../src/xemacps_example_intr_dma.c:1729:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1741:9: warning: 'return' with a value, in function returning void
-  return 0;
-         ^
-../src/xemacps_example_intr_dma.c:1694:6: note: declared here
- void TestData(  )
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1745:6: warning: conflicting types for 'PrintData'
- void PrintData(char *data_ptr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1729:2: note: previous implicit declaration of 'PrintData' was here
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'enet_reconfig_rxsetup':
-../src/xemacps_example_intr_dma.c:1802:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1813:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1823:2: warning: implicit declaration of function 'EmacPsUtilExitLocalLoopback' [-Wimplicit-function-declaration]
-  EmacPsUtilExitLocalLoopback (EmacPsInstancePtr);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1793:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1791:6: warning: unused variable 'RecvCount' [-Wunused-variable]
-  int RecvCount = 0;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1790:6: warning: unused variable 'PAY_LOAD_LENGTH' [-Wunused-variable]
-  u32 PAY_LOAD_LENGTH = 1024;
-      ^~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:24: warning: unused variable 'rxvd_buffer_1' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1789:8: warning: unused variable 'rxvd_buffer_0' [-Wunused-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1788:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1787:8: warning: unused variable 'bitaddr' [-Wunused-variable]
-  u32 * bitaddr;
-        ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:33: warning: unused variable 'framesize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                                 ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:24: warning: unused variable 'lastiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                        ^~~~~~~~
-../src/xemacps_example_intr_dma.c:1786:16: warning: unused variable 'numiter' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-                ^~~~~~~
-../src/xemacps_example_intr_dma.c:1786:6: warning: unused variable 'bitsize' [-Wunused-variable]
-  u32 bitsize,  numiter,lastiter,framesize;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:1785:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1783:12: warning: unused variable 'bit_infor' [-Wunused-variable]
-  bs_info * bit_infor;
-            ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1782:8: warning: unused variable 'j' [-Wunused-variable]
-  u32 i,j;
-        ^
-../src/xemacps_example_intr_dma.c:1782:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1835:6: warning: conflicting types for 'printRxBD'
- void printRxBD (XEmacPs *EmacPsInstancePtr, XEmacPs_Bd *CurRxBdPtr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1179:4: note: previous implicit declaration of 'printRxBD' was here
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1018:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
- static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
-             ^~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xemacps_example_intr_dma.c
- 
-Building file: ../src/zycap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/zycap.d" -MT"src/zycap.o" -o "src/zycap.o" "../src/zycap.c"
-../src/zycap.c: In function 'print_schedule':
-../src/zycap.c:101:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                    ^
-../src/zycap.c:101:63: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                               ^
-../src/zycap.c: In function 'Net_Bitstream':
-../src/zycap.c:499:40: warning: passing argument 2 of 'check_bs_present' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-     bs_pres = check_bs_present(bs_list,modeName);
-                                        ^~~~~~~~
-../src/zycap.c:37:12: note: expected 'char *' but argument is of type 'volatile char *'
- static int check_bs_present(bs_info *bs_list,char *bs_name)
-            ^~~~~~~~~~~~~~~~
-../src/zycap.c:515:37: warning: passing argument 1 of 'SD_TransferPartial' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-      file_size = SD_TransferPartial(modeName, bs_list[pres_last].addr);
-                                     ^~~~~~~~
-../src/zycap.c:278:12: note: expected 'char *' but argument is of type 'volatile char *'
- static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
-            ^~~~~~~~~~~~~~~~~~
-../src/zycap.c:524:40: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-         strcpy(bs_list[pres_last].name,modeName);
-                                        ^~~~~~~~
-In file included from /opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/ctype.h:4:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-/opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/string.h:30:8: note: expected 'const char * restrict' but argument is of type 'volatile char *'
- char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
-        ^
-../src/zycap.c: In function 'getbitDet':
-../src/zycap.c:557:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  int Status;
-      ^~~~~~
-../src/zycap.c: In function 'print_addr':
-../src/zycap.c:582:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Addr %s \n",i,current_bs->name,current_bs->addr);
-                                                    ^
-At top level:
-../src/zycap.c:94:6: warning: 'print_schedule' defined but not used [-Wunused-function]
- void print_schedule(bs_info *bs_list)
-      ^~~~~~~~~~~~~~
-Finished building: ../src/zycap.c
- 
-Building target: zyncap_extended.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyncap_extended.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyncap_extended.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyncap_extended.elf  |tee "zyncap_extended.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 165464	   4260	 865600	1035324	  fcc3c	zyncap_extended.elf
-Finished building: zyncap_extended.elf.size
- 
-16:57:03 **** Incremental Build of configuration Debug for project zyncap_extended ****
+15:02:01 **** Incremental Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  

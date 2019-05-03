@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:partial_led:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 (* X_CORE_INFO = "partial_led_test_v1_0,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "design_1_partial_led_0_0,partial_led_test_v1_0,{}" *)

@@ -126,9 +126,9 @@ int main()
 							   &recvbuffer[RecvCount], sizeof("Yes")-RecvCount);
 	}
 
-	// print("Reading data from register after PR\n\r");
-	// rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	// xil_printf("Register content is %0x\n\r",rtn);
+	 print("Reading data from register after PR\n\r");
+	 rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+	 xil_printf("Register content is %0x\n\r",rtn);
 
 
 	Status = Prefetch_PR_Bitstream("mode1.bin");
@@ -196,14 +196,14 @@ int main()
 	delay2 =  delay - XScuTimer_GetCounterValue(TimerInstancePtr);
 	XScuTimer_Stop(TimerInstancePtr);
 	xil_printf("Time taken for transmission to interrupt %d sec\r\n",delay);
-	xil_printf("Performance with pre-fetching and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/delay2);
+	xil_printf("Performance with pre-fetching and deferred interrupt sync: %d MBytes/sec\r\n", (Status*TimerClock)/delay2);
 	xil_printf("Time taken: %d sec\r\n", delay2);
 	xil_printf("%d\r\n",Status);
 	xil_printf("%d\r\n",TimerClock);
 
-	// Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-	// rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	// xil_printf("Now the register content is %0x\n\r",rtn);
+//	 Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
+	 rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+	 xil_printf("Now the register content is %0x\n\r",rtn);
 	return 0;
 }
 

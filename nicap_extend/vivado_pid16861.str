@@ -1657,3 +1657,2130 @@ selectCodeEditor("partial_led_v1_0_S00_AXI.v", 297, 369, false, false, false, fa
 // CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
 // CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
 // HMemoryUtils.trashcanNow. Engine heap size: 1,462 MB. GUI used memory: 95 MB. Current time: 5/2/19 6:15:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,462 MB. GUI used memory: 95 MB. Current time: 5/2/19 6:45:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 7:15:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 7:45:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 8:15:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 8:45:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 96 MB. Current time: 5/2/19 9:15:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 9:45:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 10:15:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 10:45:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 95 MB. Current time: 5/2/19 11:15:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,463 MB. GUI used memory: 96 MB. Current time: 5/2/19 11:45:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 12:15:13 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 12:45:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 1:15:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 1:45:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 2:15:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 2:45:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 3:15:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 3:45:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 96 MB. Current time: 5/3/19 4:15:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 96 MB. Current time: 5/3/19 4:45:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 5:15:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 5:45:14 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 6:15:15 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 6:45:15 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 95 MB. Current time: 5/3/19 7:15:15 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 95 MB. Current time: 5/3/19 7:23:25 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 95 MB. Current time: 5/3/19 7:53:25 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 95 MB. Current time: 5/3/19 8:23:25 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 95 MB. Current time: 5/3/19 8:53:25 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 95 MB. Current time: 5/3/19 9:23:25 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 96 MB. Current time: 5/3/19 9:53:25 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 96 MB. Current time: 5/3/19 10:23:25 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 95 MB. Current time: 5/3/19 10:53:25 AM BST
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// Elapsed time: 65611 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 1, 101); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 79, 99); // cd (w, cj)
+// Elapsed time: 695 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 192, 134); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,487 MB. GUI used memory: 102 MB. Current time: 5/3/19 11:23:26 AM BST
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /partial_led_0_leds 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /partial_led_0_leds 
+// Elapsed time: 1280 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cj)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "zycap_0 ; S_AXI_LITE ; reg0 ; 0x43C1_0000 ; 64K ; 0x43C1_FFFF", 6, "0x43C1_0000", 3, false); // g (O, cj)
+// Tcl Message: current_project nicap_test 
+// Elapsed time: 45 seconds
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "partial_led_0 ; S00_AXI ; S00_AXI_reg ; 0x43C0_0000 ; 64K ; 0x43C0_FFFF", 7, "0x43C0_0000", 3, false); // g (O, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,488 MB. GUI used memory: 102 MB. Current time: 5/3/19 11:53:26 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,488 MB. GUI used memory: 102 MB. Current time: 5/3/19 12:23:26 PM BST
+// Elapsed time: 2653 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true); // B (D, cj) - Node
+// Tcl Message: current_project partial_led_v1_0_project 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cj)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // i (N, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_v1_0_S00_AXI.v]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_v1_0_S00_AXI.v]", 1, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cj)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cj)
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "IS_GENERATED ; false", 5, "false", 1, false); // l (C, cj)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i (c, cj)
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+// Elapsed time: 121 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// Tcl Message: current_project nicap_test 
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_Lcl_M_AXIS_MM2S_TREADY 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// Elapsed time: 108 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // am (cj)
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Constraints"); // bs (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May  3 12:34:30 2019] Launched synth_1... Run output will be captured here: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,528 MB. GUI used memory: 98 MB. Current time: 5/3/19 12:34:36 PM BST
+// [Engine Memory]: 1,528 MB (+3134kb) [19:54:46]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TDATA_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TDATA_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah (cj): Synthesis Completed: addNotify
+// Elapsed time: 657 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bs (cj):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,629 MB. GUI used memory: 103 MB. Current time: 5/3/19 12:45:36 PM BST
+// [Engine Memory]: 1,645 MB (+42764kb) [20:05:44]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 1,854 MB (+132774kb) [20:05:58]
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: MARK_DEBUG_NET
+// TclEventType: PHY_BLOCK_NEW
+// TclEventType: PHY_BLOCK_ADD_INST
+// TclEventType: PHY_RECT_SELECT
+// TclEventType: PHY_BLOCK_MODIFY
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: PHY_RECT_SELECT
+// TclEventType: PHY_BLOCK_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: MARK_DEBUG_NET
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: MARK_DEBUG_NET
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: MARK_DEBUG_NET
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 103 MB. Current time: 5/3/19 12:45:56 PM BST
+// [Engine Memory]: 1,973 MB (+27618kb) [20:06:12]
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,399 MB (+343523kb) [20:06:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,399 MB. GUI used memory: 103 MB. Current time: 5/3/19 12:46:14 PM BST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.4/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.6s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo.dcp' for cell 'eth_bridge/bit_buffer' INFO: [Netlist 29-17] Analyzing 505 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc] Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc] Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc] Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io.xdc] Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io.xdc] 
+// Tcl Message: INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo.dcp' 
+// Tcl Message: INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst' of design 'synth_1' [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16] 
+// Tcl Message: Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst' Sourcing Tcl File [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst' 
+// Tcl Message: INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst' of design 'synth_1' [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16] 
+// Tcl Message: Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst' Sourcing Tcl File [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr' 
+// Tcl Message: INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr' of design 'synth_1' [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5] 
+// Tcl Message: Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr' Sourcing Tcl File [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd' 
+// Tcl Message: INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd' of design 'synth_1' [/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Generating merged BMM file for the design top 'sys_top'... 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 43 instances were transformed.   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 43 instances  
+// ExpRunCommands.openSynthResults elapsed time: 48.1s
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 7469.371 ; gain = 930.582 ; free physical = 510 ; free virtual = 8265 
+// 'dO' command handler elapsed time: 49 seconds
+// M (cj): Critical Messages: addNotify
+// Elapsed time: 49 seconds
+dismissDialog("Open Synthesized Design"); // bs (cj)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// Elapsed time: 35 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[sys_top, design_1_wrapper (design_1_wrapper)]", 3); // aW (O, cj)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[sys_top, design_1_wrapper (design_1_wrapper), design_1_i (design_1)]", 6); // aW (O, cj)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[sys_top, design_1_wrapper (design_1_wrapper), design_1_i (design_1), partial_led_0 (design_1_partial_led_0_0)]", 18); // aW (O, cj)
+// Elapsed time: 26 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v), partial_led_test_v1_0_S00_AXI_inst : partial_led_test_v1_0_S00_AXI (partial_led_v1_0_S00_AXI.v)]", 2, false); // B (D, cj)
+// Tcl Message: current_project partial_led_v1_0_project 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v), partial_led_test_v1_0_S00_AXI_inst : partial_led_test_v1_0_S00_AXI (partial_led_v1_0_S00_AXI.v)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v), partial_led_test_v1_0_S00_AXI_inst : partial_led_test_v1_0_S00_AXI (partial_led_v1_0_S00_AXI.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v), partial_led_test_v1_0_S00_AXI_inst : partial_led_test_v1_0_S00_AXI (partial_led_v1_0_S00_AXI.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partial_led_test_v1_0 (partial_led_v1_0.v), partial_led_test_v1_0_S00_AXI_inst : partial_led_test_v1_0_S00_AXI (partial_led_v1_0_S00_AXI.v)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 50 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 958, 187); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 551, 307, false, true, false, false, false); // cd (w, cj) - Control Key
+typeControlKey((HResource) null, "partial_led_v1_0_S00_AXI.v", 'v'); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "partial_led_v1_0_S00_AXI.v", 'v'); // cd (w, cj)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,486 MB. GUI used memory: 136 MB. Current time: 5/3/19 12:49:06 PM BST
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 144, 263); // cd (w, cj)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,518 MB. GUI used memory: 135 MB. Current time: 5/3/19 12:49:26 PM BST
+// Elapsed time: 73 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 383, 457); // cd (w, cj)
+// Tcl Command: 'rdi::info_commands {s*}'
+// Tcl Command: 'rdi::info_commands {sy*}'
+// Tcl Command: 'rdi::info_commands {sythin*}'
+// Tcl Command: 'rdi::info_commands {sythin_desi*}'
+// Tcl Command: 'rdi::info_commands {sythi*}'
+// Tcl Command: 'rdi::info_commands {syt*}'
+// Tcl Command: 'rdi::info_commands {sy*}'
+// Tcl Command: 'rdi::info_commands {synt*}'
+// Tcl Command: 'rdi::info_commands {synt*}'
+// Tcl Command: 'rdi::info_commands {synth_*}'
+// Tcl Command: 'rdi::info_commands {synth_de*}'
+// Tcl Command: 'rdi::info_commands {synth_de*}'
+// Tcl Command: 'rdi::match_options {synth_design} {}'
+// Tcl Command: 'rdi::match_options {synth_design} {top}'
+// Tcl Command: 'rdi::match_options {synth_design} {}'
+// Tcl Command: 'rdi::match_options {synth_design} {par}'
+// Tcl Command: 'rdi::match_options {synth_design} {par}'
+// Elapsed time: 59 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1"); // aF (ae, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "partial_led_v1_0_S00_AXI.v", 2); // k (j, cj)
+// Elapsed time: 81 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 2, 204); // cd (w, cj)
+// [Engine Memory]: 2,519 MB (+229kb) [20:12:59]
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 162, 448); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 162, 448, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 162, 448); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 162, 448); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 49, 423); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 49, 423, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 212, 419); // cd (w, cj)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 228, 377); // cd (w, cj)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 236, 306); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,552 MB. GUI used memory: 135 MB. Current time: 5/3/19 12:53:46 PM BST
+// Elapsed time: 20 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 685, 249); // cd (w, cj)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1"); // aF (ae, cj)
+// Tcl Command: 'synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1'
+// Tcl Command: 'synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1'
+// TclEventType: MSGMGR_REFRESH_MSG
+// Tcl Message: synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1 
+// Tcl Message: Command: synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1 Starting synth_design Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020' 
+// Tcl Message: INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020' 
+// Tcl Message: INFO: Launching helper process for spawning children vivado processes INFO: Helper process launched with PID 19573  
+// bs (cj):  Tcl Command Line : addNotify
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7554.539 ; gain = 1.992 ; free physical = 390 ; free virtual = 8215 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'partial_led_test_v1_0' [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0.v:4] 
+// Tcl Message: 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'partial_led_test_v1_0_S00_AXI' [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:4] 
+// Tcl Message: 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer  	Parameter ADDR_LSB bound to: 2 - type: integer  	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:222] INFO: [Synth 8-226] default block is never used [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:363] INFO: [Synth 8-256] done synthesizing module 'partial_led_test_v1_0_S00_AXI' (1#1) [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:4] INFO: [Synth 8-256] done synthesizing module 'partial_led_test_v1_0' (2#1) [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7586.789 ; gain = 34.242 ; free physical = 406 ; free virtual = 8230 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7586.789 ; gain = 34.242 ; free physical = 404 ; free virtual = 8228 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Loading Part and Timing Information --------------------------------------------------------------------------------- Loading part: xc7z020clg400-1 --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7594.793 ; gain = 42.246 ; free physical = 403 ; free virtual = 8228 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7602.801 ; gain = 50.254 ; free physical = 396 ; free virtual = 8220 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ 
+// Tcl Message: No constraint files found. 
+// Tcl Message: No constraint files found. 
+// Tcl Message: --------------------------------------------------------------------------------- Start Cross Boundary and Area Optimization --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-3886] merging instance 'partial_led_test_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'partial_led_test_v1_0_S00_AXI_inst/axi_rresp_reg[1]' INFO: [Synth 8-3333] propagating constant 0 across sequential element (\partial_led_test_v1_0_S00_AXI_inst/axi_rresp_reg[1] ) INFO: [Synth 8-3886] merging instance 'partial_led_test_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'partial_led_test_v1_0_S00_AXI_inst/axi_bresp_reg[1]' INFO: [Synth 8-3333] propagating constant 0 across sequential element (\partial_led_test_v1_0_S00_AXI_inst/axi_bresp_reg[1] ) 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ 
+// Tcl Message: No constraint files found. 
+// Tcl Message: --------------------------------------------------------------------------------- Start Timing Optimization --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 386 ; free virtual = 8211 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ --------------------------------------------------------------------------------- Start Technology Mapping --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,635 MB. GUI used memory: 135 MB. Current time: 5/3/19 12:54:21 PM BST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,647 MB. GUI used memory: 135 MB. Current time: 5/3/19 12:54:21 PM BST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ --------------------------------------------------------------------------------- Start Rebuilding User Hierarchy --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Renaming Generated Ports --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Renaming Generated Nets --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Writing Synthesis Report ---------------------------------------------------------------------------------  Report BlackBoxes:  +-+--------------+----------+ | |BlackBox name |Instances | +-+--------------+----------+ +-+--------------+----------+ 
+// Tcl Message:  Report Cell Usage:  +------+-------+------+ |      |Cell   |Count | +------+-------+------+ |1     |CARRY4 |     6| |2     |LUT1   |    15| |3     |LUT2   |    18| |4     |LUT3   |    20| |5     |LUT4   |    38| |6     |LUT5   |    15| |7     |LUT6   |    45| |8     |FDRE   |   197| +------+-------+------+ 
+// Tcl Message:  Report Instance Areas:  +------+-------------------------------------+------------------------------+------+ |      |Instance                             |Module                        |Cells | +------+-------------------------------------+------------------------------+------+ |1     |top                                  |                              |   354| |2     |  partial_led_test_v1_0_S00_AXI_inst |partial_led_test_v1_0_S00_AXI |   354| +------+-------------------------------------+------------------------------+------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 385 ; free virtual = 8210 
+// Tcl Message: --------------------------------------------------------------------------------- Synthesis finished with 0 errors, 0 critical warnings and 22 warnings. Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.832 ; gain = 75.285 ; free physical = 386 ; free virtual = 8211 Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7627.840 ; gain = 75.285 ; free physical = 386 ; free virtual = 8211 
+// [Engine Memory]: 2,650 MB (+5269kb) [20:14:27]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-571] Translating synthesized netlist INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Tcl Message: INFO: [Common 17-83] Releasing license: Synthesis 
+// Tcl Message: 18 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 7765.199 ; gain = 212.652 ; free physical = 314 ; free virtual = 8144 
+// Tcl Message: design_1 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 12 seconds
+dismissDialog("Tcl Command Line"); // bs (cj)
+// Tcl Command: 'rdi::info_commands {wriyter*}'
+// Tcl Command: 'rdi::info_commands {wriy*}'
+// Tcl Command: 'rdi::info_commands {wri*}'
+// Tcl Command: 'rdi::info_commands {write*}'
+// Tcl Command: 'rdi::info_commands {write_c*}'
+// Tcl Command: 'rdi::info_commands {write_chec*}'
+// Tcl Command: 'rdi::info_commands {write_chec*}'
+// Tcl Command: 'rdi::match_options {write_checkpoint} {}'
+// Tcl Command: 'rdi::match_options {write_checkpoint} {for}'
+// Tcl Command: 'rdi::match_options {write_checkpoint} {force}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../} {nic}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/} {chec}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/} {chec}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/checkpoints/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/checkpoints/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/checkpoints/} {up}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/checkpoints/} {up}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/checkpoints/} {up.dcp}'
+// Elapsed time: 34 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_checkpoint -force ../nicap_extend/checkpoints/up.dcp", true); // aF (ae, cj)
+// Tcl Command: 'write_checkpoint -force ../nicap_extend/checkpoints/up.dcp'
+// Tcl Command: 'write_checkpoint -force ../nicap_extend/checkpoints/up.dcp'
+// Tcl Message: write_checkpoint -force ../nicap_extend/checkpoints/up.dcp 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/up.dcp' has been generated. 
+// Tcl Message: /home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/up.dcp 
+// [Engine Memory]: 2,874 MB (+96054kb) [20:15:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,877 MB. GUI used memory: 149 MB. Current time: 5/3/19 12:54:59 PM BST
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "partial_led_v1_0_S00_AXI.v", 3); // k (j, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 609, 121); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 610, 233); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,906 MB. GUI used memory: 145 MB. Current time: 5/3/19 12:55:16 PM BST
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 606, 342); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 609, 445); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 209, 352); // cd (w, cj)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// bs (cj):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,906 MB. GUI used memory: 139 MB. Current time: 5/3/19 12:55:33 PM BST
+// Engine heap size: 2,906 MB. GUI used memory: 140 MB. Current time: 5/3/19 12:55:33 PM BST
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,856 MB. GUI used memory: 137 MB. Current time: 5/3/19 12:55:33 PM BST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading"); // bs (cj)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1", true); // aF (ae, cj)
+// Tcl Command: 'synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1'
+// Tcl Command: 'synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1'
+// TclEventType: MSGMGR_REFRESH_MSG
+// Tcl Message: synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1 
+// Tcl Message: Command: synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1 Starting synth_design Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020' 
+// Tcl Message: INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020' 
+// Tcl Message: INFO: Launching helper process for spawning children vivado processes INFO: Helper process launched with PID 19829  
+// bs (cj):  Tcl Command Line : addNotify
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 230 ; free virtual = 8060 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'partial_led_test_v1_0' [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0.v:4] 
+// Tcl Message: 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'partial_led_test_v1_0_S00_AXI' [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:4] 
+// Tcl Message: 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer  	Parameter ADDR_LSB bound to: 2 - type: integer  	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:222] INFO: [Synth 8-226] default block is never used [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:363] INFO: [Synth 8-256] done synthesizing module 'partial_led_test_v1_0_S00_AXI' (1#1) [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:4] INFO: [Synth 8-256] done synthesizing module 'partial_led_test_v1_0' (2#1) [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 246 ; free virtual = 8076 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 248 ; free virtual = 8077 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Loading Part and Timing Information --------------------------------------------------------------------------------- Loading part: xc7z020clg400-1 --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 248 ; free virtual = 8077 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 233 ; free virtual = 8062 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ 
+// Tcl Message: No constraint files found. 
+// Tcl Message: No constraint files found. 
+// Tcl Message: --------------------------------------------------------------------------------- Start Cross Boundary and Area Optimization --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-3886] merging instance 'partial_led_test_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'partial_led_test_v1_0_S00_AXI_inst/axi_rresp_reg[1]' INFO: [Synth 8-3333] propagating constant 0 across sequential element (\partial_led_test_v1_0_S00_AXI_inst/axi_rresp_reg[1] ) INFO: [Synth 8-3886] merging instance 'partial_led_test_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'partial_led_test_v1_0_S00_AXI_inst/axi_bresp_reg[1]' INFO: [Synth 8-3333] propagating constant 0 across sequential element (\partial_led_test_v1_0_S00_AXI_inst/axi_bresp_reg[1] ) 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 225 ; free virtual = 8054 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ 
+// Tcl Message: No constraint files found. 
+// Tcl Message: --------------------------------------------------------------------------------- Start Timing Optimization --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 225 ; free virtual = 8055 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ --------------------------------------------------------------------------------- Start Technology Mapping --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 225 ; free virtual = 8054 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,865 MB. GUI used memory: 141 MB. Current time: 5/3/19 12:55:53 PM BST
+// Engine heap size: 2,865 MB. GUI used memory: 142 MB. Current time: 5/3/19 12:55:53 PM BST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 8065 
+// Tcl Message: Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 8065 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ --------------------------------------------------------------------------------- Start Rebuilding User Hierarchy --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 8065 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Renaming Generated Ports --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 8065 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 8065 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Renaming Generated Nets --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 8065 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Writing Synthesis Report ---------------------------------------------------------------------------------  Report BlackBoxes:  +-+--------------+----------+ | |BlackBox name |Instances | +-+--------------+----------+ +-+--------------+----------+ 
+// Tcl Message:  Report Cell Usage:  +------+-------+------+ |      |Cell   |Count | +------+-------+------+ |1     |CARRY4 |     6| |2     |LUT1   |    15| |3     |LUT2   |    18| |4     |LUT3   |    20| |5     |LUT4   |    38| |6     |LUT5   |    15| |7     |LUT6   |    45| |8     |FDRE   |   197| +------+-------+------+ 
+// Tcl Message:  Report Instance Areas:  +------+-------------------------------------+------------------------------+------+ |      |Instance                             |Module                        |Cells | +------+-------------------------------------+------------------------------+------+ |1     |top                                  |                              |   354| |2     |  partial_led_test_v1_0_S00_AXI_inst |partial_led_test_v1_0_S00_AXI |   354| +------+-------------------------------------+------------------------------+------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 236 ; free virtual = 8065 
+// Tcl Message: --------------------------------------------------------------------------------- Synthesis finished with 0 errors, 0 critical warnings and 22 warnings. Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 238 ; free virtual = 8067 Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 238 ; free virtual = 8067 
+// Tcl Message: INFO: [Project 1-571] Translating synthesized netlist 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,865 MB. GUI used memory: 139 MB. Current time: 5/3/19 12:55:54 PM BST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  INFO: [Common 17-83] Releasing license: Synthesis 
+// Tcl Message: 18 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 7904.172 ; gain = 0.000 ; free physical = 301 ; free virtual = 8127 
+// Tcl Message: design_1 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 13 seconds
+dismissDialog("Tcl Command Line"); // bs (cj)
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/checkpoints/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_checkpoint} {../nicap_extend/checkpoints/} {down}'
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_checkpoint -force ../nicap_extend/checkpoints/down.dcp", true); // aF (ae, cj)
+// Tcl Command: 'write_checkpoint -force ../nicap_extend/checkpoints/down.dcp'
+// Tcl Command: 'write_checkpoint -force ../nicap_extend/checkpoints/down.dcp'
+// Tcl Message: write_checkpoint -force ../nicap_extend/checkpoints/down.dcp 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/down.dcp' has been generated. 
+// Tcl Message: /home/alex/GitHub/ZyEthCAP/nicap_extend/checkpoints/down.dcp 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,930 MB. GUI used memory: 148 MB. Current time: 5/3/19 12:56:16 PM BST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 16 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectCodeEditor("partial_led_v1_0.v", 442, 424); // cd (w, cj)
+selectCodeEditor("partial_led_v1_0.v", 199, 414); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "partial_led_v1_0_S00_AXI.v", 3); // k (j, cj)
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 169, 473); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,953 MB. GUI used memory: 145 MB. Current time: 5/3/19 12:57:01 PM BST
+// Elapsed time: 12 seconds
+selectCodeEditor("partial_led_v1_0_S00_AXI.v", 173, 176); // cd (w, cj)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// bs (cj):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,958 MB. GUI used memory: 142 MB. Current time: 5/3/19 12:57:35 PM BST
+// Engine heap size: 2,958 MB. GUI used memory: 143 MB. Current time: 5/3/19 12:57:35 PM BST
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,913 MB. GUI used memory: 140 MB. Current time: 5/3/19 12:57:35 PM BST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1", true); // aF (ae, cj)
+// Tcl Command: 'synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1'
+// Tcl Command: 'synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1'
+// TclEventType: MSGMGR_REFRESH_MSG
+// Tcl Message: synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1 
+// Tcl Message: Command: synth_design -top partial_led_test_v1_0 -mode out_of_context -part xc7z020clg400-1 Starting synth_design Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020' 
+// Tcl Message: INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020' 
+// Tcl Message: INFO: Launching helper process for spawning children vivado processes INFO: Helper process launched with PID 20172  
+// bs (cj):  Tcl Command Line : addNotify
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 221 ; free virtual = 8052 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'partial_led_test_v1_0' [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0.v:4] 
+// Tcl Message: 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'partial_led_test_v1_0_S00_AXI' [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:4] 
+// Tcl Message: 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'partial_led_test_v1_0_S00_AXI' (1#1) [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0_S00_AXI.v:4] INFO: [Synth 8-256] done synthesizing module 'partial_led_test_v1_0' (2#1) [/home/alex/GitHub/zynq-ip-cores/partial_led_1.0/hdl/partial_led_v1_0.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 236 ; free virtual = 8067 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 238 ; free virtual = 8069 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Loading Part and Timing Information --------------------------------------------------------------------------------- Loading part: xc7z020clg400-1 --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 237 ; free virtual = 8069 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 237 ; free virtual = 8069 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ 
+// Tcl Message: No constraint files found. 
+// Tcl Message: No constraint files found. 
+// Tcl Message: --------------------------------------------------------------------------------- Start Cross Boundary and Area Optimization --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 238 ; free virtual = 8069 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ 
+// Tcl Message: No constraint files found. 
+// Tcl Message: --------------------------------------------------------------------------------- Start Timing Optimization --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 238 ; free virtual = 8069 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ --------------------------------------------------------------------------------- Start Technology Mapping --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 238 ; free virtual = 8069 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,914 MB. GUI used memory: 144 MB. Current time: 5/3/19 12:57:57 PM BST
+// Engine heap size: 2,914 MB. GUI used memory: 145 MB. Current time: 5/3/19 12:57:57 PM BST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 248 ; free virtual = 8068 
+// Tcl Message: Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 248 ; free virtual = 8068 
+// Tcl Message: ---------------------------------------------------------------------------------  Report RTL Partitions:  +-+--------------+------------+----------+ | |RTL Partition |Replication |Instances | +-+--------------+------------+----------+ +-+--------------+------------+----------+ --------------------------------------------------------------------------------- Start Rebuilding User Hierarchy --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 248 ; free virtual = 8068 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Renaming Generated Ports --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 248 ; free virtual = 8068 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 248 ; free virtual = 8068 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Renaming Generated Nets --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 248 ; free virtual = 8068 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- Start Writing Synthesis Report ---------------------------------------------------------------------------------  Report BlackBoxes:  +------+------------------------------+----------+ |      |BlackBox name                 |Instances | +------+------------------------------+----------+ |1     |partial_led_test_v1_0_S00_AXI |         1| +------+------------------------------+----------+ 
+// Tcl Message:  Report Cell Usage:  +------+------------------------------+------+ |      |Cell                          |Count | +------+------------------------------+------+ |1     |partial_led_test_v1_0_S00_AXI |     1| +------+------------------------------+------+ 
+// Tcl Message:  Report Instance Areas:  +------+---------+-------+------+ |      |Instance |Module |Cells | +------+---------+-------+------+ |1     |top      |       |    45| +------+---------+-------+------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 248 ; free virtual = 8068 
+// Tcl Message: --------------------------------------------------------------------------------- Synthesis finished with 0 errors, 0 critical warnings and 0 warnings. Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 250 ; free virtual = 8070 Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 250 ; free virtual = 8070 
+// Tcl Message: INFO: [Project 1-571] Translating synthesized netlist 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,914 MB. GUI used memory: 142 MB. Current time: 5/3/19 12:57:58 PM BST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  INFO: [Common 17-83] Releasing license: Synthesis 
+// Tcl Message: 10 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 7954.934 ; gain = 0.000 ; free physical = 299 ; free virtual = 8127 
+// Tcl Message: design_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,930 MB. GUI used memory: 187 MB. Current time: 5/3/19 12:58:00 PM BST
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 12 seconds
+dismissDialog("Tcl Command Line"); // bs (cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cj)
+// Device view-level: 0.0
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - partial_led", 2); // k (j, cj)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // an (O, cj)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cj)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // an (O, cj)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, cj)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cj)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bs (cj):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (A, G)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,901 MB. GUI used memory: 149 MB. Current time: 5/3/19 12:58:21 PM BST
+// Engine heap size: 2,902 MB. GUI used memory: 158 MB. Current time: 5/3/19 12:58:21 PM BST
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_project -delete 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Package IP"); // bs (cj)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path /home/alex/GitHub/zynq-ip-cores 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/alex/GitHub/zynq-ip-cores' 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /useLcl_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TVALID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TVALID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TLAST_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TLAST_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TDATA_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /Lcl_M_AXIS_MM2S_TDATA_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /zycap_0_mm2s_introut 
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cZ, cj)
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cZ, cj)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cZ, cj)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  

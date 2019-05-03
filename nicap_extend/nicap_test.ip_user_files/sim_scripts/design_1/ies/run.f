@@ -1,10 +1,10 @@
 -makelib ies_lib/xil_defaultlib -sv \
-  "/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-  "/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
-  "/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/blk_mem_gen_v8_4_1 \
   "../../../../nicap_test.srcs/sources_1/bd/design_1/ipshared/67d8/simulation/blk_mem_gen_v8_4.v" \
@@ -172,8 +172,8 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
   "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
-  "../../../bd/design_1/ipshared/b310/hdl/partial_led_v1_0_S00_AXI.v" \
-  "../../../bd/design_1/ipshared/b310/hdl/partial_led_v1_0.v" \
+  "../../../bd/design_1/ipshared/f938/hdl/partial_led_v1_0_S00_AXI.v" \
+  "../../../bd/design_1/ipshared/f938/hdl/partial_led_v1_0.v" \
   "../../../bd/design_1/ip/design_1_partial_led_0_0/sim/design_1_partial_led_0_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_15 \

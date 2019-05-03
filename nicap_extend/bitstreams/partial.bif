@@ -1,5 +1,5 @@
 //arch = zynq; split = false; format = BIN
 the_ROM_image:
 {
-	/home/alex/GitHub/ZyEthCAP/nicap_extend/bitstreams/mode1_pblock_partial_led_0_partial.bit
+	/home/alex/GitHub/ZyEthCAP/nicap_extend/bitstreams/modeB_pblock_1_partial.bit
 }

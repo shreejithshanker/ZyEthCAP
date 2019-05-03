@@ -1,0 +1,12 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/Xilinx/Vivado/2017.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x923da9) [0x7fce7971fda9]
+/opt/Xilinx/Vivado/2017.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(JVM_handle_linux_signal+0xb6) [0x7fce797263f6]
+/opt/Xilinx/Vivado/2017.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x9209d3) [0x7fce7971c9d3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef20) [0x7fceb7b07f20]
+/opt/Xilinx/Vivado/2017.4/lib/lnx64.o/Ubuntu/libstdc++.so.6(__dynamic_cast+0x40) [0x7fceb815cc20]
+/opt/Xilinx/Vivado/2017.4/lib/lnx64.o/librdi_coregen.so(HRSBMoAddrRelationsImp::GetAllAddrBlks(HSTVector<HRSBMoAddrBlk*, std::allocator<HRSBMoAddrBlk*> >&)+0x9a) [0x7fcea67c22ba]
+/opt/Xilinx/Vivado/2017.4/lib/lnx64.o/librdi_rsb.so(Java_ui_data_rsbi_RSBAddrRelations_1GetAllAddrBlks+0x1f) [0x7fce899af0af]
+[0x7fce697bea34]

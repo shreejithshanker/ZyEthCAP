@@ -3,19 +3,19 @@
 
 # XDC: new/top_io.xdc
 
-# XDC: /home/alex/GitHub/ZyEthCAP/nicap_extend/constraints/top_fplan_debug_bu.xdc
+# XDC: imports/constraints/top_fplan_debug_bu.xdc
 
-# XDC: /home/alex/GitHub/ZyEthCAP/nicap_extend/constraints/top_io_debug.xdc
+# XDC: imports/constraints/top_io_debug.xdc
 
-# XDC: /home/alex/GitHub/ZyEthCAP/nicap_extend/constraints/top_io.xdc
+# XDC: imports/constraints/top_io.xdc
 
-# IP: /home/alex/GitHub/ZyEthCAP/nicap_extend/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+# IP: ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_0 || ORIG_REF_NAME==blk_mem_gen_0} -quiet] -quiet
 
-# IP: /home/alex/GitHub/ZyEthCAP/nicap_extend/ip/fifo_generator_1/fifo_generator_1.xci
+# IP: ip/fifo_generator_1/fifo_generator_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_1 || ORIG_REF_NAME==fifo_generator_1} -quiet] -quiet
 
-# IP: /home/alex/GitHub/ZyEthCAP/nicap_extend/ip/fifo_generator_0/fifo_generator_0.xci
+# IP: ip/fifo_generator_0/fifo_generator_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] -quiet
 
 # Block Designs: bd/design_1/design_1.bd
@@ -120,12 +120,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_auto_p
 # IP: bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_auto_pc_2 || ORIG_REF_NAME==design_1_auto_pc_2} -quiet] -quiet
 
-# XDC: /home/alex/GitHub/ZyEthCAP/nicap_extend/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
+# XDC: ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc
 
-# XDC: /home/alex/GitHub/ZyEthCAP/nicap_extend/ip/fifo_generator_1/fifo_generator_1.xdc
+# XDC: ip/fifo_generator_1/fifo_generator_1.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_1 || ORIG_REF_NAME==fifo_generator_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: /home/alex/GitHub/ZyEthCAP/nicap_extend/ip/fifo_generator_0/fifo_generator_0.xdc
+# XDC: ip/fifo_generator_0/fifo_generator_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc

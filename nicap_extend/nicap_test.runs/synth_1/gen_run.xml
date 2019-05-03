@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1556797783">
-  <File Type="PA-TCL" Name="sys_top.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1556884904">
+  <File Type="VDS-TIMING-PB" Name="sys_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="sys_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="sys_top.dcp"/>
-  <File Type="REPORTS-TCL" Name="sys_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="sys_top.vds"/>
   <File Type="RDS-UTIL-PB" Name="sys_top_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="sys_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="sys_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="sys_top.vds"/>
+  <File Type="REPORTS-TCL" Name="sys_top_reports.tcl"/>
+  <File Type="PA-TCL" Name="sys_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
@@ -192,6 +195,16 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="ScopedToCell" Val="design_1_wrapper/design_1_i/partial_led_0/inst/partial_led_test_v1_0_S00_AXI_inst"/>
+        <Attr Name="ScopedToCell" Val="design_1_wrapper/design_1_i/partial_led_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/nicap_extend/checkpoints/up.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/checkpoints/up.dcp"/>
+        <Attr Name="ImportTime" Val="1556808706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="ScopedToCell" Val="design_1_wrapper/design_1_i/partial_led_0"/>
       </FileInfo>
     </File>

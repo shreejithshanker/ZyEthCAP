@@ -1370,7 +1370,7 @@ int ppu_test(XEmacPs *EmacPsInstancePtr)
 	TxBuffer[0][41] = 0x6f;
 	TxBuffer[0][42] = 0x64;
 	TxBuffer[0][43] = 0x65;
-	TxBuffer[0][44] = 0x32;
+	TxBuffer[0][44] = 0x31;
 	TxBuffer[0][45] = 0x30;
 	TxBuffer[0][46] = 0x30;
 	TxBuffer[0][47] = 0x30;

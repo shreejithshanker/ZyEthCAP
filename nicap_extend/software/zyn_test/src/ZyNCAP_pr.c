@@ -32,6 +32,56 @@ int EmacFrTxSetup(XEmacPs *EmacPsInstancePtr);
 int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000;
 //int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2;
 
+static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
+{
+	FIL fil;
+	FRESULT rc;
+	UINT br;
+	u32 file_size;
+
+	rc = f_open(&fil, FileName, FA_READ);
+	if (rc) {
+		xil_printf(" ERROR : f_open returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+
+	file_size = f_size(&fil);
+
+//	xil_printf("file size is %0x\n\r",file_size);
+//
+//	rc = f_lseek(&fil, 0);
+//	if (rc) {
+//		xil_printf(" ERROR : f_lseek returned %d\r\n", rc);
+//		return XST_FAILURE;
+//	}
+
+	rc = f_read(&fil, (void*) DestinationAddress, file_size, &br);
+	if (rc) {
+		xil_printf(" ERROR : f_read returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+
+	rc = f_close(&fil);
+	if (rc) {
+		xil_printf(" ERROR : f_close returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+
+	Xil_DCacheFlush();
+
+	return file_size;
+}
+
+static int SD_Init(FATFS *fatfs)
+{
+	FRESULT rc;
+	rc = f_mount(0, fatfs);
+	if (rc) {
+		xil_printf(" ERROR : f_mount returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
 
 
 int main()
@@ -41,10 +91,14 @@ int main()
 	int Status;
 	int rtn;
 	u32 delay,delay1;
+	FATFS * fatfs;
 	XScuTimer_Config *ConfigPtr;
 	XScuTimer *TimerInstancePtr = &Timer;        /* The instance of the Timer Counter. Used to measure the performance of the ICAP controller */
 	// Initialize timer counter
 	ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+
+
+
 
 	/*
 	 * This is where the virtual address would be used, this example
@@ -73,6 +127,35 @@ int main()
 		return XST_FAILURE;
 	}
 
+	/***************************************************** PCAP Initial Test ************************************************/
+
+	char * fileName = "mode1.bin";
+
+	fatfs=malloc(sizeof(FATFS));
+	Status = SD_Init(fatfs);
+	if (Status != XST_SUCCESS) {
+	 print("file system init failed\n\r");
+	 exit(XST_FAILURE);
+	}
+
+	Status = SD_TransferPartial(fileName, 0x00200000);
+	if (Status == XST_FAILURE) {
+		xil_printf("failed");
+		return XST_FAILURE;
+	}
+
+
+
+
+
+
+
+
+
+
+	/***************************************************** ZyCAP (without Pre-Fetch) Initial Test ************************************************/
+
+
 	//Initialise the ZyNCAP controller
 	Status = Init_Zycap(&InterruptController, &ps7_ethernet_0);
 	if (Status != XST_SUCCESS){
@@ -86,7 +169,6 @@ int main()
 		 return XST_FAILURE;
 	}
 
-	/*****************************************************************************************************************/
 	/*Read data from the peripheral. The peripheral implements a single register. In config1, the peripheral increments the data by one
 	 * before writing to the internal register. In config2, the peripheral decrements the data by one before writing to the internal
 	 * register.

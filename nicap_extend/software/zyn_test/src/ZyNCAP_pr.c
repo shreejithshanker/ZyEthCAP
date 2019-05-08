@@ -13,13 +13,19 @@
 #include "xemacps_example_intr_dma.h"
 #include "xuartps.h"
 #include "zycap.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+#include "xdevcfg.h"
 
 #define EMACPS_DEVICE_ID	XPAR_XEMACPS_0_DEVICE_ID
 #define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define EMACPS_IRPT_INTR	XPS_GEM0_INT_ID
 #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
-#define DeviceId XPAR_XUARTPS_0_DEVICE_ID
+#define DeviceId 			XPAR_XUARTPS_0_DEVICE_ID
 
+#define DCFG_DEVICE_ID		XPAR_XDCFG_0_DEVICE_ID
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define DCFG_INTR_ID		XPAR_XDCFG_0_INTR
 
 
 XScuGic InterruptController;         /* Instance of the Interrupt Controller. User has to provide a pointer to the ICAP driver */
@@ -27,10 +33,20 @@ XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
 static XEmacPs ps7_ethernet_0;
 XUartPs Uart_PS;
 
+XDcfg DcfgInstance;   /* Device Configuration Interface Instance */
+XScuGic IntcInstance; /* Instance of the Interrupt Controller driver */
+
+volatile int DmaDone;
+volatile int DmaPcapDone;
+volatile int FpgaProgrammed;
+
 int EmacFrTxSetup(XEmacPs *EmacPsInstancePtr);
 
 int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000;
 //int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2;
+
+int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
+				u16 deviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize);
 
 static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
 {
@@ -92,6 +108,7 @@ int main()
 	int rtn;
 	u32 delay,delay1;
 	FATFS * fatfs;
+	u32 fileSize;
 	XScuTimer_Config *ConfigPtr;
 	XScuTimer *TimerInstancePtr = &Timer;        /* The instance of the Timer Counter. Used to measure the performance of the ICAP controller */
 	// Initialize timer counter
@@ -129,6 +146,13 @@ int main()
 
 	/***************************************************** PCAP Initial Test ************************************************/
 
+	xil_printf("Start PCAP test? ");
+		while (RecvCount < (sizeof("Yes") - 1)) {
+					/* Transmit the data */
+					RecvCount += XUartPs_Recv(&Uart_PS,
+								   &recvbuffer[RecvCount], sizeof("Yes")-RecvCount);
+		}
+
 	char * fileName = "mode1.bin";
 
 	fatfs=malloc(sizeof(FATFS));
@@ -138,20 +162,19 @@ int main()
 	 exit(XST_FAILURE);
 	}
 
-	Status = SD_TransferPartial(fileName, 0x00200000);
-	if (Status == XST_FAILURE) {
-		xil_printf("failed");
+	fileSize = SD_TransferPartial(fileName, 0x00200000);
+	if (fileSize == XST_FAILURE) {
+		xil_printf("Failed Transfer.");
 		return XST_FAILURE;
 	}
 
+	Status = XDcfgInterruptExample(&IntcInstance, &DcfgInstance, DCFG_DEVICE_ID, DCFG_INTR_ID, 0x00200000, fileSize);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Dcfg Interrupt Example Test Failed\r\n");
+		return XST_FAILURE;
+	}
 
-
-
-
-
-
-
-
+	xil_printf("Successfully ran Dcfg Interrupt Example Test\r\n");
 
 	/***************************************************** ZyCAP (without Pre-Fetch) Initial Test ************************************************/
 

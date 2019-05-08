@@ -1,0 +1,165 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:54:30 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 10183
+License: Customer
+
+Current time: 	Wed May 08 11:04:41 BST 2019
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Ubuntu
+OS Version: 4.18.0-16-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :1
+Screen size: 4480x2520
+Screen resolution (DPI): 96
+Available screens: 3
+Available disk space: 238 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/tools/Xilinx/Vivado/2017.4/tps/lnx64/jre
+JVM executable location: 	/tools/Xilinx/Vivado/2017.4/tps/lnx64/jre/bin/java
+
+User name: 	alex
+User home directory: /home/alex
+User working directory: /home/alex/GitHub/ZyEthCAP/nicap_extend
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2017.4
+RDI_DATADIR: /tools/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: /home/alex/.Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: /home/alex/.Xilinx/Vivado/2017.4/
+Vivado layouts directory: /home/alex/.Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	
+Vivado journal file location: 	
+Engine tmp dir: 	./.Xil/Vivado-10183-alex-pc
+
+GUI allocated memory:	179 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 880 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl' 
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: nicap_test.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project nicap_test.xpr 
+// [GUI Memory]: 98 MB (+100654kb) [00:00:05]
+// [Engine Memory]: 856 MB (+746244kb) [00:00:05]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 960 MB (+64274kb) [00:00:09]
+// [Engine Memory]: 1,009 MB (+918kb) [00:00:10]
+// [GUI Memory]: 105 MB (+1563kb) [00:00:10]
+// Tcl Message: open_project nicap_test.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alex/GitHub/ZyEthCAP/zycap_core'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alex/GitHub/zynq-ip-cores'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,031 MB. GUI used memory: 57 MB. Current time: 5/8/19 11:04:46 AM BST
+// Project name: nicap_test; location: /home/alex/GitHub/ZyEthCAP/nicap_extend; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 6153.191 ; gain = 186.055 ; free physical = 216 ; free virtual = 23550 
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (cj): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,060 MB (+49kb) [00:00:23]
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cj): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aa)
+// 'o' command handler elapsed time: 6 seconds
+dismissDialog("Launch SDK"); // aa (cj)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cj)
+// Tcl Command: 'rdi::info_commands {laubn*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ae, cj)
+// Tcl Command: 'rdi::info_commands {launch*}'
+// Tcl Command: 'rdi::match_options {launch_sdk} {}'
+// Tcl Command: 'rdi::match_options {launch_sdk} {wo}'
+// Tcl Command: 'rdi::match_options {launch_sdk} {wo}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::match_options {launch_sdk} {}'
+// Tcl Command: 'rdi::match_options {launch_sdk} {hw}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Elapsed time: 41 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_sdk -workspace ./software -hwspec ./software/wrapper.hdf", true); // aF (ae, cj)
+// Tcl Command: 'launch_sdk -workspace ./software -hwspec ./software/wrapper.hdf'
+// Tcl Command: 'launch_sdk -workspace ./software -hwspec ./software/wrapper.hdf'
+// Tcl Message: launch_sdk -workspace ./software -hwspec ./software/wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace ./software -hwspec ./software/wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,068 MB. GUI used memory: 57 MB. Current time: 5/8/19 11:34:48 AM BST
+// Elapsed time: 2850 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,143 MB (+31671kb) [00:48:58]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// 'bA' command handler elapsed time: 3 seconds
+dismissDialog("Open Block Design"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 61 MB. Current time: 5/8/19 11:53:34 AM BST
+// [GUI Memory]: 111 MB (+550kb) [00:49:45]
+// [GUI Memory]: 116 MB (+325kb) [00:50:10]
+// [GUI Memory]: 123 MB (+692kb) [00:50:40]
+// [GUI Memory]: 130 MB (+1039kb) [00:51:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,158 MB. GUI used memory: 67 MB. Current time: 5/8/19 12:23:39 PM BST

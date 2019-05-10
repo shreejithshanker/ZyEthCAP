@@ -637,6 +637,7 @@ set_property MARK_DEBUG true [get_nets {eth_bridge/config_match_reg_reg_n_0_[7]}
 
 
 
+
 ####################################################################################
 # Constraints from file : 'top_fplan_debug_bu.xdc'
 ####################################################################################
@@ -15097,18 +15098,31 @@ set_false_path -to [get_cells {syncstages_ff_reg[0]}]
 # Scoped constraints for xpm_memory
 
 
-# User Generated miscellaneous constraints 
+####################################################################################
+# Constraints from file : 'top_io.xdc'
+####################################################################################
 
 current_instance -quiet
-set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/partial_led_0/inst/partial_led_test_v1_0_S00_AXI_inst]
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports {leds_0[0]}]
+set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports {leds_0[1]}]
+set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports {leds_0[2]}]
+set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {leds_0[3]}]
+
+
+# User Generated miscellaneous constraints 
+
+set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/partial_led_test_0]
 
 # User Generated physical constraints 
 
-create_pblock pblock_1
-add_cells_to_pblock [get_pblocks pblock_1] [get_cells -quiet [list design_1_wrapper/design_1_i/partial_led_0/inst/partial_led_test_v1_0_S00_AXI_inst]]
-resize_pblock [get_pblocks pblock_1] -add {SLICE_X80Y77:SLICE_X89Y97}
-set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_1]
-set_property SNAPPING_MODE ON [get_pblocks pblock_1]
+create_pblock pblock_partial_led_test_0
+add_cells_to_pblock [get_pblocks pblock_partial_led_test_0] [get_cells -quiet [list design_1_wrapper/design_1_i/partial_led_test_0]]
+resize_pblock [get_pblocks pblock_partial_led_test_0] -add {SLICE_X82Y78:SLICE_X97Y93}
+resize_pblock [get_pblocks pblock_partial_led_test_0] -add {DSP48_X3Y32:DSP48_X3Y35}
+resize_pblock [get_pblocks pblock_partial_led_test_0] -add {RAMB18_X4Y32:RAMB18_X4Y35}
+resize_pblock [get_pblocks pblock_partial_led_test_0] -add {RAMB36_X4Y16:RAMB36_X4Y17}
+set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_partial_led_test_0]
+set_property SNAPPING_MODE ON [get_pblocks pblock_partial_led_test_0]
 
 # User Generated miscellaneous constraints 
 

@@ -1,4 +1,4 @@
-11:50:34 **** Build of project standalone_bsp_0 ****
+16:34:59 **** Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
@@ -10,8 +10,6 @@ Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src
 make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/partial_led_v1_0/src
-make -C ps7_cortexa9_0/libsrc/partial_led_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
 make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src
@@ -28,6 +26,8 @@ Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_3/src
 make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src
 make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/partial_led_test_v1_0/src
+make -C ps7_cortexa9_0/libsrc/partial_led_test_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
 make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
@@ -39,6 +39,7 @@ make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COM
 Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Compiling dmaps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
 Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Compiling ddrps
@@ -51,16 +52,6 @@ Compiling gpiops
 Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src
 make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Compiling scugic
-Running Make libs in ps7_cortexa9_0/libsrc/partial_led_v1_0/src
-make -C ps7_cortexa9_0/libsrc/partial_led_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling partial_led...
-partial_led_selftest.c: In function 'PARTIAL_LED_Reg_SelfTest':
-partial_led_selftest.c:52:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-    if ( PARTIAL_LED_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-                                                            ^~
-partial_led_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-  int Index;
-      ^~~~~
 Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
 make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Compiling scuwdt
@@ -85,6 +76,29 @@ Compiling sdps
 Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src
 make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/partial_led_test_v1_0/src
+make -C ps7_cortexa9_0/libsrc/partial_led_test_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+Compiling partial_led_test...
+partial_led_test_selftest.c: In function 'PARTIAL_LED_TEST_Reg_SelfTest':
+partial_led_test_selftest.c:40:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("******************************\n\r");
+  ^~~~~~~~~~
+In file included from partial_led_test_selftest.c:3:0:
+partial_led_test.h:35:4: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+    ^
+partial_led_test_selftest.c:50:4: note: in expansion of macro 'PARTIAL_LED_TEST_mWriteReg'
+    PARTIAL_LED_TEST_mWriteReg (baseaddr, write_loop_index*4, (write_loop_index+1)*READ_WRITE_MUL_FACTOR);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+partial_led_test.h:55:5: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     Xil_In32((BaseAddress) + (RegOffset))
+     ^
+partial_led_test_selftest.c:52:9: note: in expansion of macro 'PARTIAL_LED_TEST_mReadReg'
+    if ( PARTIAL_LED_TEST_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+         ^~~~~~~~~~~~~~~~~~~~~~~~~
+partial_led_test_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
 Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
 make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Compiling usbps
@@ -98,213 +112,43 @@ Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
 make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 Compiling scutimer
 Finished building libraries
-11:50:43 **** Clean-only build of configuration Debug for project zyn_bypass ****
+16:35:33 **** Clean-only build of configuration Debug for project zyn_bypass ****
 make clean 
 rm -rf  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o  ./src/ZyNCAP_pr.d ./src/devcfg.d ./src/ff.d ./src/mmc.d ./src/xaxidma.d ./src/xaxidma_bd.d ./src/xaxidma_bdring.d ./src/xaxidma_g.d ./src/xaxidma_sinit.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d ./src/zycap.d  zyn_bypass.elf.size  zyn_bypass.elf
  
-11:50:43 **** Build of configuration Debug for project zyn_bypass ****
+16:35:33 **** Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 Building file: ../src/ZyNCAP_pr.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
+../src/ZyNCAP_pr.c:20:0: warning: "XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR" redefined
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
  
-Building file: ../src/devcfg.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg.d" -MT"src/devcfg.o" -o "src/devcfg.o" "../src/devcfg.c"
-Finished building: ../src/devcfg.c
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:381:0: note: this is the location of the previous definition
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0xFFFFFFFF
  
-Building file: ../src/ff.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.o" -o "src/ff.o" "../src/ff.c"
-Finished building: ../src/ff.c
- 
-Building file: ../src/mmc.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mmc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.o" -o "src/mmc.o" "../src/mmc.c"
-Finished building: ../src/mmc.c
- 
-Building file: ../src/xaxidma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma.d" -MT"src/xaxidma.o" -o "src/xaxidma.o" "../src/xaxidma.c"
-Finished building: ../src/xaxidma.c
- 
-Building file: ../src/xaxidma_bd.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_bd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_bd.d" -MT"src/xaxidma_bd.o" -o "src/xaxidma_bd.o" "../src/xaxidma_bd.c"
-Finished building: ../src/xaxidma_bd.c
- 
-Building file: ../src/xaxidma_bdring.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_bdring.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_bdring.d" -MT"src/xaxidma_bdring.o" -o "src/xaxidma_bdring.o" "../src/xaxidma_bdring.c"
-Finished building: ../src/xaxidma_bdring.c
- 
-Building file: ../src/xaxidma_g.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_g.d" -MT"src/xaxidma_g.o" -o "src/xaxidma_g.o" "../src/xaxidma_g.c"
-Finished building: ../src/xaxidma_g.c
- 
-Building file: ../src/xaxidma_sinit.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_sinit.d" -MT"src/xaxidma_sinit.o" -o "src/xaxidma_sinit.o" "../src/xaxidma_sinit.c"
-Finished building: ../src/xaxidma_sinit.c
- 
-Building file: ../src/xemacps_example_intr_dma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
-../src/xemacps_example_intr_dma.c: In function 'EmacSetup':
-../src/xemacps_example_intr_dma.c:500:3: warning: implicit declaration of function 'EmacPsUtilEnterLocalLoopback' [-Wimplicit-function-declaration]
-   EmacPsUtilEnterLocalLoopback(EmacPsInstancePtr);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
-../src/xemacps_example_intr_dma.c:564:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
-  u32 RxFrLen;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:563:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
-  u32 NumRxBuf = 0;
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
-../src/xemacps_example_intr_dma.c:1186:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
-  u32 CrlApbClkCntrl;
-      ^~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'ppu_test':
-../src/xemacps_example_intr_dma.c:1332:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_0 = PACKET_BUFFER_2;
-                ^
-../src/xemacps_example_intr_dma.c:1333:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_1 = PACKET_BUFFER_3;
-                ^
-../src/xemacps_example_intr_dma.c:1344:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
-                              ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:122:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1387:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
-                                     ^
-../src/xemacps_example_intr_dma.c:1401:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1402:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1402:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1412:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1413:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                    ^
-../src/xemacps_example_intr_dma.c:1413:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
-    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
-                                         ^
-../src/xemacps_example_intr_dma.c:1329:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1329:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1328:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1327:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1325:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: In function 'TestData':
-../src/xemacps_example_intr_dma.c:1467:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1479:9: warning: 'return' with a value, in function returning void
-  return 0;
-         ^
-../src/xemacps_example_intr_dma.c:1432:6: note: declared here
- void TestData(  )
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1483:6: warning: conflicting types for 'PrintData'
- void PrintData(char *data_ptr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1467:2: note: previous implicit declaration of 'PrintData' was here
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1014:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
- static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
-             ^~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xemacps_example_intr_dma.c
- 
-Building file: ../src/xemacps_example_util.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
-Finished building: ../src/xemacps_example_util.c
- 
-Building file: ../src/zycap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/zycap.d" -MT"src/zycap.o" -o "src/zycap.o" "../src/zycap.c"
-../src/zycap.c: In function 'print_schedule':
-../src/zycap.c:101:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                    ^
-../src/zycap.c:101:63: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                               ^
-../src/zycap.c: In function 'Net_Bitstream':
-../src/zycap.c:499:40: warning: passing argument 2 of 'check_bs_present' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-     bs_pres = check_bs_present(bs_list,modeName);
-                                        ^~~~~~~~
-../src/zycap.c:37:12: note: expected 'char *' but argument is of type 'volatile char *'
- static int check_bs_present(bs_info *bs_list,char *bs_name)
-            ^~~~~~~~~~~~~~~~
-../src/zycap.c:515:37: warning: passing argument 1 of 'SD_TransferPartial' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-      file_size = SD_TransferPartial(modeName, bs_list[pres_last].addr);
-                                     ^~~~~~~~
-../src/zycap.c:278:12: note: expected 'char *' but argument is of type 'volatile char *'
- static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
-            ^~~~~~~~~~~~~~~~~~
-../src/zycap.c:524:40: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-         strcpy(bs_list[pres_last].name,modeName);
-                                        ^~~~~~~~
-In file included from /tools/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/ctype.h:4:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-/tools/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/string.h:30:8: note: expected 'const char * restrict' but argument is of type 'volatile char *'
- char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
-        ^
-At top level:
-../src/zycap.c:94:6: warning: 'print_schedule' defined but not used [-Wunused-function]
- void print_schedule(bs_info *bs_list)
-      ^~~~~~~~~~~~~~
-Finished building: ../src/zycap.c
- 
-Building target: zyn_bypass.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_bypass.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_bypass.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_bypass.elf  |tee "zyn_bypass.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 160056	   4260	 148736	 313052	  4c6dc	zyn_bypass.elf
-Finished building: zyn_bypass.elf.size
- 
-11:50:44 **** Clean-only build of configuration Debug for project zyn_pcap ****
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:20:50: error: 'XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^
+../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:20:50: note: each undeclared identifier is reported only once for each function it appears in
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^
+../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/ZyNCAP_pr.o] Error 1
+16:35:33 **** Clean-only build of configuration Debug for project zyn_pcap ****
 make clean 
 rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  zyn_pcap.elf.size  zyn_pcap.elf
  
-11:50:44 **** Build of configuration Debug for project zyn_pcap ****
+16:35:33 **** Build of configuration Debug for project zyn_pcap ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -316,11 +160,67 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcp
                 ^
 compilation terminated.
 make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
-11:50:44 **** Clean-only build of configuration Debug for project zyn_test ****
+16:35:33 **** Clean-only build of configuration Debug for project zyn_test ****
 make clean 
 rm -rf  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o  ./src/ZyNCAP_pr.d ./src/devcfg.d ./src/devcfg_intr.d ./src/ff.d ./src/mmc.d ./src/xaxidma.d ./src/xaxidma_bd.d ./src/xaxidma_bdring.d ./src/xaxidma_g.d ./src/xaxidma_sinit.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d ./src/zycap.d  zyn_test.elf.size  zyn_test.elf
  
-11:50:45 **** Build of configuration Debug for project zyn_test ****
+16:35:33 **** Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c:23:0: warning: "XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR" redefined
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:381:0: note: this is the location of the previous definition
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0xFFFFFFFF
+ 
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:23:50: error: 'XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^
+../src/ZyNCAP_pr.c:23:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:23:50: note: each undeclared identifier is reported only once for each function it appears in
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^
+../src/ZyNCAP_pr.c:23:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+16:36:17 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c:23:0: warning: "XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR" redefined
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:381:0: note: this is the location of the previous definition
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0xFFFFFFFF
+ 
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:23:50: error: 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR
+                                                  ^
+../src/ZyNCAP_pr.c:23:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:23:50: note: each undeclared identifier is reported only once for each function it appears in
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR
+                                                  ^
+../src/ZyNCAP_pr.c:23:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+16:36:26 **** Auto Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -508,21 +408,223 @@ Finished building target: zyn_test.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162164	   4260	 148800	 315224	  4cf58	zyn_test.elf
+ 162260	   4260	 148800	 315320	  4cfb8	zyn_test.elf
 Finished building: zyn_test.elf.size
  
-11:51:05 **** Incremental Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+16:42:47 **** Clean-only build of configuration Debug for project zyn_test ****
+make clean 
+rm -rf  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o  ./src/ZyNCAP_pr.d ./src/devcfg.d ./src/devcfg_intr.d ./src/ff.d ./src/mmc.d ./src/xaxidma.d ./src/xaxidma_bd.d ./src/xaxidma_bdring.d ./src/xaxidma_g.d ./src/xaxidma_sinit.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d ./src/zycap.d  zyn_test.elf.size  zyn_test.elf
  
-make: Nothing to be done for 'main-build'.
-11:51:45 **** Auto Build of configuration Debug for project zyn_test ****
+16:42:48 **** Incremental Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 Building file: ../src/ZyNCAP_pr.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building file: ../src/devcfg.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg.d" -MT"src/devcfg.o" -o "src/devcfg.o" "../src/devcfg.c"
+Finished building: ../src/devcfg.c
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.o" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mmc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.o" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/xaxidma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma.d" -MT"src/xaxidma.o" -o "src/xaxidma.o" "../src/xaxidma.c"
+Finished building: ../src/xaxidma.c
+ 
+Building file: ../src/xaxidma_bd.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_bd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_bd.d" -MT"src/xaxidma_bd.o" -o "src/xaxidma_bd.o" "../src/xaxidma_bd.c"
+Finished building: ../src/xaxidma_bd.c
+ 
+Building file: ../src/xaxidma_bdring.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_bdring.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_bdring.d" -MT"src/xaxidma_bdring.o" -o "src/xaxidma_bdring.o" "../src/xaxidma_bdring.c"
+Finished building: ../src/xaxidma_bdring.c
+ 
+Building file: ../src/xaxidma_g.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_g.d" -MT"src/xaxidma_g.o" -o "src/xaxidma_g.o" "../src/xaxidma_g.c"
+Finished building: ../src/xaxidma_g.c
+ 
+Building file: ../src/xaxidma_sinit.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_sinit.d" -MT"src/xaxidma_sinit.o" -o "src/xaxidma_sinit.o" "../src/xaxidma_sinit.c"
+Finished building: ../src/xaxidma_sinit.c
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacSetup':
+../src/xemacps_example_intr_dma.c:500:3: warning: implicit declaration of function 'EmacPsUtilEnterLocalLoopback' [-Wimplicit-function-declaration]
+   EmacPsUtilEnterLocalLoopback(EmacPsInstancePtr);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
+../src/xemacps_example_intr_dma.c:564:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+../src/xemacps_example_intr_dma.c:563:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
+  u32 NumRxBuf = 0;
+      ^~~~~~~~
+../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
+../src/xemacps_example_intr_dma.c:1186:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
+  u32 CrlApbClkCntrl;
+      ^~~~~~~~~~~~~~
+../src/xemacps_example_intr_dma.c: In function 'ppu_test':
+../src/xemacps_example_intr_dma.c:1332:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  rxvd_buffer_0 = PACKET_BUFFER_2;
+                ^
+../src/xemacps_example_intr_dma.c:1333:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  rxvd_buffer_1 = PACKET_BUFFER_3;
+                ^
+../src/xemacps_example_intr_dma.c:1344:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
+  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
+                              ^
+In file included from ../src/xemacps_example_intr_dma.h:4:0,
+                 from ../src/xemacps_example_intr_dma.c:129:
+../src/xemacps_example.h:122:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
+ void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/xemacps_example_intr_dma.c:1387:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
+                                     ^
+../src/xemacps_example_intr_dma.c:1401:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:1412:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:1329:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
+  char *rxvd_buffer_0, *rxvd_buffer_1;
+                        ^~~~~~~~~~~~~
+../src/xemacps_example_intr_dma.c:1329:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
+  char *rxvd_buffer_0, *rxvd_buffer_1;
+        ^~~~~~~~~~~~~
+../src/xemacps_example_intr_dma.c:1328:7: warning: unused variable 'temp_char' [-Wunused-variable]
+  char temp_char;
+       ^~~~~~~~~
+../src/xemacps_example_intr_dma.c:1327:6: warning: unused variable 'DataError' [-Wunused-variable]
+  u32 DataError;
+      ^~~~~~~~~
+../src/xemacps_example_intr_dma.c:1325:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i,j;
+      ^
+../src/xemacps_example_intr_dma.c: In function 'TestData':
+../src/xemacps_example_intr_dma.c:1467:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
+  PrintData(PACKET_BUFFER_2);
+  ^~~~~~~~~
+../src/xemacps_example_intr_dma.c:1479:9: warning: 'return' with a value, in function returning void
+  return 0;
+         ^
+../src/xemacps_example_intr_dma.c:1432:6: note: declared here
+ void TestData(  )
+      ^~~~~~~~
+../src/xemacps_example_intr_dma.c: At top level:
+../src/xemacps_example_intr_dma.c:1483:6: warning: conflicting types for 'PrintData'
+ void PrintData(char *data_ptr)
+      ^~~~~~~~~
+../src/xemacps_example_intr_dma.c:1467:2: note: previous implicit declaration of 'PrintData' was here
+  PrintData(PACKET_BUFFER_2);
+  ^~~~~~~~~
+../src/xemacps_example_intr_dma.c:1014:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
+ static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
+             ^~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+Finished building: ../src/xemacps_example_util.c
+ 
+Building file: ../src/zycap.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/zycap.d" -MT"src/zycap.o" -o "src/zycap.o" "../src/zycap.c"
+../src/zycap.c: In function 'print_schedule':
+../src/zycap.c:101:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'struct bit_info *' [-Wformat=]
+         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
+                                                    ^
+../src/zycap.c:101:63: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'struct bit_info *' [-Wformat=]
+         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
+                                                               ^
+../src/zycap.c: In function 'Net_Bitstream':
+../src/zycap.c:499:40: warning: passing argument 2 of 'check_bs_present' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     bs_pres = check_bs_present(bs_list,modeName);
+                                        ^~~~~~~~
+../src/zycap.c:37:12: note: expected 'char *' but argument is of type 'volatile char *'
+ static int check_bs_present(bs_info *bs_list,char *bs_name)
+            ^~~~~~~~~~~~~~~~
+../src/zycap.c:515:37: warning: passing argument 1 of 'SD_TransferPartial' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+      file_size = SD_TransferPartial(modeName, bs_list[pres_last].addr);
+                                     ^~~~~~~~
+../src/zycap.c:278:12: note: expected 'char *' but argument is of type 'volatile char *'
+ static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
+            ^~~~~~~~~~~~~~~~~~
+../src/zycap.c:524:40: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+         strcpy(bs_list[pres_last].name,modeName);
+                                        ^~~~~~~~
+In file included from /tools/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/ctype.h:4:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
+                 from ../src/zycap.h:8,
+                 from ../src/zycap.c:7:
+/tools/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/string.h:30:8: note: expected 'const char * restrict' but argument is of type 'volatile char *'
+ char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
+        ^
+At top level:
+../src/zycap.c:94:6: warning: 'print_schedule' defined but not used [-Wunused-function]
+ void print_schedule(bs_info *bs_list)
+      ^~~~~~~~~~~~~~
+Finished building: ../src/zycap.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162260	   4260	 148800	 315320	  4cfb8	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+16:56:45 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:04:42 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c:23:0: warning: "XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR" redefined
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0x43C00000
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:381:0: note: this is the location of the previous definition
+ #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0xFFFFFFFF
+ 
 Finished building: ../src/ZyNCAP_pr.c
  
 Building target: zyn_test.elf
@@ -533,45 +635,15 @@ Finished building target: zyn_test.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162252	   4260	 148800	 315312	  4cfb0	zyn_test.elf
+ 162324	   4260	 148800	 315384	  4cff8	zyn_test.elf
 Finished building: zyn_test.elf.size
  
-11:59:35 **** Incremental Build of configuration Debug for project zyn_test ****
+17:04:54 **** Incremental Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-12:01:03 **** Incremental Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-12:02:03 **** Auto Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 162252	   4260	 148800	 315312	  4cfb0	zyn_test.elf
-Finished building: zyn_test.elf.size
- 
-12:02:16 **** Incremental Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
-12:04:04 **** Auto Build of configuration Debug for project zyn_test ****
+17:05:26 **** Auto Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -591,17 +663,27 @@ arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
  162260	   4260	 148800	 315320	  4cfb8	zyn_test.elf
 Finished building: zyn_test.elf.size
  
-12:04:08 **** Incremental Build of configuration Debug for project zyn_test ****
+17:08:26 **** Incremental Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-12:04:33 **** Incremental Build of configuration Debug for project zyn_test ****
+17:10:16 **** Auto Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-make: Nothing to be done for 'main-build'.
-12:06:39 **** Auto Build of configuration Debug for project zyn_test ****
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:317:128: error: expected ')' before ';' token
+  xil_printf("Performance with pre-fetching and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/(delay2-delay);
+                                                                                                                                ^
+../src/ZyNCAP_pr.c:326:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+17:10:24 **** Auto Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -621,32 +703,25 @@ arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
  162260	   4260	 148800	 315320	  4cfb8	zyn_test.elf
 Finished building: zyn_test.elf.size
  
-12:06:49 **** Auto Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 162276	   4260	 148800	 315336	  4cfc8	zyn_test.elf
-Finished building: zyn_test.elf.size
- 
-12:08:09 **** Incremental Build of configuration Debug for project zyn_test ****
+17:10:29 **** Incremental Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-12:08:45 **** Auto Build of configuration Debug for project zyn_test ****
+17:12:41 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:326:39: error: 'delay2' undeclared (first use in this function)
+  xil_printf("Time taken: %d sec\r\n", delay2);
+                                       ^~~~~~
+../src/ZyNCAP_pr.c:326:39: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+17:12:44 **** Auto Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -663,15 +738,15 @@ Finished building target: zyn_test.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162276	   4260	 148800	 315336	  4cfc8	zyn_test.elf
+ 162236	   4260	 148800	 315296	  4cfa0	zyn_test.elf
 Finished building: zyn_test.elf.size
  
-12:08:48 **** Incremental Build of configuration Debug for project zyn_test ****
+17:12:48 **** Incremental Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-12:09:05 **** Auto Build of configuration Debug for project zyn_test ****
+17:13:23 **** Auto Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -688,10 +763,39 @@ Finished building target: zyn_test.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162276	   4260	 148800	 315336	  4cfc8	zyn_test.elf
+ 162236	   4260	 148800	 315296	  4cfa0	zyn_test.elf
 Finished building: zyn_test.elf.size
  
-12:12:03 **** Auto Build of configuration Debug for project zyn_test ****
+17:13:26 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:17:35 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:292:6: warning: variable 'delay2' set but not used [-Wunused-but-set-variable]
+  u32 delay2;
+      ^~~~~~
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162332	   4260	 148800	 315392	  4d000	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:17:48 **** Auto Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -708,10 +812,1274 @@ Finished building target: zyn_test.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162260	   4260	 148800	 315320	  4cfb8	zyn_test.elf
+ 162356	   4260	 148800	 315416	  4d018	zyn_test.elf
 Finished building: zyn_test.elf.size
  
-12:12:06 **** Incremental Build of configuration Debug for project zyn_test ****
+17:18:16 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:329:58: error: expected ')' before ';' token
+  xil_printf("Time taken: %d sec\r\n", (TimerClock/delay2);
+                                                          ^
+../src/ZyNCAP_pr.c:337:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+17:18:22 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162420	   4260	 148800	 315480	  4d058	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:18:26 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:18:43 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162356	   4260	 148800	 315416	  4d018	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:19:11 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162356	   4260	 148800	 315416	  4d018	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:19:47 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162356	   4260	 148800	 315416	  4d018	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:19:52 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:20:18 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162420	   4260	 148800	 315480	  4d058	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:20:47 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162356	   4260	 148800	 315416	  4d018	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:20:55 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162356	   4260	 148800	 315416	  4d018	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:29:34 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162284	   4260	 148800	 315344	  4cfd0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:30:04 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:30:09 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:31:16 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:31:20 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:31:37 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162284	   4260	 148800	 315344	  4cfd0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:36:22 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:36:25 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:42:42 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:329:114: error: expected ')' before ';' token
+  xil_printf("Time taken for transmission to interrupt %d sec\r\n",(delay/(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2));
+                                                                                                                  ^
+../src/ZyNCAP_pr.c:339:1: error: expected ';' before '}' token
+ }
+ ^
+../src/ZyNCAP_pr.c:291:6: warning: variable 'delay2' set but not used [-Wunused-but-set-variable]
+  u32 delay2;
+      ^~~~~~
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+17:42:45 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:42:49 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:43:28 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:43:34 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:43:53 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:329:69: error: expected expression before ')' token
+  xil_printf("Time taken for transmission to interrupt %d sec\r\n",(()delay/(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2)));
+                                                                     ^
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+17:43:57 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:44:03 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162284	   4260	 148800	 315344	  4cfd0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:50:43 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162284	   4260	 148800	 315344	  4cfd0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:50:49 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:51:39 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+17:51:44 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:13:13 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162348	   4260	 148800	 315408	  4d010	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:13:18 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:34:52 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162524	   4260	 148800	 315584	  4d0c0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:35:01 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:35:50 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162524	   4260	 148800	 315584	  4d0c0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:35:53 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:37:22 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:42:26 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:180:11: warning: implicit declaration of function 'XDcfg_TransferBitfile' [-Wimplicit-function-declaration]
+  Status = XDcfg_TransferBitfile(&IntcInstance, &DcfgInstance, DCFG_DEVICE_ID, DCFG_INTR_ID, 0x00200000, fileSize);
+           ^~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162436	   4260	 148800	 315496	  4d068	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:42:34 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:180:11: warning: implicit declaration of function 'XDcfg_TransferBitfile' [-Wimplicit-function-declaration]
+  Status = XDcfg_TransferBitfile(&DcfgInstance,0x00200000, fileSize);
+           ^~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162372	   4260	 148800	 315432	  4d028	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:42:52 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162372	   4260	 148800	 315432	  4d028	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:43:10 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:43:19 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:45:04 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:45:17 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162372	   4260	 148800	 315432	  4d028	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:45:20 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:45:51 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162372	   4260	 148800	 315432	  4d028	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:46:23 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162372	   4260	 148800	 315432	  4d028	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:46:32 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:46:36 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:47:12 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:47:21 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:48:06 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:517:35: error: expected ';', ',' or ')' before numeric constant
+ #define XPAR_PS7_UART_0_DEVICE_ID 0
+                                   ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:527:34: note: in expansion of macro 'XPAR_PS7_UART_0_DEVICE_ID'
+ #define XPAR_XUARTPS_0_DEVICE_ID XPAR_PS7_UART_0_DEVICE_ID
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:26:21: note: in expansion of macro 'XPAR_XUARTPS_0_DEVICE_ID'
+ #define DeviceId    XPAR_XUARTPS_0_DEVICE_ID
+                     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:106:9: note: in expansion of macro 'DeviceId'
+     u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize)
+         ^~~~~~~~
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+18:48:24 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'XDcfgInterruptExample':
+../src/ZyNCAP_pr.c:138:11: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(IntcInstPtr, DcfgInstPtr, DcfgIntrId);
+           ^~~~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:143:40: error: 'DcfgIntrHandler' undeclared (first use in this function)
+  XDcfg_SetHandler(DcfgInstPtr, (void *)DcfgIntrHandler, DcfgInstPtr);
+                                        ^~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:143:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/ZyNCAP_pr.c:160:23: error: 'SLCR_PCAP_CLK_CTRL' undeclared (first use in this function)
+  StatusReg = Xil_In32(SLCR_PCAP_CLK_CTRL);
+                       ^~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:161:20: error: 'SLCR_PCAP_CLK_CTRL_EN_MASK' undeclared (first use in this function)
+  if (!(StatusReg & SLCR_PCAP_CLK_CTRL_EN_MASK)) {
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:162:13: error: 'SLCR_UNLOCK' undeclared (first use in this function)
+   Xil_Out32(SLCR_UNLOCK, SLCR_UNLOCK_VAL);
+             ^~~~~~~~~~~
+../src/ZyNCAP_pr.c:162:26: error: 'SLCR_UNLOCK_VAL' undeclared (first use in this function)
+   Xil_Out32(SLCR_UNLOCK, SLCR_UNLOCK_VAL);
+                          ^~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:165:26: error: 'SLCR_LOCK_VAL' undeclared (first use in this function)
+   Xil_Out32(SLCR_UNLOCK, SLCR_LOCK_VAL);
+                          ^~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:173:13: error: 'SLCR_LVL_SHFTR_EN' undeclared (first use in this function)
+   Xil_Out32(SLCR_LVL_SHFTR_EN, 0xA);
+             ^~~~~~~~~~~~~~~~~
+../src/ZyNCAP_pr.c:174:13: error: 'SLCR_LOCK' undeclared (first use in this function)
+   Xil_Out32(SLCR_LOCK, SLCR_LOCK_VAL);
+             ^~~~~~~~~
+make: *** [src/subdir.mk:59: src/ZyNCAP_pr.o] Error 1
+18:48:38 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:49:17 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c:187:72: error: unknown type name 'X'
+     u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize, X)
+                                                                        ^
+../src/devcfg_intr.c:378:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+ static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:339:13: warning: 'DcfgIntrHandler' defined but not used [-Wunused-function]
+ static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus)
+             ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:49:45 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c:186:5: error: conflicting types for 'XDcfgInterruptExample'
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:124:5: note: previous declaration of 'XDcfgInterruptExample' was here
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
+     ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:50:39 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+../src/ZyNCAP_pr.c: In function 'main':
+../src/ZyNCAP_pr.c:178:11: warning: implicit declaration of function 'XDcfgInterruptExample' [-Wimplicit-function-declaration]
+  Status = XDcfgInterruptExample(&IntcInstance, &DcfgInstance, DCFG_DEVICE_ID, DCFG_INTR_ID, 0x00200000, fileSize);
+           ^~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c:186:5: error: conflicting types for 'XDcfgInterruptExample'
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:124:5: note: previous declaration of 'XDcfgInterruptExample' was here
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
+     ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:51:00 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c:186:5: error: conflicting types for 'XDcfgInterruptExample'
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:124:5: note: previous declaration of 'XDcfgInterruptExample' was here
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
+     ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:51:14 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c:187:72: error: unknown type name 'X'
+     u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize, X)
+                                                                        ^
+../src/devcfg_intr.c:378:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+ static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:339:13: warning: 'DcfgIntrHandler' defined but not used [-Wunused-function]
+ static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus)
+             ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:51:23 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:52:22 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c:187:72: error: unknown type name 'XScuTimer'
+     u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize, XScuTimer *Timer)
+                                                                        ^~~~~~~~~
+../src/devcfg_intr.c:378:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+ static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:339:13: warning: 'DcfgIntrHandler' defined but not used [-Wunused-function]
+ static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus)
+             ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:52:37 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c:187:5: error: conflicting types for 'XDcfgInterruptExample'
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:125:5: note: previous declaration of 'XDcfgInterruptExample' was here
+ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
+     ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:52:55 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:53:38 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ZyNCAP_pr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+Finished building: ../src/ZyNCAP_pr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162476	   4260	 148800	 315536	  4d090	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:54:35 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscutimer.h:117:0,
+                 from ../src/devcfg_intr.c:79:
+../src/devcfg_intr.c: In function 'XDcfgInterruptExample':
+../src/devcfg_intr.c:295:22: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
+                      ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xscutimer_hw.h:276:13: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+             ^~~~~~~~
+../src/devcfg_intr.c:295:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
+  ^~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:295:22: note: each undeclared identifier is reported only once for each function it appears in
+  XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
+                      ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xscutimer_hw.h:276:13: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+             ^~~~~~~~
+../src/devcfg_intr.c:295:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
+  ^~~~~~~~~~~~~~~~~~~
+../src/devcfg_intr.c:195:13: warning: variable 'delay1' set but not used [-Wunused-but-set-variable]
+  u32 delay, delay1;
+             ^~~~~~
+../src/devcfg_intr.c:195:6: warning: unused variable 'delay' [-Wunused-variable]
+  u32 delay, delay1;
+      ^~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:54:43 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c: In function 'XDcfgInterruptExample':
+../src/devcfg_intr.c:195:13: warning: variable 'delay1' set but not used [-Wunused-but-set-variable]
+  u32 delay, delay1;
+             ^~~~~~
+../src/devcfg_intr.c:195:6: warning: unused variable 'delay' [-Wunused-variable]
+  u32 delay, delay1;
+      ^~~~~
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162540	   4260	 148800	 315600	  4d0d0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:55:14 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c: In function 'XDcfgInterruptExample':
+../src/devcfg_intr.c:195:13: warning: variable 'delay1' set but not used [-Wunused-but-set-variable]
+  u32 delay, delay1;
+             ^~~~~~
+../src/devcfg_intr.c:195:6: warning: unused variable 'delay' [-Wunused-variable]
+  u32 delay, delay1;
+      ^~~~~
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162540	   4260	 148800	 315600	  4d0d0	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:55:36 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c: In function 'XDcfgInterruptExample':
+../src/devcfg_intr.c:319:65: error: 'fileSize' undeclared (first use in this function)
+  xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (fileSize*TimerClock)/delay);
+                                                                 ^~~~~~~~
+../src/devcfg_intr.c:319:65: note: each undeclared identifier is reported only once for each function it appears in
+../src/devcfg_intr.c:319:74: error: 'TimerClock' undeclared (first use in this function)
+  xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (fileSize*TimerClock)/delay);
+                                                                          ^~~~~~~~~~
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:55:42 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c: In function 'XDcfgInterruptExample':
+../src/devcfg_intr.c:319:79: error: 'TimerClock' undeclared (first use in this function)
+  xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (bitstreamSize*TimerClock)/delay);
+                                                                               ^~~~~~~~~~
+../src/devcfg_intr.c:319:79: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:56:01 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/devcfg_intr.o:(.data+0x0): multiple definition of `TimerClock'
+./src/ZyNCAP_pr.o:(.data+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile:41: zyn_test.elf] Error 1
+18:56:10 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+../src/devcfg_intr.c: In function 'XDcfgInterruptExample':
+../src/devcfg_intr.c:322:79: error: 'TimerClock' undeclared (first use in this function)
+  xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (bitstreamSize*TimerClock)/delay);
+                                                                               ^~~~~~~~~~
+../src/devcfg_intr.c:322:79: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:59: src/devcfg_intr.o] Error 1
+18:56:20 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162716	   4260	 148800	 315776	  4d180	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:56:25 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162716	   4260	 148800	 315776	  4d180	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:56:50 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:57:55 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162716	   4260	 148800	 315776	  4d180	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:58:04 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:58:40 **** Auto Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/devcfg_intr.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
+Finished building: ../src/devcfg_intr.c
+ 
+Building target: zyn_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zyn_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162716	   4260	 148800	 315776	  4d180	zyn_test.elf
+Finished building: zyn_test.elf.size
+ 
+18:58:43 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:58:02 **** Incremental Build of configuration Debug for project zyn_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+20:58:30 **** Incremental Build of configuration Debug for project zyn_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  

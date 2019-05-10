@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  3 13:00:19 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May  9 14:58:41 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -69,9 +69,9 @@
         <CONNECTION INSTANCE="zycap_0" PORT="Lcl_M_AXIS_MM2S_TREADY"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="leds_0" RIGHT="0" SIGIS="undef" SIGNAME="partial_led_0_leds">
+    <PORT DIR="O" LEFT="3" NAME="leds_0" RIGHT="0" SIGIS="undef" SIGNAME="partial_led_test_0_leds">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="partial_led_0" PORT="leds"/>
+        <CONNECTION INSTANCE="partial_led_test_0" PORT="leds"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -3827,97 +3827,97 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_awaddr"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="2" NAME="M02_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_awprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_awprot"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_awvalid"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_awready"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_awready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_wdata"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="M02_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_wstrb"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_wvalid"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_wready"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_wready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_bresp"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_bvalid"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_bready"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_bready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_araddr"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="2" NAME="M02_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_arprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_arprot"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_arvalid"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_arready"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_arready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_rdata"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_rresp"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_rvalid"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef" SIGNAME="axi_mem_intercon_M02_AXI_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_rready"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5896,7 +5896,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/partial_led_0" HWVERSION="1.0" INSTANCE="partial_led_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="partial_led" VLNV="user.org:user:partial_led:1.0">
+    <MODULE FULLNAME="/partial_led_test_0" HWVERSION="1.0" INSTANCE="partial_led_test_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="partial_led_test" VLNV="edu.sg:user:partial_led_test:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -5904,13 +5904,15 @@
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_partial_led_0_0"/>
+        <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0xFFFFFFFF"/>
+        <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_partial_led_test_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-        <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x43C00000"/>
-        <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x43C0FFFF"/>
+        <PARAMETER NAME="0" VALUE="0x43C00000"/>
+        <PARAMETER NAME="0" VALUE="0x43C0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="3" NAME="leds" RIGHT="0" SIGIS="undef" SIGNAME="partial_led_0_leds">
+        <PORT DIR="O" LEFT="3" NAME="leds" RIGHT="0" SIGIS="undef" SIGNAME="partial_led_test_0_leds">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="leds_0"/>
           </CONNECTIONS>
@@ -6023,8 +6025,6 @@
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="axi_mem_intercon_M02_AXI" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="WIZ_DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="WIZ_NUM_REG" VALUE="4"/>
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
@@ -7545,7 +7545,6 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_ACLK"/>
             <CONNECTION INSTANCE="rst_processing_system7_0_50M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="zycap_0" PORT="s_axi_lite_aclk"/>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ACLK"/>
@@ -7556,6 +7555,7 @@
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M01_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M03_ACLK"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -7866,7 +7866,7 @@
       </BUSINTERFACES>
       <MEMORYMAP>
         <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x40000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x4000FFFF" INSTANCE="axi_bram_ctrl_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="S_AXI"/>
-        <MEMRANGE ADDRESSBLOCK="S00_AXI_reg" BASENAME="C_S00_AXI_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_S00_AXI_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="partial_led_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S00_AXI"/>
+        <MEMRANGE ADDRESSBLOCK="S00_AXI_reg" BASENAME="0" BASEVALUE="0x43C00000" HIGHNAME="0" HIGHVALUE="0x43C0FFFF" INSTANCE="partial_led_test_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S00_AXI"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C10000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C1FFFF" INSTANCE="zycap_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI_LITE"/>
         <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x60000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x6000FFFF" INSTANCE="axi_bram_ctrl_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x82000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x8200FFFF" INSTANCE="axi_bram_ctrl_2" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP1" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="S_AXI"/>
@@ -7874,7 +7874,7 @@
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="axi_bram_ctrl_0"/>
-        <PERIPHERAL INSTANCE="partial_led_0"/>
+        <PERIPHERAL INSTANCE="partial_led_test_0"/>
         <PERIPHERAL INSTANCE="zycap_0"/>
         <PERIPHERAL INSTANCE="axi_bram_ctrl_1"/>
         <PERIPHERAL INSTANCE="axi_bram_ctrl_2"/>
@@ -7931,7 +7931,6 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_3" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_smc" PORT="aresetn"/>
             <CONNECTION INSTANCE="zycap_0" PORT="axi_resetn"/>
-            <CONNECTION INSTANCE="partial_led_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S00_ARESETN"/>
@@ -7940,6 +7939,7 @@
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M01_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M03_ARESETN"/>
+            <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

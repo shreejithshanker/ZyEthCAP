@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557312631275_1" label="pynq_zycap" name="pynq_zycap">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles/.project" type="1"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/standalone_bsp_0" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/wrapper_hw_platform_1" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/zyn_bypass" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/zyn_pcap" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/zyn_test" type="4"/>
-</workingSet>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557312581258_0" label="Window Working Set" name="Aggregate for window 1557312581257"/>
-<mruList name="pynq_zycap"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1557415792202_0" label="Window Working Set" name="Aggregate for window 1557415792201"/>
 </workingSetManager>

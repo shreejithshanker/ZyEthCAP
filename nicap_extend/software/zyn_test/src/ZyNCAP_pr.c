@@ -16,11 +16,13 @@
 #include "xil_exception.h"
 #include "xscugic.h"
 #include "xdevcfg.h"
+#include "devcfg.h"
+
 
 #define EMACPS_DEVICE_ID	XPAR_XEMACPS_0_DEVICE_ID
 #define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define EMACPS_IRPT_INTR	XPS_GEM0_INT_ID
-#define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
+//#define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0x43C00000
 #define DeviceId 			XPAR_XUARTPS_0_DEVICE_ID
 
 #define DCFG_DEVICE_ID		XPAR_XDCFG_0_DEVICE_ID
@@ -41,12 +43,13 @@ volatile int DmaPcapDone;
 volatile int FpgaProgrammed;
 
 int EmacFrTxSetup(XEmacPs *EmacPsInstancePtr);
+//int XDcfg_TransferBitfile(XDcfg *Instance, u32 StartAddress, u32 WordLength);
 
-int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000;
+int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000; // units in microseconds
 //int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2;
 
 int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
-				u16 deviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize);
+				u16 deviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize, XScuTimer * Timer);
 
 static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
 {
@@ -168,13 +171,24 @@ int main()
 		return XST_FAILURE;
 	}
 
-	Status = XDcfgInterruptExample(&IntcInstance, &DcfgInstance, DCFG_DEVICE_ID, DCFG_INTR_ID, 0x00200000, fileSize);
+	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
+	delay1 = XScuTimer_GetCounterValue(TimerInstancePtr);
+	XScuTimer_Start(TimerInstancePtr);
+
+	Status = XDcfgInterruptExample(&IntcInstance, &DcfgInstance, DCFG_DEVICE_ID, DCFG_INTR_ID, 0x00200000, fileSize, &Timer);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Dcfg Interrupt Example Test Failed\r\n");
 		return XST_FAILURE;
 	}
+//	Status = XDcfg_TransferBitfile(&DcfgInstance, 0x00200000, fileSize);
+//	if (Status != XST_SUCCESS) {
+//		xil_printf("Dcfg Interrupt Example Test Failed\r\n");
+//		return XST_FAILURE;
+//	}
 
-	xil_printf("Successfully ran Dcfg Interrupt Example Test\r\n");
+	XScuTimer_Stop(TimerInstancePtr);
+	delay =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
+	xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (fileSize*TimerClock)/delay);
 
 	/***************************************************** ZyCAP (without Pre-Fetch) Initial Test ************************************************/
 
@@ -251,6 +265,8 @@ int main()
 	xil_printf("Reconfiguration speed (Prefetch): %d MBytes/sec\r\n", (Status*TimerClock)/delay);
 	//Prefetch the config1 bitstream for better ICAP performance
 	RecvCount = 0;
+
+
 	xil_printf("Check PRR Registers? ");
 	while (RecvCount < (sizeof("Yes") - 1)) {
 				/* Transmit the data */
@@ -269,6 +285,7 @@ int main()
 		return XST_FAILURE;
 	}*/
 
+	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
 
 
 	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
@@ -283,10 +300,12 @@ int main()
 							   &recvbuffer[RecvCount], sizeof("Yes")-RecvCount);
 	}
 
+
+	Status = Prefetch_PR_Bitstream("mode2.bin");
+	u32 delay2;
+
 	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
 	delay1 = XScuTimer_GetCounterValue(TimerInstancePtr);
-	Status = Prefetch_PR_Bitstream("mode2.bin");
-
 	XScuTimer_Start(TimerInstancePtr);
 	// Send Ethernet Frame
 	Status = ppu_test(&ps7_ethernet_0);
@@ -295,11 +314,18 @@ int main()
 	{
 		// Wait here
 	}
-	delay =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
 	XScuTimer_Stop(TimerInstancePtr);
-//	xil_printf("Mode Name received is %s",modeName);
-	u32 delay2;
+
+	delay2 =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
+
+//	delay =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
+	xil_printf("Mode Name received is %s\r\n",modeName);
+//	XScuTimer_Start(TimerInstancePtr);
+
+	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
+	delay1 = XScuTimer_GetCounterValue(TimerInstancePtr);
 	XScuTimer_Start(TimerInstancePtr);
+
 	Status = Net_Bitstream();
     if (Status == XST_FAILURE)
     {
@@ -308,13 +334,17 @@ int main()
     }
 	//synchronize the interrupt
 	Sync_Zycap();
-	delay2 =  delay - XScuTimer_GetCounterValue(TimerInstancePtr);
+
+
 	XScuTimer_Stop(TimerInstancePtr);
-	xil_printf("Time taken for transmission to interrupt %d sec\r\n",delay);
-	xil_printf("Performance with pre-fetching and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/delay2);
-	xil_printf("Time taken: %d sec\r\n", delay2);
-	xil_printf("%d\r\n",Status);
-	xil_printf("%d\r\n",TimerClock);
+	delay =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
+
+//	delay2 =  delay - XScuTimer_GetCounterValue(TimerInstancePtr);
+	xil_printf("Time taken for transmission to interrupt %d usec\r\n",(delay/TimerClock));
+	xil_printf("Performance with pre-fetching and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/(delay+delay2));
+	xil_printf("Time taken: %d sec\r\n", (delay2));
+//	xil_printf("%d\r\n",Status);
+//	xil_printf("%d\r\n",TimerClock);
 
 	 Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
 	 rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);

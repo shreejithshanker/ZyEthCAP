@@ -373,13 +373,13 @@
 
 /******************************************************************/
 
-/* Definitions for driver PARTIAL_LED */
-#define XPAR_PARTIAL_LED_NUM_INSTANCES 1
+/* Definitions for driver PARTIAL_LED_TEST */
+#define XPAR_PARTIAL_LED_TEST_NUM_INSTANCES 1
 
-/* Definitions for peripheral PARTIAL_LED_0 */
-#define XPAR_PARTIAL_LED_0_DEVICE_ID 0
-#define XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR 0x43C00000
-#define XPAR_PARTIAL_LED_0_S00_AXI_HIGHADDR 0x43C0FFFF
+/* Definitions for peripheral PARTIAL_LED_TEST_0 */
+#define XPAR_PARTIAL_LED_TEST_0_DEVICE_ID 0
+#define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0xFFFFFFFF
+#define XPAR_PARTIAL_LED_TEST_0_S00_AXI_HIGHADDR 0x00000000
 
 
 /******************************************************************/

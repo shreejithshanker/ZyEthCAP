@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Fri May  3 13:00:17 2019
-//Host        : alex-warc running 64-bit Ubuntu 18.04.2 LTS
+//Date        : Thu May  9 14:58:38 2019
+//Host        : alex-pc running 64-bit Ubuntu 18.10
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -332,7 +332,7 @@ module design_1
   wire axi_smc_M00_AXI_RREADY;
   wire [1:0]axi_smc_M00_AXI_RRESP;
   wire axi_smc_M00_AXI_RVALID;
-  wire [3:0]partial_led_0_leds;
+  wire [3:0]partial_led_test_0_leds;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -471,7 +471,7 @@ module design_1
   assign Lcl_M_AXIS_MM2S_TVALID_0_1 = Lcl_M_AXIS_MM2S_TVALID_0;
   assign axi_bram_ctrl_2_BRAM_PORTA_DOUT = BRAM_PORTA_dout[31:0];
   assign axi_bram_ctrl_3_BRAM_PORTA_DOUT = BRAM_PORTA_1_dout[31:0];
-  assign leds_0[3:0] = partial_led_0_leds;
+  assign leds_0[3:0] = partial_led_test_0_leds;
   assign useLcl_0_1 = useLcl_0;
   (* BMM_INFO_ADDRESS_SPACE = "byte  0x40000000 32 > design_1 blk_mem_gen_0" *) 
   (* KEEP_HIERARCHY = "yes" *) 
@@ -1007,8 +1007,8 @@ module design_1
         .rstb(axi_bram_ctrl_1_BRAM_PORTB_RST),
         .wea(axi_bram_ctrl_1_BRAM_PORTA_WE),
         .web(axi_bram_ctrl_1_BRAM_PORTB_WE));
-  design_1_partial_led_0_0 partial_led_0
-       (.leds(partial_led_0_leds),
+  design_1_partial_led_test_0_0 partial_led_test_0
+       (.leds(partial_led_test_0_leds),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_mem_intercon_M02_AXI_ARADDR[3:0]),
         .s00_axi_aresetn(rst_processing_system7_0_50M_peripheral_aresetn),

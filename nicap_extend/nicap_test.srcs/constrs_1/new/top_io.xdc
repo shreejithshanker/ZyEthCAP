@@ -74,8 +74,12 @@ set_property MARK_DEBUG true [get_nets {eth_bridge/config_match_reg_reg_n_0_[7]}
 set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/partial_led_test_v1_0_0/inst/partial_led_test_v1_0_S00_AXI_inst]
 
 set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/partial_led_0]
+
 create_pblock pblock_partial_led_0
 add_cells_to_pblock [get_pblocks pblock_partial_led_0] [get_cells -quiet [list design_1_wrapper/design_1_i/partial_led_0]]
-resize_pblock [get_pblocks pblock_partial_led_0] -add {SLICE_X54Y71:SLICE_X67Y97}
+resize_pblock [get_pblocks pblock_partial_led_0] -add {SLICE_X80Y87:SLICE_X99Y96}
+resize_pblock [get_pblocks pblock_partial_led_0] -add {DSP48_X3Y36:DSP48_X3Y37}
+resize_pblock [get_pblocks pblock_partial_led_0] -add {RAMB18_X4Y36:RAMB18_X4Y37}
+resize_pblock [get_pblocks pblock_partial_led_0] -add {RAMB36_X4Y18:RAMB36_X4Y18}
 set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_partial_led_0]
 set_property SNAPPING_MODE ON [get_pblocks pblock_partial_led_0]

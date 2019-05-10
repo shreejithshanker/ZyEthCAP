@@ -401,7 +401,8 @@
       else
         begin
             if (&bitflip) begin
-                leds <= leds + 1'b1;
+//                leds <= leds + 1'b1;
+                leds <= 1'b1;
                 bitflip <= 'd0;
             end
             else begin

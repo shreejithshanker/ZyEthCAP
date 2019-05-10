@@ -76,6 +76,8 @@
 #include "xil_exception.h"
 #include "xscugic.h"
 #include "xdevcfg.h"
+#include "xscutimer.h"
+
 
 /************************** Constant Definitions *****************************/
 
@@ -121,12 +123,14 @@
 /************************** Function Prototypes ******************************/
 
 int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
-				u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize);
+				u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize, XScuTimer *Timer);
 static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
 				XDcfg *DcfgInstPtr,
 				u16 DcfgIntrId);
 
 static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus);
+
+int TimerClock;
 
 /************************** Variable Definitions *****************************/
 
@@ -183,12 +187,14 @@ volatile int FpgaProgrammed;
 *
 ****************************************************************************/
 int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
-				u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize)
+				u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize, XScuTimer *Timer)
 {
 	int Status;
 	u32 IntrStsReg = 0;
 	u32 StatusReg;
 	u32 PartialCfg = 1;
+
+	u32 delay, delay1;
 
 	XDcfg_Config *ConfigPtr;
 
@@ -287,15 +293,25 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 	/*
 	 * Download bitstream in non secure mode
 	 */
+
+	XScuTimer_LoadTimer(Timer, 0xFFFFFFFF);
+	delay1 = XScuTimer_GetCounterValue(Timer);
+	XScuTimer_Start(Timer);
+
 	XDcfg_Transfer(DcfgInstPtr, (u8 *)bitstreamLoc,
 			bitstreamSize,
 			(u8 *)XDCFG_DMA_INVALID_ADDRESS,
 			0, XDCFG_NON_SECURE_PCAP_WRITE);
 
+
+
 	while (!DmaDone);
 
 	if (PartialCfg) {
 		while (!DmaPcapDone);
+		XScuTimer_Stop(Timer);
+		delay =  delay1 - XScuTimer_GetCounterValue(Timer);
+		xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (bitstreamSize*TimerClock)/delay);
 	} else {
 		while (!FpgaProgrammed);
 		/*
@@ -306,7 +322,10 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 		Xil_Out32(SLCR_LOCK, SLCR_LOCK_VAL);
 	}
 
+
+
 	Status = XST_SUCCESS;
+
 
 	XDcfg_IntrDisable(DcfgInstPtr, (XDCFG_IXR_DMA_DONE_MASK |
 					XDCFG_IXR_D_P_DONE_MASK |

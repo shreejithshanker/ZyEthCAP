@@ -13,58 +13,69 @@ preplace port EnIn -pg 1 -y -180 -defaultsOSRD
 preplace port BRAM_PORTA -pg 1 -y 320 -defaultsOSRD
 preplace portBus leds_0 -pg 1 -y -50 -defaultsOSRD
 preplace portBus Lcl_M_AXIS_MM2S_TDATA_0 -pg 1 -y 100 -defaultsOSRD
-preplace inst axi_bram_ctrl_2 -pg 1 -lvl 4 -y 300 -defaultsOSRD
-preplace inst axi_bram_ctrl_3 -pg 1 -lvl 4 -y 470 -defaultsOSRD
-preplace inst partial_led_test_0 -pg 1 -lvl 4 -y -230 -defaultsOSRD
-preplace inst axi_mem_intercon_1 -pg 1 -lvl 3 -y 310 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 3 -y 100 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 1 -y -40 -defaultsOSRD
-preplace inst rst_processing_system7_0_50M -pg 1 -lvl 2 -y 640 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 60 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -y 180 -defaultsOSRD -resize 120 60
-preplace inst zycap_0 -pg 1 -lvl 2 -y 120 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 3 -y -160 -defaultsOSRD
-preplace inst axi_bram_ctrl_0 -pg 1 -lvl 4 -y 40 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 2 -y -250 -defaultsOSRD
-preplace inst axi_bram_ctrl_1 -pg 1 -lvl 4 -y 170 -defaultsOSRD -resize 200 100
-preplace netloc processing_system7_0_DDR 1 2 4 710J -350 NJ -350 NJ -350 1650J
-preplace netloc axi_mem_intercon_M01_AXI 1 3 1 1090
-preplace netloc Lcl_M_AXIS_MM2S_TVALID_0_1 1 0 2 NJ 140 NJ
-preplace netloc useLcl_0_1 1 0 2 NJ 160 NJ
-preplace netloc zycap_0_mm2s_introut 1 0 3 -60 -100 NJ -100 700
-preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 2 1 750
-preplace netloc axi_mem_intercon_M03_AXI 1 1 3 210 10 740J 20 1050
-preplace netloc axi_mem_intercon_1_M00_AXI 1 3 1 1050
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 710
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 1410
-preplace netloc Lcl_M_AXIS_MM2S_TDATA_0_1 1 0 2 NJ 100 NJ
-preplace netloc axi_smc_M00_AXI 1 1 3 210 -380 NJ -380 1060
-preplace netloc zycap_0_M_AXI_MM2S 1 2 1 710
-preplace netloc processing_system7_0_M_AXI_GP1 1 2 1 720
-preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 4 1 1400
-preplace netloc partial_led_test_0_leds 1 4 2 NJ -230 1630
-preplace netloc Lcl_M_AXIS_MM2S_TLAST_0_1 1 0 2 NJ 120 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 180 -390 700
-preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 4 2 NJ 300 1640J
-preplace netloc axi_mem_intercon_1_M01_AXI 1 3 1 1050
-preplace netloc axi_mem_intercon_M00_AXI 1 3 1 1110
-preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 3 200 0 760 30 1100
-preplace netloc axi_mem_intercon_M02_AXI 1 3 1 1070
-preplace netloc xlconcat_0_dout 1 1 1 170
-preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 4 2 NJ 470 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 2 4 720J -340 NJ -340 NJ -340 1640J
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 190 -360 730 -360 1080
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 4 1 1400
-preplace netloc zycap_0_Lcl_M_AXIS_MM2S_TREADY 1 2 4 710J 170 1060J 370 1410J 120 NJ
-preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 4 1 1400
-preplace netloc EnIn_1 1 0 1 -70
-levelinfo -pg 1 -90 70 470 910 1260 1520 1670 -top -400 -bot 1540
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 5 -y 300 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -y 370 -defaultsOSRD
+preplace inst axi_bram_ctrl_3 -pg 1 -lvl 5 -y 470 -defaultsOSRD
+preplace inst partial_led_test_0 -pg 1 -lvl 5 -y -230 -defaultsOSRD
+preplace inst axi_mem_intercon_1 -pg 1 -lvl 4 -y 390 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -y 160 -defaultsOSRD
+preplace inst aes_0 -pg 1 -lvl 1 -y 370 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -y -40 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 3 -y 740 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -y 60 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 6 -y 180 -defaultsOSRD -resize 120 60
+preplace inst zycap_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -y -160 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -y 40 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -y 390 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -y -250 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 5 -y 170 -defaultsOSRD -resize 200 100
+preplace netloc processing_system7_0_DDR 1 3 4 1210J -440 NJ -440 NJ -440 2230J
+preplace netloc axi_mem_intercon_M01_AXI 1 4 1 1610
+preplace netloc Lcl_M_AXIS_MM2S_TVALID_0_1 1 0 3 -300J 90 NJ 90 NJ
+preplace netloc useLcl_0_1 1 0 3 -290J 110 NJ 110 NJ
+preplace netloc zycap_0_mm2s_introut 1 1 3 180J 30 650J -40 1170
+preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 3 1 1280
+preplace netloc axi_mem_intercon_M03_AXI 1 2 3 670 -480 NJ -480 1580
+preplace netloc axi_mem_intercon_1_M00_AXI 1 4 1 1640
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1230
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 1930
+preplace netloc Lcl_M_AXIS_MM2S_TDATA_0_1 1 0 3 -320J 50 NJ 50 NJ
+preplace netloc axi_mem_intercon_1_M02_AXI 1 2 3 680 -470 NJ -470 1590
+preplace netloc axi_smc_M00_AXI 1 2 3 690 -460 NJ -460 1560
+preplace netloc zycap_0_M_AXI_MM2S 1 3 1 1210
+preplace netloc processing_system7_0_M_AXI_GP1 1 3 1 1230
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 5 1 1920
+preplace netloc partial_led_test_0_leds 1 5 2 NJ -230 2200
+preplace netloc Lcl_M_AXIS_MM2S_TLAST_0_1 1 0 3 -310J 70 NJ 70 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 2 690 -130 1170
+preplace netloc axi_dma_0_M_AXI_SG 1 3 1 1260
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 5 2 NJ 300 2210J
+preplace netloc axi_mem_intercon_1_M01_AXI 1 4 1 1610
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1640
+preplace netloc aes_0_aes_done 1 1 1 170
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 0 5 -250 200 N 200 660 -50 1240 -510 1630
+preplace netloc axi_mem_intercon_M02_AXI 1 4 1 1600
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1190
+preplace netloc xlconcat_0_dout 1 2 1 630
+preplace netloc aes_0_M00_AXIS 1 1 2 180J 280 N
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 5 2 NJ 470 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 3 4 1220J -430 NJ -430 NJ -430 2210J
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1250
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -260 190 N 190 640 -140 1270 -500 1620
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 0 4 -270 -430 NJ -430 NJ -430 1180
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 5 1 1930
+preplace netloc zycap_0_Lcl_M_AXIS_MM2S_TREADY 1 3 4 1200J -520 NJ -520 NJ -520 2220J
+preplace netloc axi_mem_intercon_1_M03_AXI 1 0 5 -280 -450 NJ -450 NJ -450 NJ -450 1570
+preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 5 1 1920
+preplace netloc EnIn_1 1 0 2 N -180 170
+levelinfo -pg 1 -340 -40 460 930 1420 1780 2090 2310 -top -620 -bot 1540
 ",
 }
 {
-   da_axi4_cnt: "16",
+   da_axi4_cnt: "21",
    da_board_cnt: "1",
    da_bram_cntlr_cnt: "4",
-   da_clkrst_cnt: "2",
+   da_clkrst_cnt: "4",
    da_ps7_cnt: "3",
 }

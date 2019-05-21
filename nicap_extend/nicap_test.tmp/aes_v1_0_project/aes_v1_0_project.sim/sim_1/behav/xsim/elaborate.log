@@ -1,0 +1,53 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 898171cc534247e5aa38bad51df06093 --incr --debug typical --relax --mt 8 -L axis_infrastructure_v1_1_0 -L axis_register_slice_v1_1_15 -L axis_dwidth_converter_v1_1_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot aes_axis_tb_behav xil_defaultlib.aes_axis_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.types
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.math
+Compiling package xil_defaultlib.sbox
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.aes_v1_0_S00_AXI_default
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module xil_defaultlib.axis_dwidth_converter_1
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module xil_defaultlib.axis_dwidth_converter_0
+Compiling architecture behavioral of entity xil_defaultlib.cipher_cu [cipher_cu_default]
+Compiling architecture behavioral of entity xil_defaultlib.state_reg [state_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.cipher [cipher_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.encryption_module [encryption_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.inv_cipher_cu [inv_cipher_cu_default]
+Compiling architecture behavioral of entity xil_defaultlib.inv_cipher [inv_cipher_default]
+Compiling architecture behavioral of entity xil_defaultlib.decrementor [decrementor_default]
+Compiling architecture behavioral of entity xil_defaultlib.decryption_module [decryption_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.key_expander [key_expander_default]
+Compiling architecture behavioral of entity xil_defaultlib.dp_ram [dp_ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.key_expansion_cu [key_expansion_cu_default]
+Compiling architecture structural of entity xil_defaultlib.key_expansion [key_expansion_default]
+Compiling architecture behavioral of entity xil_defaultlib.aes_module_cu [aes_module_cu_default]
+Compiling architecture behavioral of entity xil_defaultlib.aes_module [aes_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.aes_wrapper [aes_wrapper_default]
+Compiling module xil_defaultlib.aes_v1_0
+Compiling module xil_defaultlib.aes_axis_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_axis_tb_behav

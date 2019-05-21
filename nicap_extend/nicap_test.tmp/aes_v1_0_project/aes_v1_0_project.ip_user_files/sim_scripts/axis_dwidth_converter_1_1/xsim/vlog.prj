@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../ipstatic/hdl" \
+"../../../../../../../../zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_1_1/sim/axis_dwidth_converter_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

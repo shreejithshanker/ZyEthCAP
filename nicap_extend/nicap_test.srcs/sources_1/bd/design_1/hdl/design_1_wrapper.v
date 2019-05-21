@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Mon May 13 11:50:37 2019
+//Date        : Wed May 15 14:59:47 2019
 //Host        : alex-pc running 64-bit Ubuntu 18.10
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -51,6 +51,8 @@ module design_1_wrapper
     Lcl_M_AXIS_MM2S_TREADY_0,
     Lcl_M_AXIS_MM2S_TVALID_0,
     leds_0,
+    status_0,
+    status_1,
     useLcl_0);
   output [15:0]BRAM_PORTA_1_addr;
   output BRAM_PORTA_1_clk;
@@ -93,6 +95,8 @@ module design_1_wrapper
   output Lcl_M_AXIS_MM2S_TREADY_0;
   input Lcl_M_AXIS_MM2S_TVALID_0;
   output [3:0]leds_0;
+  output status_0;
+  output status_1;
   input useLcl_0;
 
   wire [15:0]BRAM_PORTA_1_addr;
@@ -136,6 +140,8 @@ module design_1_wrapper
   wire Lcl_M_AXIS_MM2S_TREADY_0;
   wire Lcl_M_AXIS_MM2S_TVALID_0;
   wire [3:0]leds_0;
+  wire status_0;
+  wire status_1;
   wire useLcl_0;
 
   design_1 design_1_i
@@ -180,5 +186,7 @@ module design_1_wrapper
         .Lcl_M_AXIS_MM2S_TREADY_0(Lcl_M_AXIS_MM2S_TREADY_0),
         .Lcl_M_AXIS_MM2S_TVALID_0(Lcl_M_AXIS_MM2S_TVALID_0),
         .leds_0(leds_0),
+        .status_0(status_0),
+        .status_1(status_1),
         .useLcl_0(useLcl_0));
 endmodule

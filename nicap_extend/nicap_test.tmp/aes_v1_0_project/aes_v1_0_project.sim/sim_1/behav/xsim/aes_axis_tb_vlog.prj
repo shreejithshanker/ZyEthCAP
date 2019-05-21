@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../aes_v1_0_project.ip_user_files/ipstatic/hdl" \
+"../../../../../../../../zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_0_1/sim/axis_dwidth_converter_0.v" \
+"../../../../../../../../zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_1_1/sim/axis_dwidth_converter_1.v" \
+"../../../../../../../../zynq-ip-cores/aes_1.0/hdl/aes_v1_0.v" \
+"../../../../../../../../zynq-ip-cores/aes_1.0/hdl/aes_v1_0_S00_AXI.v" \
+"../../../../../../../../zynq-ip-cores/aes_1.0/src/aes_axis_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

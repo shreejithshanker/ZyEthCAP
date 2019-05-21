@@ -6,7 +6,7 @@
 <Project Version="7" Minor="35" Path="/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/partial_led_test_v1_0_project/partial_led_test_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="4b444a0b50a24fcf9fc658eae1dcc877"/>
+    <Option Name="Id" Val="3428f2047e744f26819cd9aea6b00242"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -22,6 +22,9 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="PRFlow" Val="TRUE"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../ip_repo/aes_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../ip_repo/aes_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../zycap_core"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../zynq-ip-cores"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
@@ -59,12 +62,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/src/partial_led_test_v1_0_S00_AXI.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/hdl/partial_led_test_v1_0.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -97,6 +94,19 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
+    <FileSet Name="up" Type="BlockSrcs" RelSrcDir="$PSRCDIR/up">
+      <File Path="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/src/partial_led_test_v1_0_S00_AXI.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="partial_led_test_v1_0_S00_AXI"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/src/partial_led_test_v1_0_S00_AXI.v"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -120,17 +130,47 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
           <Desc>Vivado Synthesis Defaults</Desc>
         </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="up_synth_1" Type="Ft3:Synth" SrcSet="up" Part="xc7z020clg400-1" ConstrsSet="up" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/up_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" PRConfiguration="config_1" ConfigurationChanged="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="up_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="up" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="up_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
           <Desc>Default settings for Implementation.</Desc>
@@ -152,4 +192,16 @@
   <Board>
     <Jumpers/>
   </Board>
+  <PRFlow Version="1" Minor="0">
+    <PartitionDefs>
+      <PartitionDef Name="direction" DefaultRM="up" ModuleName="partial_led_test_v1_0_S00_AXI" LibraryName="xil_defaultlib">
+        <ReconfigModule Name="up" Top="partial_led_test_v1_0_S00_AXI" SrcSet="up" SynthRun="up_synth_1" ImplRun="up_impl_1"/>
+      </PartitionDef>
+    </PartitionDefs>
+    <PRConfigurations>
+      <PRConfiguration Name="config_1" Active="true">
+        <PartitionInstMap PartitionInst="partial_led_test_v1_0_S00_AXI_inst" RM="up"/>
+      </PRConfiguration>
+    </PRConfigurations>
+  </PRFlow>
 </Project>

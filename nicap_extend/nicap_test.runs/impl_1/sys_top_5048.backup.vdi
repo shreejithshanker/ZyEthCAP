@@ -1,0 +1,651 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 15 12:20:35 2019
+# Process ID: 5048
+# Current directory: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1
+# Command line: vivado -log sys_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sys_top.tcl -notrace
+# Log file: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/sys_top.vdi
+# Journal file: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl'
+source sys_top.tcl -notrace
+Command: link_design -top sys_top -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo.dcp' for cell 'eth_bridge/bit_buffer'
+INFO: [Netlist 29-17] Analyzing 1468 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'eth_bridge/arb_fifo/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'eth_bridge/arb_fifo/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'eth_bridge/fifo1/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'eth_bridge/fifo1/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'eth_bridge/fifo2/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'eth_bridge/fifo2/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0_board.xdc] for cell 'design_1_wrapper/design_1_i/rst_processing_system7_0_50M/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0_board.xdc] for cell 'design_1_wrapper/design_1_i/rst_processing_system7_0_50M/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0.xdc] for cell 'design_1_wrapper/design_1_i/rst_processing_system7_0_50M/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0.xdc] for cell 'design_1_wrapper/design_1_i/rst_processing_system7_0_50M/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_2/design_1_processing_system7_0_2.xdc] for cell 'design_1_wrapper/design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_2/design_1_processing_system7_0_2.xdc] for cell 'design_1_wrapper/design_1_i/processing_system7_0/inst'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_zycap_0_0/src/zycap_axi_dma_0_0/zycap_axi_dma_0_0.xdc] for cell 'design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_zycap_0_0/src/zycap_axi_dma_0_0/zycap_axi_dma_0_0.xdc] for cell 'design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xdc] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xdc] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo/bit_buffer_fifo.xdc] for cell 'eth_bridge/bit_buffer/inst'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo/bit_buffer_fifo.xdc] for cell 'eth_bridge/bit_buffer/inst'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc]
+WARNING: [Vivado 12-584] No ports matched 'status_0'. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'status_1'. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'eth_bridge/config_frameData_reg_n_0_[16]'. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'eth_bridge/config_frameData_reg_n_0_[29]'. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'design_1_wrapper/design_1_i/partial_led_test_v1_0_0/inst/partial_led_test_v1_0_S00_AXI_inst'. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'design_1_wrapper/design_1_i/partial_led_0'. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc:79]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/new/top_io.xdc]
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:302]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:897]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:1491]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:2309]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:3357]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:4175]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5226]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5820]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:6638]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:7686]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:8504]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc]
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:301]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:895]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:1713]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:2761]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:3579]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc]
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io.xdc]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io.xdc]
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/constraints/top_io.xdc]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/constraints/top_io.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo.dcp'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_zycap_0_0/src/zycap_axi_dma_0_0/zycap_axi_dma_0_0_clocks.xdc] for cell 'design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_zycap_0_0/src/zycap_axi_dma_0_0/zycap_axi_dma_0_0_clocks.xdc] for cell 'design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_clocks.xdc] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_clocks.xdc] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo/bit_buffer_fifo_clocks.xdc] for cell 'eth_bridge/bit_buffer/inst'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo/bit_buffer_fifo_clocks.xdc] for cell 'eth_bridge/bit_buffer/inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst' of design 'design_1' [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst' of design 'design_1' [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr' of design 'design_1' [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd' of design 'design_1' [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_async_clock_and_reset.inst_xpm_cdc_sync_rst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_async_clock_and_reset.inst_xpm_cdc_sync_rst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_wrapper/design_1_i/zycap_0/inst/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_wrapper/design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'sys_top'...
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 45 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 45 instances
+
+13 Infos, 26 Warnings, 7 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:47 . Memory (MB): peak = 2208.574 ; gain = 938.047 ; free physical = 1263 ; free virtual = 17564
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2240.578 ; gain = 32.004 ; free physical = 1257 ; free virtual = 17559
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 12 inverter(s) to 107 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: d95b941d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2240.578 ; gain = 0.000 ; free physical = 1227 ; free virtual = 17530
+INFO: [Opt 31-389] Phase Retarget created 432 cells and removed 542 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 11 inverter(s) to 27 load pin(s).
+Phase 2 Constant propagation | Checksum: 106dbb892
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2240.578 ; gain = 0.000 ; free physical = 1230 ; free virtual = 17533
+INFO: [Opt 31-389] Phase Constant propagation created 336 cells and removed 993 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12d733597
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2240.578 ; gain = 0.000 ; free physical = 1228 ; free virtual = 17531
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2190 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 12d733597
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2240.578 ; gain = 0.000 ; free physical = 1225 ; free virtual = 17530
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 12d733597
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2240.578 ; gain = 0.000 ; free physical = 1225 ; free virtual = 17530
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2240.578 ; gain = 0.000 ; free physical = 1224 ; free virtual = 17529
+Ending Logic Optimization Task | Checksum: 1c53e3090
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2240.578 ; gain = 0.000 ; free physical = 1224 ; free virtual = 17529
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.825 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 42 BRAM(s) out of a total of 58 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 11 WE to EN ports
+Number of BRAM Ports augmented: 41 newly gated: 18 Total Ports: 116
+Ending PowerOpt Patch Enables Task | Checksum: 225a51342
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1165 ; free virtual = 17473
+Ending Power Optimization Task | Checksum: 225a51342
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2682.445 ; gain = 441.867 ; free physical = 1184 ; free virtual = 17493
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Remap
+Phase 1 Remap | Checksum: 15f56839e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1187 ; free virtual = 17496
+INFO: [Opt 31-389] Phase Remap created 0 cells and removed 2 cells
+Ending Logic Optimization Task | Checksum: 15f56839e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1186 ; free virtual = 17496
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 26 Warnings, 7 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 2682.445 ; gain = 473.871 ; free physical = 1186 ; free virtual = 17496
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1181 ; free virtual = 17495
+INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/sys_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1169 ; free virtual = 17486
+INFO: [runtcl-4] Executing : report_drc -file sys_top_drc_opted.rpt -pb sys_top_drc_opted.pb -rpx sys_top_drc_opted.rpx
+Command: report_drc -file sys_top_drc_opted.rpt -pb sys_top_drc_opted.pb -rpx sys_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/sys_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[6] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[0]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[6] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[0]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[7] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[1]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[7] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[1]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[8] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[2]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[8] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[2]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[9] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[3]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_0/ADDRARDADDR[9] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[3]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[6] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[0]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[6] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[0]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[7] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[1]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[7] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[1]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[8] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[2]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[8] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[2]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[9] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[3]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/decryption_module/counter/reg_Q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1 has an input control pin design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/ram_reg_1/ADDRARDADDR[9] (net: design_1_wrapper/design_1_i/aes_0/inst/aes/key_expansion/ram/address_in[3]) which is driven by a register (design_1_wrapper/design_1_i/aes_0/inst/aes/encryption_module/counter/reg_Q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 16 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1154 ; free virtual = 17478
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 121e4b721
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1154 ; free virtual = 17477
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1153 ; free virtual = 17477
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a04a91e1
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1111 ; free virtual = 17440
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 14e413f16
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1082 ; free virtual = 17410
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14e413f16
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1082 ; free virtual = 17410
+Phase 1 Placer Initialization | Checksum: 14e413f16
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1082 ; free virtual = 17410
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1651ca01e
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1072 ; free virtual = 17404
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1651ca01e
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1071 ; free virtual = 17403
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 128fd7873
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1070 ; free virtual = 17402
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 18b92dd4c
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1070 ; free virtual = 17402
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 19b708d72
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1067 ; free virtual = 17400
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 16386de15
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1049 ; free virtual = 17382
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1dd9dc636
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1053 ; free virtual = 17387
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1dd9dc636
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1053 ; free virtual = 17387
+Phase 3 Detail Placement | Checksum: 1dd9dc636
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1053 ; free virtual = 17387
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1d093a61e
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1d093a61e
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:27 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1059 ; free virtual = 17393
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.643. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1db6f5960
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:28 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1058 ; free virtual = 17392
+Phase 4.1 Post Commit Optimization | Checksum: 1db6f5960
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1058 ; free virtual = 17392
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1db6f5960
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1057 ; free virtual = 17391
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1db6f5960
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1057 ; free virtual = 17391
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 200a389ef
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1058 ; free virtual = 17392
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 200a389ef
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1058 ; free virtual = 17392
+Ending Placer Task | Checksum: 1384c0258
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1078 ; free virtual = 17413
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 42 Warnings, 7 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:30 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1078 ; free virtual = 17413
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.92 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1034 ; free virtual = 17410
+INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/sys_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1052 ; free virtual = 17407
+INFO: [runtcl-4] Executing : report_io -file sys_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1044 ; free virtual = 17399
+INFO: [runtcl-4] Executing : report_utilization -file sys_top_utilization_placed.rpt -pb sys_top_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1052 ; free virtual = 17408
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file sys_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 1051 ; free virtual = 17407
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 4b3d555d ConstDB: 0 ShapeSum: ed0eacfb RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: ef40b9c5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 907 ; free virtual = 17264
+Post Restoration Checksum: NetGraph: dd2da6d0 NumContArr: 121312f5 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: ef40b9c5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 907 ; free virtual = 17263
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: ef40b9c5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 891 ; free virtual = 17248
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: ef40b9c5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 891 ; free virtual = 17248
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1e502a7e4
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 860 ; free virtual = 17220
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.617  | TNS=0.000  | WHS=-0.353 | THS=-344.098|
+
+Phase 2 Router Initialization | Checksum: 1fea7bb07
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 852 ; free virtual = 17213
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 20283a2fa
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:22 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 962 ; free virtual = 17328
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2826
+ Number of Nodes with overlaps = 403
+ Number of Nodes with overlaps = 103
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.290  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: fb63d062
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:34 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 945 ; free virtual = 17317
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.290  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 17cc8085d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:39 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 884 ; free virtual = 17261
+Phase 4 Rip-up And Reroute | Checksum: 17cc8085d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:39 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 884 ; free virtual = 17261
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1101b20a5
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:39 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 883 ; free virtual = 17260
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.290  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1101b20a5
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:39 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 884 ; free virtual = 17261
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1101b20a5
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:40 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 876 ; free virtual = 17253
+Phase 5 Delay and Skew Optimization | Checksum: 1101b20a5
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:40 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 895 ; free virtual = 17272
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1a98aa465
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:40 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 887 ; free virtual = 17264
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.290  | TNS=0.000  | WHS=0.022  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 139f3427f
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:40 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 884 ; free virtual = 17263
+Phase 6 Post Hold Fix | Checksum: 139f3427f
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:40 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 893 ; free virtual = 17272
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.32422 %
+  Global Horizontal Routing Utilization  = 5.25837 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: e50d7ebc
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:40 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 893 ; free virtual = 17271
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: e50d7ebc
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:40 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 892 ; free virtual = 17271
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1249349dd
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:42 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 892 ; free virtual = 17270
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.290  | TNS=0.000  | WHS=0.022  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1249349dd
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:42 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 892 ; free virtual = 17270
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:42 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 918 ; free virtual = 17296
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+77 Infos, 42 Warnings, 7 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:20 ; elapsed = 00:00:44 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 914 ; free virtual = 17291
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 868 ; free virtual = 17288
+INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/sys_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2682.445 ; gain = 0.000 ; free physical = 912 ; free virtual = 17304
+INFO: [runtcl-4] Executing : report_drc -file sys_top_drc_routed.rpt -pb sys_top_drc_routed.pb -rpx sys_top_drc_routed.rpx
+Command: report_drc -file sys_top_drc_routed.rpt -pb sys_top_drc_routed.pb -rpx sys_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/sys_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file sys_top_methodology_drc_routed.rpt -pb sys_top_methodology_drc_routed.pb -rpx sys_top_methodology_drc_routed.rpx
+Command: report_methodology -file sys_top_methodology_drc_routed.rpt -pb sys_top_methodology_drc_routed.pb -rpx sys_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.runs/impl_1/sys_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file sys_top_power_routed.rpt -pb sys_top_power_summary_routed.pb -rpx sys_top_power_routed.rpx
+Command: report_power -file sys_top_power_routed.rpt -pb sys_top_power_summary_routed.pb -rpx sys_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+89 Infos, 43 Warnings, 7 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file sys_top_route_status.rpt -pb sys_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file sys_top_timing_summary_routed.rpt -rpx sys_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file sys_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file sys_top_clock_utilization_routed.rpt
+INFO: [Common 17-206] Exiting Vivado at Wed May 15 12:23:42 2019...

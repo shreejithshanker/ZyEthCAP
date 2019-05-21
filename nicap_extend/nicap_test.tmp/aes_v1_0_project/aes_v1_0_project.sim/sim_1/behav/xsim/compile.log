@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alex/GitHub/zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_0_1/sim/axis_dwidth_converter_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_dwidth_converter_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alex/GitHub/zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_1_1/sim/axis_dwidth_converter_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_dwidth_converter_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alex/GitHub/zynq-ip-cores/aes_1.0/hdl/aes_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_v1_0
+WARNING: [VRFC 10-965] invalid size of integer constant literal [/home/alex/GitHub/zynq-ip-cores/aes_1.0/hdl/aes_v1_0.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alex/GitHub/zynq-ip-cores/aes_1.0/hdl/aes_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alex/GitHub/zynq-ip-cores/aes_1.0/src/aes_axis_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_axis_tb

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="up_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1557930632">
+  <File Type="VDS-TIMING-PB" Name="partial_led_test_v1_0_S00_AXI_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="partial_led_test_v1_0_S00_AXI_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="partial_led_test_v1_0_S00_AXI.dcp"/>
+  <File Type="REPORTS-TCL" Name="partial_led_test_v1_0_S00_AXI_reports.tcl"/>
+  <File Type="PA-TCL" Name="partial_led_test_v1_0_S00_AXI.tcl"/>
+  <File Type="RDS-RDS" Name="partial_led_test_v1_0_S00_AXI.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="partial_led_test_v1_0_S00_AXI_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="partial_led_test_v1_0_S00_AXI_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="partial_led_test_v1_0_S00_AXI_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/up">
+    <File Path="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/src/partial_led_test_v1_0_S00_AXI.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="partial_led_test_v1_0_S00_AXI"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/src/partial_led_test_v1_0_S00_AXI.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/up">
+    <File Path="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/src/partial_led_test_v1_0_S00_AXI.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="partial_led_test_v1_0_S00_AXI"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../zycap_core/core/vivado/ipcore/partial_led_test_1.0/src/partial_led_test_v1_0_S00_AXI.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

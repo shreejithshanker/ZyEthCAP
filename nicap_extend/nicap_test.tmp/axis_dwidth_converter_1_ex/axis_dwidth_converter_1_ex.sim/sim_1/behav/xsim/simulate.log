@@ -1,0 +1,9 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+    0.00ns: exdes_tb: Waiting for clock to lock
+ 1442.60ns: exdes_tb: Starting testbench
+ 1522.60ns: exdes_tb: Asserting reset for 16 cycles
+ 1602.60ns: exdes_tb: Reset complete
+43175.00ns: exdes_tb: SIMULATION PASSED
+43175.00ns: exdes_tb: Test Completed Successfully
+$finish called at time : 43175 ns : File "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/axis_dwidth_converter_1_ex/imports/exdes_tb.v" Line 101

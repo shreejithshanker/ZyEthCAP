@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/aes_v1_0_project/aes_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/aes_axis_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue May 21 14:38:16 2019" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed May 22 11:34:04 2019" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "e1cd1e8d-b976-45a1-9175-434ac93a4e5e" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "898171cc534247e5aa38bad51df06093" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "23" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "54" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Ubuntu" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Ubuntu 18.10" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "803.731 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "3086.147 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -33,10 +33,10 @@ webtalk_add_data -client xsim -key Debug -value "typical" -context "xsim\\comman
 webtalk_add_data -client xsim -key Simulation_Image_Code -value "264 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Image_Data -value "20 KB" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Total_Processes -value "281" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Total_Processes -value "284" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "53" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "1.17_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "237672_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1970841197 -regid "" -xml /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/aes_v1_0_project/aes_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/aes_axis_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/aes_v1_0_project/aes_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/aes_axis_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/aes_v1_0_project/aes_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/aes_axis_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "1.16_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "237840_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1665722973 -regid "" -xml /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/aes_v1_0_project/aes_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/aes_axis_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/aes_v1_0_project/aes_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/aes_axis_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/aes_v1_0_project/aes_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/aes_axis_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

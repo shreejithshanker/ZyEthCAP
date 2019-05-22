@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/axis_dwidth_converter_1_ex/axis_dwidth_converter_1_ex.srcs/sources_1/ip/proc_sys_reset_0/sim/proc_sys_reset_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity proc_sys_reset_0

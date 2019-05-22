@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 22 00:21:25 2019
+# Process ID: 14992
+# Current directory: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/axis_dwidth_converter_1_ex/axis_dwidth_converter_1_ex.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/axis_dwidth_converter_1_ex/axis_dwidth_converter_1_ex.sim/sim_1/behav/xsim/xsim.dir/exdes_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/axis_dwidth_converter_1_ex/axis_dwidth_converter_1_ex.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/axis_dwidth_converter_1_ex/axis_dwidth_converter_1_ex.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/axis_dwidth_converter_1_ex/axis_dwidth_converter_1_ex.sim/sim_1/behav/xsim/xsim.dir/exdes_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May 22 00:21:25 2019...

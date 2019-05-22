@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,8 +29,6 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  /home/alex/GitHub/ip_repo/aes_1.0
-  /home/alex/GitHub/ip_repo/aes_1.0
   /home/alex/GitHub/ZyEthCAP/zycap_core
   /home/alex/GitHub/zynq-ip-cores
 } [current_project]

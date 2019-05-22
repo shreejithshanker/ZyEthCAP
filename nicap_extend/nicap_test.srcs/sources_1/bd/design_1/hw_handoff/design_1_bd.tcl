@@ -183,9 +183,6 @@ proc create_root_design { parentCell } {
 
   # Create instance: aes_0, and set properties
   set aes_0 [ create_bd_cell -type ip -vlnv user.org:user:aes:1.0 aes_0 ]
-  set_property -dict [ list \
-   CONFIG.C_M00_AXIS_START_COUNT {32} \
- ] $aes_0
 
   # Create instance: axi_bram_ctrl_0, and set properties
   set axi_bram_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0 ]

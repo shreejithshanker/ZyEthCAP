@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 24 16:06:53 2019
+# Process ID: 8119
+# Current directory: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/axis_dwidth_converter_1_synth_1
+# Command line: vivado -log axis_dwidth_converter_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_dwidth_converter_1.tcl
+# Log file: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/axis_dwidth_converter_1_synth_1/axis_dwidth_converter_1.vds
+# Journal file: /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/axis_dwidth_converter_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source axis_dwidth_converter_1.tcl -notrace

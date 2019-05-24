@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:aes:1.0
-// IP Revision: 16
+// IP Revision: 17
 
 (* X_CORE_INFO = "aes_v1_0,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "design_1_aes_0_1,aes_v1_0,{}" *)

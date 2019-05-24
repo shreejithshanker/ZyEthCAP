@@ -119,6 +119,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_aes_0_
 # IP: bd/design_1/ip/design_1_aes_0_1/src/axis_dwidth_converter_0_1/axis_dwidth_converter_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axis_dwidth_converter_0 || ORIG_REF_NAME==axis_dwidth_converter_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_aes_0_1/src/axis_dwidth_converter_1/axis_dwidth_converter_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axis_dwidth_converter_1 || ORIG_REF_NAME==axis_dwidth_converter_1} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_auto_pc_4 || ORIG_REF_NAME==design_1_auto_pc_4} -quiet] -quiet
 

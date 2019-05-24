@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:aes:1.0
-// IP Revision: 16
+// IP Revision: 17
 
 `timescale 1ns/1ps
 

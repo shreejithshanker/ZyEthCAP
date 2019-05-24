@@ -58,9 +58,9 @@ preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 0 5 -290 280 N
 preplace netloc axi_mem_intercon_M02_AXI 1 4 1 1590
 preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1230
 preplace netloc xlconcat_0_dout 1 2 1 620
-preplace netloc aes_0_M00_AXIS 1 1 2 280 350 NJ
 preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 5 2 NJ 470 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 3 4 1210J -440 NJ -440 NJ -440 2150J
+preplace netloc aes_0_M00_AXIS 1 1 2 280 350 NJ
 preplace netloc axi_dma_0_mm2s_introut 1 1 3 270 -140 NJ -140 1170
 preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1260
 preplace netloc aes_0_status_0 1 1 6 N 410 600J 490 1190J 570 1630J 400 NJ 400 2160J

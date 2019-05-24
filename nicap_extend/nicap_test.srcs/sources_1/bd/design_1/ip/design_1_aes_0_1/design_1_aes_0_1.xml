@@ -1027,11 +1027,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 22 11:32:55 UTC 2019</spirit:value>
+            <spirit:value>Wed May 22 13:43:14 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:5f8cc35c</spirit:value>
+            <spirit:value>7:59f9e11e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1046,11 +1046,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 22 11:32:55 UTC 2019</spirit:value>
+            <spirit:value>Wed May 22 13:43:14 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:5f8cc35c</spirit:value>
+            <spirit:value>7:59f9e11e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1065,11 +1065,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 22 11:32:55 UTC 2019</spirit:value>
+            <spirit:value>Wed May 22 13:43:14 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:83daefdc</spirit:value>
+            <spirit:value>7:72c17ee6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1084,11 +1084,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 22 11:32:55 UTC 2019</spirit:value>
+            <spirit:value>Wed May 22 13:43:14 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:83daefdc</spirit:value>
+            <spirit:value>7:72c17ee6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1699,71 +1699,71 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/hdl/aes_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/1fa4/hdl/aes_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/types.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/types.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/cipher_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/cipher_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/math.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/math.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/sbox.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/sbox.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/state_reg.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/state_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/cipher.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/cipher.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/counter.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/counter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/encryption_module.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/encryption_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/inv_cipher_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/inv_cipher_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/inv_cipher.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/inv_cipher.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/decrementor.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/decrementor.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/decryption_module.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/decryption_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/key_expander.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/key_expander.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/dp_ram.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/dp_ram.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/key_expansion_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/key_expansion_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/key_expansion.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/key_expansion.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1771,15 +1771,23 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/aes_module_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/aes_module_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/aes_module.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/aes_wrapper.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/hdl/aes_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/aes_module.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/axis_dwidth_converter_1/axis_dwidth_converter_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fa4/hdl/aes_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1794,71 +1802,71 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/hdl/aes_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/1fa4/hdl/aes_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/types.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/types.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/cipher_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/cipher_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/math.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/math.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/sbox.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/sbox.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/state_reg.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/state_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/cipher.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/cipher.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/counter.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/counter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/encryption_module.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/encryption_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/inv_cipher_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/inv_cipher_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/inv_cipher.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/inv_cipher.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/decrementor.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/decrementor.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/decryption_module.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/decryption_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/key_expander.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/key_expander.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/dp_ram.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/dp_ram.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/key_expansion_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/key_expansion_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/key_expansion.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/key_expansion.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1866,15 +1874,23 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/aes_module_cu.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/aes_module_cu.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/src/aes_module.vhd</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/aes_wrapper.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4717/hdl/aes_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/1fa4/src/aes_module.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/axis_dwidth_converter_1/axis_dwidth_converter_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fa4/hdl/aes_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1984,7 +2000,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>aes_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>16</xilinx:coreRevision>
+      <xilinx:coreRevision>17</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="user.org:user:aes:1.0_ARCHIVE_LOCATION">/home/alex/GitHub/zynq-ip-cores/aes_1.0</xilinx:tag>
       </xilinx:tags>
@@ -2045,7 +2061,7 @@
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4502a2e8"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b39e5388"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b754fdce"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="55afa21d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="0571206c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="8da6937a"/>

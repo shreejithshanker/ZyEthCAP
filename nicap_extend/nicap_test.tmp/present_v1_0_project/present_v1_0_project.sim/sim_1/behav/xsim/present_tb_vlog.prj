@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../present_v1_0_project.ip_user_files/ipstatic/hdl" \
+"../../../../present_v1_0_project.srcs/sources_1/ip/axis_dwidth_converter_1/sim/axis_dwidth_converter_1.v" \
+"../../../../present_v1_0_project.srcs/sources_1/ip/axis_dwidth_converter_0/sim/axis_dwidth_converter_0.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/pbox.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/pbox_inv.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/present.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/present_dec.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/present_enc.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0_S00_AXI.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/roundkey.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/sbox.v" \
+"../../../../../../../../zynq-ip-cores/present_1.0/present_1.0/hdl/sbox_inv.v" \
+"../../../../present_v1_0_project.srcs/sim_1/new/present_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

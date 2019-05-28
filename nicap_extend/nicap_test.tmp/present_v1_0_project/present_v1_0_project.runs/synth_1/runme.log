@@ -1,0 +1,1001 @@
+
+*** Running vivado
+    with args -log present_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source present_v1_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl'
+source present_v1_0.tcl -notrace
+Command: synth_design -top present_v1_0 -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26463 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1304.656 ; gain = 87.992 ; free physical = 1325 ; free virtual = 8823
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'present_v1_0' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'present_v1_0_S00_AXI' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0_S00_AXI.v:234]
+INFO: [Synth 8-226] default block is never used [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0_S00_AXI.v:375]
+INFO: [Synth 8-256] done synthesizing module 'present_v1_0_S00_AXI' (1#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-350] instance 'present_v1_0_S00_AXI_inst' of module 'present_v1_0_S00_AXI' requires 25 connections, but only 24 given [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:92]
+INFO: [Synth 8-638] synthesizing module 'PRESENT' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present.v:15]
+	Parameter b_64 bound to: 64 - type: integer 
+	Parameter b_80 bound to: 80 - type: integer 
+	Parameter b_2 bound to: 2 - type: integer 
+	Parameter b_4 bound to: 4 - type: integer 
+	Parameter b_5 bound to: 5 - type: integer 
+	Parameter b_32 bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'present_ENC' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_enc.v:16]
+	Parameter b_64 bound to: 64 - type: integer 
+	Parameter b_80 bound to: 80 - type: integer 
+	Parameter b_2 bound to: 2 - type: integer 
+	Parameter b_4 bound to: 4 - type: integer 
+	Parameter b_5 bound to: 5 - type: integer 
+	Parameter b_32 bound to: 32 - type: integer 
+	Parameter time_key bound to: 1 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter ENCODE bound to: 3'b010 
+	Parameter DONE bound to: 3'b100 
+	Parameter max_rounds bound to: 31 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sbox' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/sbox.v:14]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (2#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/sbox.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_enc.v:92]
+INFO: [Synth 8-638] synthesizing module 'pbox' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/pbox.v:14]
+	Parameter b_64 bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pbox' (3#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/pbox.v:14]
+INFO: [Synth 8-256] done synthesizing module 'present_ENC' (4#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_enc.v:16]
+INFO: [Synth 8-638] synthesizing module 'present_DEC' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_dec.v:15]
+	Parameter b_64 bound to: 64 - type: integer 
+	Parameter b_80 bound to: 80 - type: integer 
+	Parameter b_2 bound to: 2 - type: integer 
+	Parameter b_4 bound to: 4 - type: integer 
+	Parameter b_5 bound to: 5 - type: integer 
+	Parameter b_32 bound to: 32 - type: integer 
+	Parameter time_key bound to: 1 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter DECODE bound to: 3'b010 
+	Parameter WAIT bound to: 3'b011 
+	Parameter DONE bound to: 3'b100 
+	Parameter max_rounds bound to: 5'b11111 
+INFO: [Synth 8-638] synthesizing module 'sbox_inv' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/sbox_inv.v:14]
+INFO: [Synth 8-256] done synthesizing module 'sbox_inv' (5#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/sbox_inv.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_dec.v:93]
+INFO: [Synth 8-638] synthesizing module 'pbox_inv' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/pbox_inv.v:16]
+	Parameter b_64 bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pbox_inv' (6#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/pbox_inv.v:16]
+INFO: [Synth 8-256] done synthesizing module 'present_DEC' (7#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_dec.v:15]
+INFO: [Synth 8-638] synthesizing module 'subkey_gen' [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/roundkey.v:17]
+	Parameter b_64 bound to: 64 - type: integer 
+	Parameter b_80 bound to: 80 - type: integer 
+	Parameter round bound to: 32 - type: integer 
+	Parameter b_5 bound to: 5 - type: integer 
+	Parameter b_4 bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'subkey_gen' (8#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/roundkey.v:17]
+WARNING: [Synth 8-6014] Unused sequential element encoder_ready_reg was removed.  [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present.v:172]
+INFO: [Synth 8-256] done synthesizing module 'PRESENT' (9#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present.v:15]
+INFO: [Synth 8-638] synthesizing module 'axis_dwidth_converter_0' [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/realtime/axis_dwidth_converter_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'axis_dwidth_converter_0' (10#1) [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/realtime/axis_dwidth_converter_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'axis_dwidth_converter_1' [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/realtime/axis_dwidth_converter_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'axis_dwidth_converter_1' (11#1) [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/realtime/axis_dwidth_converter_1_stub.v:6]
+WARNING: [Synth 8-3848] Net m00_axis_tvalid in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:65]
+WARNING: [Synth 8-3848] Net m00_axis_tdata in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:66]
+WARNING: [Synth 8-3848] Net m00_axis_tstrb in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:67]
+WARNING: [Synth 8-3848] Net m00_axis_tlast in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:68]
+WARNING: [Synth 8-3848] Net in_aclk in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:119]
+WARNING: [Synth 8-3848] Net in_aresetn in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:119]
+WARNING: [Synth 8-3848] Net in_s_axis_tdata in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:124]
+WARNING: [Synth 8-3848] Net in in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:81]
+WARNING: [Synth 8-3848] Net key_2 in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:82]
+WARNING: [Synth 8-3848] Net key_1 in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:82]
+WARNING: [Synth 8-3848] Net key_0 in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:82]
+WARNING: [Synth 8-3848] Net out_s_axis_tvalid in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:130]
+WARNING: [Synth 8-3848] Net out_m_axis_tready in module/entity present_v1_0 does not have driver. [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:135]
+INFO: [Synth 8-256] done synthesizing module 'present_v1_0' (12#1) [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:4]
+WARNING: [Synth 8-3331] design present_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design present_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design present_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design present_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design present_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design present_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[31]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[30]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[29]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[28]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[27]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[26]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[25]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[24]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[23]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[22]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[21]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[20]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[19]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[18]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[17]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[16]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[15]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[14]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[13]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[12]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[11]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[10]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[9]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[8]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[7]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[6]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[5]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[4]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[3]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[2]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[1]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[0]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tstrb[0]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tlast
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[31]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[30]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[29]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[28]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[27]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[26]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[25]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[24]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[23]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[22]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[21]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[20]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[19]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[18]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[17]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[16]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[15]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[14]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[13]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[12]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[11]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[10]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[9]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[8]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[7]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[6]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[5]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[4]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[3]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[2]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[1]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tdata[0]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tstrb[0]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port s00_axis_tlast
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_aclk
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_aresetn
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tready
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1348.188 ; gain = 131.523 ; free physical = 1322 ; free virtual = 8828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin present:enc_hdr_start to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:dec_hdr_start to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[79] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[78] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[77] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[76] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[75] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[74] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[73] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[72] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[71] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[70] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[69] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[68] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[67] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[66] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[65] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[64] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[63] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[62] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[61] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[60] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[59] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[58] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[57] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[56] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[55] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[54] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[53] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[52] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[51] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[50] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[49] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[48] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[47] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[46] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[45] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[44] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[43] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[42] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[41] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[40] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[39] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[38] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[37] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[36] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[35] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[34] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[33] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[32] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[31] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[30] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[29] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[28] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[27] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[26] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[25] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[24] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[23] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[22] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[21] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[20] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[19] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[18] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[17] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[16] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[15] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[14] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[13] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[12] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[11] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[10] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[9] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[8] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[7] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[6] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[5] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[4] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[3] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[2] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[1] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:key[0] to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+WARNING: [Synth 8-3295] tying undriven pin present:generate_key to constant 0 [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:138]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1348.188 ; gain = 131.523 ; free physical = 1330 ; free virtual = 8831
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/dcp2/axis_dwidth_converter_0_in_context.xdc] for cell 'input_axis'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/dcp2/axis_dwidth_converter_0_in_context.xdc] for cell 'input_axis'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/dcp3/axis_dwidth_converter_1_in_context.xdc] for cell 'output_axis'
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/.Xil/Vivado-26451-alex-warc/dcp3/axis_dwidth_converter_1_in_context.xdc] for cell 'output_axis'
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1737.445 ; gain = 0.000 ; free physical = 1040 ; free virtual = 8563
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1737.445 ; gain = 520.781 ; free physical = 1102 ; free virtual = 8638
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1737.445 ; gain = 520.781 ; free physical = 1102 ; free virtual = 8638
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for input_axis. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for output_axis. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1737.445 ; gain = 520.781 ; free physical = 1104 ; free virtual = 8640
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cntr_val_reg was removed.  [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_enc.v:158]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'present_DEC'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cntr_val_reg was removed.  [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_dec.v:164]
+WARNING: [Synth 8-6014] Unused sequential element cntr_val_reg was removed.  [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/roundkey.v:81]
+INFO: [Synth 8-5546] ROM "key_mem_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_mem_reg[0]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              001
+                    WAIT |                               01 |                              011
+                  DECODE |                               10 |                              010
+                    DONE |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'present_DEC'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1737.445 ; gain = 520.781 ; free physical = 1091 ; free virtual = 8626
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---XORs : 
+	   2 Input     80 Bit         XORs := 2     
+	   2 Input     64 Bit         XORs := 2     
+	   2 Input      5 Bit         XORs := 1     
++---Registers : 
+	               80 Bit    Registers := 2     
+	               64 Bit    Registers := 39    
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 28    
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 4     
+	   4 Input     80 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 61    
+	   4 Input      1 Bit        Muxes := 31    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module present_v1_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module present_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+Module present_ENC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 12    
+Module present_DEC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 11    
+Module subkey_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
++---Registers : 
+	               80 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module PRESENT 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     80 Bit         XORs := 2     
++---Registers : 
+	               80 Bit    Registers := 1     
+	               64 Bit    Registers := 34    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 2     
+	   4 Input     80 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 38    
+	   4 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cntr_val_reg was removed.  [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_enc.v:158]
+WARNING: [Synth 8-6014] Unused sequential element cntr_val_reg was removed.  [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_dec.v:164]
+WARNING: [Synth 8-6014] Unused sequential element cntr_val_reg was removed.  [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/roundkey.v:81]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[31]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[30]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[29]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[28]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[27]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[26]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[25]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[24]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[23]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[22]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[21]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[20]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[19]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[18]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[17]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[16]
+WARNING: [Synth 8-3331] design present_v1_0 has unconnected port m00_axis_tdata[15]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[9] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[1]' (FDE) to 'present/key_val_reg[65]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[12] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[0]' (FDE) to 'present/key_val_reg[64]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[11] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[2]' (FDE) to 'present/key_val_reg[66]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[15] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[7]' (FDE) to 'present/key_val_reg[71]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[20] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[5]' (FDE) to 'present/key_val_reg[69]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[18] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[6]' (FDE) to 'present/key_val_reg[70]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[19] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[3]' (FDE) to 'present/key_val_reg[67]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[16] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[4]' (FDE) to 'present/key_val_reg[68]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[17] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[8]' (FDE) to 'present/key_val_reg[72]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[21] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[13]' (FDE) to 'present/key_val_reg[77]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[26] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[11]' (FDE) to 'present/key_val_reg[75]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[24] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[12]' (FDE) to 'present/key_val_reg[76]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[25] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[9]' (FDE) to 'present/key_val_reg[73]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[22] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[10]' (FDE) to 'present/key_val_reg[74]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[23] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[14]' (FDE) to 'present/key_val_reg[78]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[29] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[15]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/\rxorer_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/time_key_gen_reg)
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[20]' (FDE) to 'present/key_val_reg[52]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[18]' (FDE) to 'present/key_val_reg[50]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[19]' (FDE) to 'present/key_val_reg[51]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[16]' (FDE) to 'present/key_val_reg[48]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[17]' (FDE) to 'present/key_val_reg[49]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[21]' (FDE) to 'present/key_val_reg[53]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[26]' (FDE) to 'present/key_val_reg[58]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[24]' (FDE) to 'present/key_val_reg[56]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[25]' (FDE) to 'present/key_val_reg[57]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[22]' (FDE) to 'present/key_val_reg[54]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[23]' (FDE) to 'present/key_val_reg[55]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[27]' (FDE) to 'present/key_val_reg[59]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[32]' (FDE) to 'present/key_val_reg[64]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[30]' (FDE) to 'present/key_val_reg[62]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[31]' (FDE) to 'present/key_val_reg[63]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[28]' (FDE) to 'present/key_val_reg[60]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[29]' (FDE) to 'present/key_val_reg[61]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[33]' (FDE) to 'present/key_val_reg[65]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[38]' (FDE) to 'present/key_val_reg[70]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[36]' (FDE) to 'present/key_val_reg[68]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[37]' (FDE) to 'present/key_val_reg[69]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[34]' (FDE) to 'present/key_val_reg[66]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[35]' (FDE) to 'present/key_val_reg[67]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[39]' (FDE) to 'present/key_val_reg[71]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[44]' (FDE) to 'present/key_val_reg[76]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[42]' (FDE) to 'present/key_val_reg[74]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[43]' (FDE) to 'present/key_val_reg[75]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[40]' (FDE) to 'present/key_val_reg[72]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[41]' (FDE) to 'present/key_val_reg[73]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[45]' (FDE) to 'present/key_val_reg[77]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[46]' (FDE) to 'present/key_val_reg[78]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[47]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/present_DEC/max_val_reg[0]' (FDSE) to 'present/present_DEC/max_val_reg[2]'
+INFO: [Synth 8-3886] merging instance 'present/present_DEC/max_val_reg[1]' (FDSE) to 'present/present_DEC/max_val_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (present/present_DEC/\max_val_reg[2] )
+INFO: [Synth 8-3886] merging instance 'present/present_DEC/max_val_reg[4]' (FDSE) to 'present/present_DEC/max_val_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_DEC/hdr_flag_reg)
+INFO: [Synth 8-3886] merging instance 'present/present_ENC/max_val_reg[3]' (FDSE) to 'present/present_ENC/max_val_reg[4]'
+INFO: [Synth 8-3886] merging instance 'present/present_ENC/max_val_reg[0]' (FDSE) to 'present/present_ENC/max_val_reg[1]'
+INFO: [Synth 8-3886] merging instance 'present/present_ENC/max_val_reg[1]' (FDSE) to 'present/present_ENC/max_val_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (present/present_ENC/\max_val_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/present_ENC/hdr_flag_reg)
+INFO: [Synth 8-3886] merging instance 'present_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'present_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\present_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'present_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'present_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\present_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[50]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[48]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[49]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[51]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[56]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[54]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[55]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[52]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[53]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[57]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[62]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[60]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[61]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[58]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[59]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[63]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[68]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[66]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[67]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[64]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[65]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[69]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[74]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[72]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[73]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[70]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[71]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[75]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[78]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[76]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3886] merging instance 'present/key_val_reg[77]' (FDE) to 'present/key_val_reg[79]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (present/\key_val_reg[79] )
+WARNING: [Synth 8-3332] Sequential element (hdr_flag_reg) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (max_val_reg[2]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (header_done_reg) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[31]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[30]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[29]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[28]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[27]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[26]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[25]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[24]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[23]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[22]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[21]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[20]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[19]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[18]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[17]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[16]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[15]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[14]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[13]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[12]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[11]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[10]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[9]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[8]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[7]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[6]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[5]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[4]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[3]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[2]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[1]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[0]) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (time_key_gen_reg) is unused and will be removed from module present_ENC.
+WARNING: [Synth 8-3332] Sequential element (hdr_flag_reg) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (max_val_reg[2]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (header_done_reg) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[31]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[30]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[29]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[28]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[27]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[26]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[25]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[24]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[23]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[22]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[21]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[20]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[19]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[18]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[17]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[16]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[15]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[14]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[13]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[12]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[11]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[10]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[9]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[8]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[7]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[6]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[5]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[4]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[3]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[2]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[1]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (rxorer_reg[0]) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (time_key_gen_reg) is unused and will be removed from module present_DEC.
+WARNING: [Synth 8-3332] Sequential element (key_val_reg[79]) is unused and will be removed from module PRESENT.
+WARNING: [Synth 8-3332] Sequential element (present_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (present_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (present_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (present_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (present_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (present_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module present_v1_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1737.445 ; gain = 520.781 ; free physical = 1060 ; free virtual = 8595
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|present     | time_key_mem_reg | Implied   | 32 x 64              | RAM32M x 22   | 
++------------+------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 1737.445 ; gain = 520.781 ; free physical = 911 ; free virtual = 8454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 1737.445 ; gain = 520.781 ; free physical = 910 ; free virtual = 8453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|present     | time_key_mem_reg | Implied   | 32 x 64              | RAM32M x 22   | 
++------------+------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[63]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[62]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[61]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[60]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[59]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[58]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[57]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[56]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[55]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[54]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[53]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[52]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[51]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[50]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[49]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[48]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[47]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[46]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[45]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[44]) is unused and will be removed from module present_v1_0.
+WARNING: [Synth 8-3332] Sequential element (enc_in_reg[43]) is unused and will be removed from module present_v1_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 907 ; free virtual = 8450
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module input_axis has unconnected pin s_axis_tdata[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module output_axis has unconnected pin s_axis_tvalid
+CRITICAL WARNING: [Synth 8-4442] BlackBox module output_axis has unconnected pin m_axis_tready
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:54 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 908 ; free virtual = 8451
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:54 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 909 ; free virtual = 8451
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:54 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 908 ; free virtual = 8451
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:54 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 908 ; free virtual = 8451
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 908 ; free virtual = 8450
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 908 ; free virtual = 8450
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |axis_dwidth_converter_0 |         1|
+|2     |axis_dwidth_converter_1 |         1|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |axis_dwidth_converter_0 |     1|
+|2     |axis_dwidth_converter_1 |     1|
+|3     |BUFG                    |     2|
+|4     |LUT1                    |     9|
+|5     |LUT2                    |   109|
+|6     |LUT3                    |    85|
+|7     |LUT4                    |    31|
+|8     |LUT5                    |    74|
+|9     |LUT6                    |  1362|
+|10    |MUXF7                   |   512|
+|11    |MUXF8                   |   256|
+|12    |RAM32M                  |    22|
+|13    |FDRE                    |  2662|
+|14    |FDSE                    |    10|
+|15    |IBUF                    |    50|
+|16    |OBUF                    |    43|
+|17    |OBUFT                   |    37|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+----------------------------+---------------------+------+
+|      |Instance                    |Module               |Cells |
++------+----------------------------+---------------------+------+
+|1     |top                         |                     |  5364|
+|2     |  present                   |PRESENT              |  4838|
+|3     |    present_DEC             |present_DEC          |  1227|
+|4     |    present_ENC             |present_ENC          |  1182|
+|5     |    subkey_gen              |subkey_gen           |   220|
+|6     |  present_v1_0_S00_AXI_inst |present_v1_0_S00_AXI |   228|
++------+----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 1737.797 ; gain = 521.133 ; free physical = 908 ; free virtual = 8450
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 34 critical warnings and 296 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1737.797 ; gain = 131.875 ; free physical = 964 ; free virtual = 8507
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 1737.805 ; gain = 521.133 ; free physical = 964 ; free virtual = 8507
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 840 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+203 Infos, 304 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:57 . Memory (MB): peak = 1769.812 ; gain = 577.980 ; free physical = 980 ; free virtual = 8524
+INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.tmp/present_v1_0_project/present_v1_0_project.runs/synth_1/present_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file present_v1_0_utilization_synth.rpt -pb present_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1793.824 ; gain = 0.000 ; free physical = 977 ; free virtual = 8522
+INFO: [Common 17-206] Exiting Vivado at Tue May 28 12:30:20 2019...

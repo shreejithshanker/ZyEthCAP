@@ -1,0 +1,39 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 98cf0f29e3324de08517c1024c921c13 --incr --debug typical --relax --mt 8 -L axis_infrastructure_v1_1_0 -L axis_register_slice_v1_1_15 -L axis_dwidth_converter_v1_1_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot present_tb_behav xil_defaultlib.present_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enc_hdr_start [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:150]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dec_hdr_start [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:159]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port m_axis_tready [/home/alex/GitHub/zynq-ip-cores/present_1.0/present_1.0/hdl/present_v1_0.v:184]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.present_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.pbox
+Compiling module xil_defaultlib.present_ENC_default
+Compiling module xil_defaultlib.pbox_inv
+Compiling module xil_defaultlib.sbox_inv
+Compiling module xil_defaultlib.present_DEC_default
+Compiling module xil_defaultlib.subkey_gen
+Compiling module xil_defaultlib.PRESENT
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_15.axis_register_slice_v1_1_15_axis...
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module xil_defaultlib.axis_dwidth_converter_0
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module axis_dwidth_converter_v1_1_14.axis_dwidth_converter_v1_1_14_ax...
+Compiling module xil_defaultlib.axis_dwidth_converter_1
+Compiling module xil_defaultlib.present_v1_0
+Compiling module xil_defaultlib.present_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot present_tb_behav

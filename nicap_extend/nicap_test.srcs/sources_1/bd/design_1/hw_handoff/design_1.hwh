@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 22 14:43:15 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 29 10:28:01 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -9780,6 +9780,9 @@
             <CONNECTION INSTANCE="axi_dma_0" PORT="s_axi_lite_aclk"/>
             <CONNECTION INSTANCE="axi_dma_0" PORT="m_axi_mm2s_aclk"/>
             <CONNECTION INSTANCE="axi_dma_0" PORT="m_axi_s2mm_aclk"/>
+            <CONNECTION INSTANCE="aes_0" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="aes_0" PORT="s00_axis_aclk"/>
+            <CONNECTION INSTANCE="aes_0" PORT="m00_axis_aclk"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ACLK"/>
@@ -9795,9 +9798,6 @@
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S02_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S03_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M03_ACLK"/>
-            <CONNECTION INSTANCE="aes_0" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="aes_0" PORT="s00_axis_aclk"/>
-            <CONNECTION INSTANCE="aes_0" PORT="m00_axis_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -10179,6 +10179,9 @@
             <CONNECTION INSTANCE="zycap_0" PORT="axi_resetn"/>
             <CONNECTION INSTANCE="partial_led_test_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_dma_0" PORT="axi_resetn"/>
+            <CONNECTION INSTANCE="aes_0" PORT="s00_axi_aresetn"/>
+            <CONNECTION INSTANCE="aes_0" PORT="s00_axis_aresetn"/>
+            <CONNECTION INSTANCE="aes_0" PORT="m00_axis_aresetn"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="S00_ARESETN"/>
@@ -10192,9 +10195,6 @@
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S02_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S03_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon_1" PORT="M03_ARESETN"/>
-            <CONNECTION INSTANCE="aes_0" PORT="s00_axi_aresetn"/>
-            <CONNECTION INSTANCE="aes_0" PORT="s00_axis_aresetn"/>
-            <CONNECTION INSTANCE="aes_0" PORT="m00_axis_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

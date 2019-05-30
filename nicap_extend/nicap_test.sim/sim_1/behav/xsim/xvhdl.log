@@ -1,0 +1,52 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_bram_ctrl_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/sim/design_1_axi_bram_ctrl_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_bram_ctrl_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/sim/design_1_rst_processing_system7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_rst_processing_system7_0_50M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_2_0/sim/design_1_axi_bram_ctrl_2_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_bram_ctrl_2_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_3_0/sim/design_1_axi_bram_ctrl_3_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_bram_ctrl_3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_zycap_0_0/src/zycap_axi_dma_0_0/sim/zycap_axi_dma_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity zycap_axi_dma_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bd_afc3_psr_aclk_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ip/design_1_axi_dma_0_1/sim/design_1_axi_dma_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_dma_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/types.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/cipher_cu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cipher_cu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/math.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/sbox.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/state_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity state_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/cipher.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cipher
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/encryption_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity encryption_module
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/inv_cipher_cu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inv_cipher_cu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/inv_cipher.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inv_cipher
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/decrementor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity decrementor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/decryption_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity decryption_module
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/key_expander.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity key_expander
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/dp_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_ram
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/key_expansion_cu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity key_expansion_cu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/key_expansion.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity key_expansion
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/aes_module_cu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aes_module_cu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/aes_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aes_wrapper
+ERROR: [VRFC 10-149] 'aes_module' is not compiled in library xil_defaultlib [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/aes_wrapper.vhd:66]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/aes_wrapper.vhd:44]
+INFO: [VRFC 10-240] VHDL file /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.ip_user_files/bd/design_1/ipshared/1fa4/src/aes_wrapper.vhd ignored due to errors

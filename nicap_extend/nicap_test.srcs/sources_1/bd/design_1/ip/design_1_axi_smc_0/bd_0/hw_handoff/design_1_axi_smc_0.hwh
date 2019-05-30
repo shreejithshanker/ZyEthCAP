@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 22 14:43:14 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 29 10:28:01 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="bd_afc3" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
       <CONNECTIONS>
+        <CONNECTION INSTANCE="m00_sc2axi" PORT="aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m00_exit_pipeline_m00_exit" PORT="aclk"/>
+        <CONNECTION INSTANCE="s00_axi2sc" PORT="aclk"/>
         <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="aclk"/>
         <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="aclk"/>
         <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="aclk"/>
-        <CONNECTION INSTANCE="s00_axi2sc" PORT="aclk"/>
         <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="s_sc_aclk"/>
         <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m00_sc2axi" PORT="aclk"/>
-        <CONNECTION INSTANCE="m00_exit_pipeline_m00_exit" PORT="aclk"/>
         <CONNECTION INSTANCE="clk_map_psr_aclk" PORT="slowest_sync_clk"/>
       </CONNECTIONS>
     </PORT>
@@ -24,21 +24,6 @@
         <CONNECTION INSTANCE="clk_map_psr_aclk" PORT="aux_reset_in"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="7" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="0" NAME="S00_AXI_arlock" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="3" NAME="S00_AXI_arcache" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="3" NAME="S00_AXI_arqos" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="S00_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef"/>
-    <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef"/>
     <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" LEFT="3" NAME="M00_AXI_arlen" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" LEFT="2" NAME="M00_AXI_arsize" RIGHT="0" SIGIS="undef"/>
@@ -54,6 +39,21 @@
     <PORT DIR="I" NAME="M00_AXI_rlast" SIGIS="undef"/>
     <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef"/>
     <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="7" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="0" NAME="S00_AXI_arlock" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="3" NAME="S00_AXI_arcache" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="3" NAME="S00_AXI_arqos" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef"/>
+    <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef"/>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -219,14 +219,14 @@
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="clk_map_psr_aclk_interconnect_aresetn">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m00_exit_pipeline_m00_exit" PORT="aresetn"/>
             <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="aresetn"/>
             <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="aresetn"/>
             <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="aresetn"/>
             <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="s_sc_aresetn"/>
             <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m00_exit_pipeline_m00_exit" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst"/>

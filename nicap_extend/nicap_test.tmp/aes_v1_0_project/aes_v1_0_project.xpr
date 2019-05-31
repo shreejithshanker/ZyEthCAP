@@ -42,13 +42,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="1"/>
-    <Option Name="WTModelSimExportSim" Val="1"/>
-    <Option Name="WTQuestaExportSim" Val="1"/>
-    <Option Name="WTIesExportSim" Val="1"/>
-    <Option Name="WTVcsExportSim" Val="1"/>
-    <Option Name="WTRivieraExportSim" Val="1"/>
-    <Option Name="WTActivehdlExportSim" Val="1"/>
+    <Option Name="WTXSimExportSim" Val="3"/>
+    <Option Name="WTModelSimExportSim" Val="3"/>
+    <Option Name="WTQuestaExportSim" Val="3"/>
+    <Option Name="WTIesExportSim" Val="3"/>
+    <Option Name="WTVcsExportSim" Val="3"/>
+    <Option Name="WTRivieraExportSim" Val="3"/>
+    <Option Name="WTActivehdlExportSim" Val="3"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -59,140 +59,171 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_0_1/axis_dwidth_converter_0.xci">
+      <File Path="$PSRCDIR/sources_1/ip/axis_dwidth_converter_0/axis_dwidth_converter_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axis_dwidth_converter_1/axis_dwidth_converter_1.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/hdl/aes_v1_0_S00_AXI.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/types.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/hdl/aes_v1_0_S00_AXI.v">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/cipher_cu.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/types.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/math.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/cipher_cu.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/sbox.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/math.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/state_reg.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/sbox.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/cipher.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/state_reg.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/counter.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/cipher.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/encryption_module.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/counter.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/inv_cipher_cu.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/encryption_module.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/inv_cipher.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/inv_cipher_cu.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/decrementor.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/inv_cipher.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/decryption_module.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/decrementor.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/key_expander.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/decryption_module.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/dp_ram.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/key_expander.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/key_expansion_cu.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/dp_ram.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/key_expansion.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/key_expansion_cu.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/aes_module_cu.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/key_expansion.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/aes_module.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/aes_module_cu.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/aes_wrapper.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/aes_module.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/hdl/aes_v1_0.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/aes_wrapper.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/hdl/aes_v1_0.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/component.xml">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/component.xml">
         <FileInfo SFType="IPXACT"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/top.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/reg_32.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/sbox_inv.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -208,18 +239,82 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/aes_axis_tb.v">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/hdl/aes_axis_tb.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/aes_module_tb.vhd">
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/aes_axis_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
-          <Attr Name="UsedIn" Val="testbench"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/aes_module_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/cipher_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/counter_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/decryption_module_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/encryption_module_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/inv_cipher_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/key_expander_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/key_expansion_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/aes_1.0/src/sbox_inv_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
@@ -229,19 +324,6 @@
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="axis_dwidth_converter_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axis_dwidth_converter_1">
-      <File Path="$PPRDIR/../../../../zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_1/axis_dwidth_converter_1.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="axis_dwidth_converter_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -275,32 +357,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="axis_dwidth_converter_1_synth_1" Type="Ft3:Synth" SrcSet="axis_dwidth_converter_1" Part="xc7z020clg400-1" ConstrsSet="axis_dwidth_converter_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axis_dwidth_converter_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="axis_dwidth_converter_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="axis_dwidth_converter_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="axis_dwidth_converter_1_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>

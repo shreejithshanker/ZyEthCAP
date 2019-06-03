@@ -82,11 +82,11 @@ set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEt
 set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xdc]
 set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 read_ip -quiet /home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/sources_1/ip/bit_buffer_fifo/bit_buffer_fifo.xci

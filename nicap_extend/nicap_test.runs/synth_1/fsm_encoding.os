@@ -1,25 +1,5 @@
 
  add_fsm_encoding \
-       {axis_dwidth_converter_v1_1_14_axisc_upsizer.state} \
-       { }  \
-       {{000 00010} {001 00001} {010 10000} {011 00100} {101 01000} }
-
- add_fsm_encoding \
-       {cipher_cu.S} \
-       { }  \
-       {{000 000} {001 001} {010 010} {011 011} {100 100} {101 101} }
-
- add_fsm_encoding \
-       {inv_cipher_cu.S} \
-       { }  \
-       {{000 000} {001 001} {010 010} {011 011} {100 100} {101 101} }
-
- add_fsm_encoding \
-       {aes_module_cu.S} \
-       { }  \
-       {{000 000} {001 011} {010 100} {011 001} {100 010} }
-
- add_fsm_encoding \
        {wr_chnl.GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs} \
        { }  \
        {{000 000} {001 100} {010 011} {011 001} {100 010} }
@@ -88,6 +68,21 @@
        {axi_data_fifo_v2_1_14_axic_reg_srl_fifo__parameterized3.state} \
        { }  \
        {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_14_axic_reg_srl_fifo__parameterized4.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {present_DEC.state} \
+       { }  \
+       {{001 00} {010 10} {011 01} {100 11} }
+
+ add_fsm_encoding \
+       {axis_dwidth_converter_v1_1_14_axisc_upsizer.state} \
+       { }  \
+       {{000 00010} {001 00001} {010 10000} {011 00100} {101 01000} }
 
  add_fsm_encoding \
        {axi_datamover_pcc__parameterized0.sig_pcc_sm_state} \

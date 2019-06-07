@@ -2,3 +2,6 @@
 *.runs/*
 *.metadata
 *.str
+*.jou
+*.log
+*.tmp

@@ -1,3 +1,4 @@
 *mrp
 *.runs/*
 *.metadata
+*.str

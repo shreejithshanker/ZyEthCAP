@@ -75,11 +75,14 @@ set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/parti
 
 set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/partial_led_0]
 
-create_pblock pblock_partial_led_0
 add_cells_to_pblock [get_pblocks pblock_partial_led_0] [get_cells -quiet [list design_1_wrapper/design_1_i/partial_led_0]]
-resize_pblock [get_pblocks pblock_partial_led_0] -add {SLICE_X80Y87:SLICE_X99Y96}
-resize_pblock [get_pblocks pblock_partial_led_0] -add {DSP48_X3Y36:DSP48_X3Y37}
-resize_pblock [get_pblocks pblock_partial_led_0] -add {RAMB18_X4Y36:RAMB18_X4Y37}
-resize_pblock [get_pblocks pblock_partial_led_0] -add {RAMB36_X4Y18:RAMB36_X4Y18}
-set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_partial_led_0]
-set_property SNAPPING_MODE ON [get_pblocks pblock_partial_led_0]
+
+create_pblock pblock_crypto_top_0
+add_cells_to_pblock [get_pblocks pblock_crypto_top_0] [get_cells -quiet [list design_1_wrapper/design_1_i/crypto_top_0]]
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {SLICE_X80Y69:SLICE_X109Y96}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {DSP48_X3Y28:DSP48_X4Y37}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB18_X4Y28:RAMB18_X5Y37}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB36_X4Y14:RAMB36_X5Y18}
+set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_crypto_top_0]
+set_property SNAPPING_MODE ON [get_pblocks pblock_crypto_top_0]
+set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/crypto_top_0]

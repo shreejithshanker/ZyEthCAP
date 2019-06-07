@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun  7 14:22:25 2019
+# Process ID: 4431
+# Current directory: /home/alex/GitHub/ZyEthCAP/nicap_extend/scripts
+# Command line: vivado -mode batch -source generate_bitstreams.tcl
+# Log file: /home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/vivado.log
+# Journal file: /home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl'
+source generate_bitstreams.tcl
+# open_checkpoint ../checkpoints/top_mode1_routed.dcp
+Command: open_checkpoint ../checkpoints/top_mode1_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1168.105 ; gain = 0.000 ; free physical = 175 ; free virtual = 15400
+INFO: [Netlist 29-17] Analyzing 1403 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top_board.xdc]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top_board.xdc]
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top_early.xdc]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top_early.xdc]
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:302]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:897]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:1491]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:2309]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:3357]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:4175]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5226]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5820]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:6638]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:7686]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:8504]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:301]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:895]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:1713]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:2761]
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:3579]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top.xdc]
+Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top_late.xdc]
+Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-4431-alex-pc/dcp1/sys_top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:01 . Memory (MB): peak = 1632.902 ; gain = 28.758 ; free physical = 166 ; free virtual = 14934
+Restored from archive | CPU: 1.010000 secs | Memory: 24.317146 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:01 . Memory (MB): peak = 1632.902 ; gain = 28.758 ; free physical = 166 ; free virtual = 14934
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 26 instances
+  SRLC32E => SRL16E: 20 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1632.902 ; gain = 464.797 ; free physical = 213 ; free virtual = 14938
+# write_bitstream -force ../bitstreams/aes.bit
+Command: write_bitstream -force ../bitstreams/aes.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license: PartialReconfiguration
+WARNING: [Common 17-301] Failed to get a license for 'PartialReconfiguration'. Explanation: Cannot connect to a license server running the xilinxd licensing daemon on the specified host.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+Attempting to get a license: ap_opencl
+WARNING: [Common 17-301] Failed to get a license for 'ap_opencl'. Explanation: Cannot connect to a license server running the xilinxd licensing daemon on the specified host.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+INFO: [Common 17-83] Releasing license: Implementation
+2 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_bitstream failed
+ERROR: [Constraints 18-4613] A valid license was not found for feature 'PartialReconfiguration'. Please run the Vivado License Manager for assistance in determining which features and devices are licensed for your system.
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  7 14:23:01 2019...

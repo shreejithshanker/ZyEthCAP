@@ -489,6 +489,64 @@ set_false_path -to [get_pins -hier *cdc_to*/D]
 
 
 ####################################################################################
+# Constraints from file : 'design_1_axi_dma_0_1.xdc'
+####################################################################################
+
+# file: design_1_axi_dma_0_1.xdc
+# (c) Copyright 2009 - 2013 Xilinx, Inc. All rights reserved.
+#
+# This file contains confidential and proprietary information
+# of Xilinx, Inc. and is protected under U.S. and
+# international copyright and other intellectual property
+# laws.
+#
+# DISCLAIMER
+# This disclaimer is not a license and does not grant any
+# rights to the materials distributed herewith. Except as
+# otherwise provided in a valid license issued to you by
+# Xilinx, and to the maximum extent permitted by applicable
+# law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+# WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+# AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+# BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+# INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+# (2) Xilinx shall not be liable (whether in contract or tort,
+# including negligence, or under any other theory of
+# liability) for any loss or damage of any kind or nature
+# related to, arising under or in connection with these
+# materials, including for any direct, or any indirect,
+# special, incidental, or consequential loss or damage
+# (including loss of data, profits, goodwill, or any type of
+# loss or damage suffered as a result of any action brought
+# by a third party) even if such damage or loss was
+# reasonably foreseeable or Xilinx had been advised of the
+# possibility of the same.
+#
+# CRITICAL APPLICATIONS
+# Xilinx products are not designed or intended to be fail-
+# safe, or for use in any application requiring fail-safe
+# performance, such as life-support or safety devices or
+# systems, Class III medical devices, nuclear facilities,
+# applications related to the deployment of airbags, or any
+# other applications that could lead to death, personal
+# injury, or severe property or environmental damage
+# (individually and collectively, "Critical
+# Applications"). Customer assumes the sole risk and
+# liability of any use of Xilinx products in Critical
+# Applications, subject only to applicable laws and
+# regulations governing limitations on product liability.
+#
+# THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+# PART OF THIS FILE AT ALL TIMES.
+
+
+current_instance -quiet
+current_instance design_1_wrapper/design_1_i/axi_dma_0/U0
+set_false_path -to [get_pins -hier *cdc_to*/D]
+
+
+
+####################################################################################
 # Constraints from file : 'bit_buffer_fifo.xdc'
 ####################################################################################
 
@@ -565,8 +623,6 @@ set_false_path -to [get_pins -hier *cdc_to*/D]
 current_instance -quiet
 set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports {leds_0[0]}]
 set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports {leds_0[1]}]
-set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports {leds_0[2]}]
-set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {leds_0[3]}]
 
 set_property MARK_DEBUG true [get_nets {eth_bridge/config_frameData[15]_i_3_n_0}]
 set_property MARK_DEBUG true [get_nets {eth_bridge/config_frameData[31]_i_1_n_0}]
@@ -14876,10 +14932,72 @@ set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {leds_0[3]}]
 
 
 ####################################################################################
+# Constraints from file : 'top_io.xdc'
+####################################################################################
+
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports {leds_0[0]}]
+set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports {leds_0[1]}]
+set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports {leds_0[2]}]
+set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {leds_0[3]}]
+
+
+####################################################################################
 # Constraints from file : 'zycap_axi_dma_0_0_clocks.xdc'
 ####################################################################################
 
 # file: zycap_axi_dma_0_0.xdc
+# (c) Copyright 2009 - 2013 Xilinx, Inc. All rights reserved.
+#
+# This file contains confidential and proprietary information
+# of Xilinx, Inc. and is protected under U.S. and
+# international copyright and other intellectual property
+# laws.
+#
+# DISCLAIMER
+# This disclaimer is not a license and does not grant any
+# rights to the materials distributed herewith. Except as
+# otherwise provided in a valid license issued to you by
+# Xilinx, and to the maximum extent permitted by applicable
+# law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+# WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+# AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+# BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+# INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+# (2) Xilinx shall not be liable (whether in contract or tort,
+# including negligence, or under any other theory of
+# liability) for any loss or damage of any kind or nature
+# related to, arising under or in connection with these
+# materials, including for any direct, or any indirect,
+# special, incidental, or consequential loss or damage
+# (including loss of data, profits, goodwill, or any type of
+# loss or damage suffered as a result of any action brought
+# by a third party) even if such damage or loss was
+# reasonably foreseeable or Xilinx had been advised of the
+# possibility of the same.
+#
+# CRITICAL APPLICATIONS
+# Xilinx products are not designed or intended to be fail-
+# safe, or for use in any application requiring fail-safe
+# performance, such as life-support or safety devices or
+# systems, Class III medical devices, nuclear facilities,
+# applications related to the deployment of airbags, or any
+# other applications that could lead to death, personal
+# injury, or severe property or environmental damage
+# (individually and collectively, "Critical
+# Applications"). Customer assumes the sole risk and
+# liability of any use of Xilinx products in Critical
+# Applications, subject only to applicable laws and
+# regulations governing limitations on product liability.
+#
+# THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+# PART OF THIS FILE AT ALL TIMES.
+
+
+####################################################################################
+# Constraints from file : 'design_1_axi_dma_0_1_clocks.xdc'
+####################################################################################
+
+# file: design_1_axi_dma_0_1.xdc
 # (c) Copyright 2009 - 2013 Xilinx, Inc. All rights reserved.
 #
 # This file contains confidential and proprietary information
@@ -15088,6 +15206,33 @@ set_false_path -to [get_cells {syncstages_ff_reg[0]}]
 
 
 
+# Scoped constraints for xpm_fifo
+#if {([llength [ get_cells -hier *src_gray_ff_reg* -quiet]] > 0)} {
+#set_false_path -from [get_pins -hierarchical -filter {NAME =~ *wr_rst_i_reg/C}] -to [get_pins -hierarchical -filter {NAME =~ *d_out_reg/D}]
+#wr_rst_rd_reg[*]/D}]
+#set_false_path -from [get_pins -hierarchical -filter {NAME =~ *rd_rst_d3_reg/C}] -to [get_pins -hierarchical -filter {NAME =~ *d_out_reg/D}]
+#}
+
+
+
+# Scoped constraints for xpm_fifo
+#if {([llength [ get_cells -hier *src_gray_ff_reg* -quiet]] > 0)} {
+#set_false_path -from [get_pins -hierarchical -filter {NAME =~ *wr_rst_i_reg/C}] -to [get_pins -hierarchical -filter {NAME =~ *d_out_reg/D}]
+#wr_rst_rd_reg[*]/D}]
+#set_false_path -from [get_pins -hierarchical -filter {NAME =~ *rd_rst_d3_reg/C}] -to [get_pins -hierarchical -filter {NAME =~ *d_out_reg/D}]
+#}
+
+
+
+# Scoped constraints for xpm_fifo
+#if {([llength [ get_cells -hier *src_gray_ff_reg* -quiet]] > 0)} {
+#set_false_path -from [get_pins -hierarchical -filter {NAME =~ *wr_rst_i_reg/C}] -to [get_pins -hierarchical -filter {NAME =~ *d_out_reg/D}]
+#wr_rst_rd_reg[*]/D}]
+#set_false_path -from [get_pins -hierarchical -filter {NAME =~ *rd_rst_d3_reg/C}] -to [get_pins -hierarchical -filter {NAME =~ *d_out_reg/D}]
+#}
+
+
+
 
 ####################################################################################
 # Constraints from file : 'xpm_memory_xdc.tcl'
@@ -15098,34 +15243,21 @@ set_false_path -to [get_cells {syncstages_ff_reg[0]}]
 # Scoped constraints for xpm_memory
 
 
-####################################################################################
-# Constraints from file : 'top_io.xdc'
-####################################################################################
-
-current_instance -quiet
-set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports {leds_0[0]}]
-set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports {leds_0[1]}]
-set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports {leds_0[2]}]
-set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {leds_0[3]}]
-
-
-# User Generated miscellaneous constraints 
-
-set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/partial_led_test_0]
-
 # User Generated physical constraints 
 
-create_pblock pblock_partial_led_test_0
-add_cells_to_pblock [get_pblocks pblock_partial_led_test_0] [get_cells -quiet [list design_1_wrapper/design_1_i/partial_led_test_0]]
-resize_pblock [get_pblocks pblock_partial_led_test_0] -add {SLICE_X82Y78:SLICE_X97Y93}
-resize_pblock [get_pblocks pblock_partial_led_test_0] -add {DSP48_X3Y32:DSP48_X3Y35}
-resize_pblock [get_pblocks pblock_partial_led_test_0] -add {RAMB18_X4Y32:RAMB18_X4Y35}
-resize_pblock [get_pblocks pblock_partial_led_test_0] -add {RAMB36_X4Y16:RAMB36_X4Y17}
-set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_partial_led_test_0]
-set_property SNAPPING_MODE ON [get_pblocks pblock_partial_led_test_0]
+current_instance -quiet
+create_pblock pblock_crypto_top_0
+add_cells_to_pblock [get_pblocks pblock_crypto_top_0] [get_cells -quiet [list design_1_wrapper/design_1_i/crypto_top_0]]
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {SLICE_X80Y69:SLICE_X109Y96}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {DSP48_X3Y28:DSP48_X4Y37}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB18_X4Y28:RAMB18_X5Y37}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB36_X4Y14:RAMB36_X5Y18}
+set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_crypto_top_0]
+set_property SNAPPING_MODE ON [get_pblocks pblock_crypto_top_0]
 
 # User Generated miscellaneous constraints 
 
+set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/crypto_top_0]
 
 # Vivado Generated miscellaneous constraints 
 

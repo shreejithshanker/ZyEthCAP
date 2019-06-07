@@ -1,6 +1,8 @@
 #!/bin/bash
 
-proxychains /tools/Xilinx/Vivado/2017.4/bin/vivado -mode batch -source generate_bitstreams.tcl 
+#proxychains /tools/Xilinx/Vivado/2017.4/bin/vivado -mode batch -source generate_bitstreams.tcl 
+/opt/Xilinx/Vivado/2017.4/bin/vivado -mode batch -source generate_bitstreams.tcl 
+
 echo 'message:Finished Generating Bitstreams' | zenity --notification
 for i in $(find ../bitstreams -type f -name "*pblock*"); do
     name=$(echo $i | cut -d '_' -f 1 | rev | cut -d '/' -f 1 | rev)

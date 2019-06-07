@@ -1,3 +1,5 @@
+# ZyEthCAP
+
 ZyEthCAP extends ZyNCAP by adding capability for receiving bitstream over Ethernet. 
 Frames are identified by an 8-byte Bitstream Identifier (0011AABBCCDDEEFF) followed by a 7-byte Length Field (bitstream length in bytes) and a 1-byte bitframe identifier -- the last 2 bits of the bitframe ID must be set to '10' for starting frame, '01' for ending frame and '00' for all others. 
 
@@ -9,7 +11,13 @@ Observe the console using a terminal application like TeraTerm (8-bit at a baud 
 
 Once the python script is done, type on 3 key press command on the UART console to read the time consumed by the ethernet operation, based on a hardware counter. The counter counts the time from the reception of the first frame to the completion of reconfiguration operation. 
 
-Test on PynQ-Z2 board
+### Tests
+
+#### PCAP
+
+### Info
+
+Test on PynQ-Z1 board
 Device xc7z020clg400-1 
 
 Partial bitstream size: 151488 bytes

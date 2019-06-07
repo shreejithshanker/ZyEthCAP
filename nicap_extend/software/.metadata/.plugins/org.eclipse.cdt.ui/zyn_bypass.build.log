@@ -1,15 +1,79 @@
-16:35:33 **** Build of configuration Debug for project zyn_bypass ****
+16:02:22 **** Auto Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 Building file: ../src/ZyNCAP_pr.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
+ #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
+ #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
+ 
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
+ #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
+ #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
+ 
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
+ #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
+ #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
+ 
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
+ #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
+ #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
+ 
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
+ #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
+ #define XPAR_AXIDMA_0_BASEADDR 0x80400000
+ 
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
+ #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
+ #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
+ 
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
+ #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
+ #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
+ 
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
+ #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:468:0: note: this is the location of the previous definition
+ #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
+ 
 ../src/ZyNCAP_pr.c:20:0: warning: "XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR" redefined
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
  
 In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:381:0: note: this is the location of the previous definition
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:434:0: note: this is the location of the previous definition
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR 0xFFFFFFFF
  
 ../src/ZyNCAP_pr.c: In function 'main':
@@ -25,7 +89,8 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
 ../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make: *** [src/subdir.mk:56: src/ZyNCAP_pr.o] Error 1
+src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
+make: *** [src/ZyNCAP_pr.o] Error 1
 
-16:35:33 Build Finished (took 187ms)
+16:02:23 Build Finished (took 114ms)
 

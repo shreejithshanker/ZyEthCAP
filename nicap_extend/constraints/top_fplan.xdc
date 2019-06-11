@@ -693,6 +693,16 @@ set_property MARK_DEBUG true [get_nets {eth_bridge/config_match_reg_reg_n_0_[7]}
 
 
 
+create_pblock pblock_crypto_top_0
+add_cells_to_pblock [get_pblocks pblock_crypto_top_0] [get_cells -quiet [list design_1_wrapper/design_1_i/crypto_top_0]]
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {SLICE_X80Y69:SLICE_X109Y96}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {DSP48_X3Y28:DSP48_X4Y37}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB18_X4Y28:RAMB18_X5Y37}
+resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB36_X4Y14:RAMB36_X5Y18}
+set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_crypto_top_0]
+set_property SNAPPING_MODE ON [get_pblocks pblock_crypto_top_0]
+set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/crypto_top_0]
+
 
 ####################################################################################
 # Constraints from file : 'top_fplan_debug_bu.xdc'
@@ -15242,22 +15252,6 @@ set_false_path -to [get_cells {syncstages_ff_reg[0]}]
 
 # Scoped constraints for xpm_memory
 
-
-# User Generated physical constraints 
-
-current_instance -quiet
-create_pblock pblock_crypto_top_0
-add_cells_to_pblock [get_pblocks pblock_crypto_top_0] [get_cells -quiet [list design_1_wrapper/design_1_i/crypto_top_0]]
-resize_pblock [get_pblocks pblock_crypto_top_0] -add {SLICE_X80Y69:SLICE_X109Y96}
-resize_pblock [get_pblocks pblock_crypto_top_0] -add {DSP48_X3Y28:DSP48_X4Y37}
-resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB18_X4Y28:RAMB18_X5Y37}
-resize_pblock [get_pblocks pblock_crypto_top_0] -add {RAMB36_X4Y14:RAMB36_X5Y18}
-set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_crypto_top_0]
-set_property SNAPPING_MODE ON [get_pblocks pblock_crypto_top_0]
-
-# User Generated miscellaneous constraints 
-
-set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/crypto_top_0]
 
 # Vivado Generated miscellaneous constraints 
 

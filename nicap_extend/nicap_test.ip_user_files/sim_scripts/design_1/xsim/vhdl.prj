@@ -7,5 +7,24 @@ vhdl xil_defaultlib  \
 "../../../bd/design_1/ip/design_1_zycap_0_0/src/zycap_axi_dma_0_0/sim/zycap_axi_dma_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" \
 "../../../bd/design_1/ip/design_1_axi_dma_0_1/sim/design_1_axi_dma_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/types.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/cipher_cu.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/math.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/sbox.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/state_reg.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/cipher.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/counter.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/encryption_module.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/inv_cipher_cu.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/inv_cipher.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/decrementor.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/decryption_module.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/key_expander.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/dp_ram.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/key_expansion_cu.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/key_expansion.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/aes_module_cu.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/aes_module.vhd" \
+"../../../bd/design_1/ip/design_1_crypto_top_0_0/sources_1/ip/aes_v1_0_0/sources_1/imports/aes_1.0/src/aes_wrapper.vhd" \
 
 nosort

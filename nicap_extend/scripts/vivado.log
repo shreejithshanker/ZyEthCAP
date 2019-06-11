@@ -2,215 +2,26 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Jun  7 15:25:43 2019
-# Process ID: 12236
+# Start of session at: Mon Jun 10 17:29:44 2019
+# Process ID: 8658
 # Current directory: /home/alex/GitHub/ZyEthCAP/nicap_extend/scripts
-# Command line: vivado -mode batch -source generate_bitstreams.tcl
+# Command line: vivado -mode batch -source generate_sdk.tcl
 # Log file: /home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/vivado.log
 # Journal file: /home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/vivado.jou
 #-----------------------------------------------------------
 Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl'
-source generate_bitstreams.tcl
-# open_checkpoint ../checkpoints/top_mode1_routed.dcp
-Command: open_checkpoint ../checkpoints/top_mode1_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1168.773 ; gain = 0.000 ; free physical = 2116 ; free virtual = 10545
-INFO: [Netlist 29-17] Analyzing 1403 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.4
-INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top_board.xdc]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top_board.xdc]
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top_early.xdc]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top_early.xdc]
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top.xdc]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:302]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:897]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:1491]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:2309]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:3357]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:4175]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5226]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5820]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:6638]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:7686]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:8504]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:301]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:895]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:1713]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:2761]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:3579]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top.xdc]
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top_late.xdc]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp1/sys_top_late.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.96 ; elapsed = 00:00:00.97 . Memory (MB): peak = 1609.613 ; gain = 29.758 ; free physical = 1557 ; free virtual = 10077
-Restored from archive | CPU: 0.970000 secs | Memory: 24.317146 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.96 ; elapsed = 00:00:00.97 . Memory (MB): peak = 1609.613 ; gain = 29.758 ; free physical = 1557 ; free virtual = 10077
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 46 instances were transformed.
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 26 instances
-  SRLC32E => SRL16E: 20 instances
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
-open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1609.613 ; gain = 440.840 ; free physical = 1604 ; free virtual = 10081
-# write_bitstream -force ../bitstreams/aes.bit
-Command: write_bitstream -force ../bitstreams/aes.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-Attempting to get a license: PartialReconfiguration
-INFO: [Common 17-1540] The version limit for your license is '2019.02' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
-Feature available: PartialReconfiguration
-Running DRC as a precondition to command write_bitstream
+source generate_sdk.tcl
+# open_project ../nicap_test.xpr
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
-INFO: [DRC 23-27] Running DRC with 8 threads
-WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
-WARNING: [DRC PDRC-153] Gated clock check: Net design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/control_unit/y_mux_ctrl_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/control_unit/y_mux_ctrl_reg[0]_i_2/O, cell design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/control_unit/y_mux_ctrl_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[6] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/decryption_module/counter/reg_Q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[6] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/encryption_module/counter/reg_Q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[7] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[1]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/decryption_module/counter/reg_Q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[7] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[1]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/encryption_module/counter/reg_Q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[8] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[2]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/decryption_module/counter/reg_Q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[8] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[2]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/encryption_module/counter/reg_Q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[9] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[3]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/decryption_module/counter/reg_Q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRARDADDR[9] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_read[3]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/encryption_module/counter/reg_Q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRBWRADDR[6] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_write[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/counter/reg_Q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRBWRADDR[7] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_write[1]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/counter/reg_Q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRBWRADDR[8] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_write[2]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/counter/reg_Q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/ADDRBWRADDR[9] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/address_write[3]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/counter/reg_Q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[0] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[1] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[2] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[3] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[4] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[5] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[6] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0 has an input control pin design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/ram_reg_0/WEBWE[7] (net: design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/ram/Q[0]) which is driven by a register (design_1_wrapper/design_1_i/crypto_top_0/aes/inst/aes/aes/aes_module/key_expansion/control_unit/S_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC RTSTAT-10] No routable loads: 16 net(s) have no routable loads. The problem bus(es) and/or net(s) are eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/s_axis_tready... and (the first 15 of 16 listed).
-INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
-INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 23 Warnings, 2 Advisories
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-Partition "pblock_crypto_top_0" Reconfigurable Module "design_1_wrapper/design_1_i/crypto_top_0"
-INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
-INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ../bitstreams/aes.bit...
-Process Partition "pblock_crypto_top_0"
-INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Partition "pblock_crypto_top_0" has RESET_AFTER_RECONFIG = TRUE.
-Creating bitmap...
-Creating bitstream...
-Partial bitstream contains 6396512 bits.
-Writing bitstream ../bitstreams/aes_pblock_crypto_top_0_partial.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Common 17-83] Releasing license: Implementation
-11 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 2109.434 ; gain = 499.820 ; free physical = 1436 ; free virtual = 9999
-# close_design
-# open_checkpoint ../checkpoints/top_mode2_routed.dcp
-Command: open_checkpoint ../checkpoints/top_mode2_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2109.434 ; gain = 0.000 ; free physical = 1606 ; free virtual = 10177
-INFO: [Netlist 29-17] Analyzing 1377 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top_board.xdc]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top_board.xdc]
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top_early.xdc]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top_early.xdc]
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top.xdc]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:302]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:897]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:1491]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:2309]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:3357]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:4175]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5226]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:5820]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:6638]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:7686]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_fplan_debug_bu.xdc:8504]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:301]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:895]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:1713]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:2761]
-WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [/home/alex/GitHub/ZyEthCAP/nicap_extend/nicap_test.srcs/constrs_1/imports/constraints/top_io_debug.xdc:3579]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top.xdc]
-Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top_late.xdc]
-Finished Parsing XDC File [/home/alex/GitHub/ZyEthCAP/nicap_extend/scripts/.Xil/Vivado-12236-alex-warc/dcp3/sys_top_late.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2109.434 ; gain = 0.000 ; free physical = 1446 ; free virtual = 10016
-Restored from archive | CPU: 1.140000 secs | Memory: 26.101585 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2109.434 ; gain = 0.000 ; free physical = 1446 ; free virtual = 10016
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 68 instances were transformed.
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 48 instances
-  SRLC32E => SRL16E: 20 instances
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
-open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2109.434 ; gain = 0.000 ; free physical = 1483 ; free virtual = 10007
-# write_bitstream -force ../bitstreams/pres.bit
-Command: write_bitstream -force ../bitstreams/pres.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
-INFO: [DRC 23-27] Running DRC with 8 threads
-WARNING: [DRC RTSTAT-10] No routable loads: 16 net(s) have no routable loads. The problem bus(es) and/or net(s) are eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, eth_bridge/fifo2/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, eth_bridge/arb_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, eth_bridge/fifo1/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, eth_bridge/bit_buffer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/s_axis_tready... and (the first 15 of 16 listed).
-INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
-INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_wrapper/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings, 2 Advisories
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-Partition "pblock_crypto_top_0" Reconfigurable Module "design_1_wrapper/design_1_i/crypto_top_0"
-INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
-INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ../bitstreams/pres.bit...
-Process Partition "pblock_crypto_top_0"
-INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Partition "pblock_crypto_top_0" has RESET_AFTER_RECONFIG = TRUE.
-Creating bitmap...
-Creating bitstream...
-Partial bitstream contains 6396512 bits.
-Writing bitstream ../bitstreams/pres_pblock_crypto_top_0_partial.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Common 17-83] Releasing license: Implementation
-11 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:51 ; elapsed = 00:00:27 . Memory (MB): peak = 2229.492 ; gain = 120.059 ; free physical = 1265 ; free virtual = 9802
-# close_design
-INFO: [Common 17-206] Exiting Vivado at Fri Jun  7 15:27:28 2019...
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alex/GitHub/ZyEthCAP/zycap_core'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alex/GitHub/zynq-ip-cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.shs:user:zycap:1.0'. The one found in IP location '/home/alex/GitHub/ZyEthCAP/zycap_core/core/vivado/ipcore/zycap' will take precedence over the same IP in location /home/alex/GitHub/zynq-ip-cores/zycap
+# write_hwdef -file ../software/system_wrapper.hdf -force
+# launch_sdk -workspace ../software -hwspec ../software/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace ../software -hwspec ../software/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 10 17:29:56 2019...

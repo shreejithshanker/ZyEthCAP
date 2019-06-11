@@ -210,10 +210,10 @@ int main()
 	 * before writing to the internal register. In config2, the peripheral decrements the data by one before writing to the internal
 	 * register.
 	 */
-	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-	print("Reading data from register before PR\n\r");
-	rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	xil_printf("Register content is %0x\n\r",rtn);
+//	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
+//	print("Reading data from register before PR\n\r");
+//	rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+//	xil_printf("Register content is %0x\n\r",rtn);
 
 	print("Starting Reconfiguration\n\r");
 
@@ -243,10 +243,10 @@ int main()
 							   &recvbuffer[RecvCount], sizeof("Yes")-RecvCount);
 	}
 
-	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-	print("Reading data from register before PR\n\r");
-	rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	xil_printf("Register content is %0x\n\r",rtn);
+//	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
+//	print("Reading data from register before PR\n\r");
+//	rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+//	xil_printf("Register content is %0x\n\r",rtn);
 
 	Status = Prefetch_PR_Bitstream("mode1.bin");
 	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
@@ -288,10 +288,10 @@ int main()
 	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
 
 
-	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-	print("Reading data from register before PR\n\r");
-	rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	xil_printf("Register content is %0x\n\r",rtn);
+//	Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
+//	print("Reading data from register before PR\n\r");
+//	rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+//	xil_printf("Register content is %0x\n\r",rtn);
 
 	 xil_printf("Start Network test? ");
 	while (RecvCount < (sizeof("Yes") - 1)) {
@@ -346,9 +346,9 @@ int main()
 //	xil_printf("%d\r\n",Status);
 //	xil_printf("%d\r\n",TimerClock);
 
-	 Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
-	 rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
-	 xil_printf("Now the register content is %0x\n\r",rtn);
+//	 Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
+//	 rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);
+//	 xil_printf("Now the register content is %0x\n\r",rtn);
 	return 0;
 }
 

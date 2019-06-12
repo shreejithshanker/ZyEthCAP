@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1560174800">
-  <File Type="PA-TCL" Name="sys_top.tcl"/>
-  <File Type="REPORTS-TCL" Name="sys_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="sys_top.vds"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1560347658">
+  <File Type="VDS-TIMING-PB" Name="sys_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="sys_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="sys_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="sys_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="sys_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="sys_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="sys_top.vds"/>
+  <File Type="REPORTS-TCL" Name="sys_top_reports.tcl"/>
+  <File Type="PA-TCL" Name="sys_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
@@ -162,12 +167,11 @@
         <Attr Name="ImportTime" Val="1546252029"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/checkpoints/mode1.dcp">
+    <File Path="$PPRDIR/checkpoints/top_mode2_routed.dcp">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="ScopedToCell" Val="design_1_wrapper/design_1_i/partial_led_test_0"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../zynq-ip-cores/crypto_wrapper/crypto_wrapper.checkpoint/aes.dcp">
@@ -176,21 +180,6 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="ScopedToCell" Val="design_1_wrapper/design_1_i/crypto_top_0"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../zynq-ip-cores/crypto_wrapper/crypto_wrapper.checkpoint/pres.dcp">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="ScopedToCell" Val="design_1_wrapper/design_1_i/crypto_top_0"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/checkpoints/top_mode2_routed.dcp">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>

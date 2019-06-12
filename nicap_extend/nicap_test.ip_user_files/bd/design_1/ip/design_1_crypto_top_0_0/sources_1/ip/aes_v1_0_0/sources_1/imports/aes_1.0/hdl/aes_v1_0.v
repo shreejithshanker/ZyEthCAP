@@ -69,7 +69,7 @@
 		output wire  m00_axis_tvalid,
 		output wire [C_M00_AXIS_TDATA_WIDTH-1 : 0] m00_axis_tdata,
 		output wire [(C_M00_AXIS_TDATA_WIDTH/8)-1 : 0] m00_axis_tstrb,
-		output wire  m00_axis_tlast,
+		output reg  m00_axis_tlast = 0,
 		input wire  m00_axis_tready
 	);
 	

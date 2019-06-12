@@ -1,9 +1,9 @@
 #!/bin/bash
 
-XILINX_SDK='/tools/Xilinx/SDK/2017.4/bin'
+XILINX_SDK='/opt/Xilinx/SDK/2017.4/bin'
 
 #proxychains /tools/Xilinx/Vivado/2017.4/bin/vivado -mode batch -source generate_bitstreams.tcl 
-#/opt/Xilinx/Vivado/2017.4/bin/vivado -mode batch -source generate_bitstreams.tcl 
+/opt/Xilinx/Vivado/2017.4/bin/vivado -mode batch -source generate_bitstreams.tcl 
 echo 'message:Finished Generating Bitstreams' | zenity --notification
 rm ../bitstreams/*.bin
 for i in $(find ../bitstreams -type f -name "*pblock*"); do

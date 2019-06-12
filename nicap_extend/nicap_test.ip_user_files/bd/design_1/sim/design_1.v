@@ -1,15 +1,15 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Mon Jun 10 15:01:32 2019
-//Host        : alex-pc running 64-bit Ubuntu 18.10
+//Date        : Wed Jun 12 14:53:35 2019
+//Host        : alex-warc running 64-bit Ubuntu 18.04.2 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=35,numReposBlks=20,numNonXlnxBlks=2,numHierBlks=15,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=28,da_board_cnt=1,da_bram_cntlr_cnt=4,da_clkrst_cnt=11,da_ps7_cnt=3,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=35,numReposBlks=20,numNonXlnxBlks=2,numHierBlks=15,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=32,da_board_cnt=1,da_bram_cntlr_cnt=4,da_clkrst_cnt=11,da_ps7_cnt=3,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (BRAM_PORTA_1_addr,
     BRAM_PORTA_1_clk,
@@ -176,6 +176,7 @@ module design_1
   wire [3:0]axi_dma_0_M_AXI_S2MM_WSTRB;
   wire axi_dma_0_M_AXI_S2MM_WVALID;
   wire axi_dma_0_mm2s_introut;
+  wire axi_dma_0_s2mm_introut;
   wire [31:0]axi_mem_intercon_1_M00_AXI_ARADDR;
   wire [1:0]axi_mem_intercon_1_M00_AXI_ARBURST;
   wire [3:0]axi_mem_intercon_1_M00_AXI_ARCACHE;
@@ -725,7 +726,7 @@ module design_1
         .s_axi_wready(axi_mem_intercon_1_M01_AXI_WREADY),
         .s_axi_wstrb(axi_mem_intercon_1_M01_AXI_WSTRB),
         .s_axi_wvalid(axi_mem_intercon_1_M01_AXI_WVALID));
-  design_1_axi_dma_0_1 axi_dma_0
+  design_1_axi_dma_0_0 axi_dma_0
        (.axi_resetn(rst_processing_system7_0_50M_peripheral_aresetn),
         .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
         .m_axi_mm2s_araddr(axi_dma_0_M_AXI_MM2S_ARADDR),
@@ -763,6 +764,7 @@ module design_1
         .m_axis_mm2s_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
         .m_axis_mm2s_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID),
         .mm2s_introut(axi_dma_0_mm2s_introut),
+        .s2mm_introut(axi_dma_0_s2mm_introut),
         .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_lite_araddr(axi_mem_intercon_1_M02_AXI_ARADDR[9:0]),
         .s_axi_lite_arready(axi_mem_intercon_1_M02_AXI_ARREADY),
@@ -1401,8 +1403,8 @@ module design_1
   design_1_xlconcat_0_0 xlconcat_0
        (.In0(zycap_0_mm2s_introut),
         .In1(EnIn_1),
-        .In2(1'b0),
-        .In3(axi_dma_0_mm2s_introut),
+        .In2(axi_dma_0_mm2s_introut),
+        .In3(axi_dma_0_s2mm_introut),
         .dout(xlconcat_0_dout));
   design_1_zycap_0_0 zycap_0
        (.Lcl_M_AXIS_MM2S_TDATA(Lcl_M_AXIS_MM2S_TDATA_0_1),

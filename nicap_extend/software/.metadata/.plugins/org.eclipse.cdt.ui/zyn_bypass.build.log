@@ -1,4 +1,4 @@
-21:18:09 **** Auto Build of configuration Debug for project zyn_bypass ****
+15:40:01 **** Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -35,6 +35,7 @@ In file included from ../src/ZyNCAP_pr.c:15:0:
  
 In file included from ../src/ZyNCAP_pr.c:9:0:
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
+src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
  #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
  
 In file included from ../src/ZyNCAP_pr.c:15:0:
@@ -69,6 +70,14 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
  #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
  
+In file included from ../src/ZyNCAP_pr.c:15:0:
+../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
+ #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
+ 
+In file included from ../src/ZyNCAP_pr.c:9:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
+ #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
+ 
 ../src/ZyNCAP_pr.c: In function 'main':
 ../src/ZyNCAP_pr.c:20:50: error: 'XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR' undeclared (first use in this function)
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
@@ -82,7 +91,7 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
 ../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make: *** [src/subdir.mk:56: src/ZyNCAP_pr.o] Error 1
+make: *** [src/ZyNCAP_pr.o] Error 1
 
-21:18:09 Build Finished (took 65ms)
+15:40:01 Build Finished (took 128ms)
 

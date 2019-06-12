@@ -343,8 +343,8 @@ int main()
 	xil_printf("Time taken for transmission to interrupt %d usec\r\n",(delay/TimerClock));
 	xil_printf("Performance with pre-fetching and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/(delay+delay2));
 	xil_printf("Time taken: %d sec\r\n", (delay2));
-//	xil_printf("%d\r\n",Status);
-//	xil_printf("%d\r\n",TimerClock);
+	xil_printf("%d\r\n",Status);
+	xil_printf("%d\r\n",TimerClock);
 
 //	 Xil_Out32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR,0x0);
 //	 rtn = Xil_In32(XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR);

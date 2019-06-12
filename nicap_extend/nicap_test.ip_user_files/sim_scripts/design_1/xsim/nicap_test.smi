@@ -10,9 +10,9 @@
 
 <MemInfoSimulation Version="1" Minor="0">
   <Processor Endianness="Little" InstPath="design_1_wrapper/design_1_i/processing_system7_0">
-    <AddressSpace Name="design_1_wrapper_design_1_i_processing_system7_0.design_1_wrapper_design_1_i_blk_mem_gen_0_64K_4_ADDR_SPACE" ECC="NONE" Begin="1073741824" End="1073807359">
+    <AddressSpace Name="design_1_wrapper_design_1_i_processing_system7_0.design_1_wrapper_design_1_i_blk_mem_gen_0_64K_1_ADDR_SPACE" ECC="NONE" Begin="1073741824" End="1073807359">
       <BusBlock>
-        <BitLane MemType="blk_mem_gen_0_64K_4_MEM_DEVICE" MemType_DataWidth="32" MemType_AddressDepth="1073807359">
+        <BitLane MemType="blk_mem_gen_0_64K_1_MEM_DEVICE" MemType_DataWidth="32" MemType_AddressDepth="1073807359">
           <DataWidth MSB="31" LSB="0"/>
           <AddressRange Begin="0" End="16383"/>
           <Parity ON="false" NumBits="0"/>
@@ -20,9 +20,9 @@
         </BitLane>
       </BusBlock>
     </AddressSpace>
-    <AddressSpace Name="design_1_wrapper_design_1_i_processing_system7_0.design_1_wrapper_design_1_i_blk_mem_gen_1_64K_4_ADDR_SPACE" ECC="NONE" Begin="1610612736" End="1610678271">
+    <AddressSpace Name="design_1_wrapper_design_1_i_processing_system7_0.design_1_wrapper_design_1_i_blk_mem_gen_1_64K_1_ADDR_SPACE" ECC="NONE" Begin="1610612736" End="1610678271">
       <BusBlock>
-        <BitLane MemType="blk_mem_gen_1_64K_4_MEM_DEVICE" MemType_DataWidth="32" MemType_AddressDepth="1610678271">
+        <BitLane MemType="blk_mem_gen_1_64K_1_MEM_DEVICE" MemType_DataWidth="32" MemType_AddressDepth="1610678271">
           <DataWidth MSB="31" LSB="0"/>
           <AddressRange Begin="0" End="16383"/>
           <Parity ON="false" NumBits="0"/>

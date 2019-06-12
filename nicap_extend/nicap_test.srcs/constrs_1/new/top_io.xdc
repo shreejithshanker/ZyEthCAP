@@ -87,3 +87,5 @@ set_property RESET_AFTER_RECONFIG true [get_pblocks pblock_crypto_top_0]
 set_property SNAPPING_MODE ON [get_pblocks pblock_crypto_top_0]
 set_property HD.RECONFIGURABLE true [get_cells design_1_wrapper/design_1_i/crypto_top_0]
 
+
+

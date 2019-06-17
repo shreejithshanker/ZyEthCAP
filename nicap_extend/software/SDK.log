@@ -1625,3 +1625,1227 @@ con
 ----------------End of Script----------------
 
 15:43:36 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+09:10:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:10:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:10:41 INFO  : FPGA configured successfully with bitstream "/home/alex/GitHub/ZyEthCAP/nicap_extend/bitstreams/pres.bit"
+09:10:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:10:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:10:52 INFO  : FPGA configured successfully with bitstream "/home/alex/GitHub/ZyEthCAP/nicap_extend/bitstreams/aes.bit"
+09:11:06 INFO  : Disconnected from the channel tcfchan#1.
+09:11:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:11:07 INFO  : 'fpga -state' command is executed.
+09:11:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:11:07 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+09:11:07 INFO  : 'jtag frequency' command is executed.
+09:11:07 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:11:07 INFO  : Context for 'APU' is selected.
+09:11:08 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+09:11:08 INFO  : 'configparams force-mem-access 1' command is executed.
+09:11:08 INFO  : Context for 'APU' is selected.
+09:11:08 INFO  : 'stop' command is executed.
+09:11:09 INFO  : 'ps7_init' command is executed.
+09:11:09 INFO  : 'ps7_post_config' command is executed.
+09:11:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:11:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:11:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:11:09 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:11:09 INFO  : 'configparams force-mem-access 0' command is executed.
+09:11:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:11:09 INFO  : Memory regions updated for context APU
+09:11:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:11:09 INFO  : 'con' command is executed.
+09:11:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+09:11:09 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+09:13:59 INFO  : Disconnected from the channel tcfchan#2.
+09:14:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:14:00 INFO  : 'fpga -state' command is executed.
+09:14:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:14:00 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+09:14:00 INFO  : 'jtag frequency' command is executed.
+09:14:00 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:14:00 INFO  : Context for 'APU' is selected.
+09:14:01 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+09:14:01 INFO  : 'configparams force-mem-access 1' command is executed.
+09:14:01 INFO  : Context for 'APU' is selected.
+09:14:01 INFO  : 'stop' command is executed.
+09:14:02 INFO  : 'ps7_init' command is executed.
+09:14:02 INFO  : 'ps7_post_config' command is executed.
+09:14:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:14:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:14:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:14:02 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:14:02 INFO  : 'configparams force-mem-access 0' command is executed.
+09:14:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:14:02 INFO  : Memory regions updated for context APU
+09:14:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:14:02 INFO  : 'con' command is executed.
+09:14:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+09:14:02 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+09:14:34 INFO  : Disconnected from the channel tcfchan#3.
+09:14:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:14:35 INFO  : 'fpga -state' command is executed.
+09:14:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:14:35 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+09:14:35 INFO  : 'jtag frequency' command is executed.
+09:14:35 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:14:35 INFO  : Context for 'APU' is selected.
+09:14:37 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+09:14:37 INFO  : 'configparams force-mem-access 1' command is executed.
+09:14:37 INFO  : Context for 'APU' is selected.
+09:14:37 INFO  : 'stop' command is executed.
+09:14:37 INFO  : 'ps7_init' command is executed.
+09:14:37 INFO  : 'ps7_post_config' command is executed.
+09:14:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:14:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:14:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:14:38 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:14:38 INFO  : 'configparams force-mem-access 0' command is executed.
+09:14:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:14:38 INFO  : Memory regions updated for context APU
+09:14:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:14:38 INFO  : 'con' command is executed.
+09:14:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+09:14:38 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+09:16:39 INFO  : Disconnected from the channel tcfchan#4.
+09:16:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:16:40 INFO  : 'fpga -state' command is executed.
+09:16:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:16:40 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+09:16:40 INFO  : 'jtag frequency' command is executed.
+09:16:40 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:16:40 INFO  : Context for 'APU' is selected.
+09:16:42 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+09:16:42 INFO  : 'configparams force-mem-access 1' command is executed.
+09:16:42 INFO  : Context for 'APU' is selected.
+09:16:42 INFO  : 'stop' command is executed.
+09:16:42 INFO  : 'ps7_init' command is executed.
+09:16:42 INFO  : 'ps7_post_config' command is executed.
+09:16:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:16:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:16:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:16:42 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:16:42 INFO  : 'configparams force-mem-access 0' command is executed.
+09:16:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:16:42 INFO  : Memory regions updated for context APU
+09:16:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:16:42 INFO  : 'con' command is executed.
+09:16:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+09:16:42 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+09:16:58 INFO  : Disconnected from the channel tcfchan#5.
+09:16:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:16:59 INFO  : 'fpga -state' command is executed.
+09:16:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:17:00 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+09:17:00 INFO  : 'jtag frequency' command is executed.
+09:17:00 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:17:00 INFO  : Context for 'APU' is selected.
+09:17:01 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+09:17:01 INFO  : 'configparams force-mem-access 1' command is executed.
+09:17:01 INFO  : Context for 'APU' is selected.
+09:17:01 INFO  : 'stop' command is executed.
+09:17:01 INFO  : 'ps7_init' command is executed.
+09:17:01 INFO  : 'ps7_post_config' command is executed.
+09:17:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:02 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:17:02 INFO  : 'configparams force-mem-access 0' command is executed.
+09:17:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:17:02 INFO  : Memory regions updated for context APU
+09:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:02 INFO  : 'con' command is executed.
+09:17:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+09:17:02 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+09:17:32 INFO  : Disconnected from the channel tcfchan#6.
+09:17:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+09:17:33 INFO  : 'fpga -state' command is executed.
+09:17:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:17:33 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+09:17:33 INFO  : 'jtag frequency' command is executed.
+09:17:33 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:17:33 INFO  : Context for 'APU' is selected.
+09:17:34 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+09:17:34 INFO  : 'configparams force-mem-access 1' command is executed.
+09:17:34 INFO  : Context for 'APU' is selected.
+09:17:34 INFO  : 'stop' command is executed.
+09:17:35 INFO  : 'ps7_init' command is executed.
+09:17:35 INFO  : 'ps7_post_config' command is executed.
+09:17:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:17:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:35 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:17:35 INFO  : 'configparams force-mem-access 0' command is executed.
+09:17:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:17:35 INFO  : Memory regions updated for context APU
+09:17:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:17:35 INFO  : 'con' command is executed.
+09:17:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+09:17:35 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+10:30:47 INFO  : Disconnected from the channel tcfchan#7.
+10:30:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+10:30:48 INFO  : 'fpga -state' command is executed.
+10:30:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:48 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+10:30:48 INFO  : 'jtag frequency' command is executed.
+10:30:48 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:30:48 INFO  : Context for 'APU' is selected.
+10:30:50 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+10:30:50 INFO  : 'configparams force-mem-access 1' command is executed.
+10:30:50 INFO  : Context for 'APU' is selected.
+10:30:50 INFO  : 'stop' command is executed.
+10:30:50 INFO  : 'ps7_init' command is executed.
+10:30:50 INFO  : 'ps7_post_config' command is executed.
+10:30:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:30:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:51 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:30:51 INFO  : 'configparams force-mem-access 0' command is executed.
+10:30:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:30:51 INFO  : Memory regions updated for context APU
+10:30:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:51 INFO  : 'con' command is executed.
+10:30:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+10:30:51 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+10:37:45 INFO  : Disconnected from the channel tcfchan#8.
+10:37:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+10:37:46 INFO  : 'fpga -state' command is executed.
+10:37:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:46 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+10:37:46 INFO  : 'jtag frequency' command is executed.
+10:37:46 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:37:46 INFO  : Context for 'APU' is selected.
+10:37:48 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+10:37:48 INFO  : 'configparams force-mem-access 1' command is executed.
+10:37:48 INFO  : Context for 'APU' is selected.
+10:37:48 INFO  : 'stop' command is executed.
+10:37:48 INFO  : 'ps7_init' command is executed.
+10:37:48 INFO  : 'ps7_post_config' command is executed.
+10:37:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:37:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:37:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:37:48 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:37:48 INFO  : 'configparams force-mem-access 0' command is executed.
+10:37:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:37:49 INFO  : Memory regions updated for context APU
+10:37:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:37:49 INFO  : 'con' command is executed.
+10:37:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+10:37:49 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+10:39:42 INFO  : Disconnected from the channel tcfchan#9.
+10:39:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+10:39:43 INFO  : 'fpga -state' command is executed.
+10:39:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:43 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+10:39:43 INFO  : 'jtag frequency' command is executed.
+10:39:43 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:39:43 INFO  : Context for 'APU' is selected.
+10:39:45 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+10:39:45 INFO  : 'configparams force-mem-access 1' command is executed.
+10:39:45 INFO  : Context for 'APU' is selected.
+10:39:45 INFO  : 'stop' command is executed.
+10:39:46 INFO  : 'ps7_init' command is executed.
+10:39:46 INFO  : 'ps7_post_config' command is executed.
+10:39:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:39:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:46 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:39:46 INFO  : 'configparams force-mem-access 0' command is executed.
+10:39:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:39:46 INFO  : Memory regions updated for context APU
+10:39:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:46 INFO  : 'con' command is executed.
+10:39:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+10:39:46 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+10:40:40 INFO  : Disconnected from the channel tcfchan#10.
+10:40:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+10:40:41 INFO  : 'fpga -state' command is executed.
+10:40:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:41 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+10:40:41 INFO  : 'jtag frequency' command is executed.
+10:40:41 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:40:41 INFO  : Context for 'APU' is selected.
+10:40:43 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+10:40:43 INFO  : 'configparams force-mem-access 1' command is executed.
+10:40:43 INFO  : Context for 'APU' is selected.
+10:40:43 INFO  : 'stop' command is executed.
+10:40:43 INFO  : 'ps7_init' command is executed.
+10:40:43 INFO  : 'ps7_post_config' command is executed.
+10:40:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:40:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:44 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:40:44 INFO  : 'configparams force-mem-access 0' command is executed.
+10:40:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:40:44 INFO  : Memory regions updated for context APU
+10:40:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:44 INFO  : 'con' command is executed.
+10:40:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+10:40:44 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+10:51:19 INFO  : Disconnected from the channel tcfchan#11.
+10:51:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+10:51:20 INFO  : 'fpga -state' command is executed.
+10:51:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:51:20 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+10:51:20 INFO  : 'jtag frequency' command is executed.
+10:51:20 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:51:20 INFO  : Context for 'APU' is selected.
+10:51:21 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+10:51:21 INFO  : 'configparams force-mem-access 1' command is executed.
+10:51:21 INFO  : Context for 'APU' is selected.
+10:51:21 INFO  : 'stop' command is executed.
+10:51:22 INFO  : 'ps7_init' command is executed.
+10:51:22 INFO  : 'ps7_post_config' command is executed.
+10:51:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:51:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:51:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:51:22 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:51:22 INFO  : 'configparams force-mem-access 0' command is executed.
+10:51:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:51:22 INFO  : Memory regions updated for context APU
+10:51:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:51:22 INFO  : 'con' command is executed.
+10:51:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+10:51:22 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:24:04 INFO  : Disconnected from the channel tcfchan#12.
+11:24:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:24:05 INFO  : 'fpga -state' command is executed.
+11:24:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:05 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:24:05 INFO  : 'jtag frequency' command is executed.
+11:24:05 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:24:05 INFO  : Context for 'APU' is selected.
+11:24:07 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:24:07 INFO  : 'configparams force-mem-access 1' command is executed.
+11:24:07 INFO  : Context for 'APU' is selected.
+11:24:07 INFO  : 'stop' command is executed.
+11:24:07 INFO  : 'ps7_init' command is executed.
+11:24:07 INFO  : 'ps7_post_config' command is executed.
+11:24:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:24:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:07 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:24:07 INFO  : 'configparams force-mem-access 0' command is executed.
+11:24:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:24:07 INFO  : Memory regions updated for context APU
+11:24:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:07 INFO  : 'con' command is executed.
+11:24:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:24:07 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:25:17 INFO  : Disconnected from the channel tcfchan#13.
+11:25:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:25:18 INFO  : 'fpga -state' command is executed.
+11:25:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:25:18 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:25:18 INFO  : 'jtag frequency' command is executed.
+11:25:18 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:25:18 INFO  : Context for 'APU' is selected.
+11:25:19 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:25:19 INFO  : 'configparams force-mem-access 1' command is executed.
+11:25:19 INFO  : Context for 'APU' is selected.
+11:25:19 INFO  : 'stop' command is executed.
+11:25:20 INFO  : 'ps7_init' command is executed.
+11:25:20 INFO  : 'ps7_post_config' command is executed.
+11:25:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:25:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:20 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:25:20 INFO  : 'configparams force-mem-access 0' command is executed.
+11:25:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:25:20 INFO  : Memory regions updated for context APU
+11:25:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:20 INFO  : 'con' command is executed.
+11:25:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:25:20 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:27:07 INFO  : Disconnected from the channel tcfchan#14.
+11:27:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:27:08 INFO  : 'fpga -state' command is executed.
+11:27:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:27:08 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:27:08 INFO  : 'jtag frequency' command is executed.
+11:27:08 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:27:08 INFO  : Context for 'APU' is selected.
+11:27:10 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:27:10 INFO  : 'configparams force-mem-access 1' command is executed.
+11:27:10 INFO  : Context for 'APU' is selected.
+11:27:10 INFO  : 'stop' command is executed.
+11:27:10 INFO  : 'ps7_init' command is executed.
+11:27:10 INFO  : 'ps7_post_config' command is executed.
+11:27:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:27:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:11 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:27:11 INFO  : 'configparams force-mem-access 0' command is executed.
+11:27:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:27:11 INFO  : Memory regions updated for context APU
+11:27:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:27:11 INFO  : 'con' command is executed.
+11:27:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:27:11 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:32:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:32:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:32:10 INFO  : FPGA configured successfully with bitstream "/home/alex/GitHub/ZyEthCAP/nicap_extend/bitstreams/aes.bit"
+11:32:24 INFO  : Disconnected from the channel tcfchan#15.
+11:32:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:32:25 INFO  : 'fpga -state' command is executed.
+11:32:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:32:25 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:32:25 INFO  : 'jtag frequency' command is executed.
+11:32:25 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:32:25 INFO  : Context for 'APU' is selected.
+11:32:26 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:32:26 INFO  : 'configparams force-mem-access 1' command is executed.
+11:32:27 INFO  : Context for 'APU' is selected.
+11:32:27 INFO  : 'stop' command is executed.
+11:32:27 INFO  : 'ps7_init' command is executed.
+11:32:27 INFO  : 'ps7_post_config' command is executed.
+11:32:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:32:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:32:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:32:27 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:32:27 INFO  : 'configparams force-mem-access 0' command is executed.
+11:32:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:32:27 INFO  : Memory regions updated for context APU
+11:32:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:32:27 INFO  : 'con' command is executed.
+11:32:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:32:27 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:43:26 INFO  : Disconnected from the channel tcfchan#16.
+11:43:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:43:27 INFO  : 'fpga -state' command is executed.
+11:43:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:27 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:43:27 INFO  : 'jtag frequency' command is executed.
+11:43:27 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:43:27 INFO  : Context for 'APU' is selected.
+11:43:29 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:43:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:43:29 INFO  : Context for 'APU' is selected.
+11:43:29 INFO  : 'stop' command is executed.
+11:43:29 INFO  : 'ps7_init' command is executed.
+11:43:29 INFO  : 'ps7_post_config' command is executed.
+11:43:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:43:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:30 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:30 INFO  : 'configparams force-mem-access 0' command is executed.
+11:43:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:43:30 INFO  : Memory regions updated for context APU
+11:43:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:30 INFO  : 'con' command is executed.
+11:43:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:43:30 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:44:32 INFO  : Disconnected from the channel tcfchan#17.
+11:44:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:44:33 INFO  : 'fpga -state' command is executed.
+11:44:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:33 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:44:33 INFO  : 'jtag frequency' command is executed.
+11:44:33 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:44:33 INFO  : Context for 'APU' is selected.
+11:44:35 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:44:35 INFO  : 'configparams force-mem-access 1' command is executed.
+11:44:35 INFO  : Context for 'APU' is selected.
+11:44:35 INFO  : 'stop' command is executed.
+11:44:35 INFO  : 'ps7_init' command is executed.
+11:44:35 INFO  : 'ps7_post_config' command is executed.
+11:44:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:44:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:36 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:36 INFO  : 'configparams force-mem-access 0' command is executed.
+11:44:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:44:36 INFO  : Memory regions updated for context APU
+11:44:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:36 INFO  : 'con' command is executed.
+11:44:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:44:36 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:46:04 INFO  : Disconnected from the channel tcfchan#18.
+11:46:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:46:05 INFO  : 'fpga -state' command is executed.
+11:46:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:46:05 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:46:05 INFO  : 'jtag frequency' command is executed.
+11:46:05 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:46:05 INFO  : Context for 'APU' is selected.
+11:46:07 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:46:07 INFO  : 'configparams force-mem-access 1' command is executed.
+11:46:07 INFO  : Context for 'APU' is selected.
+11:46:07 INFO  : 'stop' command is executed.
+11:46:08 INFO  : 'ps7_init' command is executed.
+11:46:08 INFO  : 'ps7_post_config' command is executed.
+11:46:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:46:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:08 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:46:08 INFO  : 'configparams force-mem-access 0' command is executed.
+11:46:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:46:08 INFO  : Memory regions updated for context APU
+11:46:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:08 INFO  : 'con' command is executed.
+11:46:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:46:08 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:48:59 INFO  : Disconnected from the channel tcfchan#19.
+11:49:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:49:01 INFO  : 'fpga -state' command is executed.
+11:49:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:01 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:49:01 INFO  : 'jtag frequency' command is executed.
+11:49:01 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:49:01 INFO  : Context for 'APU' is selected.
+11:49:02 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:49:02 INFO  : 'configparams force-mem-access 1' command is executed.
+11:49:02 INFO  : Context for 'APU' is selected.
+11:49:02 INFO  : 'stop' command is executed.
+11:49:03 INFO  : 'ps7_init' command is executed.
+11:49:03 INFO  : 'ps7_post_config' command is executed.
+11:49:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:49:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:03 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:49:03 INFO  : 'configparams force-mem-access 0' command is executed.
+11:49:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:49:03 INFO  : Memory regions updated for context APU
+11:49:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:03 INFO  : 'con' command is executed.
+11:49:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:49:03 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+11:49:43 INFO  : Disconnected from the channel tcfchan#20.
+11:49:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+11:49:44 INFO  : 'fpga -state' command is executed.
+11:49:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:44 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+11:49:44 INFO  : 'jtag frequency' command is executed.
+11:49:44 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:49:44 INFO  : Context for 'APU' is selected.
+11:49:46 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+11:49:46 INFO  : 'configparams force-mem-access 1' command is executed.
+11:49:46 INFO  : Context for 'APU' is selected.
+11:49:46 INFO  : 'stop' command is executed.
+11:49:46 INFO  : 'ps7_init' command is executed.
+11:49:46 INFO  : 'ps7_post_config' command is executed.
+11:49:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:49:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:46 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:49:46 INFO  : 'configparams force-mem-access 0' command is executed.
+11:49:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:49:46 INFO  : Memory regions updated for context APU
+11:49:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:47 INFO  : 'con' command is executed.
+11:49:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+11:49:47 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+12:16:14 INFO  : Disconnected from the channel tcfchan#21.
+12:16:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+12:16:15 INFO  : 'fpga -state' command is executed.
+12:16:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:16:15 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+12:16:15 INFO  : 'jtag frequency' command is executed.
+12:16:15 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:16:15 INFO  : Context for 'APU' is selected.
+12:16:17 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+12:16:17 INFO  : 'configparams force-mem-access 1' command is executed.
+12:16:17 INFO  : Context for 'APU' is selected.
+12:16:17 INFO  : 'stop' command is executed.
+12:16:18 INFO  : 'ps7_init' command is executed.
+12:16:18 INFO  : 'ps7_post_config' command is executed.
+12:16:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:16:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:18 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:16:18 INFO  : 'configparams force-mem-access 0' command is executed.
+12:16:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:16:18 INFO  : Memory regions updated for context APU
+12:16:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:18 INFO  : 'con' command is executed.
+12:16:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+12:16:18 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+14:43:15 INFO  : Disconnected from the channel tcfchan#22.
+14:43:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+14:43:16 INFO  : 'fpga -state' command is executed.
+14:43:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:16 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+14:43:16 INFO  : 'jtag frequency' command is executed.
+14:43:16 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:43:16 INFO  : Context for 'APU' is selected.
+14:43:18 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+14:43:18 INFO  : 'configparams force-mem-access 1' command is executed.
+14:43:18 INFO  : Context for 'APU' is selected.
+14:43:18 INFO  : 'stop' command is executed.
+14:43:18 INFO  : 'ps7_init' command is executed.
+14:43:18 INFO  : 'ps7_post_config' command is executed.
+14:43:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:43:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:19 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:43:19 INFO  : 'configparams force-mem-access 0' command is executed.
+14:43:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:43:19 INFO  : Memory regions updated for context APU
+14:43:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:43:19 INFO  : 'con' command is executed.
+14:43:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+14:43:19 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+15:12:23 INFO  : Disconnected from the channel tcfchan#23.
+15:12:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+15:12:24 INFO  : 'fpga -state' command is executed.
+15:12:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:24 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+15:12:24 INFO  : 'jtag frequency' command is executed.
+15:12:24 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:12:24 INFO  : Context for 'APU' is selected.
+15:12:26 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+15:12:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:26 INFO  : Context for 'APU' is selected.
+15:12:26 INFO  : 'stop' command is executed.
+15:12:26 INFO  : 'ps7_init' command is executed.
+15:12:26 INFO  : 'ps7_post_config' command is executed.
+15:12:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:12:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:27 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:12:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:12:27 INFO  : Memory regions updated for context APU
+15:12:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:27 INFO  : 'con' command is executed.
+15:12:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+15:12:27 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+15:12:48 INFO  : Disconnected from the channel tcfchan#24.
+15:12:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+15:12:49 INFO  : 'fpga -state' command is executed.
+15:12:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:49 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+15:12:49 INFO  : 'jtag frequency' command is executed.
+15:12:49 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:12:49 INFO  : Context for 'APU' is selected.
+15:12:50 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+15:12:50 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:50 INFO  : Context for 'APU' is selected.
+15:12:50 INFO  : 'stop' command is executed.
+15:12:51 INFO  : 'ps7_init' command is executed.
+15:12:51 INFO  : 'ps7_post_config' command is executed.
+15:12:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:12:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:51 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:51 INFO  : 'configparams force-mem-access 0' command is executed.
+15:12:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:12:51 INFO  : Memory regions updated for context APU
+15:12:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:51 INFO  : 'con' command is executed.
+15:12:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+15:12:51 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+15:28:07 INFO  : Disconnected from the channel tcfchan#25.
+15:28:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+15:28:09 INFO  : 'fpga -state' command is executed.
+15:28:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:09 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+15:28:09 INFO  : 'jtag frequency' command is executed.
+15:28:09 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:28:09 INFO  : Context for 'APU' is selected.
+15:28:10 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+15:28:10 INFO  : 'configparams force-mem-access 1' command is executed.
+15:28:10 INFO  : Context for 'APU' is selected.
+15:28:10 INFO  : 'stop' command is executed.
+15:28:11 INFO  : 'ps7_init' command is executed.
+15:28:11 INFO  : 'ps7_post_config' command is executed.
+15:28:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:28:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:11 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:28:11 INFO  : 'configparams force-mem-access 0' command is executed.
+15:28:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:28:11 INFO  : Memory regions updated for context APU
+15:28:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:11 INFO  : 'con' command is executed.
+15:28:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+15:28:11 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+15:43:25 INFO  : Disconnected from the channel tcfchan#26.
+15:43:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+15:43:26 INFO  : 'fpga -state' command is executed.
+15:43:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:27 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+15:43:27 INFO  : 'jtag frequency' command is executed.
+15:43:27 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:43:27 INFO  : Context for 'APU' is selected.
+15:43:28 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+15:43:28 INFO  : 'configparams force-mem-access 1' command is executed.
+15:43:28 INFO  : Context for 'APU' is selected.
+15:43:28 INFO  : 'stop' command is executed.
+15:43:29 INFO  : 'ps7_init' command is executed.
+15:43:29 INFO  : 'ps7_post_config' command is executed.
+15:43:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:43:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:43:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:43:29 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:43:29 INFO  : 'configparams force-mem-access 0' command is executed.
+15:43:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:43:29 INFO  : Memory regions updated for context APU
+15:43:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:43:29 INFO  : 'con' command is executed.
+15:43:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+15:43:29 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'
+15:44:03 INFO  : Disconnected from the channel tcfchan#27.
+15:44:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent PYNQ 210017097590A" && level==0} -index 1' command is executed.
+15:44:04 INFO  : 'fpga -state' command is executed.
+15:44:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:04 INFO  : Jtag cable 'Digilent PYNQ 210017097590A' is selected.
+15:44:04 INFO  : 'jtag frequency' command is executed.
+15:44:04 INFO  : Sourcing of '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:44:04 INFO  : Context for 'APU' is selected.
+15:44:06 INFO  : Hardware design information is loaded from '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf'.
+15:44:06 INFO  : 'configparams force-mem-access 1' command is executed.
+15:44:06 INFO  : Context for 'APU' is selected.
+15:44:06 INFO  : 'stop' command is executed.
+15:44:06 INFO  : 'ps7_init' command is executed.
+15:44:06 INFO  : 'ps7_post_config' command is executed.
+15:44:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:44:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:07 INFO  : The application '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:44:07 INFO  : 'configparams force-mem-access 0' command is executed.
+15:44:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+loadhw -hw /home/alex/GitHub/ZyEthCAP/nicap_extend/software/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+dow /home/alex/GitHub/ZyEthCAP/nicap_extend/software/zyn_test/Debug/zyn_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:44:07 INFO  : Memory regions updated for context APU
+15:44:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:07 INFO  : 'con' command is executed.
+15:44:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent PYNQ 210017097590A"} -index 0
+con
+----------------End of Script----------------
+
+15:44:07 INFO  : Launch script is exported to file '/home/alex/GitHub/ZyEthCAP/nicap_extend/software/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_zyn_test.elf_on_local.tcl'

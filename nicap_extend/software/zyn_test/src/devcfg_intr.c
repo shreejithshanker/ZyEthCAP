@@ -194,7 +194,7 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 	u32 StatusReg;
 	u32 PartialCfg = 1;
 
-	u32 delay, delay1;
+//	u32 delay, delay1;
 
 	XDcfg_Config *ConfigPtr;
 
@@ -294,9 +294,9 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 	 * Download bitstream in non secure mode
 	 */
 
-	XScuTimer_LoadTimer(Timer, 0xFFFFFFFF);
-	delay1 = XScuTimer_GetCounterValue(Timer);
-	XScuTimer_Start(Timer);
+//	XScuTimer_LoadTimer(Timer, 0xFFFFFFFF);
+//	delay1 = XScuTimer_GetCounterValue(Timer);
+//	XScuTimer_Start(Timer);
 
 	XDcfg_Transfer(DcfgInstPtr, (u8 *)bitstreamLoc,
 			bitstreamSize,
@@ -309,9 +309,9 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 
 	if (PartialCfg) {
 		while (!DmaPcapDone);
-		XScuTimer_Stop(Timer);
-		delay =  delay1 - XScuTimer_GetCounterValue(Timer);
-		xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (bitstreamSize*TimerClock)/delay);
+//		XScuTimer_Stop(Timer);
+//		delay =  delay1 - XScuTimer_GetCounterValue(Timer);
+//		xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (bitstreamSize*TimerClock)/delay);
 	} else {
 		while (!FpgaProgrammed);
 		/*

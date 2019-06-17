@@ -173,7 +173,7 @@ static void EnIntrHandler(void *baseaddr_p)
      XScuGic_Disable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
 	 modebin[0] = Xil_In32(ENET_RX_BASEADDR+4);
 	 modebin[1] = Xil_In32(ENET_RX_BASEADDR); // Also resets interrupt
-     xil_printf(" Received mode info %x , %x",modebin[1],modebin[0]);
+//     xil_printf(" Received mode info %x , %x",modebin[1],modebin[0]);
 	 modeName = ModeName(modebin[0],modebin[1]);
 	 ReConfig = 1;
      XScuGic_Enable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
@@ -204,7 +204,7 @@ static char * ModeName (int y, int x)
         snprintf(buf, sizeof(buf), "%c",z[i]);
         strcat(name,buf);
     }
-    xil_printf("\r\n Mode name %s",name);
+//    xil_printf("\r\n Mode name %s",name);
     strcat(name,".bin");
     return (name);
 }

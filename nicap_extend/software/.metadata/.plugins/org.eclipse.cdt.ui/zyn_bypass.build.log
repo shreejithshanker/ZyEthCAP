@@ -1,4 +1,4 @@
-15:40:01 **** Build of configuration Debug for project zyn_bypass ****
+10:51:08 **** Auto Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -35,7 +35,6 @@ In file included from ../src/ZyNCAP_pr.c:15:0:
  
 In file included from ../src/ZyNCAP_pr.c:9:0:
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
  #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
  
 In file included from ../src/ZyNCAP_pr.c:15:0:
@@ -64,6 +63,7 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
  
 In file included from ../src/ZyNCAP_pr.c:15:0:
 ../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
+src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
  #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
  
 In file included from ../src/ZyNCAP_pr.c:9:0:
@@ -93,5 +93,5 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 make: *** [src/ZyNCAP_pr.o] Error 1
 
-15:40:01 Build Finished (took 128ms)
+10:51:08 Build Finished (took 118ms)
 

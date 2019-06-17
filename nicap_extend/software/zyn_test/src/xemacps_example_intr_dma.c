@@ -488,7 +488,7 @@ LONG EmacSetup (INTC *IntcInstancePtr,
 			Xil_DCacheFlushRange((UINTPTR)(&BdTxTerminate), 64);
 		}
 	}
-	xil_printf("Entering loopback config: GemVersion is %d",GemVersion);
+	xil_printf("Entering loopback config: GemVersion is %d\n\r",GemVersion);
 	/*
 	 * Set emacps to phy loopback
 	 */

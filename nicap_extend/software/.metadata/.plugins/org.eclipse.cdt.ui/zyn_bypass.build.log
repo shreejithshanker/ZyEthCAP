@@ -1,4 +1,4 @@
-10:51:08 **** Auto Build of configuration Debug for project zyn_bypass ****
+12:53:06 **** Incremental Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -63,7 +63,6 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
  
 In file included from ../src/ZyNCAP_pr.c:15:0:
 ../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
  #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
  
 In file included from ../src/ZyNCAP_pr.c:9:0:
@@ -85,6 +84,7 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
 ../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
 ../src/ZyNCAP_pr.c:20:50: note: each undeclared identifier is reported only once for each function it appears in
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
                                                   ^
@@ -93,5 +93,5 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 make: *** [src/ZyNCAP_pr.o] Error 1
 
-10:51:08 Build Finished (took 118ms)
+12:53:07 Build Finished (took 118ms)
 

@@ -343,8 +343,8 @@ int main()
 
 //	delay2 =  delay - XScuTimer_GetCounterValue(TimerInstancePtr);
 	xil_printf("Time Taken for Network RX: %d ns\r\n", (ZyCAP_Network_Transmit_delay - ZyCAP_Network_Receive_delay)*nano_seconds);
-	xil_printf("Time Taken for Renconfig: %d ns\r\n", (ZyCAP_Network_Init_delay - ZyCAP_Network_Final_delay)*nano_seconds);
-	xil_printf("Reconfig speed (Prefetch) and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/(ZyCAP_Network_Init_delay - ZyCAP_Network_Final_delay));
+	xil_printf("Time Taken for Reconfig: %d ns\r\n", (ZyCAP_Network_Transmit_delay - ZyCAP_Network_Final_delay)*nano_seconds);
+	xil_printf("Reconfig speed (Prefetch) and deferred interrupt sync: %ld MBytes/sec\r\n", (Status*TimerClock)/(ZyCAP_Network_Transmit_delay - ZyCAP_Network_Final_delay));
 	xil_printf("File size: %d Bytes\n\r", Status);
 
 	return 0;

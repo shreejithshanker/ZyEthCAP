@@ -316,6 +316,9 @@ LONG EmacSetup (INTC *IntcInstancePtr,
 	XEmacPs_Config *Config;
 	XEmacPs_Bd BdTemplate;
 
+	u8 prio = 10;
+	u8 trigger;
+
 	/*************************************/
 	/* Setup device for first-time usage */
 	/*************************************/
@@ -369,6 +372,8 @@ LONG EmacSetup (INTC *IntcInstancePtr,
 				    XEMACPS_HANDLER_DMARECV,
 				    (void *) XEmacPsRecvHandler,
 				    EmacPsInstancePtr);
+
+
 	Status |=
 		XEmacPs_SetHandler(EmacPsInstancePtr, XEMACPS_HANDLER_ERROR,
 				    (void *) XEmacPsErrorHandler,
@@ -881,6 +886,8 @@ static LONG EmacPsSetupIntrSystem(INTC *IntcInstancePtr,
 				  u16 EmacPsIntrId)
 {
 	LONG Status;
+	u8 prio;
+	u8 trigger;
 
 #ifdef XPAR_INTC_0_DEVICE_ID
 
@@ -985,6 +992,14 @@ static LONG EmacPsSetupIntrSystem(INTC *IntcInstancePtr,
 	 * Enable interrupts from the hardware
 	 */
 	XScuGic_Enable(IntcInstancePtr, EmacPsIntrId);
+
+	XScuGic_GetPriorityTriggerType(IntcInstancePtr,EmacPsIntrId,&prio,&trigger);
+	xil_printf("Eth Prio is %d\n\r",prio);
+	prio = 200;
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr,EmacPsIntrId,prio,trigger);
+	XScuGic_GetPriorityTriggerType(IntcInstancePtr,EmacPsIntrId,&prio,&trigger);
+	xil_printf("Eth Prio is now %d\n\r",prio);
+
 #endif
 #ifndef TESTAPP_GEN
 	/*
@@ -1075,6 +1090,7 @@ static void XEmacPsRecvHandler(void *Callback)
 {
 	XEmacPs *EmacPsInstancePtr = (XEmacPs *) Callback;
 
+	xil_printf("\n\rTTTTTTTTTTTTTTTTTTTT\n\r");
 	/*
 	 * Disable the transmit related interrupts
 	 */

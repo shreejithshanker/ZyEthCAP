@@ -1,237 +1,45 @@
-11:51:12 **** Build of project standalone_bsp_0 ****
-make -k all 
-Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_3/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_5/src
-make -C ps7_cortexa9_0/libsrc/axidma_v9_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/bram_v4_2/src
-make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling dmaps
-Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling ddrps
-Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src
-make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling qspips
-Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling gpiops
-Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src
-make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling scugic
-Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_3/src
-make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling sdps
-Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src
-make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling standalone
-Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling cpu_cortexa9
-Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling xadcps
-Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_5/src
-make -C ps7_cortexa9_0/libsrc/axidma_v9_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling axidma
-Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_2/src
-make -C ps7_cortexa9_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling bram
-Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling devcfg
-Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling scuwdt
-Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src
-make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling emacps
-Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling usbps
-Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling coresightps_dcc
-Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src
-make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling uartps
-Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-Compiling scutimer
-Finished building libraries
-11:51:37 **** Clean-only build of configuration Debug for project eth_loopback ****
-make clean 
-rm -rf  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o  ./src/ff.d ./src/mmc.d ./src/xdevcfg_interrupt_example.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d  eth_loopback.elf.size  eth_loopback.elf
- 
-11:51:37 **** Build of configuration Debug for project eth_loopback ****
+17:33:03 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/ff.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.o" -o "src/ff.o" "../src/ff.c"
-Finished building: ../src/ff.c
+make: Nothing to be done for 'main-build'.
+17:34:10 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
  
-Building file: ../src/mmc.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mmc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.o" -o "src/mmc.o" "../src/mmc.c"
-Finished building: ../src/mmc.c
+make: Nothing to be done for 'main-build'.
+17:34:43 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
  
 Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
 ../src/xdevcfg_interrupt_example.c: In function 'main':
-../src/xdevcfg_interrupt_example.c:225:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
     filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
                ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:238:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
      ReconfigFlag = CheckDataFlag();
                     ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:200:6: warning: unused variable 'recvbuffer' [-Wunused-variable]
-   u8 recvbuffer [10];
-      ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:175:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
   int ReconfigFlag;
       ^~~~~~~~~~~~
 ../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:315:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
   Status = SD_Init(fatfs);
            ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/xdevcfg_interrupt_example.c
- 
-Building file: ../src/xemacps_example_intr_dma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
-../src/xemacps_example_intr_dma.c: In function 'EmacSetup':
-../src/xemacps_example_intr_dma.c:504:3: warning: implicit declaration of function 'EmacPsUtilEnterLocalLoopback' [-Wimplicit-function-declaration]
-   EmacPsUtilEnterLocalLoopback(EmacPsInstancePtr); // Enabled MAC Loopback -- SHS
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
-../src/xemacps_example_intr_dma.c:568:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
-  u32 RxFrLen;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:567:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
-  u32 NumRxBuf = 0;
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsRecvHandler':
-../src/xemacps_example_intr_dma.c:1103:15: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  int NumRxBuf,Status;
-               ^~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsErrorHandler':
-../src/xemacps_example_intr_dma.c:1182:4: warning: implicit declaration of function 'printRxBD' [-Wimplicit-function-declaration]
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
-../src/xemacps_example_intr_dma.c:1233:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
-  u32 CrlApbClkCntrl;
-      ^~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'ppu_test':
-../src/xemacps_example_intr_dma.c:1379:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_0 = PACKET_BUFFER_2;
-                ^
-../src/xemacps_example_intr_dma.c:1380:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_1 = PACKET_BUFFER_3;
-                ^
-../src/xemacps_example_intr_dma.c:1391:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
-                              ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:124:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1435:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
-                                     ^
-../src/xemacps_example_intr_dma.c:1453:55: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(RX_BD_LIST_START_ADDRESS + (bd_index * 8)) = &RxBuffer[bd_index][0];
-                                                       ^
-../src/xemacps_example_intr_dma.c:1463:55: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(RX_BD_LIST_START_ADDRESS + (bd_index * 8)) = &RxBuffer[bd_index][0];
-                                                       ^
-../src/xemacps_example_intr_dma.c:1376:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1376:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1375:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1374:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1372:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1520:9: warning: "/*" within comment [-Wcomment]
-  //     /* Transmit the data
-          
-../src/xemacps_example_intr_dma.c: In function 'TestData':
-../src/xemacps_example_intr_dma.c:1732:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1744:9: warning: 'return' with a value, in function returning void
-  return 0;
-         ^
-../src/xemacps_example_intr_dma.c:1697:6: note: declared here
- void TestData(  )
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1748:6: warning: conflicting types for 'PrintData'
- void PrintData(char *data_ptr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1732:2: note: previous implicit declaration of 'PrintData' was here
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1852:6: warning: conflicting types for 'printRxBD'
- void printRxBD (XEmacPs *EmacPsInstancePtr, XEmacPs_Bd *CurRxBdPtr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1182:4: note: previous implicit declaration of 'printRxBD' was here
-    printRxBD (EmacPsInstancePtr, (u32*)RX_BD_LIST_START_ADDRESS);
-    ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1018:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
- static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
-             ^~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xemacps_example_intr_dma.c
- 
-Building file: ../src/xemacps_example_util.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
-Finished building: ../src/xemacps_example_util.c
  
 Building target: eth_loopback.elf
 Invoking: ARM v7 gcc linker
@@ -241,1233 +49,448 @@ Finished building target: eth_loopback.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 124848	   4212	 863920	 992980	  f26d4	eth_loopback.elf
+ 125576	   4212	 863984	 993772	  f29ec	eth_loopback.elf
 Finished building: eth_loopback.elf.size
  
-11:51:39 **** Clean-only build of configuration Debug for project zyn_bypass ****
-make clean 
-rm -rf  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o  ./src/ZyNCAP_pr.d ./src/devcfg.d ./src/ff.d ./src/mmc.d ./src/xaxidma.d ./src/xaxidma_bd.d ./src/xaxidma_bdring.d ./src/xaxidma_g.d ./src/xaxidma_sinit.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d ./src/zycap.d  zyn_bypass.elf.size  zyn_bypass.elf
- 
-11:51:40 **** Build of configuration Debug for project zyn_bypass ****
+17:35:16 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/ZyNCAP_pr.c
+Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:20:50: error: 'XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR' undeclared (first use in this function)
- #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
-                                                  ^
-../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
- #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
-                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/ZyNCAP_pr.c:20:50: note: each undeclared identifier is reported only once for each function it appears in
- #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
-                                                  ^
-../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
- #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
-                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-make: *** [src/ZyNCAP_pr.o] Error 1
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
-11:51:42 **** Clean-only build of configuration Debug for project zyn_pcap ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  zyn_pcap.elf.size  zyn_pcap.elf
- 
-11:51:42 **** Build of configuration Debug for project zyn_pcap ****
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
+../src/xdevcfg_interrupt_example.c:642:62: error: 'prio' undeclared (first use in this function)
+  XScuGic_GetPriorityTriggerType(IntcInstancePtr,TimerIntrId,&prio,&trigger);
+                                                              ^~~~
+../src/xdevcfg_interrupt_example.c:642:62: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c:642:68: error: 'trigger' undeclared (first use in this function)
+  XScuGic_GetPriorityTriggerType(IntcInstancePtr,TimerIntrId,&prio,&trigger);
+                                                                    ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+17:35:24 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/helloworld.c
+Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:83:16: fatal error: ff.h: No such file or directory
- #include "ff.h"
-                ^
-compilation terminated.
-make: *** [src/helloworld.o] Error 1
-src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
-11:51:42 **** Clean-only build of configuration Debug for project zyn_test ****
-make clean 
-rm -rf  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o  ./src/ZyNCAP_pr.d ./src/devcfg.d ./src/devcfg_intr.d ./src/ff.d ./src/mmc.d ./src/xaxidma.d ./src/xaxidma_bd.d ./src/xaxidma_bdring.d ./src/xaxidma_g.d ./src/xaxidma_sinit.d ./src/xemacps_example_intr_dma.d ./src/xemacps_example_util.d ./src/zycap.d  zyn_test.elf.size  zyn_test.elf
- 
-11:51:42 **** Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building file: ../src/devcfg.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg.d" -MT"src/devcfg.o" -o "src/devcfg.o" "../src/devcfg.c"
-Finished building: ../src/devcfg.c
- 
-Building file: ../src/devcfg_intr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/devcfg_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/devcfg_intr.d" -MT"src/devcfg_intr.o" -o "src/devcfg_intr.o" "../src/devcfg_intr.c"
-Finished building: ../src/devcfg_intr.c
- 
-Building file: ../src/ff.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ff.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.o" -o "src/ff.o" "../src/ff.c"
-Finished building: ../src/ff.c
- 
-Building file: ../src/mmc.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mmc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.o" -o "src/mmc.o" "../src/mmc.c"
-Finished building: ../src/mmc.c
- 
-Building file: ../src/xaxidma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma.d" -MT"src/xaxidma.o" -o "src/xaxidma.o" "../src/xaxidma.c"
-Finished building: ../src/xaxidma.c
- 
-Building file: ../src/xaxidma_bd.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_bd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_bd.d" -MT"src/xaxidma_bd.o" -o "src/xaxidma_bd.o" "../src/xaxidma_bd.c"
-Finished building: ../src/xaxidma_bd.c
- 
-Building file: ../src/xaxidma_bdring.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_bdring.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_bdring.d" -MT"src/xaxidma_bdring.o" -o "src/xaxidma_bdring.o" "../src/xaxidma_bdring.c"
-Finished building: ../src/xaxidma_bdring.c
- 
-Building file: ../src/xaxidma_g.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_g.d" -MT"src/xaxidma_g.o" -o "src/xaxidma_g.o" "../src/xaxidma_g.c"
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/xaxidma_g.c:72:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/xaxidma_g.c:70:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-Finished building: ../src/xaxidma_g.c
- 
-Building file: ../src/xaxidma_sinit.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_sinit.d" -MT"src/xaxidma_sinit.o" -o "src/xaxidma_sinit.o" "../src/xaxidma_sinit.c"
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/xaxidma_sinit.c:69:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/xaxidma_sinit.c:67:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-Finished building: ../src/xaxidma_sinit.c
- 
-Building file: ../src/xemacps_example_intr_dma.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
-../src/xemacps_example_intr_dma.c: In function 'EmacSetup':
-../src/xemacps_example_intr_dma.c:500:3: warning: implicit declaration of function 'EmacPsUtilEnterLocalLoopback' [-Wimplicit-function-declaration]
-   EmacPsUtilEnterLocalLoopback(EmacPsInstancePtr);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'EnetFrameSetup':
-../src/xemacps_example_intr_dma.c:564:6: warning: unused variable 'RxFrLen' [-Wunused-variable]
-  u32 RxFrLen;
-      ^~~~~~~
-../src/xemacps_example_intr_dma.c:563:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
-  u32 NumRxBuf = 0;
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
-../src/xemacps_example_intr_dma.c:1186:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
-  u32 CrlApbClkCntrl;
-      ^~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c: In function 'ppu_test':
-../src/xemacps_example_intr_dma.c:1332:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_0 = PACKET_BUFFER_2;
-                ^
-../src/xemacps_example_intr_dma.c:1333:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  rxvd_buffer_1 = PACKET_BUFFER_3;
-                ^
-../src/xemacps_example_intr_dma.c:1344:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type [-Wincompatible-pointer-types]
-  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
-                              ^
-In file included from ../src/xemacps_example_intr_dma.h:4:0,
-                 from ../src/xemacps_example_intr_dma.c:129:
-../src/xemacps_example.h:122:6: note: expected 'char (*)[10276]' but argument is of type 'char *'
- void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
-      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1387:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
-                                     ^
-../src/xemacps_example_intr_dma.c:1401:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1412:47: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
-                                               ^
-../src/xemacps_example_intr_dma.c:1329:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-                        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1329:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
-  char *rxvd_buffer_0, *rxvd_buffer_1;
-        ^~~~~~~~~~~~~
-../src/xemacps_example_intr_dma.c:1328:7: warning: unused variable 'temp_char' [-Wunused-variable]
-  char temp_char;
-       ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1327:6: warning: unused variable 'DataError' [-Wunused-variable]
-  u32 DataError;
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1325:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i,j;
-      ^
-../src/xemacps_example_intr_dma.c: In function 'TestData':
-../src/xemacps_example_intr_dma.c:1467:2: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1479:9: warning: 'return' with a value, in function returning void
-  return 0;
-         ^
-../src/xemacps_example_intr_dma.c:1432:6: note: declared here
- void TestData(  )
-      ^~~~~~~~
-../src/xemacps_example_intr_dma.c: At top level:
-../src/xemacps_example_intr_dma.c:1483:6: warning: conflicting types for 'PrintData'
- void PrintData(char *data_ptr)
-      ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1467:2: note: previous implicit declaration of 'PrintData' was here
-  PrintData(PACKET_BUFFER_2);
-  ^~~~~~~~~
-../src/xemacps_example_intr_dma.c:1014:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
- static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
-             ^~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xemacps_example_intr_dma.c
- 
-Building file: ../src/xemacps_example_util.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
-Finished building: ../src/xemacps_example_util.c
- 
-Building file: ../src/zycap.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zycap.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/zycap.d" -MT"src/zycap.o" -o "src/zycap.o" "../src/zycap.c"
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/zycap.c:7:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:12:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-../src/zycap.c: In function 'print_schedule':
-../src/zycap.c:101:52: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                    ^
-../src/zycap.c:101:63: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'struct bit_info *' [-Wformat=]
-         printf("BS Num : %d BS Name : %s  BS Prev %s BS Next %s\n",i,current_bs->name,current_bs->prev,current_bs->next);
-                                                               ^
-../src/zycap.c: In function 'Net_Bitstream':
-../src/zycap.c:499:40: warning: passing argument 2 of 'check_bs_present' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-     bs_pres = check_bs_present(bs_list,modeName);
-                                        ^~~~~~~~
-../src/zycap.c:37:12: note: expected 'char *' but argument is of type 'volatile char *'
- static int check_bs_present(bs_info *bs_list,char *bs_name)
-            ^~~~~~~~~~~~~~~~
-../src/zycap.c:515:37: warning: passing argument 1 of 'SD_TransferPartial' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-      file_size = SD_TransferPartial(modeName, bs_list[pres_last].addr);
-                                     ^~~~~~~~
-../src/zycap.c:278:12: note: expected 'char *' but argument is of type 'volatile char *'
- static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
-            ^~~~~~~~~~~~~~~~~~
-../src/zycap.c:524:40: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-         strcpy(bs_list[pres_last].name,modeName);
-                                        ^~~~~~~~
-In file included from /opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/ctype.h:4:0,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:8,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:65,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg_hw.h:68,
-                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xdevcfg.h:170,
-                 from ../src/zycap.h:8,
-                 from ../src/zycap.c:7:
-/opt/Xilinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/string.h:30:8: note: expected 'const char * restrict' but argument is of type 'volatile char *'
- char  *_EXFUN(strcpy,(char *__restrict, const char *__restrict));
-        ^
-At top level:
-../src/zycap.c:94:6: warning: 'print_schedule' defined but not used [-Wunused-function]
- void print_schedule(bs_info *bs_list)
-      ^~~~~~~~~~~~~~
-Finished building: ../src/zycap.c
- 
-Building target: zyn_test.elf
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
  
 Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162532	   4268	 148800	 315600	  4d0d0	zyn_test.elf
-Finished building: zyn_test.elf.size
+ 125752	   4212	 863984	 993948	  f2a9c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
  
-11:52:50 **** Incremental Build of configuration Debug for project zyn_test ****
+17:35:50 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-15:09:43 **** Auto Build of configuration Debug for project zyn_test ****
+17:36:20 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/ZyNCAP_pr.c
+Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
+../src/xdevcfg_interrupt_example.c:598:5: warning: unused variable 'trigger' [-Wunused-variable]
+  u8 trigger;
+     ^~~~~~~
+../src/xdevcfg_interrupt_example.c:597:5: warning: unused variable 'prio' [-Wunused-variable]
+  u8 prio;
+     ^~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
  
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
+Building target: eth_loopback.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
  
 Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162572	   4268	 148800	 315640	  4d0f8	zyn_test.elf
-Finished building: zyn_test.elf.size
+ 125576	   4212	 863984	 993772	  f29ec	eth_loopback.elf
+Finished building: eth_loopback.elf.size
  
-15:10:05 **** Auto Build of configuration Debug for project zyn_test ****
+17:36:31 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/ZyNCAP_pr.c
+Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
+../src/xdevcfg_interrupt_example.c:598:5: warning: unused variable 'trigger' [-Wunused-variable]
+  u8 trigger;
+     ^~~~~~~
+../src/xdevcfg_interrupt_example.c:597:5: warning: unused variable 'prio' [-Wunused-variable]
+  u8 prio;
+     ^~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
  
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
+Building target: eth_loopback.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
  
 Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162572	   4268	 148800	 315640	  4d0f8	zyn_test.elf
-Finished building: zyn_test.elf.size
+ 125656	   4212	 863984	 993852	  f2a3c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
  
-15:10:12 **** Incremental Build of configuration Debug for project zyn_test ****
+17:36:37 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-15:14:26 **** Auto Build of configuration Debug for project zyn_test ****
+17:37:26 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/ZyNCAP_pr.c
+Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:248:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
+../src/xdevcfg_interrupt_example.c:601:5: warning: unused variable 'trigger' [-Wunused-variable]
+  u8 trigger;
+     ^~~~~~~
+../src/xdevcfg_interrupt_example.c:600:5: warning: unused variable 'prio' [-Wunused-variable]
+  u8 prio;
+     ^~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
  
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:123:6: warning: variable 'ZyCAP_Network_Init_delay' set but not used [-Wunused-but-set-variable]
-  u32 ZyCAP_Network_Init_delay,ZyCAP_Network_Transmit_delay, ZyCAP_Network_Receive_delay,ZyCAP_Network_Final_delay;
-      ^~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
+Building target: eth_loopback.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
  
 Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162572	   4268	 148800	 315640	  4d0f8	zyn_test.elf
-Finished building: zyn_test.elf.size
+ 125656	   4212	 863984	 993852	  f2a3c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
  
-15:14:30 **** Incremental Build of configuration Debug for project zyn_test ****
+17:37:52 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
+../src/xdevcfg_interrupt_example.c:601:5: warning: unused variable 'trigger' [-Wunused-variable]
+  u8 trigger;
+     ^~~~~~~
+../src/xdevcfg_interrupt_example.c:600:5: warning: unused variable 'prio' [-Wunused-variable]
+  u8 prio;
+     ^~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125656	   4212	 863984	 993852	  f2a3c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:38:05 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125752	   4212	 863984	 993948	  f2a9c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:38:08 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-15:16:50 **** Auto Build of configuration Debug for project zyn_test ****
+17:38:25 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-Building file: ../src/ZyNCAP_pr.c
+Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
  
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
+Building target: eth_loopback.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
  
 Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 162572	   4268	 148800	 315640	  4d0f8	zyn_test.elf
-Finished building: zyn_test.elf.size
+ 125752	   4212	 863984	 993948	  f2a9c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
  
-15:22:59 **** Auto Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 162572	   4268	 148800	 315640	  4d0f8	zyn_test.elf
-Finished building: zyn_test.elf.size
- 
-15:23:09 **** Auto Build of configuration Debug for project zyn_test ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/ZyNCAP_pr.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZyNCAP_pr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZyNCAP_pr.d" -MT"src/ZyNCAP_pr.o" -o "src/ZyNCAP_pr.o" "../src/ZyNCAP_pr.c"
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:40:0: warning: "XPAR_AXI_DMA_0_BASEADDR" redefined
- #define XPAR_AXI_DMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:31:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:41:0: warning: "XPAR_AXI_DMA_0_HIGHADDR" redefined
- #define XPAR_AXI_DMA_0_HIGHADDR XPAR_ZYCAP_0_HIGHADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:32:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_HIGHADDR 0x8040FFFF
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:46:0: warning: "XPAR_AXI_DMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:37:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:52:0: warning: "XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:43:0: note: this is the location of the previous definition
- #define XPAR_AXI_DMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:59:0: warning: "XPAR_AXIDMA_0_BASEADDR" redefined
- #define XPAR_AXIDMA_0_BASEADDR XPAR_ZYCAP_0_BASEADDR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:54:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_BASEADDR 0x80400000
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:64:0: warning: "XPAR_AXIDMA_0_INCLUDE_S2MM" redefined
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:59:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_INCLUDE_S2MM 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:70:0: warning: "XPAR_AXIDMA_0_NUM_S2MM_CHANNELS" redefined
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 0
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:65:0: note: this is the location of the previous definition
- #define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:74:0: warning: "XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR XPAR_FABRIC_ICAP_STREAM_0_MM2S_INTROUT_INTR
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:457:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 63U
- 
-In file included from ../src/ZyNCAP_pr.c:15:0:
-../src/zycap.h:75:0: warning: "XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR" redefined
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 90
- 
-In file included from ../src/ZyNCAP_pr.c:9:0:
-../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:458:0: note: this is the location of the previous definition
- #define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 64U
- 
-../src/ZyNCAP_pr.c: In function 'main':
-../src/ZyNCAP_pr.c:123:6: warning: variable 'ZyCAP_Network_Init_delay' set but not used [-Wunused-but-set-variable]
-  u32 ZyCAP_Network_Init_delay,ZyCAP_Network_Transmit_delay, ZyCAP_Network_Receive_delay,ZyCAP_Network_Final_delay;
-      ^~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/ZyNCAP_pr.c
- 
-Building target: zyn_test.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "zyn_test.elf"  ./src/ZyNCAP_pr.o ./src/devcfg.o ./src/devcfg_intr.o ./src/ff.o ./src/mmc.o ./src/xaxidma.o ./src/xaxidma_bd.o ./src/xaxidma_bdring.o ./src/xaxidma_g.o ./src/xaxidma_sinit.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/zycap.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: zyn_test.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size zyn_test.elf  |tee "zyn_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 162572	   4268	 148800	 315640	  4d0f8	zyn_test.elf
-Finished building: zyn_test.elf.size
- 
-15:23:15 **** Incremental Build of configuration Debug for project zyn_test ****
+17:38:29 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-15:28:29 **** Incremental Build of configuration Debug for project eth_loopback ****
+17:46:11 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
+  int LastTimerExpired = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125840	   4212	 863984	 994036	  f2af4	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:46:18 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  

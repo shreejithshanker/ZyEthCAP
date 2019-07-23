@@ -15,10 +15,6 @@ FATFS * fatfs;
 bs_info *bs_list;
 
 
-
-
-
-
 static void TxIntrHandler(void *Callback);
 static int SetupIntrSystem(XScuGic * IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 TxIntrId, u16 EnIntrId);
 static int SD_TransferPartial(char *FileName, u32 DestinationAddress);

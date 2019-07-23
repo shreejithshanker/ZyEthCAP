@@ -41,7 +41,7 @@ for i in range (last_frame):
 
 
 if (last_frame >0):
-    num_frames = full_frames + 1;
+    num_frames = full_frames + 1
 else:
     num_frames = full_frames
     
@@ -54,7 +54,7 @@ for i in range (num_frames):
 
     ph = Ether(dst="45:0a:35:01:02:03",src="40:B0:34:13:38:A5",type=length)
     ph1 = ph/bytes(pktdata[i])
-    sendp(ph1,iface="Intel(R) Ethernet Connection I219-LM")
+    sendp(ph1,iface="enx00e1100017c5")
     
 #print(xbin[:1024])    
 #print(lines)

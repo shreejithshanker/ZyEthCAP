@@ -1086,6 +1086,8 @@ static void XEmacPsRecvHandler(void *Callback)
 	 */
 	XEmacPs_IntDisable(EmacPsInstancePtr, (XEMACPS_IXR_FRAMERX_MASK |
 		XEMACPS_IXR_RX_ERR_MASK));
+
+	xil_printf("\r\n RX IRQ\n\r");
 	/*
 	 * Increment the counter so that main thread knows something
 	 * happened.

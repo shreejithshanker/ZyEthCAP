@@ -1,14 +1,14 @@
-17:33:03 **** Incremental Build of configuration Debug for project eth_loopback ****
+15:20:03 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-17:34:10 **** Incremental Build of configuration Debug for project eth_loopback ****
+15:20:09 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-17:34:43 **** Auto Build of configuration Debug for project eth_loopback ****
+15:21:51 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -16,29 +16,96 @@ Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
 ../src/xdevcfg_interrupt_example.c: In function 'main':
-../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:223:38: error: 'WdtDeviceId' undeclared (first use in this function)
+  WDTConfigPtr = XScuWdt_LookupConfig(WdtDeviceId);
+                                      ^~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:223:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c:252:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
     filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
                ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:266:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
      ReconfigFlag = CheckDataFlag();
                     ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+../src/xdevcfg_interrupt_example.c:227:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
   u8 recvbuffer [10];
      ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
+../src/xdevcfg_interrupt_example.c:221:18: warning: variable 'WDTConfigPtr' set but not used [-Wunused-but-set-variable]
+  XScuWdt_Config *WDTConfigPtr;
+                  ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
       ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:194:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
   int ReconfigFlag;
       ^~~~~~~~~~~~
 ../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:349:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
   Status = SD_Init(fatfs);
            ^~~~~~~
 ../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:157:13: warning: 'WdtIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void WdtIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:158:12: warning: 'WdtSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int WdtSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:160:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:550:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+15:22:03 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:252:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:266:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:227:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:18: warning: variable 'WDTConfigPtr' set but not used [-Wunused-but-set-variable]
+  XScuWdt_Config *WDTConfigPtr;
+                  ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:194:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:349:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:157:13: warning: 'WdtIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void WdtIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:158:12: warning: 'WdtSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int WdtSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:160:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:550:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
 Finished building: ../src/xdevcfg_interrupt_example.c
  
 Building target: eth_loopback.elf
@@ -49,10 +116,10 @@ Finished building target: eth_loopback.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 125576	   4212	 863984	 993772	  f29ec	eth_loopback.elf
+ 124984	   4220	 863984	 993188	  f27a4	eth_loopback.elf
 Finished building: eth_loopback.elf.size
  
-17:35:16 **** Auto Build of configuration Debug for project eth_loopback ****
+15:22:44 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -60,40 +127,906 @@ Building file: ../src/xdevcfg_interrupt_example.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
 ../src/xdevcfg_interrupt_example.c: In function 'main':
-../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:258:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
     filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
                ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:272:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
      ReconfigFlag = CheckDataFlag();
                     ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+../src/xdevcfg_interrupt_example.c:233:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
   u8 recvbuffer [10];
      ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
       ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:194:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
   int ReconfigFlag;
       ^~~~~~~~~~~~
 ../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:355:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
   Status = SD_Init(fatfs);
            ^~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
-../src/xdevcfg_interrupt_example.c:642:62: error: 'prio' undeclared (first use in this function)
-  XScuGic_GetPriorityTriggerType(IntcInstancePtr,TimerIntrId,&prio,&trigger);
-                                                              ^~~~
-../src/xdevcfg_interrupt_example.c:642:62: note: each undeclared identifier is reported only once for each function it appears in
-../src/xdevcfg_interrupt_example.c:642:68: error: 'trigger' undeclared (first use in this function)
-  XScuGic_GetPriorityTriggerType(IntcInstancePtr,TimerIntrId,&prio,&trigger);
-                                                                    ^~~~~~~
 ../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:157:13: warning: 'WdtIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void WdtIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:158:12: warning: 'WdtSetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int WdtSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:160:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:556:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125572	   4220	 863984	 993776	  f29f0	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:29:23 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:267:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:281:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:242:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:194:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:364:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:157:13: warning: 'WdtIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void WdtIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:158:12: warning: 'WdtSetupIntrSystem' used but never defined
+ static int WdtSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:160:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:565:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/xdevcfg_interrupt_example.o: In function `main':
+/home/alex/GitHub/ZyEthCAP/nicap_extend/software/eth_loopback/Debug/../src/xdevcfg_interrupt_example.c:236: undefined reference to `WdtSetupIntrSystem'
+makefile:39: recipe for target 'eth_loopback.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [eth_loopback.elf] Error 1
+15:29:44 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:267:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:281:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:242:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:194:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:364:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:154:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:157:13: warning: 'WdtIntrHandler' used but never defined
+ static void WdtIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:160:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/xdevcfg_interrupt_example.o: In function `WdtSetupIntrSystem':
+/home/alex/GitHub/ZyEthCAP/nicap_extend/software/eth_loopback/Debug/../src/xdevcfg_interrupt_example.c:604: undefined reference to `WdtIntrHandler'
+/home/alex/GitHub/ZyEthCAP/nicap_extend/software/eth_loopback/Debug/../src/xdevcfg_interrupt_example.c:604: undefined reference to `WdtIntrHandler'
+collect2: error: ld returned 1 exit status
+makefile:39: recipe for target 'eth_loopback.elf' failed
+make: *** [eth_loopback.elf] Error 1
+15:30:00 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:267:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:281:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:242:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:194:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:364:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:154:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:160:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126168	   4220	 863984	 994372	  f2c44	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:30:25 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:267:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:281:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:242:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:194:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:364:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:154:13: warning: 'TimerIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:160:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126184	   4220	 863984	 994388	  f2c54	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:33:04 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:265:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:279:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:240:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:362:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:158:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126184	   4220	 863984	 994388	  f2c54	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:33:16 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:265:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:279:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:240:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:362:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:639:13: warning: 'WdtDisableIntrSystem' defined but not used [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId)
+             ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126248	   4220	 863984	 994452	  f2c94	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:34:18 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:778:0: error: unterminated argument list invoking macro "XScuWdt_LoadWdt"
+ }
+ 
+../src/xdevcfg_interrupt_example.c:240:2: error: 'XScuWdt_LoadWdt' undeclared (first use in this function)
+  XScuWdt_LoadWdt(&WdtInstance, WDT_LOAD_VALUE
+  ^~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:240:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c:240:2: error: expected ';' at end of input
+../src/xdevcfg_interrupt_example.c:240:2: error: expected declaration or statement at end of input
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:193:6: warning: unused variable 'filesize' [-Wunused-variable]
+  int filesize;
+      ^~~~~~~~
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+../src/xdevcfg_interrupt_example.c:192:6: warning: unused variable 'ReconfigFlag' [-Wunused-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:191:13: warning: unused variable 'delayDec' [-Wunused-variable]
+  u32 delay0,delayDec;
+             ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:191:6: warning: unused variable 'delay0' [-Wunused-variable]
+  u32 delay0,delayDec;
+      ^~~~~~
+../src/xdevcfg_interrupt_example.c: At top level:
+../src/xdevcfg_interrupt_example.c:149:12: warning: 'SetupInterruptSystem' declared 'static' but never defined [-Wunused-function]
+ static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:153:13: warning: 'DcfgIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus);
+             ^~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:155:13: warning: 'WdtIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void WdtIntrHandler(void *CallBackRef);
+             ^~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:156:12: warning: 'WdtSetupIntrSystem' used but never defined
+ static int WdtSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:158:13: warning: 'WdtDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId);
+             ^~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:136:16: warning: 'ps7_ethernet_0' defined but not used [-Wunused-variable]
+ static XEmacPs ps7_ethernet_0;
+                ^~~~~~~~~~~~~~
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+15:34:22 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:269:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:283:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:244:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:366:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:643:13: warning: 'WdtDisableIntrSystem' defined but not used [-Wunused-function]
+ static void WdtDisableIntrSystem(XScuGic *IntcInstancePtr, u16 WdtIntrId)
+             ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126376	   4220	 863984	 994580	  f2d14	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:35:17 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:269:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:283:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:244:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:366:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126376	   4220	 863984	 994580	  f2d14	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:35:25 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:35:57 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:271:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:285:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:368:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126376	   4220	 863984	 994580	  f2d14	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:36:01 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:36:19 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:36:59 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:279:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:293:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:376:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126440	   4220	 863984	 994644	  f2d54	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:37:14 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:280:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:294:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:377:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126456	   4220	 863984	 994660	  f2d64	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:37:17 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:37:50 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:270:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:294:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:377:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126376	   4220	 863984	 994580	  f2d14	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:37:53 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:38:07 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:270:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:294:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:377:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126456	   4220	 863984	 994660	  f2d64	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:38:12 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:40:34 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:43:26 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:270:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt.h:139:0,
+                 from ../src/xdevcfg_interrupt_example.c:82:
+../src/xdevcfg_interrupt_example.c:284:22: error: 'WdtInstancePtr' undeclared (first use in this function)
+     XScuWdt_WriteReg(WdtInstancePtr->Config.BaseAddr,
+                      ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt_hw.h:171:13: note: in definition of macro 'XScuWdt_WriteReg'
+  Xil_Out32((BaseAddr) + ((u32)RegOffset), ((u32)Data))
+             ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:284:22: note: each undeclared identifier is reported only once for each function it appears in
+     XScuWdt_WriteReg(WdtInstancePtr->Config.BaseAddr,
+                      ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt_hw.h:171:13: note: in definition of macro 'XScuWdt_WriteReg'
+  Xil_Out32((BaseAddr) + ((u32)RegOffset), ((u32)Data))
+             ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:298:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:381:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+15:43:33 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:270:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt.h:139:0,
+                 from ../src/xdevcfg_interrupt_example.c:82:
+../src/xdevcfg_interrupt_example.c:284:34: error: invalid type argument of '->' (have 'XScuWdt {aka struct <anonymous>}')
+     XScuWdt_WriteReg(&WdtInstance->Config.BaseAddr,
+                                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt_hw.h:171:13: note: in definition of macro 'XScuWdt_WriteReg'
+  Xil_Out32((BaseAddr) + ((u32)RegOffset), ((u32)Data))
+             ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:298:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:381:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
 src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
 make: *** [src/xdevcfg_interrupt_example.o] Error 1
-17:35:24 **** Auto Build of configuration Debug for project eth_loopback ****
+15:43:40 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:270:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt.h:139:0,
+                 from ../src/xdevcfg_interrupt_example.c:82:
+../src/xdevcfg_interrupt_example.c:284:33: error: invalid type argument of '->' (have 'XScuWdt {aka struct <anonymous>}')
+     XScuWdt_WriteReg(WdtInstance->Config.BaseAddr,
+                                 ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt_hw.h:171:13: note: in definition of macro 'XScuWdt_WriteReg'
+  Xil_Out32((BaseAddr) + ((u32)RegOffset), ((u32)Data))
+             ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:298:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:381:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+15:43:42 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:270:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt.h:139:0,
+                 from ../src/xdevcfg_interrupt_example.c:82:
+../src/xdevcfg_interrupt_example.c:284:34: error: invalid type argument of '->' (have 'XScuWdt {aka struct <anonymous>}')
+     XScuWdt_WriteReg(&WdtInstance->Config.BaseAddr,
+                                  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xscuwdt_hw.h:171:13: note: in definition of macro 'XScuWdt_WriteReg'
+  Xil_Out32((BaseAddr) + ((u32)RegOffset), ((u32)Data))
+             ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:298:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:221:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:218:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:217:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:381:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+15:44:14 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -104,26 +1037,25 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_
 ../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
     filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
                ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:300:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
      ReconfigFlag = CheckDataFlag();
                     ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
   u8 recvbuffer [10];
      ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
       ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
   int ReconfigFlag;
       ^~~~~~~~~~~~
 ../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:383:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
   Status = SD_Init(fatfs);
            ^~~~~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/xdevcfg_interrupt_example.c
  
 Building target: eth_loopback.elf
@@ -134,15 +1066,20 @@ Finished building target: eth_loopback.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 125752	   4212	 863984	 993948	  f2a9c	eth_loopback.elf
+ 126440	   4220	 863984	 994644	  f2d54	eth_loopback.elf
 Finished building: eth_loopback.elf.size
  
-17:35:50 **** Incremental Build of configuration Debug for project eth_loopback ****
+15:44:31 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-17:36:20 **** Auto Build of configuration Debug for project eth_loopback ****
+15:44:49 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:45:47 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -153,33 +1090,25 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_
 ../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
     filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
                ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:300:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
      ReconfigFlag = CheckDataFlag();
                     ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
   u8 recvbuffer [10];
      ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
       ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
   int ReconfigFlag;
       ^~~~~~~~~~~~
 ../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:383:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
   Status = SD_Init(fatfs);
            ^~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
-../src/xdevcfg_interrupt_example.c:598:5: warning: unused variable 'trigger' [-Wunused-variable]
-  u8 trigger;
-     ^~~~~~~
-../src/xdevcfg_interrupt_example.c:597:5: warning: unused variable 'prio' [-Wunused-variable]
-  u8 prio;
-     ^~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/xdevcfg_interrupt_example.c
  
 Building target: eth_loopback.elf
@@ -190,217 +1119,20 @@ Finished building target: eth_loopback.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 125576	   4212	 863984	 993772	  f29ec	eth_loopback.elf
+ 126440	   4220	 863984	 994644	  f2d54	eth_loopback.elf
 Finished building: eth_loopback.elf.size
  
-17:36:31 **** Auto Build of configuration Debug for project eth_loopback ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/xdevcfg_interrupt_example.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
-../src/xdevcfg_interrupt_example.c: In function 'main':
-../src/xdevcfg_interrupt_example.c:272:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
-    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
-               ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:288:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
-     ReconfigFlag = CheckDataFlag();
-                    ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:245:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
-      ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
-  int ReconfigFlag;
-      ^~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:371:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
-  Status = SD_Init(fatfs);
-           ^~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
-../src/xdevcfg_interrupt_example.c:598:5: warning: unused variable 'trigger' [-Wunused-variable]
-  u8 trigger;
-     ^~~~~~~
-../src/xdevcfg_interrupt_example.c:597:5: warning: unused variable 'prio' [-Wunused-variable]
-  u8 prio;
-     ^~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xdevcfg_interrupt_example.c
- 
-Building target: eth_loopback.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: eth_loopback.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 125656	   4212	 863984	 993852	  f2a3c	eth_loopback.elf
-Finished building: eth_loopback.elf.size
- 
-17:36:37 **** Incremental Build of configuration Debug for project eth_loopback ****
+15:45:51 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-17:37:26 **** Auto Build of configuration Debug for project eth_loopback ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/xdevcfg_interrupt_example.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
-../src/xdevcfg_interrupt_example.c: In function 'main':
-../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
-    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
-               ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
-     ReconfigFlag = CheckDataFlag();
-                    ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:248:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
-      ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
-  int ReconfigFlag;
-      ^~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
-  Status = SD_Init(fatfs);
-           ^~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
-../src/xdevcfg_interrupt_example.c:601:5: warning: unused variable 'trigger' [-Wunused-variable]
-  u8 trigger;
-     ^~~~~~~
-../src/xdevcfg_interrupt_example.c:600:5: warning: unused variable 'prio' [-Wunused-variable]
-  u8 prio;
-     ^~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xdevcfg_interrupt_example.c
- 
-Building target: eth_loopback.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: eth_loopback.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 125656	   4212	 863984	 993852	  f2a3c	eth_loopback.elf
-Finished building: eth_loopback.elf.size
- 
-17:37:52 **** Auto Build of configuration Debug for project eth_loopback ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/xdevcfg_interrupt_example.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
-../src/xdevcfg_interrupt_example.c: In function 'main':
-../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
-    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
-               ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
-     ReconfigFlag = CheckDataFlag();
-                    ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
-      ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
-  int ReconfigFlag;
-      ^~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
-  Status = SD_Init(fatfs);
-           ^~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'TimerSetupIntrSystem':
-../src/xdevcfg_interrupt_example.c:601:5: warning: unused variable 'trigger' [-Wunused-variable]
-  u8 trigger;
-     ^~~~~~~
-../src/xdevcfg_interrupt_example.c:600:5: warning: unused variable 'prio' [-Wunused-variable]
-  u8 prio;
-     ^~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xdevcfg_interrupt_example.c
- 
-Building target: eth_loopback.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: eth_loopback.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 125656	   4212	 863984	 993852	  f2a3c	eth_loopback.elf
-Finished building: eth_loopback.elf.size
- 
-17:38:05 **** Auto Build of configuration Debug for project eth_loopback ****
-make pre-build main-build 
-a9-linaro-pre-build-step
- 
-Building file: ../src/xdevcfg_interrupt_example.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
-../src/xdevcfg_interrupt_example.c: In function 'main':
-../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
-    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
-               ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
-     ReconfigFlag = CheckDataFlag();
-                    ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
-  u8 recvbuffer [10];
-     ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
-      ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
-  int ReconfigFlag;
-      ^~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
-  Status = SD_Init(fatfs);
-           ^~~~~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/xdevcfg_interrupt_example.c
- 
-Building target: eth_loopback.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: eth_loopback.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 125752	   4212	 863984	 993948	  f2a9c	eth_loopback.elf
-Finished building: eth_loopback.elf.size
- 
-17:38:08 **** Incremental Build of configuration Debug for project eth_loopback ****
+15:46:10 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-17:38:25 **** Auto Build of configuration Debug for project eth_loopback ****
+15:48:58 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -411,26 +1143,25 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_
 ../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
     filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
                ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:303:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
      ReconfigFlag = CheckDataFlag();
                     ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
   u8 recvbuffer [10];
      ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
       ^~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:188:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
   int ReconfigFlag;
       ^~~~~~~~~~~~
 ../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:386:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
   Status = SD_Init(fatfs);
            ^~~~~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/xdevcfg_interrupt_example.c
  
 Building target: eth_loopback.elf
@@ -441,15 +1172,15 @@ Finished building target: eth_loopback.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 125752	   4212	 863984	 993948	  f2a9c	eth_loopback.elf
+ 126440	   4220	 863984	 994644	  f2d54	eth_loopback.elf
 Finished building: eth_loopback.elf.size
  
-17:38:29 **** Incremental Build of configuration Debug for project eth_loopback ****
+15:49:11 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
-17:46:11 **** Auto Build of configuration Debug for project eth_loopback ****
+15:49:28 **** Auto Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -460,23 +1191,25 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_
 ../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
     filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
                ^~~~~~~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:291:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:303:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
      ReconfigFlag = CheckDataFlag();
                     ^~~~~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:218:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
   u8 recvbuffer [10];
      ^~~~~~~~~~
-../src/xdevcfg_interrupt_example.c:190:6: warning: unused variable 'LastTimerExpired' [-Wunused-variable]
-  int LastTimerExpired = 0;
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
       ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
 ../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
-../src/xdevcfg_interrupt_example.c:374:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+../src/xdevcfg_interrupt_example.c:386:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
   Status = SD_Init(fatfs);
            ^~~~~~~
-../src/xdevcfg_interrupt_example.c: At top level:
-../src/xdevcfg_interrupt_example.c:156:13: warning: 'TimerDisableIntrSystem' declared 'static' but never defined [-Wunused-function]
- static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
-             ^~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/xdevcfg_interrupt_example.c
  
 Building target: eth_loopback.elf
@@ -487,11 +1220,961 @@ Finished building target: eth_loopback.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 125840	   4212	 863984	 994036	  f2af4	eth_loopback.elf
+ 126376	   4220	 863984	 994580	  f2d14	eth_loopback.elf
 Finished building: eth_loopback.elf.size
  
-17:46:18 **** Incremental Build of configuration Debug for project eth_loopback ****
+15:51:12 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:303:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:386:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126248	   4220	 863984	 994452	  f2c94	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:51:43 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:269:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:305:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:388:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126248	   4220	 863984	 994452	  f2c94	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+15:52:18 **** Incremental Build of configuration Debug for project eth_loopback ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
+15:54:03 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:269:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:306:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:389:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126312	   4220	 863984	 994516	  f2cd4	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:00:56 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:269:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:294:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:377:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126312	   4220	 863984	 994516	  f2cd4	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:01:13 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:269:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:294:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:223:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:220:6: warning: unused variable 'ExpiredTimeDelta' [-Wunused-variable]
+  u32 ExpiredTimeDelta = 0;
+      ^~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:219:6: warning: unused variable 'Timebase' [-Wunused-variable]
+  u32 Timebase = 0;
+      ^~~~~~~~
+../src/xdevcfg_interrupt_example.c:192:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:377:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126248	   4220	 863984	 994452	  f2c94	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:54:21 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:228:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:242:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:203:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:178:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:325:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:526:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124920	   4212	 863920	 993052	  f271c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:55:33 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:228:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:242:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:203:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:178:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:342:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:543:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124984	   4212	 863920	 993116	  f275c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:55:49 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:228:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:242:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:203:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:178:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'DeviceDriverHandler':
+../src/xdevcfg_interrupt_example.c:321:2: error: 'InterruptProcessed' undeclared (first use in this function)
+  InterruptProcessed = TRUE;
+  ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:321:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:349:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:550:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+16:55:59 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:230:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:244:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:205:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:180:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:351:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:552:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125048	   4212	 863920	 993180	  f279c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:57:55 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:239:13: warning: implicit declaration of function 'SetUpInterruptSystem' [-Wimplicit-function-declaration]
+    Status = SetUpInterruptSystem(&IntcInstance);
+             ^~~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:250:31: error: 'DeviceDriverHandler' undeclared (first use in this function)
+         (Xil_ExceptionHandler)DeviceDriverHandler,
+                               ^~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:250:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c:257:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:271:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:205:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:180:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:378:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:579:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+16:58:13 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:260:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:274:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:381:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:582:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125388	   4212	 863920	 993520	  f28f0	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:58:33 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:260:32: error: 'INTC_DEVICE_INT_ID' undeclared (first use in this function)
+  XScuGic_Enable(&IntcInstance, INTC_DEVICE_INT_ID);
+                                ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:260:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c:262:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:276:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:383:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:584:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+16:58:56 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:262:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:276:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:383:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:584:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125388	   4212	 863920	 993520	  f28f0	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:59:29 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:262:33: error: 'InterruptController' undeclared (first use in this function)
+  Status = XScuGic_SoftwareIntr(&InterruptController,
+                                 ^~~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:262:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c:263:6: error: 'INTC_DEVICE_INT_ID' undeclared (first use in this function)
+      INTC_DEVICE_INT_ID,
+      ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:285:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:299:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:406:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:607:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+16:59:37 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:263:6: error: 'INTC_DEVICE_INT_ID' undeclared (first use in this function)
+      INTC_DEVICE_INT_ID,
+      ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:263:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/xdevcfg_interrupt_example.c:285:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:299:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:406:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:607:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+src/subdir.mk:33: recipe for target 'src/xdevcfg_interrupt_example.o' failed
+make: *** [src/xdevcfg_interrupt_example.o] Error 1
+16:59:43 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:285:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:299:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:406:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:607:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125476	   4212	 863920	 993608	  f2948	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:59:46 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:285:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:299:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:406:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:607:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125476	   4212	 863920	 993608	  f2948	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+16:59:55 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:01:28 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:285:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:299:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:407:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:608:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125484	   4212	 863920	 993616	  f2950	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:01:31 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:56:39 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:292:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:400:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:601:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125492	   4212	 863920	 993624	  f2958	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:56:44 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:57:28 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:292:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:400:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:601:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125500	   4212	 863920	 993632	  f2960	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:57:50 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:292:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:400:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:601:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125288	   4212	 863920	 993420	  f288c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:57:54 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:58:27 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:275:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:292:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:208:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:183:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:400:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:601:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125240	   4212	 863920	 993372	  f285c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 
+17:58:31 **** Incremental Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+17:59:31 **** Auto Build of configuration Debug for project eth_loopback ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xdevcfg_interrupt_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdevcfg_interrupt_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_interrupt_example.d" -MT"src/xdevcfg_interrupt_example.o" -o "src/xdevcfg_interrupt_example.o" "../src/xdevcfg_interrupt_example.c"
+../src/xdevcfg_interrupt_example.c: In function 'main':
+../src/xdevcfg_interrupt_example.c:277:15: warning: implicit declaration of function 'SD_TransferPartial' [-Wimplicit-function-declaration]
+    filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+               ^~~~~~~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:294:20: warning: implicit declaration of function 'CheckDataFlag' [-Wimplicit-function-declaration]
+     ReconfigFlag = CheckDataFlag();
+                    ^~~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:210:5: warning: unused variable 'recvbuffer' [-Wunused-variable]
+  u8 recvbuffer [10];
+     ^~~~~~~~~~
+../src/xdevcfg_interrupt_example.c:185:6: warning: variable 'ReconfigFlag' set but not used [-Wunused-but-set-variable]
+  int ReconfigFlag;
+      ^~~~~~~~~~~~
+../src/xdevcfg_interrupt_example.c: In function 'XDcfgInterruptSetup':
+../src/xdevcfg_interrupt_example.c:406:11: warning: implicit declaration of function 'SD_Init' [-Wimplicit-function-declaration]
+  Status = SD_Init(fatfs);
+           ^~~~~~~
+At top level:
+../src/xdevcfg_interrupt_example.c:607:13: warning: 'TimerIntrHandler' defined but not used [-Wunused-function]
+ static void TimerIntrHandler(void *CallBackRef)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/xdevcfg_interrupt_example.c
+ 
+Building target: eth_loopback.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "eth_loopback.elf"  ./src/ff.o ./src/mmc.o ./src/xdevcfg_interrupt_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: eth_loopback.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size eth_loopback.elf  |tee "eth_loopback.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125240	   4212	 863920	 993372	  f285c	eth_loopback.elf
+Finished building: eth_loopback.elf.size
+ 

@@ -121,13 +121,8 @@
 #define SLCR_UNLOCK_VAL	0xDF0D
 #define UART_DeviceId XPAR_PS7_UART_0_DEVICE_ID
 
-#define TIMER_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
-#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
-#define TIMER_IRPT_INTR		XPAR_SCUTIMER_INTR
-#define TIMER_LOAD_VALUE	0xFFFF
 
 XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
-XScuTimer TimerIntr;
 XUartPs Uart_PS;
 
 static XEmacPs ps7_ethernet_0;
@@ -150,10 +145,10 @@ static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
 static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus);
 static void TimerIntrHandler(void *CallBackRef);
 
-static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
-				XScuTimer *TimerInstancePtr, u16 TimerIntrId);
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
+void DeviceDriverHandler(void *CallbackRef);
 
-static void TimerDisableIntrSystem(XScuGic *IntcInstancePtr, u16 TimerIntrId);
+void NonDeterministicEvent();
 
 /************************** Variable Definitions *****************************/
 
@@ -169,6 +164,8 @@ volatile u32 delayRx, delayTx,delayBuf, delayPCAP;
 volatile u32 PartialCfg = 0;
 int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000;
 volatile int TimerExpired;
+
+volatile static int InterruptProcessed = FALSE;
 
 /*****************************************************************************/
 /**
@@ -187,7 +184,6 @@ int main(void)
 	u32 delay0,delayDec;
 	int ReconfigFlag;
 	int filesize;
-	int LastTimerExpired = 0;
 	/*
 	 * Call the example , specify the device ID  and vector ID that is
 	 * generated in xparameters.h.
@@ -198,8 +194,6 @@ int main(void)
 
 	XScuTimer_Config *ConfigPtr;
 	XScuTimer *TimerInstancePtr = &Timer;        /* The instance of the Timer Counter. Used to measure the performance of the ICAP controller */
-	XScuTimer *TimerIntrPtr = &TimerIntr;        /* The instance of the Timer Counter. Used to measure the performance of the ICAP controller */
-
 	// Initialize timer counter
 	ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
 
@@ -212,8 +206,6 @@ int main(void)
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
-
-
 	XUartPs_Config *Config;
 	u8 recvbuffer [10];
 	/*
@@ -229,36 +221,6 @@ int main(void)
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
-
-	/*
-	 * Sets up virtual addresses for Timer Interrupt
-	 * uses physical address.
-	 */
-	Status = XScuTimer_CfgInitialize(TimerIntrPtr, ConfigPtr,
-				 ConfigPtr->BaseAddr);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-	Status = TimerSetupIntrSystem(&IntcInstance,
-			TimerIntrPtr, XPAR_SCUTIMER_INTR);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-	XScuTimer_EnableAutoReload(TimerIntrPtr);
-
-	/*
-	 * Load the timer counter register.
-	 */
-//	XScuTimer_LoadTimer(TimerIntrPtr, 1);
-
-	/*
-	 * Start the timer counter and then wait for it
-	 * to timeout a number of times.
-	 */
-
-
 // Set Up ENet
   Status = EmacSetup(&IntcInstance, &ps7_ethernet_0, \
 									 XPAR_PS7_ETHERNET_0_DEVICE_ID, \
@@ -269,7 +231,47 @@ int main(void)
   else {
 	 xil_printf("EmacPs Setup FAILED\r\n");
   }
-	XScuTimer_LoadTimer(TimerIntrPtr, 0x01);
+
+//  Status = XScuGic_SelfTest(&IntcInstance);
+//  	if (Status != XST_SUCCESS) {
+//  		return XST_FAILURE;
+//  	}
+
+
+  	/*
+  	 * Setup the Interrupt System
+  	 */
+  	Status = SetUpInterruptSystem(&IntcInstance);
+  	if (Status != XST_SUCCESS) {
+  		return XST_FAILURE;
+  	}
+
+  	/*
+  	 * Connect a device driver handler that will be called when an
+  	 * interrupt for the device occurs, the device driver handler performs
+  	 * the specific interrupt processing for the device
+  	 */
+  	Status = XScuGic_Connect(&IntcInstance, 0x0E,
+  			   (Xil_ExceptionHandler)DeviceDriverHandler,
+  			   (void *)&IntcInstance);
+
+  	if (Status != XST_SUCCESS) {
+  		return XST_FAILURE;
+  	}
+
+	XScuGic_Enable(&IntcInstance, 0x0E);
+
+	Status = XScuGic_SoftwareIntr(&IntcInstance,
+					0x0E,
+					XSCUGIC_SPI_CPU0_MASK);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+
+	/*
+	 * Wait for the interrupt to be processed, if the interrupt does not
+	 * occur this loop will wait forever
+	 */
 
 
 	  filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
@@ -279,9 +281,10 @@ int main(void)
     delay0 = XScuTimer_GetCounterValue(TimerInstancePtr);
     XScuTimer_Start(TimerInstancePtr);
     Status = ppu_test (&ps7_ethernet_0);
-	XScuTimer_Start(TimerIntrPtr);
-
     delayTx = XScuTimer_GetCounterValue(TimerInstancePtr);
+	Status = XScuGic_SoftwareIntr(&IntcInstance,
+					0x0E,
+					XSCUGIC_SPI_CPU0_MASK);
 
     //xil_printf("\r\n Frame Transmitted");
     while (!FrameFlag);
@@ -290,14 +293,14 @@ int main(void)
     delayRx = XScuTimer_GetCounterValue(TimerInstancePtr);
     ReconfigFlag = CheckDataFlag();
     delayDec = XScuTimer_GetCounterValue(TimerInstancePtr);
-    if (ReconfigFlag)
-    {
-    	filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
-    }
-    if (filesize != 0)
-    {
-    	xil_printf("\r\n Bitstream buffered");
-    }
+//    if (ReconfigFlag)
+//    {
+//    	filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+//    }
+    //if (filesize != 0)
+    //{
+    //	xil_printf("\r\n Bitstream buffered");
+    //}
     delayBuf = XScuTimer_GetCounterValue(TimerInstancePtr);
     Status = XDcfgInterruptRun( &DcfgInstance, filesize/4);
 
@@ -343,8 +346,37 @@ int main(void)
 
 
 
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr)
+{
 
+	/*
+	 * Connect the interrupt controller interrupt handler to the hardware
+	 * interrupt handling logic in the ARM processor.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			XScuGicInstancePtr);
 
+	/*
+	 * Enable interrupts in the ARM
+	 */
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+
+void DeviceDriverHandler(void *CallbackRef)
+{
+	/*
+	 * Indicate the interrupt has been processed using a shared variable
+	 */
+//	xil_printf("\r\n Simulating IRQ priority handling...\r\n");
+	InterruptProcessed = TRUE;
+}
+
+void NonDeterministicEvent(){
+
+}
 
 
 /*****************************************************************************/
@@ -574,100 +606,7 @@ static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus)
 
 static void TimerIntrHandler(void *CallBackRef)
 {
-	XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
 
-	/*
-	 * Check if the timer counter has expired, checking is not necessary
-	 * since that's the reason this function is executed, this just shows
-	 * how the callback reference can be used as a pointer to the instance
-	 * of the timer counter that expired, increment a shared variable so
-	 * the main thread of execution can see the timer expired.
-	 */
-	xil_printf("FIRING!\n\r");
-	if (XScuTimer_IsExpired(TimerInstancePtr)) {
-		XScuTimer_ClearInterruptStatus(TimerInstancePtr);
-		TimerExpired++;
-		if (TimerExpired == 3) {
-			XScuTimer_DisableAutoReload(TimerInstancePtr);
-		}
-	}
-}
-
-static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
-			      XScuTimer *TimerInstancePtr, u16 TimerIntrId)
-{
-	int Status;
-	u8 prio;
-	u8 trigger;
-
-#ifndef TESTAPP_GEN
-	XScuGic_Config *IntcConfig;
-
-	/*
-	 * Initialize the interrupt controller driver so that it is ready to
-	 * use.
-	 */
-	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
-	if (NULL == IntcConfig) {
-		return XST_FAILURE;
-	}
-
-	Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
-					IntcConfig->CpuBaseAddress);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-
-	Xil_ExceptionInit();
-
-
-
-	/*
-	 * Connect the interrupt controller interrupt handler to the hardware
-	 * interrupt handling logic in the processor.
-	 */
-	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
-				(Xil_ExceptionHandler)XScuGic_InterruptHandler,
-				IntcInstancePtr);
-#endif
-
-	/*
-	 * Connect the device driver handler that will be called when an
-	 * interrupt for the device occurs, the handler defined above performs
-	 * the specific interrupt processing for the device.
-	 */
-	Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
-				(Xil_ExceptionHandler)TimerIntrHandler,
-				(void *)TimerInstancePtr);
-	if (Status != XST_SUCCESS) {
-		return Status;
-	}
-
-	XScuGic_GetPriorityTriggerType(IntcInstancePtr,TimerIntrId,&prio,&trigger);
-	xil_printf("Timer Intr Prio is %d\n\r",prio);
-	prio = 10;
-	XScuGic_SetPriorityTriggerType(IntcInstancePtr,TimerIntrId,prio,trigger);
-	XScuGic_GetPriorityTriggerType(IntcInstancePtr,TimerIntrId,&prio,&trigger);
-	xil_printf("Timer Intr Prio is now %d\n\r",prio);
-	/*
-	 * Enable the interrupt for the device.
-	 */
-	XScuGic_Enable(IntcInstancePtr, TimerIntrId);
-
-	/*
-	 * Enable the timer interrupts for timer mode.
-	 */
-	XScuTimer_EnableInterrupt(TimerInstancePtr);
-
-#ifndef TESTAPP_GEN
-	/*
-	 * Enable interrupts in the Processor.
-	 */
-	Xil_ExceptionEnable();
-#endif
-
-	return XST_SUCCESS;
 }
 
 /*****************************************************************************/

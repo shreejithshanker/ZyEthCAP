@@ -1,4 +1,4 @@
-16:48:39 **** Incremental Build of configuration Debug for project zyn_bypass ****
+14:18:55 **** Auto Build of configuration Debug for project zyn_bypass ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -80,7 +80,6 @@ In file included from ../src/ZyNCAP_pr.c:9:0:
 ../src/ZyNCAP_pr.c: In function 'main':
 ../src/ZyNCAP_pr.c:20:50: error: 'XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR' undeclared (first use in this function)
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
-src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
                                                   ^
 ../src/ZyNCAP_pr.c:20:50: note: in definition of macro 'XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR'
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
@@ -92,6 +91,7 @@ src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
  #define XPAR_PARTIAL_LED_TEST_0_S00_AXI_BASEADDR XPAR_PARTIAL_LED_0_S00_AXI_BASEADDR
                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 make: *** [src/ZyNCAP_pr.o] Error 1
+src/subdir.mk:54: recipe for target 'src/ZyNCAP_pr.o' failed
 
-16:48:39 Build Finished (took 117ms)
+14:18:55 Build Finished (took 117ms)
 

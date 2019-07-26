@@ -32,24 +32,6 @@ static char * ModeName (int y, int x);
 
 
 volatile int intr_counter;
-u32 pre, post;
-
-int setup_timer(){
-	int Status;
-
-	XScuTimer_Config *ConfigPtr;
-	XScuTimer *TimerInstancePtr = &Timer;        /* The instance of the Timer Counter. Used to measure the performance of the ICAP controller */
-	// Initialize timer counter
-	ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
-
-
-	Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
-				 ConfigPtr->BaseAddr);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-	return XST_SUCCESS;
-}
 
 
 static int check_bs_present(bs_info *bs_list,char *bs_name)
@@ -193,7 +175,6 @@ static void EnIntrHandler(void *baseaddr_p)
 	 modebin[1] = Xil_In32(ENET_RX_BASEADDR); // Also resets interrupt
 //     xil_printf("\r\nReceived mode info %x , %x\r\n",modebin[1],modebin[0]);
 	 modeName = ModeName(modebin[0],modebin[1]);
-//	 xil_printf("RECONFIG FLAG");
 	 ReConfig = 1;
      XScuGic_Enable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
 }
@@ -246,8 +227,7 @@ static int SetupIntrSystem(XScuGic * IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 T
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
-
-
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, TxIntrId, 0xA0, 0x3);
 	/*
 	 * Connect the device driver handler that will be called when an
 	 * interrupt for the device occurs, the handler defined above performs
@@ -264,14 +244,7 @@ static int SetupIntrSystem(XScuGic * IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 T
 	if (Status != XST_SUCCESS) {
 		return Status;
 	}
-
-	XScuGic_SetPriorityTriggerType(IntcInstancePtr, EnIntrId, 8, 0x3);
-	u8 prio, trigger;
-	XScuGic_GetPriorityTriggerType(IntcInstancePtr,EnIntrId,&prio,&trigger);
-	xil_printf("Reconfig Prio is %d\n\r",prio);
-
 	XScuGic_Enable(IntcInstancePtr, EnIntrId);
-//	XScuGic_CPUWriteReg(IntcInstancePtr, XSCUGIC_BIN_PT_OFFSET, 0x03);
 
 	/* Enable interrupts from the hardware */
 	Xil_ExceptionInit();
@@ -443,10 +416,7 @@ int Config_PR_Bitstream(char *bs_name,int sync_intr)
     //print_schedule(bs_list);
 	//print("Central DMA Initialized\r\n");
     pres_first = find_first_bs(bs_list);
-	pre =  XScuTimer_GetCounterValue(TimerInstancePtr);
 	Status = XAxiDma_SimpleTransfer(&xcdma,bs_list[pres_first].addr,bs_list[pres_first].size,XAXIDMA_DMA_TO_DEVICE);
-
-
 	if (Status != XST_SUCCESS) {
 		xil_printf("DMA transfer failed\r\n",Status);
 		return XST_FAILURE;
@@ -473,8 +443,6 @@ int Sync_Zycap()
 		xil_printf("Failed transmit");
 		return XST_FAILURE;
 	}
-//	post =  XScuTimer_GetCounterValue(TimerInstancePtr);
-//	xil_printf("Time Taken for Reconfig: %d ns\r\n", (pre - post)*nano_seconds);
 	return XST_SUCCESS;
 }
 
@@ -561,15 +529,11 @@ int Net_Bitstream()
     }
 
     pres_first = find_first_bs(bs_list);
-
-    // START TIMER
-
    	Status = XAxiDma_SimpleTransfer(&xcdma,bs_list[pres_first].addr,bs_list[pres_first].size,XAXIDMA_DMA_TO_DEVICE);
    	if (Status != XST_SUCCESS) {
    		xil_printf("DMA transfer failed\r\n",Status);
    		return XST_FAILURE;
    	}
-
    	TxDone = 0;
    	Error = 0;
    	ReConfig = 0;

@@ -17,7 +17,7 @@
 #include "xscugic.h"
 #include "xdevcfg.h"
 #include "devcfg.h"
-
+#include "xtime_l.h"
 
 #define EMACPS_DEVICE_ID	XPAR_XEMACPS_0_DEVICE_ID
 #define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
@@ -34,6 +34,8 @@
 #define SKIP_CHECKS 1
 
 #define nano_seconds (1000/(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000))
+#define MAX_VAL 10
+#define MIN_VAL 0
 
 XScuGic InterruptController;         /* Instance of the Interrupt Controller. User has to provide a pointer to the ICAP driver */
 XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
@@ -46,8 +48,10 @@ XScuGic IntcInstance; /* Instance of the Interrupt Controller driver */
 volatile int DmaDone;
 volatile int DmaPcapDone;
 volatile int FpgaProgrammed;
+volatile static int InterruptProcessed = FALSE;
 
 
+XScuTimer *TimerInstancePtr = &Timer;
 
 int EmacFrTxSetup(XEmacPs *EmacPsInstancePtr);
 LONG EmacPsDmaSingleFrameIntrExample(XEmacPs * EmacPsInstancePtr);
@@ -62,6 +66,8 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
 
 char * aes = "aes.bin";
 char * pres = "pres.bin";
+
+u32 limit;
 
 static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
 {
@@ -106,6 +112,22 @@ static int SD_Init(FATFS *fatfs)
 	return XST_SUCCESS;
 }
 
+void DeviceDriverHandler(void *CallbackRef)
+{
+	Xil_EnableNestedInterrupts()
+	/*
+	 * Indicate the interrupt has been processed using a shared variable
+	 */
+
+	u32 test;
+	for(int i = 0; i < limit; i++){
+		if(ReConfig) break;
+		test = Xil_In32(XPAR_PS7_GPIO_0_BASEADDR);
+//		xil_printf("READ #%d : %d\r\n", i, test);
+	}
+	InterruptProcessed = TRUE;
+	Xil_DisableNestedInterrupts()
+}
 
 int main()
 {
@@ -120,21 +142,27 @@ int main()
 	// TEST 3
 	u32 ZyCAP_Prefetch_Init_delay,ZyCAP_Prefetch_Final_delay;
 	// TEST 4
-	u32 ZyCAP_Network_Init_delay,ZyCAP_Network_Transmit_delay, ZyCAP_Network_Receive_delay,ZyCAP_Network_Final_delay;
+	u32 ZyCAP_Network_Init_delay,ZyCAP_Network_Transmit_delay, ZyCAP_Network_Receive_delay, ZyCAP_Network_Final_delay;
 
 	FATFS * fatfs;
 	u32 fileSize;
-	XScuTimer_Config *ConfigPtr;
-	XScuTimer *TimerInstancePtr = &Timer;        /* The instance of the Timer Counter. Used to measure the performance of the ICAP controller */
-	// Initialize timer counter
-	ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+	XTime tSeed;
 
+	XTime_GetTime(&tSeed);
+	srand(tSeed);
 
-	Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
-				 ConfigPtr->BaseAddr);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
+	limit = rand() % (MAX_VAL + 1 - MIN_VAL) + MIN_VAL;
+//	XScuTimer_Config *ConfigPtr;
+//	XScuTimer *TimerInstancePtr = &Timer;        /* The instance of the Timer Counter. Used to measure the performance of the ICAP controller */
+//	// Initialize timer counter
+//	ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+//
+//
+//	Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+//				 ConfigPtr->BaseAddr);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
 
 	int RecvCount = 0;
 	XUartPs_Config *Config;
@@ -152,6 +180,8 @@ int main()
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
+
+	setup_timer();
 
 	xil_printf("Finished setting up NetworkPR Test...\n\r");
 
@@ -189,18 +219,22 @@ int main()
 	}
 
 	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
-	PCAP_Init_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
 	XScuTimer_Start(TimerInstancePtr);
+	PCAP_Init_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
 
 	Status = XDcfgInterruptExample(&IntcInstance, &DcfgInstance, DCFG_DEVICE_ID, DCFG_INTR_ID, BITSTREAM_MEMORY_ADDRESS, fileSize/4, &Timer);
+//    Status = XDcfgInterruptRun( &DcfgInstance, fileSize/4);
+//    Status = XDcfg_TransferBitfile(&DcfgInstance, BITSTREAM_MEMORY_ADDRESS, fileSize/4);
+	PCAP_Final_delay =  XScuTimer_GetCounterValue(TimerInstancePtr);
+
 	if (Status != XST_SUCCESS) {
 		xil_printf("Dcfg Interrupt Example Test Failed\r\n");
 		return XST_FAILURE;
 	}
 
 //	XScuTimer_Stop(TimerInstancePtr);
-	PCAP_Final_delay =  XScuTimer_GetCounterValue(TimerInstancePtr);
-	xil_printf("Time Taken for Renconfig: %d ns\r\n", (PCAP_Init_delay - PCAP_Final_delay)*nano_seconds);
+//	PCAP_Final_delay =  XScuTimer_GetCounterValue(TimerInstancePtr);
+//	xil_printf("Time Taken for Reconfig: %d ns\r\n", (PCAP_Init_delay - PCAP_Final_delay)*nano_seconds);
 	xil_printf("Reconfig Speed (PCAP): %d MBytes/sec\r\n", (fileSize*TimerClock)/(PCAP_Init_delay - PCAP_Final_delay));
 	xil_printf("File size: %d Bytes\n\r", fileSize);
 
@@ -231,6 +265,20 @@ int main()
     if (Status != XST_SUCCESS) {
 		 return XST_FAILURE;
 	}
+
+  	Status = XScuGic_Connect(&IntcInstance, 0x0E,
+  			   (Xil_ExceptionHandler)DeviceDriverHandler,
+  			   (void *)&IntcInstance);
+
+  	if (Status != XST_SUCCESS) {
+  		return XST_FAILURE;
+  	}
+	XScuGic_SetPriorityTriggerType(&IntcInstance, 0x0E, 200, 0x3);
+	u8 prio, trigger;
+	XScuGic_GetPriorityTriggerType(&IntcInstance,0x0E,&prio,&trigger);
+	xil_printf("Deterministic Prio is %d\n\r",prio);
+
+	XScuGic_Enable(&IntcInstance, 0x0E);
 
 	xil_printf("Starting ZyCAP (No Prefetch)\n\r");
 
@@ -274,18 +322,18 @@ int main()
 	xil_printf("Starting ZyCAP (Prefetch)\n\r");
 
 	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
-	ZyCAP_Prefetch_Init_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
 	XScuTimer_Start(TimerInstancePtr);
-
+	ZyCAP_Prefetch_Init_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
 	//Do the reconfiguration once again to see the effect of bufferring in the DRAM
 	Status = Config_PR_Bitstream("mode1.bin",1);
-	ZyCAP_Prefetch_Final_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
 	if (Status == XST_FAILURE){
 		xil_printf("Reconfiguration failed\r\n",Status);
 		return XST_FAILURE;
 	}
+	ZyCAP_Prefetch_Final_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
+
 	XScuTimer_Stop(TimerInstancePtr);
-	xil_printf("Time Taken for Renconfig: %d ns\r\n", (ZyCAP_Prefetch_Init_delay-ZyCAP_Prefetch_Final_delay)*nano_seconds);
+	xil_printf("Time Taken for (PCAP) Reconfig: %d ns\r\n", (ZyCAP_Prefetch_Init_delay-ZyCAP_Prefetch_Final_delay)*nano_seconds);
 	xil_printf("Reconfig speed (Network): %d MBytes/sec\r\n", (Status*TimerClock)/(ZyCAP_Prefetch_Init_delay-ZyCAP_Prefetch_Final_delay));
 	xil_printf("File size: %d Bytes\n\r", Status);
 
@@ -316,7 +364,9 @@ int main()
 	Status = ppu_test(&ps7_ethernet_0);
 	// Wait for Emacs Interrupt
 	ZyCAP_Network_Transmit_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
-
+	Status = XScuGic_SoftwareIntr(&IntcInstance,
+					0x0E,
+					XSCUGIC_SPI_CPU0_MASK);
 	while (ReConfig == 0)
 	{
 		// Wait here

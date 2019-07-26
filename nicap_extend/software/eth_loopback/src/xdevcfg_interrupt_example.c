@@ -83,6 +83,7 @@
 #include "ff.h"
 #include "xscutimer.h"
 #include "xemacps_example_intr_dma.h"
+#include "zycap.h"
 /************************** Constant Definitions *****************************/
 
 /*
@@ -147,8 +148,6 @@ static void TimerIntrHandler(void *CallBackRef);
 
 int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
 void DeviceDriverHandler(void *CallbackRef);
-
-void NonDeterministicEvent();
 
 /************************** Variable Definitions *****************************/
 
@@ -232,10 +231,10 @@ int main(void)
 	 xil_printf("EmacPs Setup FAILED\r\n");
   }
 
-//  Status = XScuGic_SelfTest(&IntcInstance);
-//  	if (Status != XST_SUCCESS) {
-//  		return XST_FAILURE;
-//  	}
+  Status = XScuGic_SelfTest(&IntcInstance);
+  	if (Status != XST_SUCCESS) {
+  		return XST_FAILURE;
+  	}
 
 
   	/*
@@ -261,9 +260,9 @@ int main(void)
 
 	XScuGic_Enable(&IntcInstance, 0x0E);
 
-	Status = XScuGic_SoftwareIntr(&IntcInstance,
-					0x0E,
-					XSCUGIC_SPI_CPU0_MASK);
+//	Status = XScuGic_SoftwareIntr(&IntcInstance,
+//					0x0E,
+//					XSCUGIC_SPI_CPU0_MASK);
 //	if (Status != XST_SUCCESS) {
 //		return XST_FAILURE;
 //	}
@@ -293,14 +292,14 @@ int main(void)
     delayRx = XScuTimer_GetCounterValue(TimerInstancePtr);
     ReconfigFlag = CheckDataFlag();
     delayDec = XScuTimer_GetCounterValue(TimerInstancePtr);
-//    if (ReconfigFlag)
-//    {
-//    	filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
-//    }
-    //if (filesize != 0)
-    //{
-    //	xil_printf("\r\n Bitstream buffered");
-    //}
+    if (ReconfigFlag)
+    {
+    	filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+    }
+    if (filesize != 0)
+    {
+    	xil_printf("\r\n Bitstream buffered");
+    }
     delayBuf = XScuTimer_GetCounterValue(TimerInstancePtr);
     Status = XDcfgInterruptRun( &DcfgInstance, filesize/4);
 
@@ -317,10 +316,12 @@ int main(void)
     //xil_printf("\r\n Frame Dec  \t|\t %d ns",(delayDec-delayRx)*3);
     xil_printf("\r\n -----------  \t|\t ----------");
     u32 unbufDelay = delayRx - delayPCAP;
-    u32 bufferedDelay = delayBuf - delayPCAP + delayRx - delayDec;
+//    u32 bufferedDelay = delayBuf - delayPCAP + delayRx - delayDec;
+    u32 bufferedDelay = delayBuf - delayPCAP;
+
 
     xil_printf("\r\n unBuf Delay  \t|\t %d ns",unbufDelay);
-    xil_printf("\r\n Buf Delay  \t|\t %d ns",unbufDelay);
+    xil_printf("\r\n Buf Delay  \t|\t %d ns",bufferedDelay);
     xil_printf("\r\n -----------  \t|\t ----------");
     xil_printf("\r\n -----------  \t|\t ----------");
 
@@ -370,12 +371,13 @@ void DeviceDriverHandler(void *CallbackRef)
 	/*
 	 * Indicate the interrupt has been processed using a shared variable
 	 */
-//	xil_printf("\r\n Simulating IRQ priority handling...\r\n");
+	u32 test;
+	xil_printf("\r\n Simulating IRQ priority handling...\r\n");
+	for(int i = 0; i < 10; i++){
+		test = Xil_In32(XPAR_PS7_GPIO_0_BASEADDR);
+		xil_printf("READ #%d : %d\r\n", i, test);
+	}
 	InterruptProcessed = TRUE;
-}
-
-void NonDeterministicEvent(){
-
 }
 
 

@@ -16,7 +16,6 @@
 #include "xscugic.h"
 #include "ff.h"
 #include "xil_cache.h"
-#include "xscutimer.h"
 #include "xemacps_example_intr_dma.h"
 #include "xil_exception.h"
 
@@ -88,9 +87,6 @@ typedef struct bit_info{
 
 #define XDCFG_CTRL_ICAP_PR_MASK	  	0xF7FFFFFF /**< Disable PCAP for PR */
 
-#define nano_seconds (1000/(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000))
-
-
 /* Flags interrupt handlers use to notify the application context the events.
 */
 volatile int TxDone;
@@ -99,11 +95,14 @@ volatile int EnetPrg;
 volatile char * modeName;
 volatile int ReConfig;
 
+//#define Xil_EnableNestedInterrupts() \
+//__asm____volatile__ ("mrs lr, spsr"); \
+//__asm____volatile__ ("stmfd sp!, {lr}"); \
+//__asm____volatile__ ("msr cpsr_c, #0x1F"); \
+//__asm____volatile__ ("stmfd sp!, {lr}");
 
-extern XScuTimer Timer;
-extern u32 ZyCAP_Network_Final_delay;
-extern XScuTimer *TimerInstancePtr;
-extern int setup_timer();
+
+
 
 int Init_Zycap(XScuGic * InterruptController, XEmacPs *EmacPsInstancePtr);
 int Config_PR_Bitstream(char *bs_name,int sync_intr);

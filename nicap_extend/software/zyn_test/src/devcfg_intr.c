@@ -77,7 +77,9 @@
 #include "xscugic.h"
 #include "xdevcfg.h"
 #include "xscutimer.h"
+#include "zycap.h"
 
+#define nano_seconds (1000/(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000))
 
 /************************** Constant Definitions *****************************/
 
@@ -129,6 +131,7 @@ static int SetupInterruptSystem(XScuGic *IntcInstancePtr,
 				u16 DcfgIntrId);
 
 static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus);
+int XDcfgInterruptRun( XDcfg * DcfgInstPtr, u32 bitsize);
 
 int TimerClock;
 
@@ -186,6 +189,8 @@ volatile int FpgaProgrammed;
 * @note		None
 *
 ****************************************************************************/
+u32 pre,post;
+
 int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 				u16 DeviceId, u16 DcfgIntrId, u32 bitstreamLoc, u32 bitstreamSize, XScuTimer *Timer)
 {
@@ -297,23 +302,38 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 //	XScuTimer_LoadTimer(Timer, 0xFFFFFFFF);
 //	delay1 = XScuTimer_GetCounterValue(Timer);
 //	XScuTimer_Start(Timer);
+	XScuTimer_Stop(TimerInstancePtr);
+
+	XScuTimer_LoadTimer(TimerInstancePtr, 0xFFFFFFFF);
+	XScuTimer_Start(TimerInstancePtr);
+
+	pre = XScuTimer_GetCounterValue(TimerInstancePtr);
 
 	XDcfg_Transfer(DcfgInstPtr, (u8 *)bitstreamLoc,
 			bitstreamSize,
 			(u8 *)XDCFG_DMA_INVALID_ADDRESS,
 			0, XDCFG_NON_SECURE_PCAP_WRITE);
 
-
+//	XDcfg_Transfer(DcfgInstPtr, (u8 *)BIT_STREAM_LOCATION,
+//			bitsize,
+//			(u8 *)XDCFG_DMA_INVALID_ADDRESS,
+//			0, XDCFG_NON_SECURE_PCAP_WRITE);
 
 	while (!DmaDone);
 
 	if (PartialCfg) {
 		while (!DmaPcapDone);
+		post = XScuTimer_GetCounterValue(TimerInstancePtr);
+		xil_printf("Time Taken for PCAP - Reconfig: %d ns\r\n", (pre - post)*nano_seconds);
+		xil_printf("Reconfig Speed (PCAP): %d MBytes/sec\r\n", ((4*bitstreamSize)*(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000))/(pre - post));
+
 //		XScuTimer_Stop(Timer);
 //		delay =  delay1 - XScuTimer_GetCounterValue(Timer);
 //		xil_printf("Reconfiguration speed (PCAP): %d MBytes/sec\r\n", (bitstreamSize*TimerClock)/delay);
 	} else {
 		while (!FpgaProgrammed);
+
+
 		/*
 		 * Enable the level-shifters from PS to PL.
 		 */
@@ -335,6 +355,37 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstPtr,
 
 	XScuGic_Disconnect(IntcInstPtr, DcfgIntrId);
 
+	return Status;
+}
+
+int XDcfgInterruptRun( XDcfg * DcfgInstPtr, u32 bitsize)
+{
+	u32 Status;
+	u32 PartialCfg = 1;
+
+	/*
+	 * Download bitstream in non secure mode
+	 */
+	XDcfg_Transfer(DcfgInstPtr, (u8 *)BIT_STREAM_LOCATION,
+			bitsize,
+			(u8 *)XDCFG_DMA_INVALID_ADDRESS,
+			0, XDCFG_NON_SECURE_PCAP_WRITE);
+
+	while (!DmaDone);
+
+	if (PartialCfg) {
+		while (!DmaPcapDone);
+	} else {
+		while (!FpgaProgrammed);
+		/*
+		 * Enable the level-shifters from PS to PL.
+		 */
+		Xil_Out32(SLCR_UNLOCK, SLCR_UNLOCK_VAL);
+		Xil_Out32(SLCR_LVL_SHFTR_EN, 0xF);
+		Xil_Out32(SLCR_LOCK, SLCR_LOCK_VAL);
+	}
+
+	Status = XST_SUCCESS;
 	return Status;
 }
 

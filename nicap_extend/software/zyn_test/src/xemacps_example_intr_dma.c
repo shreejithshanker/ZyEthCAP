@@ -1090,7 +1090,6 @@ static void XEmacPsRecvHandler(void *Callback)
 {
 	XEmacPs *EmacPsInstancePtr = (XEmacPs *) Callback;
 
-	xil_printf("\n\rTTTTTTTTTTTTTTTTTTTT\n\r");
 	/*
 	 * Disable the transmit related interrupts
 	 */

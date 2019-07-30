@@ -95,15 +95,6 @@ volatile int EnetPrg;
 volatile char * modeName;
 volatile int ReConfig;
 
-//#define Xil_EnableNestedInterrupts() \
-//__asm____volatile__ ("mrs lr, spsr"); \
-//__asm____volatile__ ("stmfd sp!, {lr}"); \
-//__asm____volatile__ ("msr cpsr_c, #0x1F"); \
-//__asm____volatile__ ("stmfd sp!, {lr}");
-
-
-
-
 int Init_Zycap(XScuGic * InterruptController, XEmacPs *EmacPsInstancePtr);
 int Config_PR_Bitstream(char *bs_name,int sync_intr);
 int Prefetch_PR_Bitstream(char *bs_name);

@@ -128,6 +128,7 @@
 /***************************** Include Files ********************************/
 #include "xemacps_example_intr_dma.h"
 #include "xil_exception.h"
+#include "xscutimer.h"
 
 #ifndef __MICROBLAZE__
 #include "xil_mmu.h"
@@ -233,6 +234,7 @@ XEmacPs_Bd BdRxTerminate __attribute__ ((aligned(64)));
 
 u32 GemVersion;
 u32 Platform;
+u32 RX_ISR;
 
 /*************************** Function Prototypes ****************************/
 
@@ -285,6 +287,9 @@ void XEmacPs_SetMdioDivisor(XEmacPs *InstancePtr, XEmacPs_MdcDiv Divisor);
 *
 ****************************************************************************/
 
+extern XScuTimer Timer;
+extern u32 ZyCAP_Network_Final_delay;
+extern XScuTimer *TimerInstancePtr;
 
 /****************************************************************************/
 /**
@@ -1045,7 +1050,8 @@ static void EmacPsDisableIntrSystem(INTC * IntcInstancePtr,
 static void XEmacPsSendHandler(void *Callback)
 {
 	XEmacPs *EmacPsInstancePtr = (XEmacPs *) Callback;
-	//XScuTimer *TimerInstancePtr = &Timer;
+
+
 	/*
 	 * Disable the transmit related interrupts
 	 */
@@ -1054,11 +1060,12 @@ static void XEmacPsSendHandler(void *Callback)
 	if (GemVersion > 2) {
 	XEmacPs_IntQ1Disable(EmacPsInstancePtr, XEMACPS_INTQ1_IXR_ALL_MASK);
 	}
+	XScuTimer *TimerInstancePtr = &Timer;
+	RX_ISR = XScuTimer_GetCounterValue(TimerInstancePtr);
 	/*
 	 * Increment the counter so that main thread knows something
 	 * happened.
 	 */
-	//delayTx = XScuTimer_GetCounterValue(TimerInstancePtr);
 	FramesTx++;
 	//xil_printf("\r\n Frame %d transmitted",FramesTx);
 }
@@ -1080,7 +1087,7 @@ static void XEmacPsSendHandler(void *Callback)
 static void XEmacPsRecvHandler(void *Callback)
 {
 	XEmacPs *EmacPsInstancePtr = (XEmacPs *) Callback;
-	//XScuTimer *TimerInstancePtr = &Timer;
+	XScuTimer *TimerInstancePtr = &Timer;
 	/*
 	 * Disable the transmit related interrupts
 	 */

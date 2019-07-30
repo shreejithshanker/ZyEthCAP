@@ -84,6 +84,8 @@
 #include "xscutimer.h"
 #include "xemacps_example_intr_dma.h"
 #include "zycap.h"
+#include "xtime_l.h"
+
 /************************** Constant Definitions *****************************/
 
 /*
@@ -121,6 +123,10 @@
 #define SLCR_LOCK_VAL	0x767B
 #define SLCR_UNLOCK_VAL	0xDF0D
 #define UART_DeviceId XPAR_PS7_UART_0_DEVICE_ID
+
+#define nano_seconds (1000/(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000))
+#define MAX_VAL 10000
+#define MIN_VAL 0
 
 
 XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
@@ -165,6 +171,8 @@ int TimerClock = XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000;
 volatile int TimerExpired;
 
 volatile static int InterruptProcessed = FALSE;
+volatile static int RECONFIG_FLAG = FALSE;
+u32 limit, test = 0;
 
 /*****************************************************************************/
 /**
@@ -183,6 +191,13 @@ int main(void)
 	u32 delay0,delayDec;
 	int ReconfigFlag;
 	int filesize;
+
+	XTime tSeed;
+
+	XTime_GetTime(&tSeed);
+	srand(tSeed);
+
+	limit = rand() % (MAX_VAL + 1 - MIN_VAL) + MIN_VAL;
 	/*
 	 * Call the example , specify the device ID  and vector ID that is
 	 * generated in xparameters.h.
@@ -260,12 +275,12 @@ int main(void)
 
 	XScuGic_Enable(&IntcInstance, 0x0E);
 
-//	Status = XScuGic_SoftwareIntr(&IntcInstance,
-//					0x0E,
-//					XSCUGIC_SPI_CPU0_MASK);
-//	if (Status != XST_SUCCESS) {
-//		return XST_FAILURE;
-//	}
+	Status = XScuGic_SoftwareIntr(&IntcInstance,
+					0x0E,
+					XSCUGIC_SPI_CPU0_MASK);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
 	/*
 	 * Wait for the interrupt to be processed, if the interrupt does not
@@ -281,15 +296,17 @@ int main(void)
     XScuTimer_Start(TimerInstancePtr);
     Status = ppu_test (&ps7_ethernet_0);
     delayTx = XScuTimer_GetCounterValue(TimerInstancePtr);
-	Status = XScuGic_SoftwareIntr(&IntcInstance,
-					0x0E,
-					XSCUGIC_SPI_CPU0_MASK);
+//	Status = XScuGic_SoftwareIntr(&IntcInstance,
+//					0x0E,
+//					XSCUGIC_SPI_CPU0_MASK);
 
     //xil_printf("\r\n Frame Transmitted");
     while (!FrameFlag);
+    xil_printf("\r\n RX time delay  \t|\t %d ns",(delayTx-RX_ISR)*nano_seconds);
+
     //xil_printf("\r\n Frame Rxd");
-    FrameFlag = 0;
     delayRx = XScuTimer_GetCounterValue(TimerInstancePtr);
+    FrameFlag = 0;
     ReconfigFlag = CheckDataFlag();
     delayDec = XScuTimer_GetCounterValue(TimerInstancePtr);
     if (ReconfigFlag)
@@ -304,12 +321,17 @@ int main(void)
     Status = XDcfgInterruptRun( &DcfgInstance, filesize/4);
 
     delayPCAP = XScuTimer_GetCounterValue(TimerInstancePtr);
-    xil_printf("\r\n PCAP Done %d",Status);
+	xil_printf("\r\n LIMIT = %d\n\r", limit);
+	if(RECONFIG_FLAG){
+		xil_printf("FLAG TRIGGED @ %d\n\r", test);
+	}
+	xil_printf("\r\n PCAP Done %d",Status);
     xil_printf("\r\n Time component \t|\t Time");
-    xil_printf("\r\n Frame Tx  \t|\t %d ns",(delay0-delayTx)*3);
+    xil_printf("\r\n Frame Tx  \t|\t %d ns",(delay0-delayTx)*nano_seconds);
 
-    xil_printf("\r\n Frame Rx  \t|\t %d ns",(delayTx-delayRx)*3);
+    xil_printf("\r\n Frame Rx  \t|\t %d ns",(delayTx-delayRx)*nano_seconds);
     xil_printf("\r\n Frame Dec  \t|\t %d ns",(delayRx-delayDec));
+    xil_printf("\r\n Experiment \t|\t %d ns",((delayTx-delayRx)+(delayRx-delayDec))*nano_seconds);
 //    xil_printf("\r\n Frame Buf  \t|\t %d ns",(delayDec-delayBuf)*3);
     xil_printf("\r\n Frame PCAP  \t|\t %d ns",(delayBuf-delayPCAP));
     xil_printf("\r\n Filesize  \t|\t %d bytes",filesize);
@@ -368,16 +390,22 @@ int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr)
 
 void DeviceDriverHandler(void *CallbackRef)
 {
+	Xil_EnableNestedInterrupts()
 	/*
 	 * Indicate the interrupt has been processed using a shared variable
 	 */
-	u32 test;
-	xil_printf("\r\n Simulating IRQ priority handling...\r\n");
-	for(int i = 0; i < 10; i++){
-		test = Xil_In32(XPAR_PS7_GPIO_0_BASEADDR);
-		xil_printf("READ #%d : %d\r\n", i, test);
+
+	for(int i = 0; i < limit; i++){
+		if(FrameFlag) {
+			RECONFIG_FLAG = TRUE;
+			break;
+		}
+//		test = Xil_In32(XPAR_PS7_GPIO_0_BASEADDR);
+		test = test + 1;
+//		xil_printf("READ #%d : %d\r\n", i, test);
 	}
 	InterruptProcessed = TRUE;
+	Xil_DisableNestedInterrupts()
 }
 
 
@@ -604,11 +632,6 @@ static void DcfgIntrHandler(void *CallBackRef, u32 IntrStatus)
 		XDcfg_IntrDisable(&DcfgInstance, XDCFG_IXR_PCFG_DONE_MASK);
 		FpgaProgrammed = TRUE;
 	}
-}
-
-static void TimerIntrHandler(void *CallBackRef)
-{
-
 }
 
 /*****************************************************************************/

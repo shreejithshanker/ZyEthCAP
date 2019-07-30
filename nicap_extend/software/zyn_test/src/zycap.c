@@ -184,23 +184,25 @@ static void TxIntrHandler(void *Callback)
 
 static void EnIntrHandler(void *baseaddr_p)
 {
-	 // print("interrupt\r\n");
+    XScuGic * IntcInstancePtr = (XScuGic *)baseaddr_p;
+    XScuGic_Disable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
+	  xil_printf("interrupt\r\n");
      intr_counter ++;
-     XScuGic * IntcInstancePtr = (XScuGic *)baseaddr_p;
 	 u32 modebin[2];
-     XScuGic_Disable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
 	 modebin[0] = Xil_In32(ENET_RX_BASEADDR+4);
 	 modebin[1] = Xil_In32(ENET_RX_BASEADDR); // Also resets interrupt
 //     xil_printf("\r\nReceived mode info %x , %x\r\n",modebin[1],modebin[0]);
 	 modeName = ModeName(modebin[0],modebin[1]);
 //	 xil_printf("RECONFIG FLAG");
 	 ReConfig = 1;
-     XScuGic_Enable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
+//     XScuGic_Enable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
 }
 
 
 static char * ModeName (int y, int x)
 {
+	u32 pre_mode = XScuTimer_GetCounterValue(TimerInstancePtr);
+
     int z[8];
     int i;
     char *name = malloc(sizeof(char) * 5);
@@ -225,6 +227,9 @@ static char * ModeName (int y, int x)
     }
 //    xil_printf("\r\nMode name %s \r\n",name);
     strcat(name,".bin");
+    u32 post_mode = XScuTimer_GetCounterValue(TimerInstancePtr);
+	xil_printf("Time Taken for PS Decoding: %d ns\r\n", (pre_mode-post_mode)*nano_seconds);
+	xil_printf("NAME: %s\r\n",name);
     return (name);
 }
 

@@ -34,7 +34,7 @@
 #define SKIP_CHECKS 1
 
 #define nano_seconds (1000/(XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ/2000000))
-#define MAX_VAL 10
+#define MAX_VAL 10000
 #define MIN_VAL 0
 
 XScuGic InterruptController;         /* Instance of the Interrupt Controller. User has to provide a pointer to the ICAP driver */
@@ -49,7 +49,7 @@ volatile int DmaDone;
 volatile int DmaPcapDone;
 volatile int FpgaProgrammed;
 volatile static int InterruptProcessed = FALSE;
-
+volatile static int RECONFIG_FLAG = FALSE;
 
 XScuTimer *TimerInstancePtr = &Timer;
 
@@ -67,7 +67,7 @@ int XDcfgInterruptExample(XScuGic *IntcInstPtr, XDcfg * DcfgInstance,
 char * aes = "aes.bin";
 char * pres = "pres.bin";
 
-u32 limit;
+volatile u32 limit,test = 0;
 
 static int SD_TransferPartial(char *FileName, u32 DestinationAddress)
 {
@@ -119,10 +119,13 @@ void DeviceDriverHandler(void *CallbackRef)
 	 * Indicate the interrupt has been processed using a shared variable
 	 */
 
-	u32 test;
-	for(int i = 0; i < limit; i++){
-		if(ReConfig) break;
-		test = Xil_In32(XPAR_PS7_GPIO_0_BASEADDR);
+	for(int i = 0; i < 100000; i++){
+		if(ReConfig) {
+			RECONFIG_FLAG = TRUE;
+			break;
+		}
+//		test = Xil_In32(XPAR_PS7_GPIO_0_BASEADDR);
+		test = test + 1;
 //		xil_printf("READ #%d : %d\r\n", i, test);
 	}
 	InterruptProcessed = TRUE;
@@ -364,9 +367,10 @@ int main()
 	Status = ppu_test(&ps7_ethernet_0);
 	// Wait for Emacs Interrupt
 	ZyCAP_Network_Transmit_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
-	Status = XScuGic_SoftwareIntr(&IntcInstance,
-					0x0E,
-					XSCUGIC_SPI_CPU0_MASK);
+//	Status = XScuGic_SoftwareIntr(&IntcInstance,
+//					0x0E,
+//					XSCUGIC_SPI_CPU0_MASK);
+	xil_printf("RIGHT HERE");
 	while (ReConfig == 0)
 	{
 		// Wait here
@@ -374,10 +378,15 @@ int main()
 
 	ZyCAP_Network_Receive_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
 
+//	xil_printf("LIMIT = %d\n\r", limit);
+//
+//	if(RECONFIG_FLAG){
+//		xil_printf("FLAG TRIGGED @ %d\n\r", test);
+//	}
 //	delay =  delay1 - XScuTimer_GetCounterValue(TimerInstancePtr);
 //	xil_printf("Mode Name received is %s\r\n",modeName);
 //	XScuTimer_Start(TimerInstancePtr);
-
+//	xil_printf("HERERERE");
 	Status = Net_Bitstream();
     if (Status == XST_FAILURE)
     {

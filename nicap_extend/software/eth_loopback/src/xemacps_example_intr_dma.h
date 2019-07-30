@@ -38,5 +38,6 @@ int ppu_test(XEmacPs *EmacPsInstancePtr);
 void TestData ();
 int enet_reconfig_test(XEmacPs *EmacPsInstancePtr, XUartPs *Uart_PS, char *bs_name);
 volatile u8 FrameFlag;
+extern u32 RX_ISR;
 
 #endif /* XEMACPS_EXAMPLE_INTR_DMA_H */

@@ -186,7 +186,7 @@ static void EnIntrHandler(void *baseaddr_p)
 {
     XScuGic * IntcInstancePtr = (XScuGic *)baseaddr_p;
     XScuGic_Disable(IntcInstancePtr, XPAR_PS7_ETHERNET_0_INTR);
-	  xil_printf("interrupt\r\n");
+//	  xil_printf("interrupt\r\n");
      intr_counter ++;
 	 u32 modebin[2];
 	 modebin[0] = Xil_In32(ENET_RX_BASEADDR+4);
@@ -201,7 +201,7 @@ static void EnIntrHandler(void *baseaddr_p)
 
 static char * ModeName (int y, int x)
 {
-	u32 pre_mode = XScuTimer_GetCounterValue(TimerInstancePtr);
+//	u32 pre_mode = XScuTimer_GetCounterValue(TimerInstancePtr);
 
     int z[8];
     int i;
@@ -227,9 +227,9 @@ static char * ModeName (int y, int x)
     }
 //    xil_printf("\r\nMode name %s \r\n",name);
     strcat(name,".bin");
-    u32 post_mode = XScuTimer_GetCounterValue(TimerInstancePtr);
-	xil_printf("Time Taken for PS Decoding: %d ns\r\n", (pre_mode-post_mode)*nano_seconds);
-	xil_printf("NAME: %s\r\n",name);
+//    u32 post_mode = XScuTimer_GetCounterValue(TimerInstancePtr);
+//	xil_printf("Time Taken for PS Decoding: %d ns\r\n", (pre_mode-post_mode)*nano_seconds);
+//	xil_printf("NAME: %s\r\n",name);
     return (name);
 }
 

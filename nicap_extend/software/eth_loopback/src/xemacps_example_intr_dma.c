@@ -1087,14 +1087,14 @@ static void XEmacPsSendHandler(void *Callback)
 static void XEmacPsRecvHandler(void *Callback)
 {
 	XEmacPs *EmacPsInstancePtr = (XEmacPs *) Callback;
-	XScuTimer *TimerInstancePtr = &Timer;
+//	XScuTimer *TimerInstancePtr = &Timer;
 	/*
 	 * Disable the transmit related interrupts
 	 */
 	XEmacPs_IntDisable(EmacPsInstancePtr, (XEMACPS_IXR_FRAMERX_MASK |
 		XEMACPS_IXR_RX_ERR_MASK));
 
-	xil_printf("\r\n RX IRQ\n\r");
+//	xil_printf("\r\n RX IRQ\n\r");
 	/*
 	 * Increment the counter so that main thread knows something
 	 * happened.

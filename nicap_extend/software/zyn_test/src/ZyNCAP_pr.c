@@ -119,7 +119,7 @@ void DeviceDriverHandler(void *CallbackRef)
 	 * Indicate the interrupt has been processed using a shared variable
 	 */
 
-	for(int i = 0; i < 100000; i++){
+	for(int i = 0; i < limit; i++){
 		if(ReConfig) {
 			RECONFIG_FLAG = TRUE;
 			break;
@@ -367,10 +367,10 @@ int main()
 	Status = ppu_test(&ps7_ethernet_0);
 	// Wait for Emacs Interrupt
 	ZyCAP_Network_Transmit_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
-//	Status = XScuGic_SoftwareIntr(&IntcInstance,
-//					0x0E,
-//					XSCUGIC_SPI_CPU0_MASK);
-	xil_printf("RIGHT HERE");
+	Status = XScuGic_SoftwareIntr(&IntcInstance,
+					0x0E,
+					XSCUGIC_SPI_CPU0_MASK);
+//	xil_printf("RIGHT HERE");
 	while (ReConfig == 0)
 	{
 		// Wait here
@@ -399,6 +399,7 @@ int main()
 	ZyCAP_Network_Final_delay = XScuTimer_GetCounterValue(TimerInstancePtr);
 
 	XScuTimer_Stop(TimerInstancePtr);
+		xil_printf("LIMIT = %d\n\r", limit);
 
 //	delay2 =  delay - XScuTimer_GetCounterValue(TimerInstancePtr);
 	xil_printf("Time Taken for Network RX: %d ns\r\n", (ZyCAP_Network_Transmit_delay - ZyCAP_Network_Receive_delay)*nano_seconds);

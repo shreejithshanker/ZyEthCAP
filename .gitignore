@@ -5,3 +5,5 @@
 *.jou
 *.log
 *.tmp
+*.Xil
+*.os

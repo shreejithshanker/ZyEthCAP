@@ -1,2 +1,0 @@
-axis_dwidth_converter_1.v,verilog,xil_defaultlib,../../../../../../../../zynq-ip-cores/aes_1.0/src/axis_dwidth_converter_1_1/sim/axis_dwidth_converter_1.v,incdir="$ref_dir/../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
-glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -275,12 +275,12 @@ int main(void)
 
 	XScuGic_Enable(&IntcInstance, 0x0E);
 
-	Status = XScuGic_SoftwareIntr(&IntcInstance,
-					0x0E,
-					XSCUGIC_SPI_CPU0_MASK);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
+//	Status = XScuGic_SoftwareIntr(&IntcInstance,
+//					0x0E,
+//					XSCUGIC_SPI_CPU0_MASK);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
 
 	/*
 	 * Wait for the interrupt to be processed, if the interrupt does not
@@ -296,42 +296,49 @@ int main(void)
     XScuTimer_Start(TimerInstancePtr);
     Status = ppu_test (&ps7_ethernet_0);
     delayTx = XScuTimer_GetCounterValue(TimerInstancePtr);
-//	Status = XScuGic_SoftwareIntr(&IntcInstance,
-//					0x0E,
-//					XSCUGIC_SPI_CPU0_MASK);
+	Status = XScuGic_SoftwareIntr(&IntcInstance,
+					0x0E,
+					XSCUGIC_SPI_CPU0_MASK);
 
     //xil_printf("\r\n Frame Transmitted");
     while (!FrameFlag);
-    xil_printf("\r\n RX time delay  \t|\t %d ns",(delayTx-RX_ISR)*nano_seconds);
+//    xil_printf("\r\n RX time delay  \t|\t %d ns",(delayTx-RX_ISR)*nano_seconds);
 
     //xil_printf("\r\n Frame Rxd");
-    delayRx = XScuTimer_GetCounterValue(TimerInstancePtr);
+//    delayRx = XScuTimer_GetCounterValue(TimerInstancePtr);
     FrameFlag = 0;
     ReconfigFlag = CheckDataFlag();
-    delayDec = XScuTimer_GetCounterValue(TimerInstancePtr);
-    if (ReconfigFlag)
-    {
-    	filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
-    }
-    if (filesize != 0)
-    {
-    	xil_printf("\r\n Bitstream buffered");
-    }
-    delayBuf = XScuTimer_GetCounterValue(TimerInstancePtr);
+//    delayDec = XScuTimer_GetCounterValue(TimerInstancePtr);
+//    if (ReconfigFlag)
+//    {
+//    	xil_printf("\r\nBUFFERING!\r\n");
+//    	filesize = SD_TransferPartial("mode1.bin", BIT_STREAM_LOCATION);
+//    }
+//    if (filesize != 0)
+//    {
+//    	xil_printf("\r\n Bitstream buffered");
+//    }
+//    delayBuf = XScuTimer_GetCounterValue(TimerInstancePtr);
     Status = XDcfgInterruptRun( &DcfgInstance, filesize/4);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
     delayPCAP = XScuTimer_GetCounterValue(TimerInstancePtr);
 	xil_printf("\r\n LIMIT = %d\n\r", limit);
 	if(RECONFIG_FLAG){
 		xil_printf("FLAG TRIGGED @ %d\n\r", test);
 	}
+//    xil_printf("\r\n Experiment  \t|\t %d ns",(delayTx-delayPCAP));
+    xil_printf("\r\n Experiment \t|\t %d ns",(delayTx-delayPCAP)*nano_seconds);
+
 	xil_printf("\r\n PCAP Done %d",Status);
     xil_printf("\r\n Time component \t|\t Time");
     xil_printf("\r\n Frame Tx  \t|\t %d ns",(delay0-delayTx)*nano_seconds);
 
     xil_printf("\r\n Frame Rx  \t|\t %d ns",(delayTx-delayRx)*nano_seconds);
     xil_printf("\r\n Frame Dec  \t|\t %d ns",(delayRx-delayDec));
-    xil_printf("\r\n Experiment \t|\t %d ns",((delayTx-delayRx)+(delayRx-delayDec))*nano_seconds);
+//    xil_printf("\r\n Experiment \t|\t %d ns",((delayTx-delayRx)+(delayRx-delayDec))*nano_seconds);
 //    xil_printf("\r\n Frame Buf  \t|\t %d ns",(delayDec-delayBuf)*3);
     xil_printf("\r\n Frame PCAP  \t|\t %d ns",(delayBuf-delayPCAP));
     xil_printf("\r\n Filesize  \t|\t %d bytes",filesize);
